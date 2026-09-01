@@ -1,0 +1,164 @@
+{
+  "stats": [
+    {
+      "value": "190M",
+      "label": {"en": "women affected worldwide", "da": "kvinder ramt på verdensplan"},
+      "source": "WHO"
+    },
+    {
+      "value": "1 in 10",
+      "label": {"en": "women of reproductive age", "da": "kvinder i den fødedygtige alder"},
+      "source": "WHO"
+    },
+    {
+      "value": "7–10 yrs",
+      "label": {"en": "average time to diagnosis", "da": "gennemsnitlig tid til diagnose"},
+      "source": "Endometriosis UK · studies"
+    },
+    {
+      "value": "0",
+      "label": {"en": "cures — only symptom control exists", "da": "kure — kun symptomlindring findes"},
+      "source": ""
+    },
+    {
+      "value": "LIVE",
+      "label": {"en": "recruiting trials, tracked weekly", "da": "rekrutterende forsøg, spores ugentligt"},
+      "source": "ClinicalTrials.gov"
+    }
+  ],
+  "problems": [
+    {
+      "title": {"en": "The diagnostic delay", "da": "Diagnoseforsinkelsen"},
+      "body": {
+        "en": "The average woman waits 7–10 years for a diagnosis. In that time the disease can spread, fertility can be affected, and pain becomes chronic — all while symptoms are dismissed as 'just bad periods'.",
+        "da": "Den gennemsnitlige kvinde venter 7–10 år på en diagnose. I den tid kan sygdommen sprede sig, fertiliteten påvirkes, og smerten blive kronisk — alt imens symptomerne affærdiges som 'bare kraftige menstruationer'."
+      },
+      "source": "Endometriosis UK · multiple studies"
+    },
+    {
+      "title": {"en": "Pain that isn't taken seriously", "da": "Smerte der ikke bliver taget alvorligt"},
+      "body": {
+        "en": "Research repeatedly shows that women's pain is reported less credibly and treated less aggressively than men's. For endometriosis patients this compounds into years of birth-control prescriptions without imaging, and emergency visits dismissed as anxiety.",
+        "da": "Forskning viser gentagne gange, at kvinders smerte bliver tillagt mindre troværdighed og behandlet mindre aggressivt end mænds. For endometriosepatienter betyder det år med p-pille-recepter uden billeddiagnostik, og akutbesøg der affærdiges som angst."
+      },
+      "source": "Chen et al. 2008 (analgesic disparity) · patient surveys"
+    },
+    {
+      "title": {"en": "A research funding gap", "da": "Et forskningsfinansieringshul"},
+      "body": {
+        "en": "Endometriosis affects roughly as many women as diabetes affects people — yet it receives a fraction of the research funding. The result: no cure, no non-invasive diagnostic standard, and treatments that haven't fundamentally changed in decades.",
+        "da": "Endometriose rammer omtrent lige så mange kvinder, som diabetes rammer mennesker — men sygdommen modtager en brøkdel af forskningsmidlerne. Resultatet: ingen kur, ingen ikke-invasiv diagnostisk standard, og behandlinger der ikke har ændret sig grundlæggende i årtier."
+      },
+      "source": "Multiple funding-gap analyses"
+    },
+    {
+      "title": {"en": "No cure — only management", "da": "Ingen kur — kun håndtering"},
+      "body": {
+        "en": "Current options are hormonal suppression, pain management and surgery. They help many — but recurrence is common and quality of life remains impaired for millions. Non-hormonal therapies are finally entering late-stage trials (see the live dashboard).",
+        "da": "Nuværende muligheder er hormonel dæmpning, smertelindring og kirurgi. Det hjælper mange — men tilbagefald er hyppige, og livskvaliteten er fortsat nedsat for millioner. Ikke-hormonelle behandlinger er endelig på vej i sene kliniske faser (se live-dashboardet)."
+      },
+      "source": "ClinicalTrials.gov · medical guidelines"
+    }
+  ],
+  "actions": [
+    {
+      "title": {"en": "Join the MY-ENDO trial (Denmark)", "da": "Tilmeld dig MY-ENDO-forsøget (Danmark)"},
+      "body": {
+        "en": "Free digital mindfulness- and acceptance-based self-management programme for endometriosis pain, run by Aarhus University Hospital together with the Danish patient organisation. Recruiting now.",
+        "da": "Gratis digitalt mindfulness- og acceptance-baseret selv-håndteringsprogram mod endometriosesmerter, drevet af Aarhus Universitetshospital sammen med den danske patientforening. Rekrutterer lige nu."
+      },
+      "url": "https://clinicaltrials.gov/study/NCT06211231",
+      "cta": {"en": "See trial", "da": "Se forsøget"}
+    },
+    {
+      "title": {"en": "Join Endometriose Fællesskabet (DK)", "da": "Bliv medlem af Endometriose Fællesskabet (DK)"},
+      "body": {
+        "en": "Denmark's patient organisation: phone counselling (also for relatives), closed support groups, free legal advice on your rights at work and in the system. 450 DKK/year.",
+        "da": "Danmarks patientforening: telefonrådgivning (også for pårørende), lukkede støttegrupper, gratis juridisk rådgivning om dine rettigheder på arbejde og i systemet. 450 kr./år."
+      },
+      "url": "https://www.endo.dk/bliv-en-del-af-faellesskabet/bliv-medlem/",
+      "cta": {"en": "Become a member", "da": "Bliv medlem"}
+    },
+    {
+      "title": {"en": "Know your right to a specialist centre", "da": "Kend din ret til et specialiseret center"},
+      "body": {
+        "en": "In Denmark, patients with severe or complex endometriosis have the right to referral to one of two national centres: Rigshospitalet (East) or Aarhus University Hospital, Skejby (West). A second opinion can change everything.",
+        "da": "I Danmark har patienter med svær eller kompleks endometriose ret til henvisning til et af to landsdelscentre: Rigshospitalet (øst) eller AUH, Skejby (vest). En second opinion kan ændre alt."
+      },
+      "url": "https://www.endo.dk/endometriose/vejen-gennem-udredning/",
+      "cta": {"en": "Read the pathway", "da": "Læs forløbet"}
+    },
+    {
+      "title": {"en": "Raise your voice", "da": "Løft din stemme"},
+      "body": {
+        "en": "Denmark has just earmarked 160M DKK for a National Centre for Women's Health Research. Write to your regional council and MPs: endometriosis deserves a share — and a national diagnostic-delay target.",
+        "da": "Danmark har netop afsat 160 mio. kr. til et Nationalt Center for Forskning i Kvinders Sundhed. Skriv til dit regionsråd og dine folketingskandidater: endometriose fortjener en del af midlerne — og et nationalt mål for diagnoseforsinkelse."
+      },
+      "url": "https://www.sst.dk/puljer/nationalt-center-for-forskning-i-kvinders-sundhed",
+      "cta": {"en": "See the application", "da": "Se ansøgningsinvitationen"}
+    },
+    {
+      "title": {"en": "Support research", "da": "Støt forskning"},
+      "body": {
+        "en": "WERF, the Endometriosis Foundation of America and EndoFound fund research and awareness worldwide. Every contribution counts — and open data projects like this one are free to reuse.",
+        "da": "WERF, Endometriosis Foundation of America og EndoFound finansierer forskning og oplysning verden over. Hvert bidrag tæller — og åbne data-projekter som dette er frit at genbruge."
+      },
+      "url": "https://www.endofound.org",
+      "cta": {"en": "Donate", "da": "Donér"}
+    }
+  ],
+  "resources": [
+    {
+      "name": "Rigshospitalet — endometriose (DK)",
+      "desc": {"en": "One of two Danish national centres for severe endometriosis.", "da": "Et af Danmarks to landsdelscentre for svær endometriose."},
+      "url": "https://www.rigshospitalet.dk",
+      "tag": {"en": "Centre", "da": "Center"}
+    },
+    {
+      "name": "AUH — Klinik for Kvindesygdomme (DK)",
+      "desc": {"en": "The western national centre; runs many endometriosis trials.", "da": "Det vestlige landsdelscenter; kører mange endometriose-forsøg."},
+      "url": "https://www.auh.dk/afdelinger/kvindesygdomme-og-fodsler/klinik-for-kvindesygdomme/",
+      "tag": {"en": "Centre", "da": "Center"}
+    },
+    {
+      "name": "Endometriose Fællesskabet (DK)",
+      "desc": {"en": "Danish patient organisation: counselling, community, rights help.", "da": "Dansk patientforening: rådgivning, fællesskab, rettighedshjælp."},
+      "url": "https://www.endo.dk",
+      "tag": {"en": "Support", "da": "Støtte"}
+    },
+    {
+      "name": "Lægehåndbogen — endometriose (DK)",
+      "desc": {"en": "Danish clinical pathway and treatment overview.", "da": "Dansk klinisk forløb og behandlingsoversigt."},
+      "url": "https://www.sundhed.dk/sundhedsfaglig/laegehaandbogen/gynaekologi/tilstande-og-sygdomme/menstruationsproblemer/endometriose/",
+      "tag": {"en": "Guideline", "da": "Vejledning"}
+    },
+    {
+      "name": "Ziwig Endotest",
+      "desc": {"en": "Saliva miRNA test (CE-IVD) for endometriosis; available in Denmark via Life Genomics (prescription, private).", "da": "Spyt-miRNA-test (CE-IVD) til endometriose; tilgængelig i Danmark via Life Genomics (recept, privat)."},
+      "url": "https://ziwig.com/en/ziwig-endotest/",
+      "tag": {"en": "Diagnostics", "da": "Diagnostik"}
+    },
+    {
+      "name": "WHO — Endometriosis fact sheet",
+      "desc": {"en": "Global burden and facts from the World Health Organization.", "da": "Global byrde og fakta fra Verdenssundhedsorganisationen."},
+      "url": "https://www.who.int/news-room/fact-sheets/detail/endometriosis",
+      "tag": {"en": "Reference", "da": "Reference"}
+    },
+    {
+      "name": "Endometriosis UK",
+      "desc": {"en": "Patient support, advocacy and research in the UK.", "da": "Patientstøtte, advocacy og forskning i Storbritannien."},
+      "url": "https://www.endometriosis-uk.org",
+      "tag": {"en": "Support", "da": "Støtte"}
+    },
+    {
+      "name": "PubMed — endometriosis",
+      "desc": {"en": "Live feed of the latest peer-reviewed research (see dashboard).", "da": "Live-feed af den nyeste peer-reviewed forskning (se dashboard)."},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=endometriosis",
+      "tag": {"en": "Research", "da": "Forskning"}
+    }
+  ],
+  "methodology": {
+    "en": "Data is pulled automatically every week from the ClinicalTrials.gov API v2 and PubMed E-utilities, and committed to this repository as open JSON. Editorial content is curated with sources. This project is independent, non-commercial and not affiliated with any organisation. It is research and advocacy — not medical advice. Always discuss treatment choices with a specialist.",
+    "da": "Data trækkes automatisk hver uge fra ClinicalTrials.gov API v2 og PubMed E-utilities og gemmes i dette repository som åben JSON. Redaktionelt indhold er kurateret med kilder. Projektet er uafhængigt, non-kommercielt og ikke tilknyttet nogen organisation. Det er research og advocacy — ikke lægefaglig rådgivning. Behandlingsvalg skal altid ske med en speciallæge."
+  }
+}
