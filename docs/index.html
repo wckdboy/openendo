@@ -8,14 +8,20 @@
 <meta property="og:title" content="OpenEndo — Endometriosis Watch">
 <meta property="og:description" content="Open analytics on endometriosis research, trials, funding & policy — updated weekly from ClinicalTrials.gov and PubMed.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎗️</text></svg>">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z' fill='%23FFD60A'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <a class="brand" href="#top">🎗️ OpenEndo</a>
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z" fill="#FFD60A"/></svg>
+      OpenEndo
+    </a>
     <nav class="nav-links">
       <a href="#why" data-i18n="nav_why">Why</a>
       <a href="#dashboard" data-i18n="nav_dashboard">Dashboard</a>
@@ -33,12 +39,17 @@
 <main id="top">
   <section class="hero">
     <div class="hero-inner">
-      <p class="eyebrow" data-i18n="hero_eyebrow">Open data · Updated weekly</p>
-      <h1 data-i18n="hero_title">Open intelligence for a disease the world still ignores.</h1>
+      <p class="eyebrow" data-i18n="hero_eyebrow">Endometriosis · Open data, updated weekly</p>
+      <h1><span data-i18n="hero_title_1">Open intelligence for a disease the world</span> <em data-i18n="hero_title_2">still ignores.</em></h1>
       <p class="hero-sub" data-i18n="hero_sub">Endometriosis Watch tracks clinical trials, research and funding in the open — updated weekly — so patients, relatives, researchers and politicians can see the real state of the fight.</p>
       <div class="hero-cta">
         <a class="btn btn-blue" href="#dashboard" data-i18n="hero_cta1">Explore the data</a>
         <a class="btn btn-ghost" href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener" data-i18n="hero_cta2">Get involved</a>
+      </div>
+      <div class="trust">
+        <span>✓ <span data-i18n="hero_trust_1">No paywall</span></span>
+        <span>✓ <span data-i18n="hero_trust_2">No spin</span></span>
+        <span>✓ <span data-i18n="hero_trust_3">MIT-licensed data</span></span>
       </div>
       <div class="stats" id="stats"><!-- rendered from content.json --></div>
     </div>
@@ -47,7 +58,7 @@
   <section id="why" class="section">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav_why">Why</p>
+        <p class="eyebrow"><span class="num">01</span><span data-i18n="nav_why">Why</span></p>
         <h2 data-i18n="sec_why_title">Why this exists</h2>
         <p class="sub" data-i18n="sec_why_sub">Four facts that should outrage everyone.</p>
       </div>
@@ -58,9 +69,10 @@
   <section id="dashboard" class="section section-alt">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav_dashboard">Dashboard</p>
+        <p class="eyebrow"><span class="num">02</span><span data-i18n="nav_dashboard">Dashboard</span></p>
         <h2 data-i18n="sec_dashboard_title">Live research dashboard</h2>
         <p class="sub" data-i18n="sec_dashboard_sub">Fresh data from ClinicalTrials.gov and PubMed — regenerated every week.</p>
+        <div class="live-wrap"><span class="live-badge"><span class="dot"></span><span data-i18n="live_badge">Live · refreshed weekly</span></span></div>
       </div>
 
       <div class="kpis" id="kpis"><!-- live KPIs --></div>
@@ -99,7 +111,7 @@
   <section id="funding" class="section">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav_funding">Funding</p>
+        <p class="eyebrow"><span class="num">03</span><span data-i18n="nav_funding">Funding</span></p>
         <h2 data-i18n="sec_funding_title">Funding watch</h2>
         <p class="sub" data-i18n="sec_funding_sub">Deadlines that matter — grants that could change the field.</p>
       </div>
@@ -110,7 +122,7 @@
   <section id="action" class="section section-alt">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav_action">Take action</p>
+        <p class="eyebrow"><span class="num">04</span><span data-i18n="nav_action">Take action</span></p>
         <h2 data-i18n="sec_action_title">Take action</h2>
         <p class="sub" data-i18n="sec_action_sub">Concrete things you can do today — in Denmark and worldwide.</p>
       </div>
@@ -121,7 +133,7 @@
   <section id="resources" class="section">
     <div class="section-inner">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav_resources">Resources</p>
+        <p class="eyebrow"><span class="num">05</span><span data-i18n="nav_resources">Resources</span></p>
         <h2 data-i18n="sec_resources_title">Resources</h2>
         <p class="sub" data-i18n="sec_resources_sub">Trusted places to go for help, diagnostics and knowledge.</p>
       </div>
@@ -132,6 +144,7 @@
 
 <footer>
   <div class="footer-inner">
+    <p class="wordmark">OpenEndo — <em data-i18n="footer_tagline">open data. real hope.</em></p>
     <h3 data-i18n="footer_methodology_title">Methodology & sources</h3>
     <p id="methodology"></p>
     <p class="fresh" id="freshness"></p>
@@ -152,6 +165,6 @@
 }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>

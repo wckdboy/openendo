@@ -29,8 +29,13 @@ const I18N = {
     footer_refreshed: "Data refreshed",
     loading: "Loading live data…", error: "Could not load data.",
     link_github: "GitHub", open: "open", status_col: "Status",
-    hero_eyebrow: "Open data · Updated weekly",
-    hero_cta1: "Explore the data", hero_cta2: "Get involved"
+    hero_eyebrow: "Endometriosis · Open data, updated weekly",
+    hero_title_1: "Open intelligence for a disease the world",
+    hero_title_2: "still ignores.",
+    hero_cta1: "Explore the data", hero_cta2: "Get involved",
+    hero_trust_1: "No paywall", hero_trust_2: "No spin", hero_trust_3: "MIT-licensed data",
+    live_badge: "Live · refreshed weekly",
+    footer_tagline: "open data. real hope."
   },
   da: {
     nav_dashboard: "Dashboard", nav_why: "Hvorfor", nav_funding: "Funding",
@@ -59,8 +64,13 @@ const I18N = {
     footer_refreshed: "Data opdateret",
     loading: "Henter live-data…", error: "Kunne ikke indlæse data.",
     link_github: "GitHub", open: "åben", status_col: "Status",
-    hero_eyebrow: "Åbne data · Opdateret ugentligt",
-    hero_cta1: "Udforsk data", hero_cta2: "Vær med"
+    hero_eyebrow: "Endometriose · Åbne data, opdateret ugentligt",
+    hero_title_1: "Åben intelligens for en sygdom, verden",
+    hero_title_2: "stadig ignorerer.",
+    hero_cta1: "Udforsk data", hero_cta2: "Vær med",
+    hero_trust_1: "Ingen betalingsmur", hero_trust_2: "Ingen spin", hero_trust_3: "MIT-licenserede data",
+    live_badge: "Live · opdateret ugentligt",
+    footer_tagline: "åbne data. ægte håb."
   }
 };
 
