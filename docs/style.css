@@ -141,7 +141,7 @@ footer h3{font-size:13px;font-weight:600;letter-spacing:1.2px;text-transform:upp
   --font-display:"Fraunces",Georgia,serif;
   --ribbon:#ffd60a;
 }
-.brand svg{width:21px;height:21px;flex:none}
+.brand svg{width:20px;height:20px;flex:none}
 .hero h1{font-family:var(--font-display);font-weight:600}
 .hero h1 em{font-style:italic;font-weight:500;background:linear-gradient(90deg,var(--rose-deep) 0%,var(--lav) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .section-head h2{font-family:var(--font-display);font-weight:600}
