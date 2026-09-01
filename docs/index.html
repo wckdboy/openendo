@@ -19,6 +19,7 @@
     <nav class="nav-links">
       <a href="#why" data-i18n="nav_why">Why</a>
       <a href="#dashboard" data-i18n="nav_dashboard">Dashboard</a>
+      <a href="#targets" data-i18n="nav_targets">Targets</a>
       <a href="#funding" data-i18n="nav_funding">Funding</a>
       <a href="#action" data-i18n="nav_action">Take action</a>
       <a href="#resources" data-i18n="nav_resources">Resources</a>
@@ -91,6 +92,27 @@
           <div class="table-wrap"><table><thead><tr>
             <th data-i18n="th_date">Date</th><th data-i18n="th_title">Paper</th><th data-i18n="th_journal">Journal</th>
           </tr></thead><tbody id="tbl-papers"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="targets" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav_targets">Targets</p>
+        <h2 data-i18n="sec_targets_title">Target intelligence</h2>
+        <p class="sub" data-i18n="sec_targets_sub">Where drug discovery could happen next — novel druggable targets for endometriosis, verified against ChEMBL.</p>
+      </div>
+      <div class="kpis" id="kpis-targets"><!-- target KPIs --></div>
+      <div class="charts">
+        <div class="chart-card"><h3 data-i18n="chart_targets_title">Target maturity</h3><canvas id="chart-targets"></canvas></div>
+        <div class="chart-card wide">
+          <h3 data-i18n="tbl_targets_title">Novel drug targets — the discovery space</h3>
+          <p class="sub" id="targets-note"></p>
+          <div class="table-wrap"><table><thead><tr>
+            <th data-i18n="th_gene">Gene</th><th data-i18n="th_name">Protein</th><th data-i18n="th_drugs">Known drugs</th>
+          </tr></thead><tbody id="tbl-targets"></tbody></table></div>
         </div>
       </div>
     </div>

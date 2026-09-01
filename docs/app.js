@@ -3,12 +3,18 @@
 
 const I18N = {
   en: {
-    nav_dashboard: "Dashboard", nav_why: "Why", nav_funding: "Funding",
+    nav_dashboard: "Dashboard", nav_targets: "Targets", nav_why: "Why", nav_funding: "Funding",
     nav_action: "Take action", nav_resources: "Resources",
     hero_title: "Open intelligence for a disease the world still ignores.",
     hero_sub: "Endometriosis Watch tracks clinical trials, research and funding in the open — updated weekly — so patients, relatives, researchers and politicians can see the real state of the fight.",
     sec_why_title: "Why this exists", sec_why_sub: "Four facts that should outrage everyone.",
     sec_dashboard_title: "Live research dashboard", sec_dashboard_sub: "Fresh data from ClinicalTrials.gov and PubMed — regenerated every week.",
+    sec_targets_title: "Target intelligence", sec_targets_sub: "Where drug discovery could happen next — novel druggable targets for endometriosis, verified against ChEMBL.",
+    kpi_targets_novel: "novel targets (no drug yet)", kpi_targets_approved: "with an approved drug", kpi_targets_total: "targets audited",
+    chart_targets_title: "Target maturity", tbl_targets_title: "Novel drug targets — the discovery space",
+    target_bucket_novel: "Novel (no drug)", target_bucket_dev: "In development", target_bucket_approved: "Approved",
+    target_note: "No drug mechanisms in ChEMBL — the highest-value discovery candidates.",
+    th_gene: "Gene", th_name: "Protein", th_drugs: "Known drugs",
     kpi_recruiting_global: "recruiting trials worldwide", kpi_recruiting_dk: "recruiting in Denmark",
     kpi_papers_7d: "new papers, last 7 days", kpi_funding_open: "funding opportunities open",
     chart_country_title: "Recruiting trials by country",
@@ -33,12 +39,18 @@ const I18N = {
     hero_cta1: "Explore the data", hero_cta2: "Get involved"
   },
   da: {
-    nav_dashboard: "Dashboard", nav_why: "Hvorfor", nav_funding: "Funding",
+    nav_dashboard: "Dashboard", nav_targets: "Targets", nav_why: "Hvorfor", nav_funding: "Funding",
     nav_action: "Gør noget", nav_resources: "Ressourcer",
     hero_title: "Åben intelligens for en sygdom, verden stadig ignorerer.",
     hero_sub: "Endometriosis Watch sporer kliniske forsøg, forskning og funding i det åbne — opdateret ugentligt — så patienter, pårørende, forskere og politikere kan se den reelle tilstand af kampen.",
     sec_why_title: "Hvorfor dette findes", sec_why_sub: "Fire fakta der burde oprøre alle.",
     sec_dashboard_title: "Live forsknings-dashboard", sec_dashboard_sub: "Friske data fra ClinicalTrials.gov og PubMed — genskabt hver uge.",
+    sec_targets_title: "Target-intelligens", sec_targets_sub: "Hvor lægemiddelforskning kan ske næste gang — nye druggable targets for endometriose, verificeret mod ChEMBL.",
+    kpi_targets_novel: "nye targets (endnu intet lægemiddel)", kpi_targets_approved: "med godkendt lægemiddel", kpi_targets_total: "auditerede targets",
+    chart_targets_title: "Target-modenhed", tbl_targets_title: "Nye drug targets — opdagelsesrummet",
+    target_bucket_novel: "Nyt (intet lægemiddel)", target_bucket_dev: "Under udvikling", target_bucket_approved: "Godkendt",
+    target_note: "Ingen lægemiddelmekanismer i ChEMBL — de mest værdifulde opdagelseskandidater.",
+    th_gene: "Gen", th_name: "Protein", th_drugs: "Kendte lægemidler",
     kpi_recruiting_global: "rekrutterende forsøg på verdensplan", kpi_recruiting_dk: "rekrutterende i Danmark",
     kpi_papers_7d: "nye artikler, sidste 7 dage", kpi_funding_open: "åbne funding-muligheder",
     chart_country_title: "Rekrutterende forsøg fordelt på lande",
@@ -249,12 +261,41 @@ function renderFreshness(meta) {
     `<a href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener" style="color:var(--link)">github.com/wckdboy/openendo ↗</a>`;
 }
 
+/* ---------- target intelligence ---------- */
+
+function renderTargets(td) {
+  const list = td.targets || [];
+  const novel = list.filter(x => x.novel);
+  const approved = list.filter(x => x.max_phase >= 4);
+  const dev = list.filter(x => !x.novel && x.max_phase < 4);
+
+  document.getElementById("kpis-targets").innerHTML = `
+    <div class="kpi"><div class="n gold">${novel.length}</div><div class="l">${t("kpi_targets_novel")}</div></div>
+    <div class="kpi"><div class="n">${approved.length}</div><div class="l">${t("kpi_targets_approved")}</div></div>
+    <div class="kpi"><div class="n">${list.length}</div><div class="l">${t("kpi_targets_total")}</div></div>`;
+
+  document.getElementById("targets-note").textContent = t("target_note");
+  document.getElementById("tbl-targets").innerHTML = novel.map(x => `
+    <tr><td><b>${esc(x.gene)}</b></td><td>${esc(x.name)}</td><td class="muted">–</td></tr>`).join("") ||
+    `<tr><td colspan="3" class="loading">—</td></tr>`;
+
+  makeChart("chart-targets", {
+    type: "doughnut",
+    data: {
+      labels: [t("target_bucket_novel"), t("target_bucket_dev"), t("target_bucket_approved")],
+      datasets: [{ data: [novel.length, dev.length, approved.length],
+        backgroundColor: ["#34c759", "#ff9f0a", "#0071e3"], borderWidth: 2, borderColor: "#ffffff" }]
+    },
+    options: { plugins: { legend: { position: "right", labels: { color: "#6e6e73", boxWidth: 12, padding: 14 } } } }
+  });
+}
+
 /* ---------- boot ---------- */
 
 async function load() {
   document.getElementById("methodology").textContent = t("loading");
   try {
-    const [meta, glob, dk, recent, papers, monthly, funding, content] = await Promise.all([
+    const [meta, glob, dk, recent, papers, monthly, funding, content, targets] = await Promise.all([
       getJSON("data/meta.json"),
       getJSON("data/trials_global_recruiting.json"),
       getJSON("data/trials_denmark.json"),
@@ -263,6 +304,7 @@ async function load() {
       getJSON("data/pubmed_monthly.json"),
       getJSON("data/funding.json"),
       getJSON("data/content.json"),
+      getJSON("data/targets.json"),
     ]);
 
     renderStats(content);
@@ -275,6 +317,7 @@ async function load() {
     renderActions(content);
     renderResources(content);
     renderCharts(glob.trials, dk.trials, monthly.months);
+    renderTargets(targets);
     renderFreshness(meta);
     document.getElementById("methodology").textContent = langObj(content.methodology);
   } catch (e) {

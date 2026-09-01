@@ -1,0 +1,477 @@
+{
+ "updated": "2026-09-01",
+ "source": "Deep Origin AI Scientist novel/high-druggability target list, verified against ChEMBL (EBI) drug mechanisms",
+ "url": "https://deeporigin.com/ai-scientist/endometriosis-targets",
+ "counts": {
+  "total": 58,
+  "novel": 35,
+  "with_drugs": 23,
+  "approved": 8
+ },
+ "targets": [
+  {
+   "gene": "ADORA2B",
+   "chembl_id": "CHEMBL255",
+   "name": "Adenosine receptor A2b",
+   "mechanisms": 4,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "ALDH2",
+   "chembl_id": "CHEMBL1935",
+   "name": "Aldehyde dehydrogenase, mitochondrial",
+   "mechanisms": 1,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "BDKRB1",
+   "chembl_id": "CHEMBL4308",
+   "name": "B1 bradykinin receptor",
+   "mechanisms": 3,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "BMPR2",
+   "chembl_id": "CHEMBL5467",
+   "name": "Bone morphogenetic protein receptor type-2",
+   "mechanisms": 2,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "CMA1",
+   "chembl_id": "CHEMBL4068",
+   "name": "Chymase",
+   "mechanisms": 1,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "CNR2",
+   "chembl_id": "CHEMBL253",
+   "name": "Cannabinoid receptor 2",
+   "mechanisms": 8,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "CXCL10",
+   "chembl_id": "CHEMBL3712964",
+   "name": "C-X-C motif chemokine 10",
+   "mechanisms": 2,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "ENPP3",
+   "chembl_id": "CHEMBL5580",
+   "name": "Ectonucleotide pyrophosphatase/phosphodiesterase family member 3",
+   "mechanisms": 1,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "EPHA2",
+   "chembl_id": "CHEMBL2068",
+   "name": "Ephrin type-A receptor 2",
+   "mechanisms": 2,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "EPHB4",
+   "chembl_id": "CHEMBL5147",
+   "name": "Ephrin type-B receptor 4",
+   "mechanisms": 3,
+   "max_phase": 3.0,
+   "novel": false
+  },
+  {
+   "gene": "FN1",
+   "chembl_id": "CHEMBL3810",
+   "name": "Fibronectin",
+   "mechanisms": 7,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "HCK",
+   "chembl_id": "CHEMBL3234",
+   "name": "Tyrosine-protein kinase HCK",
+   "mechanisms": 1,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "IRAK4",
+   "chembl_id": "CHEMBL3778",
+   "name": "Interleukin-1 receptor-associated kinase 4",
+   "mechanisms": 1,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "LGALS3",
+   "chembl_id": "CHEMBL4531",
+   "name": "Galectin-3",
+   "mechanisms": 3,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "MIF",
+   "chembl_id": "CHEMBL2085",
+   "name": "Macrophage migration inhibitory factor",
+   "mechanisms": 2,
+   "max_phase": 3.0,
+   "novel": false
+  },
+  {
+   "gene": "NLRP3",
+   "chembl_id": "CHEMBL1741208",
+   "name": "NACHT, LRR and PYD domains-containing protein 3",
+   "mechanisms": 1,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "NOS2",
+   "chembl_id": "CHEMBL4481",
+   "name": "Nitric oxide synthase, inducible",
+   "mechanisms": 2,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "PLAU",
+   "chembl_id": "CHEMBL3286",
+   "name": "Urokinase-type plasminogen activator",
+   "mechanisms": 1,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "PTGER4",
+   "chembl_id": "CHEMBL1836",
+   "name": "Prostaglandin E2 receptor EP4 subtype",
+   "mechanisms": 3,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "PTGFR",
+   "chembl_id": "CHEMBL1987",
+   "name": "Prostaglandin F2-alpha receptor",
+   "mechanisms": 9,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "TGFBR1",
+   "chembl_id": "CHEMBL4439",
+   "name": "TGF-beta receptor type-1",
+   "mechanisms": 2,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "TLR8",
+   "chembl_id": "CHEMBL5805",
+   "name": "Toll-like receptor 8",
+   "mechanisms": 7,
+   "max_phase": 2.0,
+   "novel": false
+  },
+  {
+   "gene": "TRPA1",
+   "chembl_id": "CHEMBL6007",
+   "name": "Transient receptor potential cation channel subfamily A member 1",
+   "mechanisms": 5,
+   "max_phase": 4.0,
+   "novel": false
+  },
+  {
+   "gene": "ABCC4",
+   "chembl_id": "CHEMBL1743128",
+   "name": "ATP-binding cassette sub-family C member 4",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "ACKR3",
+   "chembl_id": "CHEMBL2010631",
+   "name": "Atypical chemokine receptor 3",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "ACVR1B",
+   "chembl_id": "CHEMBL5310",
+   "name": "Activin receptor type-1B",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "AOC3",
+   "chembl_id": "CHEMBL3265",
+   "name": "Amine oxidase [copper-containing] 3",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "CCR6",
+   "chembl_id": "CHEMBL4423",
+   "name": "C-C chemokine receptor type 6",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "CCR8",
+   "chembl_id": "CHEMBL4596",
+   "name": "C-C chemokine receptor type 8",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "CMKLR1",
+   "chembl_id": "CHEMBL3540",
+   "name": "Chemerin-like receptor 1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "CX3CR1",
+   "chembl_id": "CHEMBL4843",
+   "name": "CX3C chemokine receptor 1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "ENTPD1",
+   "chembl_id": "CHEMBL2766",
+   "name": "Ectonucleoside triphosphate diphosphohydrolase 1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "ENTPD2",
+   "chembl_id": "CHEMBL5049",
+   "name": "Ectonucleoside triphosphate diphosphohydrolase 2",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "F2RL1",
+   "chembl_id": "CHEMBL5963",
+   "name": "Proteinase-activated receptor 2",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "FKBP4",
+   "chembl_id": "CHEMBL4050",
+   "name": "Peptidyl-prolyl cis-trans isomerase FKBP4",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "FPR1",
+   "chembl_id": "CHEMBL3359",
+   "name": "fMet-Leu-Phe receptor",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "FPR2",
+   "chembl_id": "CHEMBL4227",
+   "name": "N-formyl peptide receptor 2",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "GPER1",
+   "chembl_id": "CHEMBL5872",
+   "name": "G-protein coupled estrogen receptor 1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "GPX4",
+   "chembl_id": "CHEMBL4295754",
+   "name": "Phospholipid hydroperoxide glutathione peroxidase GPX4",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "HPGD",
+   "chembl_id": "CHEMBL1293255",
+   "name": "15-hydroxyprostaglandin dehydrogenase [NAD(+)]",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "HTRA1",
+   "chembl_id": "CHEMBL4523419",
+   "name": "Serine protease HTRA1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "ILK",
+   "chembl_id": "CHEMBL5247",
+   "name": "Scaffold protein ILK",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "KLRK1",
+   "chembl_id": "CHEMBL5483005",
+   "name": "NKGD2-MICA",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "METTL3",
+   "chembl_id": "CHEMBL4106140",
+   "name": "METTL3/METTL14",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "MRGPRX2",
+   "chembl_id": "CHEMBL5849",
+   "name": "Mas-related G-protein coupled receptor member X2",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "NGFR",
+   "chembl_id": "CHEMBL4762",
+   "name": "Tumor necrosis factor receptor superfamily member 16",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "PDK3",
+   "chembl_id": "CHEMBL3893",
+   "name": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 3, mitochondrial",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "PFKFB3",
+   "chembl_id": "CHEMBL2331053",
+   "name": "6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 3",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "PLAUR",
+   "chembl_id": "CHEMBL4883",
+   "name": "Urokinase plasminogen activator surface receptor",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "S1PR2",
+   "chembl_id": "CHEMBL2955",
+   "name": "Sphingosine 1-phosphate receptor 2",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "S1PR3",
+   "chembl_id": "CHEMBL3892",
+   "name": "Sphingosine 1-phosphate receptor 3",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "SLC7A11",
+   "chembl_id": "CHEMBL1075149",
+   "name": "Cystine/glutamate transporter",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "SLCO2A1",
+   "chembl_id": "CHEMBL2073680",
+   "name": "Solute carrier organic anion transporter family member 2A1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "SPHK1",
+   "chembl_id": "CHEMBL4394",
+   "name": "Sphingosine kinase 1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "SUCNR1",
+   "chembl_id": "CHEMBL2150838",
+   "name": "Succinate receptor 1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "TPSAB1",
+   "chembl_id": "CHEMBL2617",
+   "name": "Tryptase beta-1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "TRPM3",
+   "chembl_id": "CHEMBL3559708",
+   "name": "Transient receptor potential cation channel subfamily M member 3",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  },
+  {
+   "gene": "YAP1",
+   "chembl_id": "CHEMBL3334415",
+   "name": "Transcriptional coactivator YAP1",
+   "mechanisms": 0,
+   "max_phase": 0.0,
+   "novel": true
+  }
+ ]
+}
