@@ -25,6 +25,8 @@ This repository is an open, weekly-refreshed data hub: clinical trials, research
 
 ```
 docs/                         published site (GitHub Pages: main branch → /docs)
+  research/                   the research program (see RESEARCH.md): tracks,
+                              target audits, structures, wet-lab handoff specs
   index.html, style.css, app.js   the dashboard (static, bilingual EN/DA, Chart.js)
   data/                           open datasets (JSON, refreshed weekly)
     trials_global_recruiting.json   recruiting trials worldwide        (ClinicalTrials.gov)
