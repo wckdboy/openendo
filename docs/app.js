@@ -28,7 +28,9 @@ const I18N = {
     footer_built: "Built open-source by Jaeger (Hermes Agent) for the Dearwolf family — and for every woman still waiting to be taken seriously. MIT licensed. Reuse the data freely.",
     footer_refreshed: "Data refreshed",
     loading: "Loading live data…", error: "Could not load data.",
-    link_github: "GitHub", open: "open", status_col: "Status"
+    link_github: "GitHub", open: "open", status_col: "Status",
+    hero_eyebrow: "Open data · Updated weekly",
+    hero_cta1: "Explore the data", hero_cta2: "Get involved"
   },
   da: {
     nav_dashboard: "Dashboard", nav_why: "Hvorfor", nav_funding: "Funding",
@@ -56,7 +58,9 @@ const I18N = {
     footer_built: "Bygget open-source af Jaeger (Hermes Agent) for Dearwolf-familien — og for enhver kvinde, der stadig venter på at blive taget alvorligt. MIT-licenseret. Genbrug data frit.",
     footer_refreshed: "Data opdateret",
     loading: "Henter live-data…", error: "Kunne ikke indlæse data.",
-    link_github: "GitHub", open: "åben", status_col: "Status"
+    link_github: "GitHub", open: "åben", status_col: "Status",
+    hero_eyebrow: "Åbne data · Opdateret ugentligt",
+    hero_cta1: "Udforsk data", hero_cta2: "Vær med"
   }
 };
 
@@ -149,7 +153,7 @@ function renderTrials(id, trials, withStatus) {
   const rows = trials.slice(0, withStatus ? 50 : 15).map(x => {
     const countries = (x.countries || []).slice(0, 4).join(", ") + ((x.countries || []).length > 4 ? "…" : "");
     return `<tr>
-      <td><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><br><span style="font-size:11px;color:#5d6f92">${esc(x.nct_id)}</span></td>
+      <td><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><br><span class="nct">${esc(x.nct_id)}</span></td>
       ${withStatus ? `<td>${statusBadge(x.status)}</td>` : ""}
       <td>${esc(x.phase)}</td>
       <td>${esc(x.sponsor || "–")}</td>
@@ -199,6 +203,10 @@ function destroyCharts() { charts.forEach(c => c.destroy()); charts = []; }
 
 function makeChart(id, cfg) {
   if (typeof Chart === "undefined") return;
+  Chart.defaults.font.family = "-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+  Chart.defaults.font.size = 12;
+  Chart.defaults.color = "#6e6e73";
+  Chart.defaults.borderColor = "rgba(0,0,0,.06)";
   const ctx = document.getElementById(id);
   if (!ctx) return;
   charts.push(new Chart(ctx, cfg));
@@ -214,23 +222,23 @@ function renderCharts(glob, dk, monthly) {
   const byStatus = {};
   dk.forEach(x => { byStatus[x.status || "UNKNOWN"] = (byStatus[x.status || "UNKNOWN"] || 0) + 1; });
 
-  const palette = ["#ffd166", "#4fd1c5", "#8ab4ff", "#ff6b6b", "#c792ea", "#93a3c4", "#f78fb3"];
+  const palette = ["#0071e3", "#34c759", "#ff375f", "#af52de", "#ff9f0a", "#5ac8fa", "#ffd60a", "#8e8e93"];
 
   makeChart("chart-country", {
     type: "bar",
-    data: { labels: countryTop.map(c => c[0]), datasets: [{ data: countryTop.map(c => c[1]), backgroundColor: "#ffd166" }] },
+    data: { labels: countryTop.map(c => c[0]), datasets: [{ data: countryTop.map(c => c[1]), backgroundColor: "#0071e3", borderRadius: 6, maxBarThickness: 34 }] },
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
   });
 
   makeChart("chart-status", {
     type: "doughnut",
-    data: { labels: Object.keys(byStatus), datasets: [{ data: Object.values(byStatus), backgroundColor: palette }] },
-    options: { plugins: { legend: { position: "right", labels: { color: "#93a3c4" } } } }
+    data: { labels: Object.keys(byStatus), datasets: [{ data: Object.values(byStatus), backgroundColor: palette, borderWidth: 2, borderColor: "#ffffff" }] },
+    options: { plugins: { legend: { position: "right", labels: { color: "#6e6e73", boxWidth: 12, padding: 14 } } } }
   });
 
   makeChart("chart-pubmed", {
     type: "line",
-    data: { labels: monthly.map(m => m.month), datasets: [{ data: monthly.map(m => m.count), borderColor: "#4fd1c5", backgroundColor: "rgba(79,209,197,0.15)", fill: true, tension: 0.3, pointBackgroundColor: "#4fd1c5" }] },
+    data: { labels: monthly.map(m => m.month), datasets: [{ data: monthly.map(m => m.count), borderColor: "#0071e3", backgroundColor: "rgba(0,113,227,0.10)", fill: true, tension: 0.32, pointBackgroundColor: "#0071e3", pointRadius: 3, borderWidth: 2.5 }] },
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
   });
 }
