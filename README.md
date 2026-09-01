@@ -10,7 +10,7 @@ This repository is an open, weekly-refreshed data hub: clinical trials, research
 
 ## Live site
 
-👉 **https://wckdboy.github.io/openendo/** (GitHub Pages, static, bilingual EN/DA)
+👉 **https://openendo.org/** (GitHub Pages, static, bilingual EN/DA) · fallback: https://wckdboy.github.io/openendo/
 
 ## What's inside
 
