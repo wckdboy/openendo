@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to support OpenEndo</title>
+<meta name="description" content="Seven ways to support OpenEndo — use the data, contribute leads, translate, code, run the pipeline, spread the word, fund & partner.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%231a1a2e'/><path d='M12 17.5c-.8-1.6-3-3.4-3-6.3 0-2 .7-3.6.7-3.6s-.7.3-1.4.3c-1.3 0-2.2-1-2.2-2.1C6.1 4 7.4 3 8.8 3c1.2 0 2.1.7 2.5 1.6.2.5.4 1.1.4 2 0-.9.2-1.5.4-2 .4-.9 1.3-1.6 2.5-1.6 1.4 0 2.7 1 2.7 2.8 0 1.1-.9 2.1-2.2 2.1-.7 0-1.4-.3-1.4-.3s.7 1.6.7 3.6c0 2.9-2.2 4.7-3 6.3z' fill='%23FFD60A'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z" fill="#FFD60A"/></svg>
+      OpenEndo
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#why">Why</a>
+      <a href="index.html#dashboard">Dashboard</a>
+      <a href="index.html#funding">Funding</a>
+      <a href="index.html#action">Take action</a>
+      <a href="index.html#resources">Resources</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-blue btn-sm" href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="subpage-hero">
+    <p class="eyebrow">OpenEndo · Get involved</p>
+    <h1>Seven ways to help.<br><em style="font-style:italic;background:linear-gradient(90deg,#e84a6f,#bf5af2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">One of them takes five minutes.</em></h1>
+    <p class="sub">OpenEndo is volunteer-run and MIT-licensed. No contribution is too small — and everything here compounds into a disease that is finally impossible to ignore.</p>
+  </div>
+
+  <div class="prose">
+
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h4>Use the data <span class="effort easy">5 min</span></h4><p>Every dataset is a public good: <a href="data/trials_global_recruiting.json">recruiting trials</a>, <a href="data/trials_denmark.json">Danish trials</a>, <a href="data/pubmed_recent.json">new research</a>, <a href="data/funding.json">funding deadlines</a>. Download it, cite it, embed it in your own site, article or grant application. No permission needed — MIT. If you're a journalist or researcher, these numbers are yours.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h4>Contribute leads <span class="effort easy">10 min</span></h4><p>Know a funding call, a recruiting trial, a new diagnostic or a patient organisation we've missed? Open an issue or a PR against <code>docs/data/funding.json</code> / <code>content.json</code>. Sources required so we can verify. Start with the <a href="https://github.com/wckdboy/openendo/issues/2" target="_blank" rel="noopener">"funding / research leads" good first issue</a>.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h4>Translate <span class="effort easy">30 min</span></h4><p>The site is English + Danish. Add Spanish, French, German, Portuguese… The i18n dictionary is ~40 keys in <code>docs/app.js</code>; content strings are in <code>content.json</code>. Follow the <a href="styleguide.html">style guide</a>, open a PR — the language toggle appears automatically. See <a href="https://github.com/wckdboy/openendo/issues/1" target="_blank" rel="noopener">good first issue #1</a>.</p></div></div>
+      <div class="step"><div class="n">4</div><div><h4>Code &amp; design <span class="effort medium">2–4 h</span></h4><p>Charts, new data sources, a dark mode, accessibility, an API wrapper… Read <a href="BRAND.md">BRAND.md</a> + the <a href="styleguide.html">style guide</a>, pick a <a href="https://github.com/wckdboy/openendo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">good first issue</a>, and PR. Bump <code>?v=N</code> on assets when you change them — GitHub Pages caches hard.</p></div></div>
+      <div class="step"><div class="n">5</div><div><h4>Run the pipeline <span class="effort medium">30 min setup</span></h4><p>Fork the repo, run <code>python3 scripts/update_data.py</code> weekly (cron/GitHub Actions), and you have your own living mirror of endometriosis research — for a research group, a patient organisation or your own projects. The script queries ClinicalTrials.gov and PubMed and commits only when something changed.</p></div></div>
+      <div class="step"><div class="n">6</div><div><h4>Spread the word <span class="effort easy">5 min</span></h4><p>Share <a href="https://openendo.org">openendo.org</a> with one person who needs it, one journalist who covers women's health, one politician. The <a href="one-pager-dk.html">Danish one-pager</a> is ready for regional councils and MP candidates — and the <a href="https://clinicaltrials.gov/study/NCT06211231" target="_blank" rel="noopener">MY-ENDO trial is recruiting in Denmark right now</a>.</p></div></div>
+      <div class="step"><div class="n">7</div><div><h4>Fund &amp; partner <span class="effort hard">ongoing</span></h4><p>Donate where it moves the needle: <a href="https://www.endo.dk" target="_blank" rel="noopener">Endometriose Fællesskabet</a> (MobilePay 71980), <a href="https://www.endofound.org" target="_blank" rel="noopener">Endometriosis Foundation of America</a>, <a href="https://www.endometriosis.org" target="_blank" rel="noopener">WERF</a>. Researchers &amp; hospitals: use the data, join the <a href="ai-agenda.html">compute agenda</a>, cite the datasets. Companies: the <a href="index.html#funding">funding watch</a> shows where your grants land. And if you want to sponsor OpenEndo itself — <a href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener">open an issue</a>; we'll set up the honest way to do it.</p></div></div>
+    </div>
+
+    <h2>What your help unlocks</h2>
+    <p>Every contribution lands on the same pile: a disease that affects ~190 million women, waits 7–10 years to be diagnosed, and receives a fraction of the research funding it deserves. The data you add, the language you translate, the issue you file — that is the infrastructure the next patient, journalist, researcher or politician will stand on.</p>
+    <p>Thank you for being on this side of the ribbon.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="styleguide.html">Style guide</a>
+      <a href="ai-agenda.html">AI &amp; compute agenda</a>
+      <a href="one-pager-dk.html">One-pager (DA)</a>
+      <a href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="wordmark">OpenEndo — <em style="font-style:italic;background:linear-gradient(90deg,#e84a6f,#bf5af2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">open data. real hope.</em></p>
+    <p class="built">MIT licensed · open source · built for patients, researchers and policymakers</p>
+  </div>
+</footer>
+
+</body>
+</html>

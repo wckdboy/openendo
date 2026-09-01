@@ -1,0 +1,67 @@
+[
+  {
+    "id": "prmrp-cta-fy26",
+    "name": "DoD PRMRP FY26 — Clinical Trial Award",
+    "org": "US Department of Defense (CDMRP)",
+    "country": "US",
+    "url": "https://cdmrp.health.mil/funding/prmrp",
+    "deadline": "2026-09-22",
+    "open": true,
+    "desc": {
+      "en": "Clinical trial funding for congressionally directed topics — endometriosis has repeatedly been a priority topic. Pre-application was July 23, 2026.",
+      "da": "Finansiering af kliniske forsøg — endometriose har gentagne gange været et prioriteret emne. Pre-application var 23. juli 2026."
+    }
+  },
+  {
+   "id": "dk-womens-health-center",
+   "name": "Nationalt Center for Forskning i Kvinders Sundhed",
+   "org": "Sundhedsstyrelsen / UFM (Danmark)",
+   "country": "DK",
+   "url": "https://www.sst.dk/puljer/nationalt-center-for-forskning-i-kvinders-sundhed",
+   "deadline": "2026-09-13",
+   "open": true,
+   "desc": {
+    "en": "160M DKK (2026–2029) for a national research centre on women's health. DEADLINE 13 September 2026, 12:00 CET. Consortium-based (universities/hospitals). Application to eviasst@sst.dk, case 03-1301-21.",
+    "da": "160 mio. kr. (2026–2029) til et nationalt forskningscenter for kvinders sundhed. FRIST 13. september 2026 kl. 12.00. Konsortiebaseret (universiteter/hospitaler). Ansøgning til eviasst@sst.dk, sag 03-1301-21."
+   }
+  },
+  {
+    "id": "eumetriosis",
+    "name": "EUmetriosis (Horizon Europe)",
+    "org": "European Commission",
+    "country": "EU",
+    "url": "https://cordis.europa.eu/project/id/101157146",
+    "deadline": null,
+    "open": false,
+    "desc": {
+      "en": "Ongoing RCT of diet + cognitive behavioural therapy for endometriosis pain, plus diagnostic development. Watch future Horizon Europe Cluster 1 Health calls.",
+      "da": "Kørende RCT af diæt + kognitiv adfærdsterapi mod endometriosesmerter samt diagnostikudvikling. Følg kommende Horizon Europe Cluster 1 Health-calls."
+    }
+  },
+  {
+    "id": "eshre-grants",
+    "name": "ESHRE Research Grants",
+    "org": "ESHRE (European Society of Human Reproduction)",
+    "country": "EU",
+    "url": "https://www.eshre.eu",
+    "deadline": null,
+    "open": true,
+    "desc": {
+      "en": "Annual research grants; themes rotate yearly (2026 themes: embryo-endometrial dialogue and adiposity & ART).",
+      "da": "Årlige forskningsbevillinger; temaerne roterer (2026: embryo-endometrie-dialog og fedme & fertilitetsbehandling)."
+    }
+  },
+  {
+    "id": "werf-endofound",
+    "name": "WERF / Endometriosis Foundation of America",
+    "org": "WERF · EndoFound",
+    "country": "Global",
+    "url": "https://www.endofound.org",
+    "deadline": null,
+    "open": true,
+    "desc": {
+      "en": "Rolling smaller research, awareness and community grants.",
+      "da": "Løbende mindre forsknings-, oplysnings- og fællesskabsbevillinger."
+    }
+  }
+]
