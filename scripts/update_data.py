@@ -172,10 +172,10 @@ def main():
     save("meta.json", meta)
 
     # --- git: commit & push only on change ---
-    r = git("status", "--porcelain", "--", "data")
+    r = git("status", "--porcelain", "--", "docs/data")
     if not r.stdout.strip():
         return  # unchanged — stay silent
-    git("add", "data")
+    git("add", "docs/data")
     git("commit", "-m", f"data: refresh {TODAY.isoformat()}")
     pull = git("pull", "--ff-only")
     if pull.returncode != 0:
@@ -183,7 +183,7 @@ def main():
     if git("push").returncode != 0:
         sys.stderr.write("git push fejlede\n")
         sys.exit(1)
-    print(f"📊 Endometriosis Watch: data opdateret & skubbet "
+    print(f"📊 OpenEndo: data opdateret & skubbet "
           f"({len(t_glob)} rekrutterende globalt, {len(t_dk)} i DK, {len(papers)} artikler/7d)")
 
 

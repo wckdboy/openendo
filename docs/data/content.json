@@ -98,6 +98,15 @@
       "cta": {"en": "See the application", "da": "Se ansøgningsinvitationen"}
     },
     {
+      "title": {"en": "Send the one-pager to your politicians", "da": "Send one-pager'en til dine politikere"},
+      "body": {
+        "en": "A one-page, source-backed fact sheet for regional councils and MP candidates — including the 13 September deadline for the 160M DKK women's health research centre and three questions worth asking.",
+        "da": "En one-page, kildebaseret fact-side til regionsråd og folketingskandidater — inkl. 13. september-fristen for de 160 mio. kr. til kvinders sundhed og tre spørgsmål værd at stille."
+      },
+      "url": "https://wckdboy.github.io/openendo/one-pager-dk.html",
+      "cta": {"en": "Open the one-pager", "da": "Åbn one-pager'en"}
+    },
+    {
       "title": {"en": "Support research", "da": "Støt forskning"},
       "body": {
         "en": "WERF, the Endometriosis Foundation of America and EndoFound fund research and awareness worldwide. Every contribution counts — and open data projects like this one are free to reuse.",
