@@ -13,17 +13,18 @@ This repository is an open, weekly-refreshed data hub: clinical trials, research
 ## What's inside
 
 ```
-data/                         open datasets (JSON, refreshed weekly)
-  trials_global_recruiting.json   recruiting trials worldwide        (ClinicalTrials.gov)
-  trials_denmark.json             all registered trials in Denmark
-  trials_recent.json              new/updated trials, last 7 days
-  pubmed_recent.json              new papers, last 7 days             (PubMed)
-  pubmed_monthly.json             papers per month, last 6 months
-  meta.json                       generation timestamp + counts
-  funding.json                    funding opportunities with deadlines (curated)
-  content.json                    stats, problem framing, actions, resources (curated, EN/DA)
-site/                         the dashboard (static HTML/CSS/JS, Chart.js)
-scripts/update_data.py        regenerates data/*.json from the APIs, commits & pushes
+docs/                         published site (GitHub Pages: main branch → /docs)
+  index.html, style.css, app.js   the dashboard (static, bilingual EN/DA, Chart.js)
+  data/                           open datasets (JSON, refreshed weekly)
+    trials_global_recruiting.json   recruiting trials worldwide        (ClinicalTrials.gov)
+    trials_denmark.json             all registered trials in Denmark
+    trials_recent.json              new/updated trials, last 7 days
+    pubmed_recent.json              new papers, last 7 days             (PubMed)
+    pubmed_monthly.json             papers per month, last 6 months
+    meta.json                       generation timestamp + counts
+    funding.json                    funding opportunities with deadlines (curated)
+    content.json                    stats, problem framing, actions, resources (curated, EN/DA)
+scripts/update_data.py        regenerates docs/data/*.json from the APIs, commits & pushes
 ```
 
 ## How the data is refreshed

@@ -11,7 +11,7 @@ import json, os, subprocess, sys, time, urllib.parse, urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA = os.path.join(ROOT, "data")
+DATA = os.path.join(ROOT, "docs", "data")
 TODAY = date.today()
 WEEK = TODAY - timedelta(days=7)
 
