@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endometriosis Watch — open analytics on research, trials & funding</title>
+<meta name="description" content="Live, open analytics on endometriosis research, clinical trials, funding and policy. Because 190 million women deserve to be taken seriously.">
+<meta property="og:title" content="Endometriosis Watch">
+<meta property="og:description" content="Open analytics on endometriosis research, trials, funding & policy — updated weekly from ClinicalTrials.gov and PubMed.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎗️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">🎗️ <span>Endometriosis <b>Watch</b></span></div>
+  <nav>
+    <a href="#dashboard" data-i18n="nav_dashboard">Dashboard</a>
+    <a href="#why" data-i18n="nav_why">Why</a>
+    <a href="#funding" data-i18n="nav_funding">Funding</a>
+    <a href="#action" data-i18n="nav_action">Take action</a>
+    <a href="#resources" data-i18n="nav_resources">Resources</a>
+    <button id="lang-toggle" class="lang" title="Switch language">Dansk</button>
+    <a class="gh" href="https://github.com/wckdboy/endometriosis-watch" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 data-i18n="hero_title">Open intelligence for a disease the world still ignores.</h1>
+  <p class="sub" data-i18n="hero_sub">Endometriosis Watch tracks clinical trials, research and funding in the open — updated weekly — so patients, relatives, researchers and politicians can see the real state of the fight.</p>
+  <div class="stats" id="stats"><!-- rendered from content.json --></div>
+</section>
+
+<section id="why">
+  <h2 data-i18n="sec_why_title">Why this exists</h2>
+  <p class="sub" data-i18n="sec_why_sub">Four facts that should outrage everyone.</p>
+  <div class="grid cards" id="problems"><!-- rendered from content.json --></div>
+</section>
+
+<section id="dashboard">
+  <h2 data-i18n="sec_dashboard_title">Live research dashboard</h2>
+  <p class="sub" data-i18n="sec_dashboard_sub">Fresh data from ClinicalTrials.gov and PubMed — regenerated every week.</p>
+
+  <div class="kpis" id="kpis"><!-- KPI cards --></div>
+
+  <div class="charts">
+    <div class="panel"><h3 data-i18n="chart_country_title">Recruiting trials by country</h3><canvas id="chart-country"></canvas></div>
+    <div class="panel"><h3 data-i18n="chart_status_title">All Denmark trials by status</h3><canvas id="chart-status"></canvas></div>
+    <div class="panel"><h3 data-i18n="chart_pubmed_title">Endometriosis papers on PubMed</h3><canvas id="chart-pubmed"></canvas></div>
+  </div>
+
+  <div class="tables">
+    <div class="panel">
+      <h3 data-i18n="tbl_global_title">Recruiting trials — worldwide</h3>
+      <table><thead><tr>
+        <th data-i18n="th_title">Trial</th><th data-i18n="th_phase">Phase</th>
+        <th data-i18n="th_sponsor">Sponsor</th><th data-i18n="th_countries">Countries</th>
+      </tr></thead><tbody id="tbl-global"></tbody></table>
+    </div>
+    <div class="panel">
+      <h3 data-i18n="tbl_denmark_title">All registered trials — Denmark</h3>
+      <table><thead><tr>
+        <th data-i18n="th_title">Trial</th><th data-i18n="th_status">Status</th>
+        <th data-i18n="th_sponsor">Sponsor</th>
+      </tr></thead><tbody id="tbl-denmark"></tbody></table>
+    </div>
+    <div class="panel">
+      <h3 data-i18n="tbl_papers_title">New research — last 7 days</h3>
+      <table><thead><tr>
+        <th data-i18n="th_date">Date</th><th data-i18n="th_title">Paper</th><th data-i18n="th_journal">Journal</th>
+      </tr></thead><tbody id="tbl-papers"></tbody></table>
+    </div>
+  </div>
+</section>
+
+<section id="funding">
+  <h2 data-i18n="sec_funding_title">Funding watch</h2>
+  <p class="sub" data-i18n="sec_funding_sub">Deadlines that matter — grants that could change the field.</p>
+  <div class="grid cards" id="funding-cards"><!-- rendered from funding.json --></div>
+</section>
+
+<section id="action">
+  <h2 data-i18n="sec_action_title">Take action</h2>
+  <p class="sub" data-i18n="sec_action_sub">Concrete things you can do today — in Denmark and worldwide.</p>
+  <div class="grid cards" id="actions"><!-- rendered from content.json --></div>
+</section>
+
+<section id="resources">
+  <h2 data-i18n="sec_resources_title">Resources</h2>
+  <p class="sub" data-i18n="sec_resources_sub">Trusted places to go for help, diagnostics and knowledge.</p>
+  <div class="grid cards" id="resources-grid"><!-- rendered from content.json --></div>
+</section>
+
+<footer>
+  <div class="panel">
+    <h3 data-i18n="footer_methodology_title">Methodology & sources</h3>
+    <p id="methodology"></p>
+    <p class="fresh" id="freshness"></p>
+    <p class="fresh" data-i18n="footer_built">Built open-source by Jaeger (Hermes Agent) for the Dearwolf family — and for every woman still waiting to be taken seriously. MIT licensed. Reuse the data freely.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
