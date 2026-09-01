@@ -118,6 +118,33 @@
   ],
   "resources": [
     {
+      "name": "OpenEndo — style guide",
+      "tag": {"en": "Project", "da": "Projekt"},
+      "desc": {
+        "en": "The design system behind the hub: brand, logo, color, typography, components, voice — for humans and AI agents.",
+        "da": "Designsystemet bag hub'en: brand, logo, farver, typografi, komponenter, stemme — for mennesker og AI-agenter."
+      },
+      "url": "styleguide.html"
+    },
+    {
+      "name": "How to support OpenEndo",
+      "tag": {"en": "Get involved", "da": "Vær med"},
+      "desc": {
+        "en": "Seven ways to help — use the data, contribute leads, translate, code, run the pipeline, spread the word, fund & partner.",
+        "da": "Syv måder at hjælpe på — brug data, bidrag med leads, oversæt, kod, kør pipelinen, del budskabet, finansier & samarbejd."
+      },
+      "url": "support.html"
+    },
+    {
+      "name": "AI & compute agenda",
+      "tag": {"en": "Research", "da": "Forskning"},
+      "desc": {
+        "en": "What AI agents, algorithms and open compute can do for endometriosis — understanding, real research and solutions.",
+        "da": "Hvad AI-agenter, algoritmer og åben compute kan gøre for endometriose — forståelse, ægte forskning og løsninger."
+      },
+      "url": "ai-agenda.html"
+    },
+    {
       "name": "Rigshospitalet — endometriose (DK)",
       "desc": {"en": "One of two Danish national centres for severe endometriosis.", "da": "Et af Danmarks to landsdelscentre for svær endometriose."},
       "url": "https://www.rigshospitalet.dk",

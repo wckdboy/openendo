@@ -12,6 +12,15 @@ This repository is an open, weekly-refreshed data hub: clinical trials, research
 
 👉 **https://openendo.org/** (GitHub Pages, static, bilingual EN/DA) · fallback: https://wckdboy.github.io/openendo/
 
+## More
+
+- [Style guide](https://openendo.org/styleguide.html) — the design system (visual)
+- [BRAND.md](BRAND.md) — brand tokens & conventions, machine-readable (for AI agents)
+- [How to support](https://openendo.org/support.html) — seven ways to help
+- [AI & compute agenda](https://openendo.org/ai-agenda.html) — what agents/algorithms/compute can do for endometriosis
+- [One-pager (DA)](https://openendo.org/one-pager-dk.html) — for Danish politicians
+- [CONTRIBUTING.md](CONTRIBUTING.md) — PR checklist
+
 ## What's inside
 
 ```

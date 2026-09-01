@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenEndo — style guide</title>
+<meta name="description" content="The OpenEndo design system: brand, logo, color, typography, components, voice — for human contributors and AI agents.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%231a1a2e'/><path d='M12 17.5c-.8-1.6-3-3.4-3-6.3 0-2 .7-3.6.7-3.6s-.7.3-1.4.3c-1.3 0-2.2-1-2.2-2.1C6.1 4 7.4 3 8.8 3c1.2 0 2.1.7 2.5 1.6.2.5.4 1.1.4 2 0-.9.2-1.5.4-2 .4-.9 1.3-1.6 2.5-1.6 1.4 0 2.7 1 2.7 2.8 0 1.1-.9 2.1-2.2 2.1-.7 0-1.4-.3-1.4-.3s.7 1.6.7 3.6c0 2.9-2.2 4.7-3 6.3z' fill='%23FFD60A'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z" fill="#FFD60A"/></svg>
+      OpenEndo
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#why">Why</a>
+      <a href="index.html#dashboard">Dashboard</a>
+      <a href="index.html#funding">Funding</a>
+      <a href="index.html#action">Take action</a>
+      <a href="index.html#resources">Resources</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-blue btn-sm" href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="subpage-hero">
+    <p class="eyebrow">OpenEndo · Style guide</p>
+    <h1>One design system.<br><em style="font-style:italic;background:linear-gradient(90deg,#e84a6f,#bf5af2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">One voice.</em></h1>
+    <p class="sub">The design language behind the open data hub for endometriosis — documented for human contributors and AI agents alike.</p>
+  </div>
+
+  <div class="prose">
+
+    <h2>Brand</h2>
+    <p><strong>OpenEndo</strong> is an open, weekly-refreshed data hub for endometriosis research: clinical trials, papers, funding and policy. The mission: make an invisible disease impossible to ignore.</p>
+    <p>The name says it: <strong>open</strong> (everything MIT-licensed, data is a public good) + <strong>endo</strong> (the word the patient community itself uses). The symbol is the <strong>yellow awareness ribbon</strong> — the ribbon of endometriosis. We never use it decoratively; it stands for the people behind the data.</p>
+    <p>Personality: <strong>hopeful, not alarmist; rigorous, not academic; warm, not sentimental.</strong> Apple-clean structure carrying an editorial, human voice.</p>
+
+    <h2>Logo</h2>
+    <div class="logo-stage">
+      <svg viewBox="0 0 24 24" width="72" height="72" style="margin:0 auto;display:block"><path d="M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z" fill="#FFD60A"/></svg>
+      <div class="word">OpenEndo</div>
+      <div class="tag">open data. real hope.</div>
+    </div>
+    <p>The mark is a single continuous line forming the ribbon loop and crossing tails — a minimal, geometric interpretation that stays crisp down to favicon size. It ships as an inline SVG; never use raster images of it.</p>
+    <div class="logo-grid">
+      <div class="logo-tile" style="background:#fff"><svg viewBox="0 0 24 24" width="40" height="40"><path d="M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z" fill="#FFD60A"/></svg><span>On light</span></div>
+      <div class="logo-tile" style="background:#1d1d1f"><svg viewBox="0 0 24 24" width="40" height="40"><path d="M12 22.5c-1.1-2.2-4.3-4.7-4.3-8.8 0-2.7.9-5 .9-5s-.9.4-2 .4C4.8 9.1 3.8 7.6 3.8 6.2 3.8 3.9 5.7 2 8 2c1.7 0 2.9 1 3.5 2.3.3.7.5 1.5.5 2.7 0-1.2.2-2 .5-2.7C13.1 3 14.3 2 16 2c2.3 0 4.2 1.9 4.2 4.2 0 1.4-1 2.9-2.9 2.9-1.1 0-2-.4-2-.4s.9 2.3.9 5c0 4.1-3.2 6.6-4.2 8.8z" fill="#FFD60A"/></svg><span style="color:#a1a1a6">On dark</span></div>
+      <div class="logo-tile" style="background:#1a1a2e;border-radius:14px"><svg viewBox="0 0 24 24" width="40" height="40"><path d="M12 17.5c-.8-1.6-3-3.4-3-6.3 0-2 .7-3.6.7-3.6s-.7.3-1.4.3c-1.3 0-2.2-1-2.2-2.1C6.1 4 7.4 3 8.8 3c1.2 0 2.1.7 2.5 1.6.2.5.4 1.1.4 2 0-.9.2-1.5.4-2 .4-.9 1.3-1.6 2.5-1.6 1.4 0 2.7 1 2.7 2.8 0 1.1-.9 2.1-2.2 2.1-.7 0-1.4-.3-1.4-.3s.7 1.6.7 3.6c0 2.9-2.2 4.7-3 6.3z" fill="#FFD60A"/></svg><span>Favicon</span></div>
+    </div>
+    <div class="dodont">
+      <div class="good"><b>Do</b>Use the yellow <code>#FFD60A</code> ribbon on light or dark backgrounds. Keep it in a 1:1 viewBox. Minimum 16px.</div>
+      <div class="bad"><b>Don't</b>Recolor the ribbon, stretch it, add shadows/glows, rotate it, or pair it with other ribbon colors.</div>
+    </div>
+
+    <h2>Color</h2>
+    <p>Apple-inspired neutrals carry the structure; rose → lavender is the signature gradient (hope); yellow is reserved for the ribbon only. Blue is always the color of action.</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#1d1d1f"></div><div class="meta"><b>Ink</b><span>#1D1D1F · headings, brand</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#3a3a3c"></div><div class="meta"><b>Text</b><span>#3A3A3C · body copy</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#6e6e73"></div><div class="meta"><b>Muted</b><span>#6E6E73 · secondary</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#ffffff;border-bottom:1px solid #e8e8ed"></div><div class="meta"><b>BG</b><span>#FFFFFF · surfaces</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#f5f5f7"></div><div class="meta"><b>BG alt</b><span>#F5F5F7 · alternating sections</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#e8e8ed"></div><div class="meta"><b>Line</b><span>#E8E8ED · borders, dividers</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#0071e3"></div><div class="meta"><b>Blue</b><span>#0071E3 · actions, links</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#e8f1fd"></div><div class="meta"><b>Blue tint</b><span>#E8F1FD · tags, chips</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#e84a6f"></div><div class="meta"><b>Rose deep</b><span>#E84A6F · eyebrows, gradient</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#bf5af2"></div><div class="meta"><b>Lavender</b><span>#BF5AF2 · gradient partner</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#ffd60a"></div><div class="meta"><b>Ribbon</b><span>#FFD60A · the mark only</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#34c759"></div><div class="meta"><b>Green</b><span>#34C759 · live, recruiting</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#ff9f0a"></div><div class="meta"><b>Gold</b><span>#FF9F0A · warnings</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#b0234a"></div><div class="meta"><b>Crimson</b><span>#B0234A · one-pager urgency</span></div></div>
+    </div>
+
+    <h2>Typography</h2>
+    <p><strong>Fraunces</strong> (500–700, with italics) is the display face — the editorial, hopeful voice. <strong>System sans</strong> is everything else: clean, fast, Apple-familiar. One display accent rule: key emotional words can take the italic gradient treatment.</p>
+    <div class="type-scale">
+      <div class="type-row"><span class="sample" style="font-family:Fraunces,Georgia,serif;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.1">Page title</span><span class="spec">Fraunces 600 · clamp(34,4.6vw,50)</span></div>
+      <div class="type-row"><span class="sample" style="font-family:Fraunces,Georgia,serif;font-size:24px;font-weight:600;letter-spacing:-.015em">Section title</span><span class="spec">Fraunces 600 · 26</span></div>
+      <div class="type-row"><span class="sample" style="font-size:17px;font-weight:600">Component heading</span><span class="spec">System 600 · 15–17</span></div>
+      <div class="type-row"><span class="sample" style="font-size:16px;color:#3a3a3c">Body copy carries the message and stays readable.</span><span class="spec">System 400 · 15–16</span></div>
+      <div class="type-row"><span class="sample" style="font-size:17px;color:#6e6e73">Supporting sub text sits quietly underneath.</span><span class="spec">System 400 · 17 · muted</span></div>
+      <div class="type-row"><span class="sample" style="font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#e84a6f">EYEBROW · 01 · WHY</span><span class="spec">System 700 · 12 · caps +2.5</span></div>
+    </div>
+
+    <h2>Layout & components</h2>
+    <p>Container <code>1060px</code>. Frosted sticky nav (<code>64px</code>, blur 20px). Sections breathe: <code>88px</code> vertical padding, alternating white / <code>#F5F5F7</code>. Radii: cards <code>18px</code>, KPI <code>14px</code>, pills <code>999px</code>. Shadows: <code>0 2px 8px</code> (rest) / <code>0 10px 34px</code> (hover).</p>
+    <ul>
+      <li><strong>Buttons</strong> — pill, <code>980px</code> radius: blue (primary action), ghost (secondary), <code>btn-sm</code> for nav. Hover: lift 1px + deepen shadow.</li>
+      <li><strong>Cards</strong> — white, hairline border, radius 18, hover lift 2px. Tag chip top-left (blue tint), title, muted body, source line, blue CTA.</li>
+      <li><strong>Status pills</strong> — green = recruiting, blue = active, grey = completed, red = terminated/withdrawn, amber = unknown.</li>
+      <li><strong>Eyebrows</strong> — numbered sections (<code>01</code>–<code>05</code>) with the rose→lavender gradient underline.</li>
+      <li><strong>Live badge</strong> — white pill with pulsing green dot; only for the live data section.</li>
+      <li><strong>Tables</strong> — uppercase micro-headers, hover row tint, NCT ids in muted micro-type.</li>
+      <li><strong>KPIs</strong> — big numbers; gold for headline stats; gradient numbers only in the hero stats.</li>
+    </ul>
+
+    <h2>Voice & tone</h2>
+    <ul>
+      <li><strong>Patient-first:</strong> "people with endometriosis", never "sufferers" or "victims". The patient is the expert of their own body.</li>
+      <li><strong>Evidence-first:</strong> every number carries a source. Never invent citations. If it isn't verified, it isn't published.</li>
+      <li><strong>Hope, not hype:</strong> "promising phase 3 results" — not "a breakthrough". No miracle-cure framing, ever.</li>
+      <li><strong>Plain language:</strong> say it so a 14-year-old and a professor both understand.</li>
+      <li><strong>Not medical advice:</strong> always point treatment decisions to specialists.</li>
+    </ul>
+    <div class="dodont">
+      <div class="good"><b>Say</b>"1 in 10 women of reproductive age are affected (WHO)" · "recruiting now at Aarhus University Hospital" · "the average wait for diagnosis is 7–10 years"</div>
+      <div class="bad"><b>Never say</b>"endometriosis sufferers" · "a revolutionary cure" · "this diet cures endo" · unlinked statistics · "just bad periods"</div>
+    </div>
+
+    <h2>Data & i18n conventions</h2>
+    <ul>
+      <li><strong>Data:</strong> JSON in <code>docs/data/</code> — <code>trials_*.json</code> (from ClinicalTrials.gov), <code>pubmed_*.json</code>, <code>funding.json</code> (curated, deadlines ISO <code>YYYY-MM-DD</code>), <code>content.json</code> (editorial, bilingual), <code>meta.json</code> (generated).</li>
+      <li><strong>i18n:</strong> every user-facing string in <code>app.js</code> I18N (EN + DA); content.json strings carry <code>{"en":…,"da":…}</code>. New languages welcome.</li>
+      <li><strong>Assets:</strong> when <code>app.js</code> or <code>style.css</code> change, bump <code>?v=N</code> in index.html — GitHub Pages caches hard.</li>
+      <li><strong>Pipeline:</strong> <code>scripts/update_data.py</code> regenerates data weekly (ClinicalTrials.gov API v2: use <code>filter.overallStatus</code>, <code>query.locn</code>, ISO dates in RANGE — the naive filter syntax 400s).</li>
+    </ul>
+
+    <h2>For AI agents</h2>
+    <p>If you are an agent extending this project, the rules are the same as for humans, plus:</p>
+    <ul>
+      <li>Never hallucinate a source — verify every link returns HTTP 200 before merging.</li>
+      <li>Follow the JSON schemas exactly; run <code>python3 scripts/update_data.py</code> and keep <code>meta.json</code> honest.</li>
+      <li>Update this style guide and <code>BRAND.md</code> when you change a token — the guide must always match reality.</li>
+      <li>Keep the MIT license and the mission: data as a public good, patients first.</li>
+    </ul>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="support.html">How to support</a>
+      <a href="ai-agenda.html">AI &amp; compute agenda</a>
+      <a href="one-pager-dk.html">One-pager (DA)</a>
+      <a href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="wordmark">OpenEndo — <em style="font-style:italic;background:linear-gradient(90deg,#e84a6f,#bf5af2);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">open data. real hope.</em></p>
+    <p class="built">MIT licensed · v1 style guide · built by Jaeger (Hermes Agent)</p>
+  </div>
+</footer>
+
+</body>
+</html>
