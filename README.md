@@ -1,4 +1,4 @@
-# Endometriosis Watch 🎗️
+# OpenEndo 🎗️ — open data hub for endometriosis
 
 **Open intelligence for a disease the world still ignores.**
 
@@ -6,9 +6,11 @@ Endometriosis affects ~190 million women worldwide (1 in 10 of reproductive age)
 
 This repository is an open, weekly-refreshed data hub: clinical trials, research papers, funding deadlines and policy — for patients, relatives, researchers, journalists and politicians.
 
+> **OpenEndo** (formerly *endometriosis-watch*): open source, MIT licensed, built for collaboration. The data is yours.
+
 ## Live site
 
-👉 **https://wckdboy.github.io/endometriosis-watch/** (GitHub Pages, static, bilingual EN/DA)
+👉 **https://wckdboy.github.io/openendo/** (GitHub Pages, static, bilingual EN/DA)
 
 ## What's inside
 
@@ -43,6 +45,18 @@ It queries the **ClinicalTrials.gov API v2** and **PubMed E-utilities**, writes 
 - PubMed E-utilities (NCBI)
 - Curated editorial content with sources in `data/content.json`
 - WHO fact sheet on endometriosis; Danish patient organisation (endo.dk); Lægehåndbogen (sundhed.dk)
+
+## Contributing
+
+This project exists to be used and extended. Ways to help:
+
+- **Submit leads** — open an issue with funding calls, new trials or policy developments we've missed
+- **Translate** — the site is bilingual (EN/DA); adding more languages is a small PR
+- **Add resources** — patient organisations, diagnostics, centres (`docs/data/content.json`)
+- **Run the pipeline** — fork, `python3 scripts/update_data.py`, PR the refreshed data
+- **Spread the word** — this disease is ignored because it is invisible; sharing is a contribution
+
+Good first issues are tagged `good first issue`.
 
 ## License
 

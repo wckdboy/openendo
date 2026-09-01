@@ -28,7 +28,7 @@ def fetch(url):
     for attempt in range(6):
         try:
             req = urllib.request.Request(url, headers={
-                "User-Agent": "endometriosis-watch/1.0 (github.com/wckdboy/endometriosis-watch)"})
+                "User-Agent": "openendo/1.0 (github.com/wckdboy/openendo)"})
             with urllib.request.urlopen(req, timeout=60) as r:
                 return json.loads(r.read().decode())
         except urllib.error.HTTPError as e:

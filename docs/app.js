@@ -238,7 +238,7 @@ function renderCharts(glob, dk, monthly) {
 function renderFreshness(meta) {
   const el = document.getElementById("freshness");
   el.innerHTML = `${t("footer_refreshed")}: <b>${esc(meta.updated || "–")}</b> (${esc(meta.generated_at || "")} UTC) · ` +
-    `<a href="https://github.com/wckdboy/endometriosis-watch" target="_blank" rel="noopener" style="color:var(--link)">github.com/wckdboy/endometriosis-watch ↗</a>`;
+    `<a href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener" style="color:var(--link)">github.com/wckdboy/openendo ↗</a>`;
 }
 
 /* ---------- boot ---------- */
