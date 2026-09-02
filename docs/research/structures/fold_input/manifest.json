@@ -1,0 +1,286 @@
+{
+ "updated": "",
+ "source": "UniProtKB (reviewed human)",
+ "folds": [
+  {
+   "gene": "ABCC4",
+   "status": "ok",
+   "uniprot": "",
+   "length": 1325,
+   "provenance": "reviewed",
+   "file": "ABCC4.fasta"
+  },
+  {
+   "gene": "ACKR3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 362,
+   "provenance": "reviewed",
+   "file": "ACKR3.fasta"
+  },
+  {
+   "gene": "ACVR1B",
+   "status": "ok",
+   "uniprot": "",
+   "length": 505,
+   "provenance": "reviewed",
+   "file": "ACVR1B.fasta"
+  },
+  {
+   "gene": "AOC3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 763,
+   "provenance": "reviewed",
+   "file": "AOC3.fasta"
+  },
+  {
+   "gene": "CCR6",
+   "status": "ok",
+   "uniprot": "",
+   "length": 718,
+   "provenance": "reviewed",
+   "file": "CCR6.fasta"
+  },
+  {
+   "gene": "CCR8",
+   "status": "ok",
+   "uniprot": "",
+   "length": 355,
+   "provenance": "reviewed",
+   "file": "CCR8.fasta"
+  },
+  {
+   "gene": "CMKLR1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 373,
+   "provenance": "reviewed",
+   "file": "CMKLR1.fasta"
+  },
+  {
+   "gene": "CX3CR1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 355,
+   "provenance": "reviewed",
+   "file": "CX3CR1.fasta"
+  },
+  {
+   "gene": "ENTPD1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 510,
+   "provenance": "reviewed",
+   "file": "ENTPD1.fasta"
+  },
+  {
+   "gene": "ENTPD2",
+   "status": "ok",
+   "uniprot": "",
+   "length": 495,
+   "provenance": "reviewed",
+   "file": "ENTPD2.fasta"
+  },
+  {
+   "gene": "F2RL1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 397,
+   "provenance": "reviewed",
+   "file": "F2RL1.fasta"
+  },
+  {
+   "gene": "FKBP4",
+   "status": "ok",
+   "uniprot": "",
+   "length": 459,
+   "provenance": "reviewed",
+   "file": "FKBP4.fasta"
+  },
+  {
+   "gene": "FPR1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 350,
+   "provenance": "reviewed",
+   "file": "FPR1.fasta"
+  },
+  {
+   "gene": "FPR2",
+   "status": "ok",
+   "uniprot": "",
+   "length": 351,
+   "provenance": "reviewed",
+   "file": "FPR2.fasta"
+  },
+  {
+   "gene": "GPER1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 375,
+   "provenance": "reviewed",
+   "file": "GPER1.fasta"
+  },
+  {
+   "gene": "GPX4",
+   "status": "ok",
+   "uniprot": "",
+   "length": 197,
+   "provenance": "reviewed",
+   "file": "GPX4.fasta"
+  },
+  {
+   "gene": "HPGD",
+   "status": "ok",
+   "uniprot": "",
+   "length": 266,
+   "provenance": "reviewed",
+   "file": "HPGD.fasta"
+  },
+  {
+   "gene": "HTRA1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 480,
+   "provenance": "reviewed",
+   "file": "HTRA1.fasta"
+  },
+  {
+   "gene": "ILK",
+   "status": "ok",
+   "uniprot": "",
+   "length": 452,
+   "provenance": "reviewed",
+   "file": "ILK.fasta"
+  },
+  {
+   "gene": "KLRK1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 216,
+   "provenance": "reviewed",
+   "file": "KLRK1.fasta"
+  },
+  {
+   "gene": "METTL3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 580,
+   "provenance": "reviewed",
+   "file": "METTL3.fasta"
+  },
+  {
+   "gene": "MRGPRX2",
+   "status": "ok",
+   "uniprot": "",
+   "length": 330,
+   "provenance": "reviewed",
+   "file": "MRGPRX2.fasta"
+  },
+  {
+   "gene": "NGFR",
+   "status": "ok",
+   "uniprot": "",
+   "length": 427,
+   "provenance": "reviewed",
+   "file": "NGFR.fasta"
+  },
+  {
+   "gene": "PDK3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 406,
+   "provenance": "reviewed",
+   "file": "PDK3.fasta"
+  },
+  {
+   "gene": "PFKFB3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 520,
+   "provenance": "reviewed",
+   "file": "PFKFB3.fasta"
+  },
+  {
+   "gene": "PLAUR",
+   "status": "ok",
+   "uniprot": "",
+   "length": 335,
+   "provenance": "reviewed",
+   "file": "PLAUR.fasta"
+  },
+  {
+   "gene": "S1PR2",
+   "status": "ok",
+   "uniprot": "",
+   "length": 353,
+   "provenance": "reviewed",
+   "file": "S1PR2.fasta"
+  },
+  {
+   "gene": "S1PR3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 378,
+   "provenance": "reviewed",
+   "file": "S1PR3.fasta"
+  },
+  {
+   "gene": "SLC7A11",
+   "status": "ok",
+   "uniprot": "",
+   "length": 501,
+   "provenance": "reviewed",
+   "file": "SLC7A11.fasta"
+  },
+  {
+   "gene": "SLCO2A1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 643,
+   "provenance": "reviewed",
+   "file": "SLCO2A1.fasta"
+  },
+  {
+   "gene": "SPHK1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 384,
+   "provenance": "reviewed",
+   "file": "SPHK1.fasta"
+  },
+  {
+   "gene": "SUCNR1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 334,
+   "provenance": "reviewed",
+   "file": "SUCNR1.fasta"
+  },
+  {
+   "gene": "TPSAB1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 275,
+   "provenance": "reviewed",
+   "file": "TPSAB1.fasta"
+  },
+  {
+   "gene": "TRPM3",
+   "status": "ok",
+   "uniprot": "",
+   "length": 1732,
+   "provenance": "reviewed",
+   "file": "TRPM3.fasta"
+  },
+  {
+   "gene": "YAP1",
+   "status": "ok",
+   "uniprot": "",
+   "length": 504,
+   "provenance": "reviewed",
+   "file": "YAP1.fasta"
+  }
+ ]
+}
