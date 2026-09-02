@@ -241,7 +241,7 @@ function renderCharts(glob, dk, monthly) {
     options: {
       indexAxis: "y",
       plugins: { legend: { display: false } },
-      scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } }, y: { ticks: { font: { size: 11 } } } },
+      scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } }, y: { ticks: { font: { size: 12 } } } },
       maintainAspectRatio: false
     }
   });
