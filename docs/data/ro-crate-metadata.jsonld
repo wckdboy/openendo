@@ -29,6 +29,9 @@
    "datePublished": "2026-09-02",
    "hasPart": [
     {
+     "@id": "data/access.json"
+    },
+    {
      "@id": "data/content.json"
     },
     {
@@ -42,6 +45,12 @@
     },
     {
      "@id": "data/pubmed_recent.json"
+    },
+    {
+     "@id": "data/repurposing_candidates.json"
+    },
+    {
+     "@id": "data/targets.json"
     },
     {
      "@id": "data/trials_denmark.json"
@@ -68,18 +77,28 @@
    "url": "https://github.com/wckdboy/openendo"
   },
   {
+   "@id": "data/access.json",
+   "@type": "File",
+   "name": "Country/postcode access: medications, specialised centres, organisations, care paths (schema openendo-access-v1)",
+   "encodingFormat": "application/json",
+   "contentSize": "21362",
+   "dateModified": "2026-09-02"
+  },
+  {
    "@id": "data/content.json",
    "@type": "File",
    "name": "Site content: stats, actions, resources (EN/DA)",
    "encodingFormat": "application/json",
-   "contentSize": "13391"
+   "contentSize": "13391",
+   "dateModified": "2026-09-02"
   },
   {
    "@id": "data/funding.json",
    "@type": "File",
    "name": "Endometriosis funding opportunities with deadlines",
    "encodingFormat": "application/json",
-   "contentSize": "2865"
+   "contentSize": "2865",
+   "dateModified": "2026-09-02"
   },
   {
    "@id": "data/meta.json",
@@ -87,10 +106,10 @@
    "name": "Generation timestamp and counts",
    "encodingFormat": "application/json",
    "contentSize": "222",
+   "dateModified": "2026-09-02",
    "isBasedOn": {
     "@id": "generated"
-   },
-   "dateModified": "2026-09-02"
+   }
   },
   {
    "@id": "data/pubmed_monthly.json",
@@ -98,10 +117,10 @@
    "name": "Monthly endometriosis paper counts (6 months)",
    "encodingFormat": "application/json",
    "contentSize": "331",
+   "dateModified": "2026-09-02",
    "isBasedOn": {
     "@id": "https://pubmed.ncbi.nlm.nih.gov/"
-   },
-   "dateModified": "2026-09-02"
+   }
   },
   {
    "@id": "data/pubmed_recent.json",
@@ -109,9 +128,25 @@
    "name": "Endometriosis papers from the last 7 days",
    "encodingFormat": "application/json",
    "contentSize": "4695",
+   "dateModified": "2026-09-02",
    "isBasedOn": {
     "@id": "https://pubmed.ncbi.nlm.nih.gov/"
-   },
+   }
+  },
+  {
+   "@id": "data/repurposing_candidates.json",
+   "@type": "File",
+   "name": "Approved-drug repurposing candidates from the M3 screen",
+   "encodingFormat": "application/json",
+   "contentSize": "6007",
+   "dateModified": "2026-09-02"
+  },
+  {
+   "@id": "data/targets.json",
+   "@type": "File",
+   "name": "Drug targets (58 total, 35 novel), ChEMBL-verified",
+   "encodingFormat": "application/json",
+   "contentSize": "9988",
    "dateModified": "2026-09-02"
   },
   {
@@ -120,10 +155,10 @@
    "name": "Endometriosis trials registered in Denmark",
    "encodingFormat": "application/json",
    "contentSize": "5293",
+   "dateModified": "2026-09-02",
    "isBasedOn": {
     "@id": "https://clinicaltrials.gov/api/v2"
-   },
-   "dateModified": "2026-09-02"
+   }
   },
   {
    "@id": "data/trials_global_recruiting.json",
@@ -131,21 +166,21 @@
    "name": "Recruiting endometriosis trials worldwide",
    "encodingFormat": "application/json",
    "contentSize": "12366",
+   "dateModified": "2026-09-02",
    "isBasedOn": {
     "@id": "https://clinicaltrials.gov/api/v2"
-   },
-   "dateModified": "2026-09-02"
+   }
   },
   {
    "@id": "data/trials_recent.json",
    "@type": "File",
-   "name": "Endometriosis trials new/updated last 7 days",
+   "name": "Endometriosis trials new/updated in the last 7 days",
    "encodingFormat": "application/json",
    "contentSize": "1783",
+   "dateModified": "2026-09-02",
    "isBasedOn": {
     "@id": "https://clinicaltrials.gov/api/v2"
-   },
-   "dateModified": "2026-09-02"
+   }
   }
  ]
 }

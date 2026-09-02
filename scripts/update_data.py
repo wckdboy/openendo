@@ -188,6 +188,13 @@ def main():
     }
     save("meta.json", meta)
 
+    # --- RO-Crate manifest: FAIR packaging must follow every data change ---
+    r = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "gen_ro_crate.py")],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        sys.stderr.write(f"gen_ro_crate fejlede: {r.stderr}\n")
+        sys.exit(1)
+
     # --- git: commit & push only on change ---
     r = git("status", "--porcelain", "--", "docs/data")
     if not r.stdout.strip():

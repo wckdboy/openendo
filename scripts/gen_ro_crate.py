@@ -1,97 +1,140 @@
 #!/usr/bin/env python3
-"""Generate an RO-Crate v1.1 manifest for docs/data/.
+"""Regenerate docs/data/ro-crate-metadata.jsonld from the actual data files.
 
-RO-Crate (https://www.researchobject.org/ro-crate/) is the packaging
-standard behind the ELN Consortium's .eln format — an RO-Crate manifest
-makes our datasets importable into eLabFTW-class tools and archives.
+FAIR manifest (RO-Crate 1.1) for the OpenEndo data layer. Scans docs/data/*.json
+(excluding the manifest itself), derives contentSize + dateModified from the
+real files and meta.json, and writes a deterministic, sorted manifest.
 
-Usage: python3 scripts/gen_ro_crate.py
+Why this exists: the manifest used to be hand-maintained and silently missed
+new files (access.json, targets.json, repurposing_candidates.json were absent).
+Now it is regenerated automatically:
+  - by scripts/update_data.py on every weekly data refresh, and
+  - checked by CI (security-scan.yml) so any PR touching docs/data must keep
+    the manifest in sync (diff-verified).
+
+Usage: python3 scripts/gen_ro_crate.py   (idempotent; writes in place)
 """
 import json
 import os
-import time
+import sys
+from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "docs", "data")
-HOME = "https://github.com/wckdboy/openendo"
+MANIFEST = os.path.join(DATA, "ro-crate-metadata.jsonld")
 
-FILE_META = {
-    "trials_global_recruiting.json": ("Recruiting endometriosis trials worldwide",
-                                      "https://clinicaltrials.gov/api/v2"),
-    "trials_denmark.json": ("Endometriosis trials registered in Denmark",
-                            "https://clinicaltrials.gov/api/v2"),
-    "trials_recent.json": ("Endometriosis trials new/updated last 7 days",
-                           "https://clinicaltrials.gov/api/v2"),
-    "pubmed_recent.json": ("Endometriosis papers from the last 7 days",
-                           "https://pubmed.ncbi.nlm.nih.gov/"),
-    "pubmed_monthly.json": ("Monthly endometriosis paper counts (6 months)",
-                            "https://pubmed.ncbi.nlm.nih.gov/"),
-    "targets.json": ("Drug-target landscape: novel/high-druggability targets",
-                     "https://www.ebi.ac.uk/chembl/"),
-    "repurposing_candidates.json": ("Approved drugs with potency against novel targets",
-                                    "https://www.ebi.ac.uk/chembl/"),
-    "funding.json": ("Endometriosis funding opportunities with deadlines", "curated"),
-    "content.json": ("Site content: stats, actions, resources (EN/DA)", "curated"),
-    "meta.json": ("Generation timestamp and counts", "generated"),
+# Human-readable names + provenance per curated/generated file. Files not
+# listed here still get included with a generic name (no source annotation).
+# Keys must match the actual filenames in docs/data/.
+NAMES = {
+    "access.json": "Country/postcode access: medications, specialised centres, organisations, care paths (schema openendo-access-v1)",
+    "content.json": "Site content: stats, actions, resources (EN/DA)",
+    "funding.json": "Endometriosis funding opportunities with deadlines",
+    "meta.json": "Generation timestamp and counts",
+    "pubmed_monthly.json": "Monthly endometriosis paper counts (6 months)",
+    "pubmed_recent.json": "Endometriosis papers from the last 7 days",
+    "repurposing_candidates.json": "Approved-drug repurposing candidates from the M3 screen",
+    "targets.json": "Drug targets (58 total, 35 novel), ChEMBL-verified",
+    "trials_denmark.json": "Endometriosis trials registered in Denmark",
+    "trials_global_recruiting.json": "Recruiting endometriosis trials worldwide",
+    "trials_recent.json": "Endometriosis trials new/updated in the last 7 days",
+}
+
+# External provenance per file -> isBasedOn @id. Omitted files get no
+# isBasedOn (curated origin is the repo itself).
+SOURCES = {
+    "meta.json": "generated",
+    "pubmed_monthly.json": "https://pubmed.ncbi.nlm.nih.gov/",
+    "pubmed_recent.json": "https://pubmed.ncbi.nlm.nih.gov/",
+    "trials_denmark.json": "https://clinicaltrials.gov/api/v2",
+    "trials_global_recruiting.json": "https://clinicaltrials.gov/api/v2",
+    "trials_recent.json": "https://clinicaltrials.gov/api/v2",
+}
+
+ORG = {
+    "@id": "https://github.com/wckdboy/openendo",
+    "@type": "Organization",
+    "name": "OpenEndo (wckdboy/openendo)",
+    "url": "https://github.com/wckdboy/openendo",
 }
 
 
-def main():
-    graph = [{
-        "@id": "ro-crate-metadata.jsonld",
-        "@type": "CreativeWork",
-        "about": {"@id": "./"},
-        "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
-        "sdPublisher": {"@id": HOME},
-    }, {
-        "@id": "./",
-        "@type": "Dataset",
-        "name": "OpenEndo — open endometriosis research data",
-        "description": ("Open, weekly-refreshed datasets on endometriosis: "
-                        "clinical trials (ClinicalTrials.gov), papers "
-                        "(PubMed), drug targets (ChEMBL), repurposing "
-                        "candidates, funding and site content. MIT licensed."),
-        "license": {"@id": "https://spdx.org/licenses/MIT"},
-        "publisher": {"@id": HOME},
-        "url": "https://openendo.org/",
-        "datePublished": time.strftime("%Y-%m-%d"),
-        "hasPart": [],
-        "keywords": ["endometriosis", "clinical trials", "drug targets",
-                     "women's health", "open data"],
-    }, {
-        "@id": HOME,
-        "@type": "Organization",
-        "name": "OpenEndo (wckdboy/openendo)",
-        "url": HOME,
-    }]
+def updated_date() -> str:
+    """Prefer meta.json's own 'updated' stamp; fall back to today."""
+    try:
+        with open(os.path.join(DATA, "meta.json"), encoding="utf-8") as f:
+            meta = json.load(f)
+        u = meta.get("updated") or meta.get("generated_at", "")[:10]
+        if u:
+            return u[:10]
+    except (OSError, ValueError):
+        pass
+    return date.today().isoformat()
 
-    for fn, (name, source) in sorted(FILE_META.items()):
-        path = os.path.join(DATA, fn)
-        if not os.path.exists(path):
-            continue
-        with open(path, encoding="utf-8") as f:
-            obj = json.load(f)
-        entry = {
-            "@id": f"data/{fn}",
+
+def build():
+    stamp = updated_date()
+    files = sorted(
+        n for n in os.listdir(DATA)
+        if n.endswith(".json") and n != "ro-crate-metadata.jsonld"
+    )
+    has_part = [{"@id": f"data/{n}"} for n in files]
+
+    graph = [
+        {
+            "@id": "ro-crate-metadata.jsonld",
+            "@type": "CreativeWork",
+            "about": {"@id": "./"},
+            "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+            "sdPublisher": {"@id": "https://github.com/wckdboy/openendo"},
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "name": "OpenEndo — open endometriosis research data",
+            "description": "Open, weekly-refreshed datasets on endometriosis: clinical trials (ClinicalTrials.gov), papers (PubMed), drug targets (ChEMBL), repurposing candidates, funding and site content. MIT licensed.",
+            "license": {"@id": "https://spdx.org/licenses/MIT"},
+            "publisher": {"@id": "https://github.com/wckdboy/openendo"},
+            "url": "https://openendo.org/",
+            "datePublished": stamp,
+            "hasPart": has_part,
+            "keywords": [
+                "endometriosis",
+                "clinical trials",
+                "drug targets",
+                "women's health",
+                "open data",
+            ],
+        },
+        ORG,
+    ]
+
+    for name in files:
+        path = os.path.join(DATA, name)
+        entity: dict[str, object] = {
+            "@id": f"data/{name}",
             "@type": "File",
-            "name": name,
+            "name": NAMES.get(name, f"OpenEndo dataset: {name}"),
             "encodingFormat": "application/json",
             "contentSize": str(os.path.getsize(path)),
+            "dateModified": stamp,
         }
-        if source != "curated":
-            entry["isBasedOn"] = {"@id": source}
-        if isinstance(obj, dict) and obj.get("updated"):
-            entry["dateModified"] = obj["updated"]
-        graph[1]["hasPart"].append({"@id": f"data/{fn}"})
-        graph.append(entry)
+        src = SOURCES.get(name)
+        if src is not None:
+            entity["isBasedOn"] = {"@id": src}
+        graph.append(entity)
 
-    crate = {"@context": "https://w3id.org/ro/crate/1.1/context",
-             "@graph": graph}
-    out = os.path.join(DATA, "ro-crate-metadata.jsonld")
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(crate, f, ensure_ascii=False, indent=1)
-    print(f"RO-Crate manifest: {len(graph[1]['hasPart'])} datasets -> {out}")
+    doc = {"@context": "https://w3id.org/ro/crate/1.1/context", "@graph": graph}
+    with open(MANIFEST, "w", encoding="utf-8") as f:
+        json.dump(doc, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+    return len(files)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        n = build()
+        print(f"ro-crate-metadata.jsonld regenereret ({n} datafiler)")
+    except Exception as e:  # noqa: BLE001 — fail loudly for CI
+        sys.stderr.write(f"FEJL i gen_ro_crate.py: {e}\n")
+        sys.exit(1)
