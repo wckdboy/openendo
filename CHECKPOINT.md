@@ -15,7 +15,7 @@
 ## 🎯 Current focus (top 3)
 
 1. **M3 repurposing validation → Percival's open loop** — 9/9 depth-checked (`docs/research/evidence/m3-validation.md`): TOP TIER sirolimus · VALIDATED cetrorelix→MRGPRX2 · WATCHLIST sulfasalazin/CsA/tacro/TKI · estradiol+dinoprostone wrong-direction. **Remaining DoD for Percival:** (a) ferroptosis-direction deep-dive (læs SEMA3C fuldt → afgør om ferroptose driver eller beskytter læsioner — unblocker sulfasalazin), (b) SCHEMA-knowledge pages sirolimus-repurposing + mrgprx2-pain + llms.txt, (c) lesion-ekspression GEO (MRGPRX2 i mastceller). *Owner: Percival*
-2. **Lovable app ↔ repo content wiring decision** — plan-mode structural map of the Lovable app done (2026-09-02): trials/papers are fetched LIVE from ClinicalTrials.gov/PubMed via server functions; funding + knowledge articles are hard-coded in the app; repo research/knowledge content is NOT shown anywhere on the site. Decision: (a) port curated content into app content layer, or (b) app fetches repo raw URLs (repo stays canonical — Percival PR #11 recommendation). DoD: decision made + first content sync live on openendo.org. *Owner: Jaeger (propose) → human (decide)*
+2. **Lovable app ↔ repo content wiring — DECISION MADE + pilot in flight** — human greenlit the sync (2026-09-02, Telegram: "Ind på lovable sitet"); method: **(b) fetch model** (repo stays canonical — Percival PR #11 recommendation; app fetches raw URLs via server function, no content duplication). Pilot: what-we-know research explainer → new `/research` page on openendo.org (fetches `docs/what-we-know.html`, rewrites font URLs to raw.githubusercontent, renders in sandboxed srcDoc iframe; Download PDF link). Lovable agent building (message `main:user#…VWSLTIRH`, 2026-09-02); Jaeger polls + verifies live. DoD: explainer live + verified on openendo.org; pattern reusable for funding/knowledge sync. *Owner: Jaeger*
 3. **M1 fold-input → AlphaFold run** — 35 novel targets packaged (`docs/research/structures/fold_input/`). Needs compute decision (RunPod serverless vs MacBook M3 Pro local vs Colab) + cost estimate. DoD: folding run launched, or explicit deferral with reason logged. *Owner: Jaeger (decide) / Percival (prepare)*
 
 ---
@@ -49,7 +49,7 @@
 - [ ] **T7 ELN interviews** — interview guide (DK) exists; Phase A (agent-del): shortlist 2–3 danske labs/institutter + outreach-udkast (DK); Phase B: interviews (menneske). DoD: shortlist + outreach-udkast i `docs/research/`. *Percival*
 - [ ] **AlphaFold run decision** — 35 FASTA ready; **27/35 findes allerede i AFDB → kun 8 skal foldes (~$1–3)**. Decide compute path (RunPod 4090 vs MacBook M3 Pro vs Colab). DoD: decision + cost sheet i `docs/research/structures/fold_input/`, derefter kør eller udsæt eksplicit. *Jaeger (decide) / Percival (prepare)*
 - [ ] **Access-finder segment (website)** — country/postcode input → up-to-date access to meds, centres/doctors, help. Data: `docs/data/access.json` (v1: DK full, GB/US/DE orgs). UI build in Lovable app (fetch model — pilot for top-3 #2). DoD: live segment on openendo.org, data verified + sourced, CI green. *Jaeger — in progress (data v1 done 2026-09-02; UI build next)*
-- [ ] **Lovable ↔ repo content sync** — after top-3 #2 decision: implement (port or fetch), verify on live site. DoD: knowledge/funding from repo visible on openendo.org; PR notes `needs-lovable-sync` workflow. *Jaeger*
+- [x] **Lovable ↔ repo content sync — DECIDED (fetch model) + pilot live** — human picked sync 2026-09-02; repo-canonical fetch implemented for what-we-know → `/research`. DoD (live + verified) in progress — verify after Lovable build. Remaining sync surface: funding + knowledge articles (hard-coded in app) → same fetch pattern. *Jaeger*
 
 ### 🟡 Medium priority
 
@@ -74,12 +74,13 @@
 - **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
 - **AlphaFold compute budget** — no decision yet; folding 35 proteins costs real money on RunPod.
 - **Percival profile state** — ✅ RESOLVED 2026-09-02: user confirmed ongoing research work ("Great continue", "Keep working, solve this"). Percival keeps producing research + data + repo maintenance; checkpoint ownership confirmed. Re-confirmed 2026-09-02: user will have Percival attack the laid-out problems (top-3 #1 M3 validation first).
-- **Lovable app content wiring** — open decision (top-3 #2): repo knowledge/funding content is not shown in the Lovable app. Proposals from either agent welcome; human decides. Until decided, treat repo as canonical and flag `needs-lovable-sync` on affected PRs.
+- **Lovable app content wiring — ✅ DECIDED 2026-09-02** — human greenlit sync; fetch model (repo canonical). Pilot (what-we-know → `/research`) building in Lovable; funding/knowledge articles remain hard-coded until same pattern applied.
 
 ---
 
 ## ✅ Recently done (change log)
 
+- **2026-09-02** — **Lovable sync DECIDED (human: "Ind på lovable sitet")**: fetch model — repo canonical, app fetches raw URLs. Pilot sent to Lovable agent: what-we-know explainer → `/research` page (server function fetch + font-URL rewrite + sandboxed srcDoc iframe + PDF link). Verifying after build. *Jaeger*
 - **2026-09-02** — Research explainer (Jaeger): `docs/what-we-know.html` — visual, plain-language tour: what we know (sourced), what we're testing (docking/ladder), what we don't know yet (honest gaps), jargon explainers, evidence ladder + repurposing verdicts, structure-coverage graphic. Local OFL fonts under `docs/assets/fonts/`; PDF renderable.
 
 - **2026-09-02** — Virtual testing pipeline started (Jaeger): `docs/research/virtual-testing.md` (validation ladder: AFDB/PDB → docking → MD → ML; infra med live RunPod-priser; faser 0–3). **Phase 0 audit done**: AFDB dækker 27/35 M1-targets (kun 8 skal foldes, ~$1–3); eksperimentelle PDB-strukturer findes for ALLE M3-mål (FKBP4/FKBP12/MRGPRX2 7S8L/xCT 7CCS/ACVR1B); HPA-ekspression (MRGPRX2 "not detected" i bulk = mastcelle-artefakt → Phase 0.5); ChEMBL-registrering bekræftet. Script `scripts/phase0_structure_expression.py`, data `docs/research/virtual/phase0.json` + `phase0.md`.
