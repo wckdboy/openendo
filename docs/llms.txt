@@ -2,6 +2,10 @@
 
 > Open data hub for endometriosis research — clinical trials, papers, funding & policy, refreshed weekly from ClinicalTrials.gov and PubMed. Open source, MIT, built for patients, researchers and policymakers.
 
+## Agents: start here
+- [CHECKPOINT.md](https://raw.githubusercontent.com/wckdboy/openendo/main/CHECKPOINT.md): living task board — current focus, horizon tasks, blockers, change log (READ FIRST)
+- [AGENTS.md](https://raw.githubusercontent.com/wckdboy/openendo/main/AGENTS.md): repo rules for agents
+
 ## Site
 - [Dashboard](index.html): live analytics — recruiting trials worldwide/by country, Denmark status, PubMed output, funding watch with deadlines
 - [Knowledge base (human hub)](wiki.html): rendered wiki index — entities, concepts, comparisons, research program

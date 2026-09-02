@@ -1,0 +1,84 @@
+# OpenEndo — Agent Checkpoint
+
+> **Living document. Agents: READ THIS FIRST before starting work.**
+> Update it when you start, finish, or reprioritize a task. Humans: this is the
+> single source of truth for "what's happening and what's next".
+>
+> Convention: every task has a status, an owner (Jaeger / Percival / anyone),
+> and a last-updated date. When you finish something, move it to ✅ Done and
+> add the next step. Never delete history — append to the change log.
+
+**Last updated:** 2026-09-02 · **Maintainers:** Jaeger + Percival (Hermes agents)
+
+---
+
+## 🎯 Current focus (top 3)
+
+1. **M3 repurposing screen → validation** — 9 candidates identified (crizotinib, dabrafenib, cyclosporine, sirolimus, tacrolimus, estradiol, cetrorelix, sulfasalazine, dinoprostone). Next: literature depth-check per candidate, rank by evidence + safety + novelty. *Owner: Percival*
+2. **Wiki growth** — 6 seed pages live; M2 evidence digest + M3 candidates + MY-ENDO trial should become knowledge pages. *Owner: Jaeger*
+3. **M1 fold-input → AlphaFold** — 35 novel targets packaged and merged; the actual folding run is the payoff. Needs compute decision (RunPod vs local). *Owner: Jaeger (decide) / Percival (prepare)*
+
+---
+
+## 📊 Workstreams
+
+| ID | Track | Status | Last touched | Owner |
+|----|-------|--------|--------------|-------|
+| M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · ⏭ run folding | 2026-09-02 | Percival |
+| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence | 2026-09-02 | Percival |
+| M3 | Drug repurposing screen | ✅ merged · 🔬 validation next | 2026-09-02 | Percival |
+| T7 | Lab software modernization (DK ELN) | ✅ merged · 📋 interviews next | 2026-09-02 | Percival |
+| INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival |
+| SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival |
+| WIKI | Knowledge base (6 pages, wiki.html, llms.txt) | 🟡 growing — needs M2/M3 ingest | 2026-09-02 | Jaeger |
+| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 | 2026-09-02 | Jaeger (cron) |
+
+---
+
+## 📋 Horizon — tasks needing focus
+
+### 🔴 High priority
+
+- [ ] **M3 candidate validation** — for each of 9 candidates: mechanism fit (endometriosis biology), existing evidence (ChEMBL/PubMed), safety profile, novelty vs current care. Deliverable: ranked shortlist with confidence tags → wiki page. *Percival — this week*
+- [ ] **Yselty (linzagolix) DK availability** — flagged `confidence: medium` in wiki; verify Danish access/reimbursement status (Medicinrådet/Lægemiddelstyrelsen) and update the page. *Jaeger — next monitor run*
+- [ ] **AlphaFold run decision** — 35 FASTA files are ready; decide compute path (RunPod serverless vs MacBook M3 Pro local vs Google Colab) and estimated cost before folding. *Jaeger*
+
+### 🟡 Medium priority
+
+- [ ] **Wiki ingest of M2 digest** — simvastatin/primaquine POC, SEMA3C→ferroptosis, diversity gap, Ziwig benchmark → knowledge pages (concepts/entities). *Jaeger*
+- [ ] **MY-ENDO trial (NCT06211231) page** — recruiting in DK now; patient-relevant entity page with inclusion/exclusion summary. *Jaeger*
+- [ ] **T7 ELN interviews** — interview guide (DK) exists; identify 2–3 Danish labs to interview; publish anonymized write-up. *Percival*
+- [ ] **RO-Crate CI wiring** — regenerate `ro-crate-metadata.jsonld` automatically in the weekly data refresh, not manually. *Percival or Jaeger*
+- [ ] **Nationalt Center for Forskning i Kvinders Sundhed** — track consortium decision; is endometriosis a priority theme? *Jaeger (monitor)*
+
+### 🟢 Lower priority / backlog
+
+- [ ] Ziwig Endotest availability in DK (diagnostic access)
+- [ ] More wiki languages (good first issue #1)
+- [ ] Funding-leads good first issue (#2) — open to community
+- [ ] llms.txt hygiene check after every merge (keep agent index current)
+- [ ] Site i18n: add Spanish/French (content.json keys exist)
+
+---
+
+## 🚧 Blockers / open questions
+
+- **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
+- **Yselty DK status** — unverified; blocks a `high` confidence rating on the page.
+- **AlphaFold compute budget** — no decision yet; folding 35 proteins costs real money on RunPod.
+- **Percival profile state** — was stopped 2026-08-31 per user request; PRs still land from his workstream. Confirm whether he should keep producing research (his branches are merged, so yes — but checkpoint ownership needs the user's blessing for ongoing work).
+
+---
+
+## ✅ Recently done (change log)
+
+- **2026-09-02** — Merged PRs #8 (M2 evidence + M3 screen), #9 (RO-Crate contract), #10 (perf fix + target intel §06). All checks green after CI self-scan bug fix.
+- **2026-09-02** — Fixed CI: PII-scan was matching its own workflow file (`.github/` now excluded from grep).
+- **2026-09-02** — Wiki published for humans (wiki.html) + agents (raw markdown via raw.githubusercontent.com); discovered GitHub Pages does not serve `.md`.
+- **2026-09-02** — KB initialized: SCHEMA, index, log, 6 seed pages (ryeqo, yselty, hmi-115, gnrh-antagonists, saliva-diagnostics, ryeqo-vs-yselty).
+- **2026-09-02** — Merged PR #5 (M1 fold-input pack) + PR #7 (T7 lab software track); preserved target-audit data from closed PR #3.
+- **2026-08-28** — Site live at openendo.org (GitHub Pages); weekly data pipeline running.
+
+---
+
+*How to update: edit the relevant section, bump the date, append to the change log. Commit with a clear message. Agents: pull before reading, push after updating.*
