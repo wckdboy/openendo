@@ -17,6 +17,7 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [How to support](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/support.html): seven ways to contribute
 - [AI & compute agenda](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/ai-agenda.html): how AI/agents/compute can move endometriosis research
 - [One-pager for decision-makers (EN)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-en.html)
+- [**What we know / what we don't — research explainer (visual)**](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/what-we-know.html): plain-language tour — targets, repurposing, virtual testing, honest gaps
 - [One-pager for decision-makers (DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-dk.html)
 
 ## Machine-readable data (JSON)

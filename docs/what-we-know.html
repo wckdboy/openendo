@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OpenEndo research — what we know, what we're testing, what we don't know yet</title>
+<meta name="description" content="An open, plain-language tour of OpenEndo's research: 35 new drug targets, 9 repurposing candidates, virtual testing — and the honest gaps. Everything sourced, everything open."/>
+<meta property="og:title" content="OpenEndo research explainer — what we know &amp; what we don't"/>
+<meta property="og:description" content="Open data and computational research on endometriosis — targets, drug repurposing, virtual testing. Know · Testing · Unknown."/>
+<meta property="og:type" content="website"/>
+<style>
+  @font-face{font-family:"Fraunces";font-style:normal;font-weight:600;src:url("assets/fonts/fraunces-600.ttf") format("truetype");}
+  @font-face{font-family:"Fraunces";font-style:normal;font-weight:700;src:url("assets/fonts/fraunces-700.ttf") format("truetype");}
+  @font-face{font-family:"Fraunces";font-style:italic;font-weight:400;src:url("assets/fonts/fraunces-it-400.ttf") format("truetype");}
+  @font-face{font-family:"Manrope";font-style:normal;font-weight:400;src:url("assets/fonts/manrope-400.ttf") format("truetype");}
+  @font-face{font-family:"Manrope";font-style:normal;font-weight:500;src:url("assets/fonts/manrope-500.ttf") format("truetype");}
+  @font-face{font-family:"Manrope";font-style:normal;font-weight:600;src:url("assets/fonts/manrope-600.ttf") format("truetype");}
+  @font-face{font-family:"Manrope";font-style:normal;font-weight:700;src:url("assets/fonts/manrope-700.ttf") format("truetype");}
+  @font-face{font-family:"Manrope";font-style:normal;font-weight:800;src:url("assets/fonts/manrope-800.ttf") format("truetype");}
+  :root{
+    --bg:#ffffff; --ink:#1d1d1f; --muted:#6e6e73; --line:#e8e8ed; --chip:#f5f5f7;
+    --ribbon:#ffd60a; --ribbon-soft:#fff7cc; --ink-soft:#3a3a3e;
+    --know:#157a3e; --know-soft:#e9f6ee;
+    --test:#b45309; --test-soft:#fdf1e3;
+    --unk:#b0234a; --unk-soft:#fbeaf0;
+    --blue:#1d4ed8; --blue-soft:#eaf0fe;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact;scroll-behavior:smooth;}
+  body{font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+       background:var(--bg);color:var(--ink);font-size:10.5pt;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .page{max-width:780px;margin:0 auto;padding:0 8mm;}
+
+  /* ---------- header ---------- */
+  header.top{padding:10mm 0 4mm;border-bottom:2.5px solid var(--ink);}
+  .brand{display:flex;align-items:baseline;gap:10px;}
+  .wordmark{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:20pt;letter-spacing:-.02em;}
+  .wordmark .mark{position:relative;white-space:nowrap;}
+  .wordmark .mark b{position:relative;z-index:1;font-weight:700;}
+  .wordmark .mark i{position:absolute;left:-2px;right:-2px;bottom:1px;height:.28em;background:var(--ribbon);z-index:0;border-radius:2px;}
+  .brand .tag{font-size:7.5pt;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-left:auto;}
+  .kicker{margin-top:7mm;font-size:8pt;font-weight:800;letter-spacing:.26em;text-transform:uppercase;}
+  h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26pt;line-height:1.12;letter-spacing:-.015em;margin-top:2.5mm;}
+  h1 em{font-style:italic;font-weight:400;}
+  h1 .swipe{position:relative;white-space:nowrap;}
+  h1 .swipe span{position:relative;z-index:1;}
+  h1 .swipe i{position:absolute;left:-1px;right:-1px;bottom:.06em;height:.2em;background:var(--ribbon);z-index:0;border-radius:2px;}
+  .lede{margin-top:3.5mm;font-size:11pt;color:var(--muted);max-width:62ch;}
+  .lede strong{color:var(--ink);}
+  .meta{display:flex;flex-wrap:wrap;gap:2mm;margin-top:4mm;}
+  .pill{border:1px solid var(--line);background:var(--chip);border-radius:999px;padding:1.5mm 4mm;font-size:7.6pt;font-weight:700;letter-spacing:.05em;color:var(--ink-soft);}
+
+  /* ---------- generic ---------- */
+  section{margin-top:9mm;}
+  .eyebrow{font-size:8pt;font-weight:800;letter-spacing:.24em;text-transform:uppercase;display:flex;align-items:center;gap:3mm;}
+  .eyebrow .dot{width:2.6mm;height:2.6mm;border-radius:50%;flex:none;}
+  h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:17pt;letter-spacing:-.01em;margin-top:2mm;line-height:1.2;}
+  h2 em{font-style:italic;font-weight:400;}
+  .sub{font-size:9.5pt;color:var(--muted);margin-top:1.5mm;max-width:66ch;}
+  .grid{display:grid;gap:3.5mm;margin-top:4mm;}
+  .g2{grid-template-columns:1fr 1fr;}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  .g4{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr;}}
+
+  .card{border:1px solid var(--line);border-radius:12px;padding:4.5mm 5mm;background:var(--bg);}
+  .card h3{font-size:10pt;font-weight:800;letter-spacing:-.01em;}
+  .card p{font-size:8.8pt;color:var(--ink-soft);margin-top:1.5mm;}
+  .stat .n{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:21pt;line-height:1;}
+  .stat .n small{font-size:11pt;font-weight:600;}
+  .stat .l{font-size:8.2pt;color:var(--muted);margin-top:1.5mm;}
+  .stat .s{font-size:7.4pt;color:var(--muted);margin-top:.8mm;}
+
+  /* status chips */
+  .chip{display:inline-flex;align-items:center;gap:1.8mm;border-radius:999px;padding:1mm 3mm;font-size:7.2pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;}
+  .chip .d{width:2.2mm;height:2.2mm;border-radius:50%;}
+  .know{background:var(--know-soft);color:var(--know);}
+  .know .d{background:var(--know);}
+  .test{background:var(--test-soft);color:var(--test);}
+  .test .d{background:var(--test);}
+  .unk{background:var(--unk-soft);color:var(--unk);}
+  .unk .d{background:var(--unk);}
+  .done{background:var(--blue-soft);color:var(--blue);}
+  .done .d{background:var(--blue);}
+  .grey{background:var(--chip);color:var(--muted);}
+
+  /* know / test / unknown rows */
+  .band{border-radius:14px;padding:5mm 6mm;margin-top:4mm;}
+  .band.know{background:var(--know-soft);border:1px solid #cfe9da;}
+  .band.test{background:var(--test-soft);border:1px solid #f5dfc2;}
+  .band.unk{background:var(--unk-soft);border:1px solid #f3cdda;}
+  .band h3{font-size:10.5pt;font-weight:800;display:flex;align-items:center;gap:3mm;}
+  .band ul{list-style:none;margin-top:2.5mm;}
+  .band li{display:flex;gap:3mm;padding:2mm 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:9.2pt;}
+  .band li:last-child{border-bottom:none;}
+  .band li .b{flex:none;font-weight:800;font-size:8.6pt;margin-top:.3mm;}
+  .band li .t small{display:block;color:var(--muted);font-size:7.8pt;margin-top:.6mm;}
+  .band.know li .b{color:var(--know);}
+  .band.test li .b{color:var(--test);}
+  .band.unk li .b{color:var(--unk);}
+
+  /* flow diagram */
+  .flow{display:flex;align-items:stretch;gap:0;margin-top:5mm;}
+  .flow .step{flex:1;border:1.5px solid var(--line);border-radius:10px;padding:3.5mm 3mm;text-align:center;background:var(--bg);position:relative;}
+  .flow .step .ic{font-size:13pt;line-height:1;}
+  .flow .step .tt{font-size:8.2pt;font-weight:800;margin-top:1.5mm;}
+  .flow .step .dd{font-size:7pt;color:var(--muted);margin-top:.8mm;line-height:1.4;}
+  .flow .step.now{border-color:var(--ribbon);box-shadow:0 0 0 1.5px var(--ribbon);}
+  .flow .step.now::after{content:"WE ARE HERE";position:absolute;top:-2.6mm;left:50%;transform:translateX(-50%);
+    background:var(--ribbon);color:var(--ink);font-size:5.6pt;font-weight:800;letter-spacing:.1em;
+    padding:.8mm 2.5mm;border-radius:999px;white-space:nowrap;}
+  .flow .arr{flex:none;display:flex;align-items:center;color:#c9c9d1;font-size:12pt;padding:0 1mm;font-weight:700;}
+  @media(max-width:640px){.flow{flex-direction:column;}.flow .arr{transform:rotate(90deg);justify-content:center;padding:1mm 0;}}
+
+  /* ladder */
+  .ladder{margin-top:4mm;}
+  .rung{display:flex;gap:4mm;align-items:flex-start;padding:2.8mm 0;border-bottom:1px dashed var(--line);}
+  .rung:last-child{border-bottom:none;}
+  .rung .num{flex:none;width:8mm;height:8mm;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:11pt;margin-top:.5mm;}
+  .rung.on .num{background:var(--ribbon);color:var(--ink);}
+  .rung.off .num{background:var(--chip);color:#b9b9c2;border:1px solid var(--line);}
+  .rung .tx .q{font-size:9.6pt;font-weight:700;}
+  .rung .tx .a{font-size:8.4pt;color:var(--muted);margin-top:.6mm;}
+  .rung .tx .a b{color:var(--ink-soft);}
+
+  /* verdict table-ish */
+  .verdict{display:grid;grid-template-columns:auto 1fr auto;gap:3mm;align-items:center;padding:2.6mm 0;border-bottom:1px dashed var(--line);}
+  .verdict:last-child{border-bottom:none;}
+  .verdict .drug{font-size:9.4pt;font-weight:800;}
+  .verdict .why{font-size:8.2pt;color:var(--muted);}
+  .verdict .v{font-size:7pt;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;padding:1mm 2.8mm;white-space:nowrap;}
+  .v.top{background:#e9f6ee;color:var(--know);}
+  .v.val{background:var(--blue-soft);color:var(--blue);}
+  .v.watch{background:var(--test-soft);color:var(--test);}
+  .v.wrong{background:var(--unk-soft);color:var(--unk);}
+
+  /* coverage bar */
+  .bar{display:flex;height:9mm;border-radius:999px;overflow:hidden;margin-top:3mm;border:1px solid var(--line);}
+  .bar .seg{display:flex;align-items:center;justify-content:center;font-size:7.4pt;font-weight:800;}
+  .bar .a{background:var(--ribbon);color:var(--ink);}
+  .bar .b{background:var(--ink);color:#fff;}
+  .legend{display:flex;gap:5mm;margin-top:2mm;font-size:7.8pt;color:var(--muted);flex-wrap:wrap;}
+  .legend span{display:inline-flex;align-items:center;gap:1.5mm;}
+  .legend i{width:2.8mm;height:2.8mm;border-radius:50%;display:inline-block;}
+
+  /* details jargon */
+  details{margin-top:2.5mm;border:1px solid var(--line);border-radius:10px;padding:2.5mm 4mm;background:var(--chip);}
+  details summary{cursor:pointer;font-size:8.6pt;font-weight:800;list-style:none;display:flex;align-items:center;gap:2.5mm;}
+  details summary::before{content:"+";font-weight:800;color:var(--muted);font-size:10pt;}
+  details[open] summary::before{content:"–";}
+  details .jargon{font-size:8.4pt;color:var(--ink-soft);margin-top:1.5mm;}
+
+  /* help cards */
+  .help{display:flex;gap:2.5mm;margin-top:3.5mm;flex-wrap:wrap;}
+  .help .h{flex:1;min-width:120px;border:1.5px solid var(--ink);border-radius:12px;padding:3.5mm 4mm;background:var(--bg);}
+  .help .h .n{font-size:7pt;font-weight:800;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;}
+  .help .h .t{font-size:8.8pt;font-weight:700;margin-top:1mm;}
+
+  .disclaimer{margin-top:8mm;border:1.5px solid var(--ink);border-radius:12px;padding:4mm 5.5mm;font-size:8pt;color:var(--ink-soft);}
+  .disclaimer b{display:flex;align-items:center;gap:2.5mm;font-size:8.6pt;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;}
+  .disclaimer .yd{width:2.8mm;height:2.8mm;border-radius:50%;background:var(--ribbon);flex:none;}
+
+  footer{margin-top:8mm;border-top:1px solid var(--line);padding:3.5mm 0 9mm;display:flex;align-items:baseline;gap:5mm;font-size:7.6pt;color:var(--muted);}
+  footer .fb{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:9.5pt;color:var(--ink);}
+  footer .ys{display:inline-block;width:6px;height:6px;border-radius:1.5px;background:var(--ribbon);margin-right:3px;transform:rotate(45deg);}
+  @media screen{.page{box-shadow:0 0 0 1px var(--line);margin-top:6mm;margin-bottom:8mm;padding:0 11mm;}}
+  @media print{@page{size:A4;margin:10mm 9mm;}body{font-size:9.6pt;}section{margin-top:6mm;}.band{padding:4mm 5mm;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <div class="brand">
+      <div class="wordmark">Open<span class="mark"><b>Endo</b><i></i></span></div>
+      <div class="tag">Research explainer · 2026-09</div>
+    </div>
+    <div class="kicker">Open research on endometriosis</div>
+    <h1>What we know. What we're testing. <em>What we don't know yet.</em></h1>
+    <p class="lede">Endometriosis affects <strong>~190 million people</strong> — yet it took decades to be taken seriously, and it still gets a sliver of research funding. OpenEndo is an open project that tracks the evidence, finds new angles, and <strong>tests ideas on computers before anyone touches a lab</strong>. This page is an honest tour: what is established, what we are testing right now, and what remains unknown. Nothing here is medical advice — everything is sourced and open.</p>
+    <div class="meta">
+      <span class="pill">~190M people affected</span>
+      <span class="pill">~7 yr average diagnosis wait</span>
+      <span class="pill">0.05% of research funding</span>
+      <span class="pill">100% open · MIT</span>
+    </div>
+  </header>
+
+  <!-- WHY -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--ribbon)"></span>Why this exists</div>
+    <h2>A disease that <em>shouldn't</em> still be this invisible</h2>
+    <p class="sub">Endometriosis is chronic, painful and common — yet diagnosis takes years and research is starved. The gap isn't a lack of patients. It's a lack of <strong>organised, open evidence</strong> that researchers, clinicians and patients can all build on.</p>
+    <div class="grid g3">
+      <div class="card stat"><div class="n">190<small>M</small></div><div class="l">people live with endometriosis worldwide</div><div class="s">WHO estimate — more than diabetes + epilepsy combined</div></div>
+      <div class="card stat"><div class="n">~7<small>yr</small></div><div class="l">average time from symptoms to diagnosis</div><div class="s">a disease waved away — the name says it</div></div>
+      <div class="card stat"><div class="n">0.05<small>%</small></div><div class="l">of health research funding goes to it</div><div class="s">per burden, it should be tens of times more</div></div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--ink)"></span>What OpenEndo does</div>
+    <h2>Four lanes, one goal: <em>better evidence, faster</em></h2>
+    <div class="grid g4">
+      <div class="card"><span class="chip done"><span class="d"></span>live</span><h3 style="margin-top:1.5mm">📡 Watch the evidence</h3><p>Every endometriosis trial, paper and grant — tracked weekly from public registries (ClinicalTrials.gov, PubMed), in the open.</p></div>
+      <div class="card"><span class="chip done"><span class="d"></span>merged</span><h3 style="margin-top:1.5mm">🎯 Find new targets</h3><p>Mapped the drug-target landscape — <b>58 targets</b>, of which <b>35 are truly novel</b> (no drug has ever been developed against them).</p></div>
+      <div class="card"><span class="chip done"><span class="d"></span>ranked</span><h3 style="margin-top:1.5mm">💊 Repurpose drugs</h3><p>Screened 9 approved drugs as candidates for endometriosis — ranked by mechanism, evidence and safety (M3).</p></div>
+      <div class="card"><span class="chip test"><span class="d"></span>testing</span><h3 style="margin-top:1.5mm">🧪 Test in silico</h3><p>New: a virtual-testing pipeline — computer tests on structures and binding before any wet lab (see below).</p></div>
+    </div>
+  </section>
+
+  <!-- PATH -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--ribbon)"></span>The big picture</div>
+    <h2>From data to patient — <em>where we are</em></h2>
+    <p class="sub">Every treatment that exists today travelled this road. We are doing steps 1–3 openly, on computers, for ideas nobody else is pursuing. Step 4 needs a lab partner; step 5 needs clinical research.</p>
+    <div class="flow">
+      <div class="step now"><div class="ic">📡</div><div class="tt">Open data</div><div class="dd">trials · papers · funding, weekly, in the open</div></div>
+      <div class="arr">→</div>
+      <div class="step now"><div class="ic">🎯</div><div class="tt">Targets &amp; candidates</div><div class="dd">35 novel targets · 9 repurposing leads</div></div>
+      <div class="arr">→</div>
+      <div class="step now"><div class="ic">🖥</div><div class="tt">Virtual tests</div><div class="dd">structures · docking · dynamics</div></div>
+      <div class="arr">→</div>
+      <div class="step"><div class="ic">🔬</div><div class="tt">Lab tests</div><div class="dd">cells &amp; models — needs a lab partner</div></div>
+      <div class="arr">→</div>
+      <div class="step"><div class="ic">🏥</div><div class="tt">Clinical research</div><div class="dd">trials — the only real proof</div></div>
+    </div>
+  </section>
+
+  <!-- KNOW -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--know)"></span>Established</div>
+    <h2>What we know <em>(sourced &amp; verified)</em></h2>
+    <div class="band know">
+      <h3><span class="chip know"><span class="d"></span>Know</span> Verified facts, with dates and sources</h3>
+      <ul>
+        <li><span class="b">✓</span><span class="t"><b>The disease is under-researched, not rare.</b> ~190M affected (WHO); diagnosis delay ~7 years; ~0.05% of research funding. <small>Sources: WHO; site stats — verified 2026-08</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>Denmark's access landscape is mapped.</b> Ryeqo has general reimbursement (≈849 kr./28 days); Yselty is approved but <i>not</i> reimbursed for endometriosis (out-of-pocket or individual application); two specialised centres treat severe disease (Rigshospitalet — East, AUH Skejby — West). <small>Lægemiddelstyrelsen / sundhed.dk — verified 2026-09-02</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>58 drug targets mapped — 35 truly novel.</b> Cross-checked against ChEMBL (the drug industry's own database): 35 have <i>no drug ever developed against them</i>. <small>targets.json — 2026-09-02</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>The screening method works.</b> Of 9 repurposing candidates, the computer screen flagged two as "wrong direction" — estradiol (it <i>activates</i> a growth receptor) and dinoprostone (it <i>is</i> the inflammatory signal PGE2). The method caught its own errors. <small>m3-validation.md — 2026-09-02</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>Sirolimus (rapamycin) is the strongest repurposing lead.</b> Its mechanism (mTOR) has independent endometriosis evidence; it has 20+ years of safety data from transplant medicine. <small>M3 validation — 2026-09-02, confidence medium-high</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>MRGPRX2 is a validated pain mechanism.</b> New 2026 studies link this mast-cell receptor to endometriosis pain — a specific, non-hormonal target. <small>M3 validation</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>We can test these ideas right now.</b> Experimental 3D structures exist for every current test candidate (FKBP4, FKBP12, MRGPRX2, xCT); 27 of 35 novel targets already have predicted structures in AlphaFold DB. <small>Phase 0 audit — 2026-09-02</small></span></li>
+      </ul>
+    </div>
+
+    <div class="bar"><div class="seg a" style="flex:27">27 of 35 targets — structure already exists</div><div class="seg b" style="flex:8">8 to fold</div></div>
+    <div class="legend">
+      <span><i style="background:var(--ribbon)"></i>already in AlphaFold DB (free, predicted)</span>
+      <span><i style="background:var(--ink)"></i>need one folding run (~$1–3 total)</span>
+    </div>
+    <p class="sub" style="margin-top:2mm">Experimental (cryo-EM / X-ray) structures also exist for the drug candidates being tested: FKBP4 · FKBP12 (control) · MRGPRX2 · xCT · ACVR1B.</p>
+  </section>
+
+  <!-- TESTING -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--test)"></span>In progress</div>
+    <h2>What we're testing right now <em>(hypotheses, on computers)</em></h2>
+    <div class="band test">
+      <h3><span class="chip test"><span class="d"></span>Testing</span> Each test produces a hypothesis — never a conclusion</h3>
+      <ul>
+        <li><span class="b">1</span><span class="t"><b>Does sirolimus actually fit its target?</b> Molecular docking: sirolimus → FKBP4, with FKBP12 as a control — because we need to know if it can engage the endometriosis-relevant protein at all. <small>Phase 1 · Vina docking · ~$5</small></span></li>
+        <li><span class="b">2</span><span class="t"><b>Can cetrorelix reach the pain receptor?</b> Docking the peptide drug against the MRGPRX2 cryo-EM structure — testing the pain-pathway idea computationally. <small>Phase 1 · ~$3</small></span></li>
+        <li><span class="b">3</span><span class="t"><b>Does sulfasalazine's target move in the right direction?</b> Its target (xCT) is real — but a 2026 paper suggests ferroptosis may drive lesion growth, not shrink it. Direction must be resolved before this ranks higher. <small>literature + docking · Phase 1</small></span></li>
+        <li><span class="b">4</span><span class="t"><b>Are the targets actually switched on in disease tissue?</b> Next free step: endometriosis-lesion gene data (GEO/single-cell) — is MRGPRX2 elevated in lesion mast cells specifically? <small>Phase 0.5 · ~$0</small></span></li>
+        <li><span class="b">5</span><span class="t"><b>Fold the 8 targets nobody has a structure for.</b> AlphaFold on a rented GPU — a few dollars, a few hours. <small>Phase 1 · ~$1–3</small></span></li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:6mm">The evidence ladder — <em>where each candidate stands</em></h2>
+    <p class="sub">For a repurposed drug, the honest path has five rungs. We are climbing rungs 2–3 on computers; rungs 4–5 need laboratories and clinical research.</p>
+    <div class="ladder">
+      <div class="rung on"><div class="num">1</div><div class="tx"><div class="q">Approved &amp; safe for another disease</div><div class="a">All 9 candidates passed this — that's the point of repurposing. <b>Sirolimus</b> has 20+ years of safety data.</div></div></div>
+      <div class="rung on"><div class="num">2</div><div class="tx"><div class="q">Mechanism fits endometriosis biology</div><div class="a">Done for 9/9 (M3 validation): <b>sirolimus</b> strongest · <b>MRGPRX2</b> axis validated · two candidates failed this rung honestly.</div></div></div>
+      <div class="rung on"><div class="num">3</div><div class="tx"><div class="q">Physically binds the target</div><div class="a"><b>In progress</b> — docking on experimental structures (Phase 1). Controls included so we don't fool ourselves.</div></div></div>
+      <div class="rung off"><div class="num">4</div><div class="tx"><div class="q">Works in endometriosis models</div><div class="a">Needs a wet lab (cells / animal models). <b>We are looking for a lab partner.</b></div></div></div>
+      <div class="rung off"><div class="num">5</div><div class="tx"><div class="q">Helps patients in trials</div><div class="a">Years away — and only clinical research can ever prove it. Our work exists to make that more likely, cheaper and better-targeted.</div></div></div>
+    </div>
+
+    <h2 style="margin-top:6mm">The 9 candidates, after ranking</h2>
+    <div class="verdict"><div class="drug">Sirolimus (rapamycin)</div><div class="why">mTOR pathway — independent endometriosis evidence, huge safety history</div><div class="v top">Top tier</div></div>
+    <div class="verdict"><div class="drug">Cetrorelix</div><div class="why">already used in endo — validates MRGPRX2 pain target, not a new drug</div><div class="v val">Axis validated</div></div>
+    <div class="verdict"><div class="drug">Sulfasalazine · Tacrolimus · Cyclosporine · Crizotinib/Dabrafenib</div><div class="why">real mechanisms but open questions: toxicity, immunosuppression, or drug-target mismatch</div><div class="v watch">Watchlist</div></div>
+    <div class="verdict"><div class="drug">Estradiol · Dinoprostone (PGE2)</div><div class="why">wrong direction — would feed the disease, not fight it. Caught by the screen.</div><div class="v wrong">Wrong direction</div></div>
+  </section>
+
+  <!-- UNKNOWN -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--unk)"></span>Honest gaps</div>
+    <h2>What we don't know yet</h2>
+    <div class="band unk">
+      <h3><span class="chip unk"><span class="d"></span>Unknown</span> We'd rather say "we don't know" than pretend</h3>
+      <ul>
+        <li><span class="b">?</span><span class="t"><b>Does sirolimus actually help endometriosis?</b> No endometriosis trial exists. Docking can say "it fits"; only a lab and trials can say "it helps". <small>the honest ceiling of computer work</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Which direction does ferroptosis go in endometriosis?</b> A Sept 2026 paper links it to lesion <i>progression</i> — if true, drugs that trigger it (sulfasalazine) could backfire. Unresolved. <small>must-read before ranking</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Is MRGPRX2 really elevated in lesion mast cells?</b> It's absent from healthy bulk tissue (expected for a mast-cell receptor) — the disease-specific question needs lesion data. <small>Phase 0.5</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Does a good computer binding predict a good real binding?</b> Usually yes-ish, sometimes no. That's why docking is followed by dynamics, and why both still need a lab. <small>methodological humility</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Would a selective ACVR1B inhibitor work?</b> The biology says yes — but no such drug exists. Building one is a decade-scale project. <small>parked honestly</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Funding.</b> All of this runs on evenings and small GPU rentals. A lab partnership or grant would change the pace completely.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- JARGON -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--ink)"></span>Plain words</div>
+    <h2>What the terms mean</h2>
+    <details><summary>What is a "drug target"?</summary><div class="jargon">A specific protein that a disease depends on. If a drug can switch that protein off (or on), the disease loses an advantage. Our 35 novel targets are proteins involved in endometriosis that <i>no drug has ever been aimed at</i> — overlooked on purpose, because the disease was under-funded.</div></details>
+    <details><summary>What is "repurposing"?</summary><div class="jargon">Taking a drug already approved for one disease and testing it against another. Huge shortcut: safety is already known, so years of early testing are skipped. It's how we found sirolimus.</div></details>
+    <details><summary>What is AlphaFold / a "predicted structure"?</summary><div class="jargon">A 3D shape of a protein, computed from its genetic sequence. AlphaFold (the 2024 Nobel Prize in Chemistry) made this possible for almost any protein. Predicted shapes are models — useful for planning, never proof.</div></details>
+    <details><summary>What is "docking"?</summary><div class="jargon">A computer test that tries to fit a drug molecule into its target protein, like testing if a key turns in a lock. It scores how well they fit. Fast and cheap — a first filter, not a verdict.</div></details>
+    <details><summary>What is "molecular dynamics"?</summary><div class="jargon">A simulation of the drug-protein pair wiggling in water over time (nanoseconds). If the drug falls off instantly, the docking was probably an illusion. More expensive than docking, so we only run it on the best hits.</div></details>
+    <details><summary>What is ChEMBL?</summary><div class="jargon">The drug industry's open database of drug-target relationships. When we say a target is "novel", we mean ChEMBL has no drug against it — verified, not assumed.</div></details>
+    <details><summary>What does "confidence" mean on our pages?</summary><div class="jargon">Our honesty label. <b>High</b> = multiple sources, verified. <b>Medium</b> = single source or fast-moving. <b>Low</b> = hypothesis, verify before relying. Every claim we publish carries one.</div></details>
+  </section>
+
+  <!-- HELP -->
+  <section>
+    <div class="eyebrow"><span class="dot" style="background:var(--ribbon)"></span>Join in</div>
+    <h2>How you can help</h2>
+    <div class="help">
+      <div class="h"><div class="n">Share</div><div class="t">Send this page to one person who should know the disease is under-researched.</div></div>
+      <div class="h"><div class="n">Labs</div><div class="t">Are you in endometriosis or drug research? We need a wet-lab partner for rung 4.</div></div>
+      <div class="h"><div class="n">Data</div><div class="t">Spot a missing trial, paper or funding call? Add it — the dataset is open (GitHub).</div></div>
+      <div class="h"><div class="n">Fund</div><div class="t">GPU hours cost dollars, not millions. Support open endometriosis research.</div></div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    <b><span class="yd"></span>Read this first</b>
+    <p style="margin-top:1.5mm">OpenEndo is open research infrastructure — not a medical service, and nothing here is medical advice. Every claim carries a source and a confidence label; computational results are hypotheses until confirmed in the lab. If you have endometriosis symptoms, talk to a clinician — and in Denmark, Endometriose Fællesskabet (endo.dk) offers free counselling.</p>
+  </div>
+
+  <footer>
+    <span class="fb"><span class="ys"></span>OpenEndo</span>
+    <span>openendo.org · open data on endometriosis research · MIT · evidence-first, patients first</span>
+    <span style="margin-left:auto">Explainer v1 · 2026-09-02</span>
+  </footer>
+
+</div>
+</body>
+</html>

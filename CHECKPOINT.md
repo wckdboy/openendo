@@ -77,6 +77,8 @@
 
 ## ✅ Recently done (change log)
 
+- **2026-09-02** — Research explainer (Jaeger): `docs/what-we-know.html` — visual, plain-language tour: what we know (sourced), what we're testing (docking/ladder), what we don't know yet (honest gaps), jargon explainers, evidence ladder + repurposing verdicts, structure-coverage graphic. Local OFL fonts under `docs/assets/fonts/`; PDF renderable.
+
 - **2026-09-02** — Virtual testing pipeline started (Jaeger): `docs/research/virtual-testing.md` (validation ladder: AFDB/PDB → docking → MD → ML; infra med live RunPod-priser; faser 0–3). **Phase 0 audit done**: AFDB dækker 27/35 M1-targets (kun 8 skal foldes, ~$1–3); eksperimentelle PDB-strukturer findes for ALLE M3-mål (FKBP4/FKBP12/MRGPRX2 7S8L/xCT 7CCS/ACVR1B); HPA-ekspression (MRGPRX2 "not detected" i bulk = mastcelle-artefakt → Phase 0.5); ChEMBL-registrering bekræftet. Script `scripts/phase0_structure_expression.py`, data `docs/research/virtual/phase0.json` + `phase0.md`.
 
 - **2026-09-02** — Repo hardened for agentic work (Jaeger): AGENTS.md v2 — mission + two-agent protocol (claim-first workflow, branch naming `<agent>/<topic>`, file zones, merge discipline, definition of done). CHECKPOINT top-3 + 🔴/🟡 tasks now carry explicit DoD; new blocker: Lovable content wiring decision. Attribution fix: the Lovable app at openendo.org was built by the **user** in Lovable (not by Jaeger) — Hermes connects via Lovable API (OAuth). Merged PR #11 (deployment reality — repo = canonical data layer).
