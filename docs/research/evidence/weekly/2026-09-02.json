@@ -1,0 +1,171 @@
+{
+ "period": "2026-08-26..2026-09-02",
+ "collected": "2026-09-02",
+ "papers": [
+  {
+   "pmid": "42678895",
+   "title": "SEMA3C Promotes the Progression of Endometriosis by Inducing Ferroptosis and Enhancing the Viability and Migration of Endometrial Stromal Cells.",
+   "journal": "Gynecologic and obstetric investigation",
+   "pubdate": "2026 Sep 1",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42678895/",
+   "source": "PubMed",
+   "abstract": "1. Gynecol Obstet Invest. 2026 Sep 1:1. doi: 10.1159/goi/aczag005. Online ahead\nof  print.\n\nSEMA3C Promotes the Progression of Endometriosis by Inducing Ferroptosis and \nEnhancing the Viability and Migration of Endometrial Stromal Cells.\n\nLi Y, Zhang Y.\n\nINTRODUCTION: Endometriosis (EMs) is a chronic inflammatory disorder involving \nectopic endometrial-like tissue. Semaphorin 3C (SEMA3C), a secreted guidance \nprotein regulating cell survival, migration, and tissue remodeling, may \ncontribute to EMs. This study examined SEMA3C expression and its relationship \nwith ferroptosis in human endometrial stromal cells (HESCs).\nMETHODS: SEMA3C expression was assessed in tissues from 30 patients with EMs and \n30 controls by immunohistochemistry, Western blotting, and quantitative \nreal-time PCR. Primary HESCs were subjected to SEMA3C overexpression or \nsiRNA-mediated knockdown. Cell viability, migration, iron content, lipid \nperoxidation, antioxidant activity, inflammatory cytokines, and ferroptosis \nregulators were analyzed. Ferrostatin-1 was used for rescue experiments.\nRESULTS: SEMA3C was upregulated in ectopic tissues versus controls (P < 0.001) \nand correlated with disease severity (stage III-IV vs. I-II, P < 0.01). Ectopic \nlesions also showed higher SEMA3C mRNA than matched eutopic endometrium (P < \n0.001). Ectopic tissues and SEMA3C-overexpressing HESCs showed increased \nferroptosis-related oxidative and inflammatory changes. SEMA3C overexpression \nenhanced HESC viability and migration, increased ACSL4, and decreased Nrf2, \nGPX4, and SLC7A11 expression (P < 0.001). SEMA3C knockdown or Ferrostatin-1 \nattenuated these alterations and suppressed HESC viability and migration (P < \n0.01).\nCONCLUSION: SEMA3C promotes HESC viability and migration through \nferroptosis-related oxidative and inflammatory mechanisms, identifying the \nSEMA3C-ferroptosis axis as a potential pathogenic pathway in EMs.\n\n© The Author(s) 2026. Published by S. Karger AG.\n\nDOI: 10.1159/goi/aczag005\nPMID: 42678895"
+  },
+  {
+   "pmid": "42678588",
+   "title": "Shared genetic architecture and cellular convergence between female reproductive disorders and pulmonary function: a genome-wide cross-trait analysis.",
+   "journal": "Functional & integrative genomics",
+   "pubdate": "2026 Sep 1",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42678588/",
+   "source": "PubMed",
+   "abstract": "1. Funct Integr Genomics. 2026 Sep 1;26(1):243. doi: 10.1007/s10142-026-02029-1.\n\nShared genetic architecture and cellular convergence between female reproductive \ndisorders and pulmonary function: a genome-wide cross-trait analysis.\n\nJi E(#)(1)(2), Wang Z(#)(3), Ning S(1)(2), Lu Y(4), Ma H(5)(6).\n\nAuthor information:\n(1)Department of Traditional Chinese Medicine, The First Affiliated Hospital of \nGuangzhou Medical University, Guangzhou, Guangdong, 510000, China.\n(2)Institute of International Traditional and Western Medicine, Guangzhou \nMedical University, Guangzhou, 510000, China.\n(3)Department of Thoracic Surgery and Oncology, State Key Laboratory of \nRespiratory Disease, National Center for Respiratory Medicine, National Clinical \nResearch Center for Respiratory Disease, Guangzhou Institute of Respiratory \nHealth, The First Affiliated Hospital of Guangzhou Medical University, \nGuangzhou, China.\n(4)The Sixth Clinical Medical College, Shenzhen Hospital (Futian) of Guangzhou \nUniversity of Chinese Medicine, Guangzhou, China.\n(5)Department of Traditional Chinese Medicine, The First Affiliated Hospital of \nGuangzhou Medical University, Guangzhou, Guangdong, 510000, China. \nhongxia_m@gzhmu.edu.cn.\n(6)Institute of International Traditional and Western Medicine, Guangzhou \nMedical University, Guangzhou, 510000, China. hongxia_m@gzhmu.edu.cn.\n(#)Contributed equally\n\nFemale reproductive disorders (FRDs), including polycystic ovary syndrome, \nendometriosis, uterine leiomyomata, and infertility, have been epidemiologically \nassociated with impaired pulmonary function. However, it remains unclear whether \nthis cross-organ link reflects shared genetic etiology and, if so, which \ncellular mechanisms mediate it. We performed a systematic genome-wide \ncross-trait analysis of three FRDs and lung function traits (FEV₁, FVC, \nFEV₁/FVC) using GWAS summary statistics from individuals of European ancestry, \nintegrating genetic correlation, bidirectional causal inference, pleiotropy \nmapping, and single-cell enrichment analyses. We identified significant negative \ngenetic correlations between FRDs and lung volume traits, most prominently for \nFVC (rg range: - 0.077 to - 0.178). Bidirectional causal analyses indicated that \nFRDs have a detrimental effect on lung volume, with higher FRD genetic liability \nassociated with reduced lung volume. Cross-trait meta-analysis identified 17 \npleiotropic variants across 11 loci, with the 19q13.2 (LTBP4) and 12q13.13 \n(HOXC6/HOXC9) loci showing strong evidence of shared causal variants. \nCritically, single-cell analyses revealed that shared genetic risk converged on \nmesenchymal lineages across organs, specifically alveolar adventitial \nfibroblasts in the lung and stromal/smooth muscle cells in the endometrium. \nTranscriptome-wide analyses further nominated the estrogen-responsive gene RERG \nas a convergent gene linking these conditions with lung function. Our study \nrevealed a shared genetic architecture between female reproducti"
+  },
+  {
+   "pmid": "42660668",
+   "title": "Lack of socio-demographic participant diversity in endometriosis evidence risks unrepresentative clinical guidance: a structured review of a NICE guideline.",
+   "journal": "The British journal of general practice : the journal of the Royal College of General Practitioners",
+   "pubdate": "2026 Sep 1",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42660668/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42677081",
+   "title": "Corrigendum: Developing a mouse endometriosis model using stored chocolate cyst slurry: an experimental study.",
+   "journal": "Reproductive and developmental medicine",
+   "pubdate": "2026 Sep",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42677081/",
+   "source": "PubMed",
+   "abstract": "1. Reprod Dev Med. 2026 Sep;10(3):200. doi: 10.1097/RD9.0000000000000182. Epub\n2026  Aug 29.\n\nCorrigendum: Developing a mouse endometriosis model using stored chocolate cyst \nslurry: an experimental study.\n\nBrahmana IB, Soetrisno S, Cempaka R.\n\nErratum for\n    doi: 10.1097/RD9.0000000000000129.\n\n[This corrects the article DOI: 10.1097/RD9.0000000000000129.].\n\nCopyright © 2026 Reproductive and Developmental Medicine, Published by Wolters \nKluwer Health, LLC.\n\nDOI: 10.1097/RD9.0000000000000182\nPMCID: PMC13528844\nPMID: 42677081"
+  },
+  {
+   "pmid": "42676912",
+   "title": "Exploring Short-Acting Hormonal Contraceptives in Endometriosis Care-A Narrative Review and Evidence-Based Practical Considerations.",
+   "journal": "Women's health reports (New Rochelle, N.Y.)",
+   "pubdate": "2026 Jan-Dec",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42676912/",
+   "source": "PubMed",
+   "abstract": "1. Womens Health Rep (New Rochelle). 2026 Aug 30;7:26884844261476400. doi: \n10.1177/26884844261476400. eCollection 2026 Jan-Dec.\n\nExploring Short-Acting Hormonal Contraceptives in Endometriosis Care-A Narrative \nReview and Evidence-Based Practical Considerations.\n\nMartínez-Zamora MÁ(1)(2), Perelló-Capó J(3)(4), Calaf-Alsina J(3)(5), \nQuílez-Conde JC(6)(7).\n\nAuthor information:\n(1)Gynecology Department, Clínic Institute of Gyneacology, Obstetrics and \nNeonatology (ICGON), Hospital Clinic of Barcelona, Universitat de Barcelona, \nBarcelona, Spain.\n(2)Institut d'Investigacions Biomèdiques August Pi I Sunyer (IDIBAPS), \nBarcelona, Spain.\n(3)Department of Pediatrics, Obstetrics and Gynecology, Preventive Medicine and \nPublic Health, Universitat Autònoma de Barcelona, Barcelona, Spain.\n(4)Department of Obstetrics and Gynecology, Hospital de la Santa Creu i Sant \nPau, Barcelona, Spain.\n(5)Institut de Recerca Sant Pau (IR SANT PAU), Barcelona, Spain.\n(6)Department of Obstetrics and Gynecology, Hospital Universitario de Basurto, \nBilbao, Spain.\n(7)Centro Ginecológico y Medicina Fetal (CEGyMF), Bilbao, Spain.\n\nBACKGROUND: Endometriosis is a chronic, estrogen-dependent inflammatory \ncondition affecting approximately 10% of women of reproductive age and \nmanifesting with pelvic pain, dysmenorrhea, dyspareunia, fatigue, and \ninfertility. First-line treatment in most patients is hormonal therapy, and \namong the available options, contraceptives are frequently used. Short-acting \ncontraceptives (SACs) have been employed off-label to manage \nendometriosis-related symptoms, yet comparative evidence regarding optimal \nformulations and regimens remains limited. This narrative review, part of the \nAgnodice Project, aims to synthesize recent evidence on the SAC \nformulation-specific effectiveness for endometriosis management, and to provide \nevidence-based practical considerations for endometriosis management.\nMETHODS: A literature search of systematic reviews and/or meta-analyses \nproviding data on non-contraceptive clinical benefits of SAC versus other SAC or \nSAC vs placebo or no treatment, including the period from 2014 to 2024, was \nconducted. Information was extracted as individual items related to \nendometriosis.\nRESULTS: Of 86 studies included in the Agnodice Project, 10 systematic reviews \nand meta-analyses specifically addressed endometriosis, yielding 21 comparative \nitems with significant differences. SACs effectively reduced dysmenorrhea, \nchronic pelvic pain, and post-operative endometrioma recurrence, among others. \nContinuous regimens consistently outperformed cyclic schedules for pain control \nand quality of life. Among formulations, desogestrel monotherapy was superior \nacross multiple outcomes in women with endometriosis. Furthermore, we present \npractical, expert considerations based on the synthesized evidence.\nCONCLUSIONS: SACs represent valuable first-line therapeutic options for \nendometriosis symptom management, with continuous regimens provid"
+  },
+  {
+   "pmid": "42672534",
+   "title": "The impact of unilateral endometriomas on ovarian response to stimulation: a systematic review and meta-analysis.",
+   "journal": "Human reproduction (Oxford, England)",
+   "pubdate": "2026 Aug 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42672534/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42671979",
+   "title": "Cecoappendiceal Endometriosis Presenting as a Cecal Traction Diverticulum: A Case Report.",
+   "journal": "Gynecologic and obstetric investigation",
+   "pubdate": "2026 Aug 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42671979/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42671576",
+   "title": "Prevalence and Impact of Pelvic Floor Dysfunction in a Large Cohort of Patients with Endometriosis: The Hidden Link.",
+   "journal": "International urogynecology journal",
+   "pubdate": "2026 Aug 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42671576/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42671245",
+   "title": "Hepatic endometriosis causing hemoperitoneum in a woman with deep endometriosis.",
+   "journal": "International journal of gynaecology and obstetrics: the official organ of the International Federation of Gynaecology and Obstetrics",
+   "pubdate": "2026 Aug 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42671245/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42670749",
+   "title": "Long non-coding RNAs in female infertility: Advancing from molecular insights to clinical relevance.",
+   "journal": "Clinical and experimental reproductive medicine",
+   "pubdate": "2026 Aug 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42670749/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42670248",
+   "title": "2-Deoxyglucose Dendrimer-Enabled Niclosamide Delivery to FRβ-Expressing Macrophages Alleviates Endometriosis Progression and Associated Hyperalgesia.",
+   "journal": "Advanced healthcare materials",
+   "pubdate": "2026 Aug 30",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42670248/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42660839",
+   "title": "Research Progress of Autophagy and Ferroptosis in Endometriosis.",
+   "journal": "Zhongguo yi xue ke xue yuan xue bao. Acta Academiae Medicinae Sinicae",
+   "pubdate": "2026 Aug 30",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42660839/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42667950",
+   "title": "Regarding\"Synergistic Effects of Endometriosis and Preeclampsia on Adverse Pregnancy Outcomes: A Population Database Cohort Study. Journal of Minimally Invasive Gynecology\".",
+   "journal": "Journal of minimally invasive gynecology",
+   "pubdate": "2026 Aug 29",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42667950/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42667387",
+   "title": "Feasibility, safety, and short-term efficacy of ultrasound-guided radiofrequency ablation for abdominal wall endometriosis: preliminary results from a single center.",
+   "journal": "Abdominal radiology (New York)",
+   "pubdate": "2026 Aug 29",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42667387/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42663586",
+   "title": "Revisiting the role of danazol in the contemporary management of endometriosis-related pain: a systematic review.",
+   "journal": "Expert opinion on pharmacotherapy",
+   "pubdate": "2026 Aug 29",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42663586/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42675751",
+   "title": "Risk factors for a marked decline in anti-Müllerian hormone after minimally invasive ovarian cystectomy: A retrospective cohort study.",
+   "journal": "Medicine",
+   "pubdate": "2026 Aug 28",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42675751/",
+   "source": "PubMed",
+   "abstract": "1. Medicine (Baltimore). 2026 Aug 28;105(35):e50473. doi: \n10.1097/MD.0000000000050473.\n\nRisk factors for a marked decline in anti-Müllerian hormone after minimally \ninvasive ovarian cystectomy: A retrospective cohort study.\n\nJang EB(1), Kook YS(1), Lee AJ(2), Shim SH(1), Lee SJ(1), Kim TJ(1), So KA(3).\n\nAuthor information:\n(1)Department of Obstetrics and Gynecology, Konkuk University School of \nMedicine, Seoul, Korea.\n(2)Department of Obstetrics and Gynecology, CHA Ilsan Medical Center, CHA \nUniversity School of Medicine, Goyang, Republic of Korea.\n(3)Department of Obstetrics and Gynecology, Korea University Guro Hospital, \nKorea University College of Medicine, Seoul, Korea.\n\nThis study aimed to investigate the factors affecting the decline of serum \nanti-Müllerian hormone (AMH) in reproductive-aged women following minimally \ninvasive ovarian cystectomy. A retrospective cohort study was conducted using \nthe medical records of reproductive-aged women who underwent minimally invasive \novarian cystectomy for benign ovarian cysts between January 2018 and December \n2022. Data on clinical characteristics, preoperative and postoperative serum AMH \nlevels, operative details, and histopathological results were analyzed. During \nthe study period, 195 patients were included. The mean age of the patients was \n32.4 years. All patients underwent minimally invasive surgery, including robotic \nand laparoscopic ovarian cystectomy. A marked decline of more than 50% in \npostoperative AMH levels was observed in 28.2% of patients. Univariable logistic \nregression analysis identified advanced age (≥30 years), endometriosis, \nbilateral ovarian cysts, adhesiolysis, and prolonged surgical intervention (≥2 \nhours) as factors associated with a significant postoperative decline in AMH \nlevel. Multivariable analysis identified that endometriosis (odds ratio [OR], \n3.2; 95% confidence interval [CI]: 1.3-7.9; P = .010) and bilateral ovarian \ncysts (OR, 2.4; 95% CI: 1.2-5.0; P = .020) were independent predictors of a \nmarked decline in postoperative AMH levels. Advanced age, endometriosis, \nbilateral ovarian cysts, prolonged surgical intervention, and adhesiolysis were \nassociated with a significant decline in AMH levels following minimally invasive \novarian cystectomy. Among these, endometriosis and bilateral ovarian cysts were \nindependent risk factors for a marked decline of AMH (≥50%).\n\nCopyright © 2026 the Author(s). Published by Wolters Kluwer Health, LLC.\n\nDOI: 10.1097/MD.0000000000050473\nPMID: 42675751 [Indexed for MEDLINE]\n\nConflict of interest statement: The authors have no funding and conflicts of \ninterest to declare."
+  },
+  {
+   "pmid": "42663623",
+   "title": "Selected gynecologic MRI mimics and pitfalls: practical problem-solving pearls.",
+   "journal": "Abdominal radiology (New York)",
+   "pubdate": "2026 Aug 28",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42663623/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42659672",
+   "title": "How can we value what is not measured: the need for better data on women's health and primary care.",
+   "journal": "The New Zealand medical journal",
+   "pubdate": "2026 Aug 28",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42659672/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42660944",
+   "title": "From polygenic risk to functional genomics: a framework for precision gynecological disease modeling.",
+   "journal": "Nature communications",
+   "pubdate": "2026 Aug 27",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42660944/",
+   "source": "PubMed"
+  },
+  {
+   "pmid": "42658261",
+   "title": "L-ICON3 Suppresses Endometriosis in a Murine Model.",
+   "journal": "Journal of molecular medicine (Berlin, Germany)",
+   "pubdate": "2026 Aug 27",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42658261/",
+   "source": "PubMed"
+  }
+ ]
+}
