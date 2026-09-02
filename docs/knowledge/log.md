@@ -34,3 +34,13 @@
 - FASEB J 2025 (PMID 40600649): MRGPRX2⁺ mast cells ↑ in lesions; HBD-2→MRGPRX2→histamine→HRH1/TRPV1 DRG sensitization drives pain (year corrected from 2026)
 - Mast-cell/pain background: Anaf 2006 (PMID 17007852), IJBS 2025 (PMID 41079937), AJRI 2025 (PMID 40028674), Front Physiol 2019 (PMID 31998139)
 - M3 cetrorelix pair resolved: measured µM *agonism* vs MRGPRX2 (Lansu, Nat Chem Biol 2017, PMID 28288109) → target-validating for antagonist development, not repurposing; cetrorelix 3 mg/weekly regimen rests on 2002 studies (PMID 12537785, 12470539); NCT00244452 no results
+
+## [2026-09-02] create | diversity-gap (concept) — wiki ingest part 2
+- 5 PMIDs (2017-2025): Bougie 2019 AJOG (race bias in historical literature); Meyer 2025 BJOG (FDA trial representation); Rice 2025 BMC (Black women QOL); Flores 2024 Pain (Latin America/Spain); Yamamoto 2017 (Asian women IVF cohort)
+- Key finding: no established biological basis for racial prevalence difference; disparities explained by access, not biology
+- OpenEndo implications: diversity signals in data pipeline + multilingual translation agenda
+
+## [2026-09-02] create | danish-registries (concept) — wiki ingest part 2
+- 7 PMIDs (2017-2026): Thomsen 2025 PPV validation; Illum 2022 temporal/regional incidence; Melgaard 2023 + 2025 pre-diagnosis utilisation; Josiasen 2026 mental health; Breintoft 2022 preterm birth; Glavind 2017 pregnancy complications
+- CPR-linkage + DNPR/Rx/MBR/psychiatric register overview; code validity caveats; underutilisation for endo highlighted
+- OpenEndo agenda: registry+EHR analytics workstream entry point

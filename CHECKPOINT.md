@@ -52,7 +52,7 @@
 
 ### 🟡 Medium priority
 
-- [ ] **Wiki ingest of M2 digest (part 2)** — ferroptosis + computational-drug-repurposing pages live (part 1, 2026-09-02); still open: diversity-gap page, Danish-registries/registry-analytics page. *Jaeger*
+- [x] **Wiki ingest of M2 digest (part 2)** — ✅ DONE 2026-09-02: `concepts/diversity-gap.md` (5 PMIDs, 2017-2025 — racial/ethnic access bias in endo research + FDA trials) + `concepts/danish-registries.md` (7 PMIDs, 2017-2026 — DNPR/Rx/MBR/psychiatric registers, CPR-linkage, diagnostic delay, obstetric + mental health outcomes); index/log/llms.txt/wiki.html updated (13 pages total). *Percival*
 - [x] **MY-ENDO trial (NCT06211231) page** — live; patient-relevant page with inclusion/exclusion summary from CT.gov. *Jaeger*
 - [ ] **T7 ELN interviews** — interview guide (DK) exists; identify 2–3 Danish labs to interview; publish anonymized write-up. DoD: ≥2 anonymized interviews merged under `docs/research/` + findings folded into lab-software-modernization.md; CI green. *Percival*
 - [x] **RO-Crate CI wiring** — `scripts/gen_ro_crate.py` regenerates `ro-crate-metadata.jsonld` from actual files (11 datasets incl. access/targets/repurposing — was missing); called by `update_data.py` on every weekly refresh AND diff-verified in CI (security-scan step fails if a PR touches docs/data without regenerating). Idempotent. *Jaeger — PR #17*
@@ -78,6 +78,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-02 (nat)** — Wiki ingest part 2 (Percival): `concepts/diversity-gap.md` (5 PMIDs, 2019-2025 — racial/ethnic access bias in endo research + FDA trials; no biological basis for racial prevalence diff) + `concepts/danish-registries.md` (7 PMIDs, 2017-2026 — DNPR/Rx/MBR/psychiatric registers, CPR-linkage, PPV validation, diagnostic delay, obstetric + mental health burden; registry analytics workstream entry point). index.md (13 pages), log.md, llms.txt, wiki.html updated. CI push pending.
 
 - **2026-09-02 (sen aften)** — Percival gateway STOPPED (2. gang, user directive): profilens TG-bot-token bruges af brugers egen anden Hermes-agent → lokal `gateway-percival` s6 down, state=stopped, `percival-gateway-watch` + `percival-activate-once` pauset (var sat til 22:40-genstart). Nat-jobs (repo-drevne) upåvirket. *Jaeger*
 - **2026-09-02 (evening)** — RO-Crate CI wiring (Jaeger): `scripts/gen_ro_crate.py` (idempotent) regenerates `docs/data/ro-crate-metadata.jsonld` from the actual files — 11 datasets now listed (access/targets/repurposing were missing from the hand-maintained manifest). Wired into `scripts/update_data.py` (every weekly refresh) + CI diff-check in security-scan.yml (PRs touching docs/data must keep the manifest fresh). README data contract updated. PR #17.

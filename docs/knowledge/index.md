@@ -1,7 +1,7 @@
 # Knowledge Index
 
 > Content catalog of the OpenEndo knowledge base. Read this first.
-> Last updated: 2026-09-02 | Total pages: 11
+> Last updated: 2026-09-02 | Total pages: 13
 
 ## Entities
 
@@ -18,6 +18,8 @@
 - [[ferroptosis]] — iron-dependent cell-death axis; SEMA3C paper + GPX4/SLC7A11 targets + sulfasalazine
 - [[computational-drug-repurposing]] — transcriptomics POC (simvastatin/primaquine) + ChEMBL screen (M3, 9 pairs)
 - [[mrgprx2-pain]] — mast-cell MRGPRX2/histamine/TRPV1 pain axis; cetrorelix hit = target-validating, not repurposing
+- [[diversity-gap]] — under-representation of racial/ethnic minority and low-income populations in endometriosis research + trials; structural access bias (5 PMIDs, 2019-2025)
+- [[danish-registries]] — DNPR/Rx/MBR/psychiatric registers; CPR-linkage; diagnostic delay, obstetric outcomes, mental health burden; underutilised for endo (7 PMIDs, 2017-2026)
 
 ## Comparisons
 

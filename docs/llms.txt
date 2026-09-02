@@ -48,6 +48,8 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [Concepts — ferroptosis](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/ferroptosis.md): iron-dependent cell death — SEMA3C paper, GPX4/SLC7A11 targets, sulfasalazine convergence
 - [Concepts — computational-drug-repurposing](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/computational-drug-repurposing.md): simvastatin/primaquine POC + M3 ChEMBL screen (9 pairs)
 - [Concepts — mrgprx2-pain](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/mrgprx2-pain.md): mast-cell MRGPRX2/histamine/TRPV1 pain axis — cetrorelix hit is target-validating, not repurposing
+- [Concepts — diversity-gap](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/diversity-gap.md): under-representation of racial/ethnic minorities in endo research + trials; access bias, not biology (5 PMIDs, 2017-2025)
+- [Concepts — danish-registries](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/danish-registries.md): DNPR/Rx/MBR/psychiatric registers; CPR-linkage; diagnostic delay, obstetric outcomes, mental health burden; registry analytics entry point (7 PMIDs, 2017-2026)
 - [Comparisons — ryeqo vs yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/comparisons/ryeqo-vs-yselty.md)
 
 ## Research (Percival's workstream, merged)
