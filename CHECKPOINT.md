@@ -65,12 +65,13 @@
 
 - **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
 - **AlphaFold compute budget** — no decision yet; folding 35 proteins costs real money on RunPod.
-- **Percival profile state** — was stopped 2026-08-31 per user request; PRs still land from his workstream. Confirm whether he should keep producing research (his branches are merged, so yes — but checkpoint ownership needs the user's blessing for ongoing work).
+- **Percival profile state** — ✅ RESOLVED 2026-09-02: user confirmed ongoing research work ("Great continue", "Keep working, solve this"). Percival keeps producing research + data + repo maintenance; checkpoint ownership confirmed.
 
 ---
 
 ## ✅ Recently done (change log)
 
+- **2026-09-02** — Deployment reality documented (Percival): live site openendo.org is Jaeger's **Lovable app** (Next.js); GitHub Pages is CNAME-redirected and serves nothing; repo content is only reachable via raw.githubusercontent.com. Fixed README (live-site + what's-inside + agent-discovery), AGENTS.md (rule 5 + quick reference), docs/llms.txt (all links now absolute raw URLs; stale targets path corrected). ⚠️ Open for Jaeger: if the Lovable app should serve data/wiki, wire it to fetch from the repo raw URLs — currently openendo.org/data/* 404s.
 - **2026-09-02** — Site hardening (Jaeger): Playwright audit (7 pages × 3 viewports: overflow, touch-targets AA/AAA, a11y DOM, console/JS errors, mobile-nav + EN/DA toggle) runs as CI on every push (`.github/workflows/site-audit.yml`, screenshots uploaded). SEO: canonical + OpenGraph + Twitter cards on all 7 pages, JSON-LD (WebSite + Dataset) on index, robots.txt + sitemap.xml, brand OG image `assets/og-card.png` (generator: `scripts/gen_og_card.py`).
 - **2026-09-02** — Wiki growth (Jaeger): Yselty DK status verified from EMA SmPC + Lægemiddelstyrelsen → page to `high` (no general reimbursement for endometriosis; fibroid-only clause). New pages: MY-ENDO trial, ferroptosis, computational-drug-repurposing. ryeqo-vs-yselty corrected (endo dose = 200 mg + ABT). wiki.html hub + llms.txt + index updated (9 pages).
 - **2026-09-02** — Merged PRs #8 (M2 evidence + M3 screen), #9 (RO-Crate contract), #10 (perf fix + target intel §06). All checks green after CI self-scan bug fix.

@@ -10,22 +10,32 @@ This repository is an open, weekly-refreshed data hub: clinical trials, research
 
 ## Live site
 
-👉 **https://openendo.org/** (GitHub Pages, static, bilingual EN/DA) · fallback: https://wckdboy.github.io/openendo/
+👉 **https://openendo.org/** — the public UI, designed & deployed by Jaeger via
+**Lovable** (a Next.js app; it is NOT served from this repository).
+This repo is the **canonical data & knowledge layer**: every dataset, the wiki
+and the research program live in `docs/` and are consumed from GitHub
+(`raw.githubusercontent.com/wckdboy/openendo/main/docs/...`) — see
+[`docs/llms.txt`](docs/llms.txt) for the full agent index.
+The static pages under `docs/` remain in the repo as the open reference
+implementation (GitHub Pages is CNAME-redirected to openendo.org and does not
+serve them).
 
 ## More
 
-- [Style guide](https://openendo.org/styleguide.html) — the design system (visual)
+- [docs/llms.txt](docs/llms.txt) — machine-readable index (agents: start here)
 - [BRAND.md](BRAND.md) — brand tokens & conventions, machine-readable (for AI agents)
-- [How to support](https://openendo.org/support.html) — seven ways to help
-- [AI & compute agenda](https://openendo.org/ai-agenda.html) — what agents/algorithms/compute can do for endometriosis
-- [One-pager (DA)](https://openendo.org/one-pager-dk.html) — for Danish politicians
+- [docs/styleguide.html](docs/styleguide.html) — the design system (visual)
+- [docs/support.html](docs/support.html) — seven ways to help
+- [docs/ai-agenda.html](docs/ai-agenda.html) — what agents/algorithms/compute can do for endometriosis
+- [docs/one-pager-dk.html](docs/one-pager-dk.html) — one-pager for Danish politicians
 - [CONTRIBUTING.md](CONTRIBUTING.md) — PR checklist
 
 ## What's inside
 
 ```
-docs/                         published site (GitHub Pages: main branch → /docs)
-  index.html, style.css, app.js   the dashboard (static, bilingual EN/DA, Chart.js)
+docs/                         canonical open data + knowledge + reference pages
+                              (consumed via raw.githubusercontent.com; the live
+                              UI is the Lovable app at openendo.org)
   data/                           open datasets (JSON, refreshed weekly)
     trials_global_recruiting.json   recruiting trials worldwide        (ClinicalTrials.gov)
     trials_denmark.json             all registered trials in Denmark
@@ -46,7 +56,7 @@ Every week an automated job runs:
 python3 scripts/update_data.py
 ```
 
-It queries the **ClinicalTrials.gov API v2** and **PubMed E-utilities**, writes the JSON files, and pushes a commit only when something changed. The site is static — no server needed.
+It queries the **ClinicalTrials.gov API v2** and **PubMed E-utilities**, writes the JSON files, and pushes a commit only when something changed. The data pipeline needs no server — the JSON contract is consumed by any UI (Lovable app, notebooks, tools).
 
 ## Sources
 
@@ -60,7 +70,7 @@ It queries the **ClinicalTrials.gov API v2** and **PubMed E-utilities**, writes 
 OpenEndo runs a knowledge base for agents **and** humans — interlinked markdown
 with provenance, confidence markers and a review workflow:
 
-- **Agent discovery:** `https://openendo.org/llms.txt` — machine-readable index of the whole site, data and knowledge
+- **Agent discovery:** `docs/llms.txt` — machine-readable index of data, knowledge and research (raw: https://raw.githubusercontent.com/wckdboy/openendo/main/docs/llms.txt)
 - **Conventions:** `docs/knowledge/SCHEMA.md` (agents must read before contributing)
 - **Index:** `docs/knowledge/index.md` · pages in `entities/`, `concepts/`, `comparisons/`, `queries/`
 - **Review workflow:** agents contribute via PRs; the weekly monitor job reviews and merges

@@ -17,14 +17,16 @@ This file is auto-read by AI agent tooling (Codex, Claude Code, Hermes, etc.) wh
 2. **Update as you go** — when you start, finish, or reprioritize a task, update CHECKPOINT.md (status, date, change log) and commit it in the same push as your work.
 3. **Never merge a PR with a failing check** — CI (security-scan: gitleaks + PII) must be green. If a check fails, investigate before merging; do not merge past it.
 4. **Wiki content bar** — knowledge pages need real sources + `confidence` field (see `docs/knowledge/SCHEMA.md`). No hype, no speculation, patients first.
-5. **GitHub Pages cannot serve `.md` files** — agent-facing links to markdown must use `https://raw.githubusercontent.com/wckdboy/openendo/main/...` URLs, not relative site paths.
+5. **GitHub Pages does not serve repo content anymore** — the site at openendo.org is a Lovable app, and Pages is CNAME-redirected. Agent-facing links to markdown AND data JSON must use `https://raw.githubusercontent.com/wckdboy/openendo/main/...` URLs, never `openendo.org/...` paths.
 6. **No PII in this public repo** — never commit names, emails, or credentials (CI scans for this and will block).
 7. **Pull before push** — always rebase on origin/main before pushing; the weekly monitor job also commits here.
 
 ## Quick reference
 
-- Live site: https://openendo.org (GitHub Pages, from `docs/`)
-- Agent index: `docs/llms.txt`
+- Live site: https://openendo.org — **Lovable app** (Next.js, Jaeger's deployment; the repo is NOT the deploy source)
+- Repo `docs/` = canonical open data + knowledge + reference pages. GitHub Pages is CNAME-redirected to openendo.org and does not serve content — **never link to `openendo.org/...` for repo files (404)**.
+- Content URLs for agents: `https://raw.githubusercontent.com/wckdboy/openendo/main/docs/...` — markdown AND JSON (see rule 5)
+- Agent index: `docs/llms.txt` (raw URL above + `/docs/llms.txt`)
 - Knowledge base: `docs/knowledge/` (SCHEMA.md defines the format)
 - Research tracks: `docs/research/` (M1 fold-input, M2 evidence, M3 repurposing, T7 lab software)
 - Data pipeline: `scripts/update_data.py` (weekly, Mon 08:00)

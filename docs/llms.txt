@@ -1,34 +1,40 @@
 # OpenEndo
 
 > Open data hub for endometriosis research — clinical trials, papers, funding & policy, refreshed weekly from ClinicalTrials.gov and PubMed. Open source, MIT, built for patients, researchers and policymakers.
+>
+> **Deployment note:** the public UI (openendo.org) is a Lovable app — repo files are NOT served there. All links below are raw.githubusercontent URLs (the only working public paths for repo content).
+
+RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 
 ## Agents: start here
 - [CHECKPOINT.md](https://raw.githubusercontent.com/wckdboy/openendo/main/CHECKPOINT.md): living task board — current focus, horizon tasks, blockers, change log (READ FIRST)
 - [AGENTS.md](https://raw.githubusercontent.com/wckdboy/openendo/main/AGENTS.md): repo rules for agents
 
-## Site
-- [Dashboard](index.html): live analytics — recruiting trials worldwide/by country, Denmark status, PubMed output, funding watch with deadlines
-- [Knowledge base (human hub)](wiki.html): rendered wiki index — entities, concepts, comparisons, research program
-- [Style guide](styleguide.html): design system, brand, logo, colors, typography, voice & tone
-- [How to support](support.html): seven ways to contribute, effort-tagged
-- [AI & compute agenda](ai-agenda.html): how AI/agents/compute can move endometriosis research
-- [One-pager for decision-makers (EN)](one-pager-en.html): source-backed fact sheet with three asks
-- [One-pager for decision-makers (DA)](one-pager-dk.html): dansk fact-side med tre krav
+## Reference pages (static implementation — rendered by the Lovable app in its own design)
+- [Dashboard](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/index.html): live analytics — recruiting trials worldwide/by country, Denmark status, PubMed output, target intelligence, funding watch
+- [Knowledge base hub (human)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/wiki.html): rendered wiki index
+- [Style guide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/styleguide.html): design system, brand, voice
+- [How to support](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/support.html): seven ways to contribute
+- [AI & compute agenda](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/ai-agenda.html): how AI/agents/compute can move endometriosis research
+- [One-pager for decision-makers (EN)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-en.html)
+- [One-pager for decision-makers (DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-dk.html)
 
 ## Machine-readable data (JSON, weekly)
-- [Recruiting trials worldwide](data/trials_global_recruiting.json)
-- [All registered trials in Denmark](data/trials_denmark.json)
-- [New/updated trials, last 7 days](data/trials_recent.json)
-- [New papers, last 7 days](data/pubmed_recent.json)
-- [Papers per month, 6 months](data/pubmed_monthly.json)
-- [Funding opportunities with deadlines](data/funding.json)
-- [Editorial content (EN/DA)](data/content.json)
-- [Generation metadata](data/meta.json)
+- [Recruiting trials worldwide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_global_recruiting.json)
+- [All registered trials in Denmark](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_denmark.json)
+- [New/updated trials, last 7 days](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_recent.json)
+- [New papers, last 7 days](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/pubmed_recent.json)
+- [Papers per month, 6 months](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/pubmed_monthly.json)
+- [Drug-target landscape (58 targets, ChEMBL-verified)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/targets.json)
+- [Repurposing candidates (9 approved-drug pairs)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json)
+- [Funding opportunities with deadlines](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/funding.json)
+- [Editorial content (EN/DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/content.json)
+- [Generation metadata](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/meta.json)
+- [RO-Crate manifest (FAIR packaging of all datasets)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/ro-crate-metadata.jsonld)
 
 ## Knowledge base
-> Knowledge pages are served as raw markdown from raw.githubusercontent.com (GitHub Pages does not serve .md files). The [human hub](wiki.html) renders the same content with design.
+> Knowledge pages are raw markdown (human hub: wiki.html reference page). SCHEMA first.
 - [SCHEMA](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/SCHEMA.md): conventions for creating/editing knowledge pages (agents must read)
-- [Index](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/index.md): catalog of knowledge pages
 - [Entities — ryeqo](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/ryeqo.md): relugolix combo, EU-approved, generelt tilskud in DK
 - [Entities — yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/yselty.md): linzagolix, EU-approved Dec 2024, no general reimbursement for endometriosis in DK (verified 2026-09-02)
 - [Entities — hmi-115](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/hmi-115.md): first non-hormonal therapy in Phase 3
@@ -41,14 +47,11 @@
 
 ## Research (Percival's workstream, merged)
 - [M1 fold-input pack](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/structures/fold_input/README.md): 35 novel drug targets, AlphaFold-ready
-- [Target audit data](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/targets/targets.json): 58 targets, ChEMBL-verified, 35 novel
-- [T7 lab software modernization track](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/lab-software-modernization.md): Danish lab software roadmap
-- [M2 living evidence — latest digest](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md): weekly evidence synthesis (PubMed + Europe PMC)
+- [M2 living evidence — digest](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md): weekly evidence synthesis (PubMed + Europe PMC)
 - [M2 evidence weekly data](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/weekly/2026-09-02.json): machine-readable evidence snapshot
-- [M3 repurposing screen](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md): 9 drug-repurposing candidates (see digest)
+- [M3 repurposing screen digest](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md): 9 drug-repurposing candidates (see digest)
+- [T7 lab software modernization track](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/lab-software-modernization.md): Danish lab software roadmap
 - [Integration contract — RO-Crate](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/tools-and-integration.md): how the hub plugs into ELN/LIMS/repositories
-- [RO-Crate manifest (machine-readable)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/ro-crate-metadata.jsonld): FAIR packaging of all datasets
-- [Target intelligence (site section 06)](index.html): doughnut + KPIs — 35 novel / 8 approved / 58 audited
 
 ## Contributing
 - [CONTRIBUTING](https://raw.githubusercontent.com/wckdboy/openendo/main/CONTRIBUTING.md): PR checklist, quality bar, review workflow
