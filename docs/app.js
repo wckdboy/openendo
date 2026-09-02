@@ -24,6 +24,13 @@ const I18N = {
     days_left: "d left", days_overdue: "d overdue",
     sec_action_title: "Take action", sec_action_sub: "Concrete things you can do today — in Denmark and worldwide.",
     sec_resources_title: "Resources", sec_resources_sub: "Trusted places to go for help, diagnostics and knowledge.",
+    sec_targets_title: "Target intelligence", sec_targets_sub: "Where drug discovery could happen next — novel druggable targets for endometriosis, verified against ChEMBL.",
+    nav_targets: "Targets",
+    kpi_targets_novel: "novel targets (no drug yet)", kpi_targets_approved: "with an approved drug", kpi_targets_total: "targets audited",
+    chart_targets_title: "Target maturity", tbl_targets_title: "Novel drug targets — the discovery space",
+    target_bucket_novel: "Novel (no drug)", target_bucket_dev: "In development", target_bucket_approved: "Approved",
+    target_note: "No drug mechanisms in ChEMBL — the highest-value discovery candidates. Data: target_audit.py → targets.json.",
+    th_gene: "Gene", th_name: "Protein", th_drugs: "Known drugs",
     footer_methodology_title: "Methodology & sources",
     footer_built: "Open source. MIT licensed — the data is a public good. Independent and unaffiliated, built for patients, researchers and policymakers.",
     footer_refreshed: "Data refreshed",
@@ -59,6 +66,13 @@ const I18N = {
     days_left: "d tilbage", days_overdue: "d overskredet",
     sec_action_title: "Gør noget", sec_action_sub: "Konkrete ting du kan gøre i dag — i Danmark og på verdensplan.",
     sec_resources_title: "Ressourcer", sec_resources_sub: "Pålidelige steder at søge hjælp, diagnostik og viden.",
+    sec_targets_title: "Target-intelligens", sec_targets_sub: "Hvor lægemiddelforskning kan ske næste gang — nye druggable targets for endometriose, verificeret mod ChEMBL.",
+    nav_targets: "Targets",
+    kpi_targets_novel: "nye targets (endnu intet lægemiddel)", kpi_targets_approved: "med godkendt lægemiddel", kpi_targets_total: "auditerede targets",
+    chart_targets_title: "Target-modenhed", tbl_targets_title: "Nye drug targets — opdagelsesrummet",
+    target_bucket_novel: "Nyt (intet lægemiddel)", target_bucket_dev: "Under udvikling", target_bucket_approved: "Godkendt",
+    target_note: "Ingen lægemiddelmekanismer i ChEMBL — de mest værdifulde opdagelseskandidater. Data: target_audit.py → targets.json.",
+    th_gene: "Gen", th_name: "Protein", th_drugs: "Kendte lægemidler",
     footer_methodology_title: "Metode & kilder",
     footer_built: "Open source. MIT-licenseret — data er et fælles gode. Uafhængigt og uden tilknytning, bygget til patienter, forskere og beslutningstagere.",
     footer_refreshed: "Data opdateret",
@@ -80,7 +94,9 @@ let charts = [];
 function t(key) { return (I18N[LANG] && I18N[LANG][key]) || key; }
 
 async function getJSON(path) {
-  const r = await fetch(path, { cache: "no-store" });
+  // default cache: GitHub Pages serves ETags, so repeat visits get 304s
+  // instead of re-downloading every dataset (was no-store).
+  const r = await fetch(path, { cache: "default" });
   if (!r.ok) throw new Error(path + " -> " + r.status);
   return r.json();
 }
@@ -265,12 +281,48 @@ function renderFreshness(meta) {
     `<a href="https://github.com/wckdboy/openendo" target="_blank" rel="noopener" style="color:var(--link)">github.com/wckdboy/openendo ↗</a>`;
 }
 
+/* ---------- target intelligence ---------- */
+
+function renderTargets(td) {
+  const list = (td && td.targets) || [];
+  const novel = list.filter(x => x.novel);
+  const approved = list.filter(x => x.max_phase >= 4);
+  const dev = list.filter(x => !x.novel && x.max_phase < 4);
+
+  if (!list.length) {
+    document.getElementById("kpis-targets").innerHTML =
+      `<div class="kpi"><div class="n">–</div><div class="l">${t("kpi_targets_total")}</div></div>`;
+    document.getElementById("targets-note").textContent = t("target_note");
+    return;
+  }
+
+  document.getElementById("kpis-targets").innerHTML = `
+    <div class="kpi"><div class="n gold">${novel.length}</div><div class="l">${t("kpi_targets_novel")}</div></div>
+    <div class="kpi"><div class="n">${approved.length}</div><div class="l">${t("kpi_targets_approved")}</div></div>
+    <div class="kpi"><div class="n">${list.length}</div><div class="l">${t("kpi_targets_total")}</div></div>`;
+
+  document.getElementById("targets-note").textContent = t("target_note");
+  document.getElementById("tbl-targets").innerHTML = novel.map(x => `
+    <tr><td><b>${esc(x.gene)}</b></td><td>${esc(x.name)}</td><td class="muted">–</td></tr>`).join("") ||
+    `<tr><td colspan="3" class="loading">—</td></tr>`;
+
+  makeChart("chart-targets", {
+    type: "doughnut",
+    data: {
+      labels: [t("target_bucket_novel"), t("target_bucket_dev"), t("target_bucket_approved")],
+      datasets: [{ data: [novel.length, dev.length, approved.length],
+        backgroundColor: ["#34c759", "#ff9f0a", "#0071e3"], borderWidth: 2, borderColor: "#ffffff" }]
+    },
+    options: { plugins: { legend: { position: "right", labels: { color: "#6e6e73", boxWidth: 12, padding: 14 } } } }
+  });
+}
+
 /* ---------- boot ---------- */
 
 async function load() {
   document.getElementById("methodology").textContent = t("loading");
   try {
-    const [meta, glob, dk, recent, papers, monthly, funding, content] = await Promise.all([
+    const [meta, glob, dk, recent, papers, monthly, funding, content, targets] = await Promise.all([
       getJSON("data/meta.json"),
       getJSON("data/trials_global_recruiting.json"),
       getJSON("data/trials_denmark.json"),
@@ -279,6 +331,7 @@ async function load() {
       getJSON("data/pubmed_monthly.json"),
       getJSON("data/funding.json"),
       getJSON("data/content.json"),
+      getJSON("data/targets.json").catch(() => null),
     ]);
 
     renderStats(content);
@@ -291,6 +344,7 @@ async function load() {
     renderActions(content);
     renderResources(content);
     renderCharts(glob.trials, dk.trials, monthly.months);
+    renderTargets(targets);
     renderFreshness(meta);
     document.getElementById("methodology").textContent = langObj(content.methodology);
   } catch (e) {
