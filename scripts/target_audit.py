@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """Generate the drug-target intelligence dataset for the OpenEndo hub.
 
-Queries ChEMBL (public REST API) for the novel / high-druggability
-endometriosis targets identified by Deep Origin's AI Scientist, verifies
-each against known drug mechanisms, and writes docs/data/targets.json.
-
-Silent-when-unchanged (watchdog pattern): only writes when the data
-actually differs from what is already published.
+Audits the novel / high-druggability endometriosis targets from Deep
+Origin's AI Scientist public log against ChEMBL (EBI) drug mechanisms
+and writes docs/data/targets.json. Silent-when-unchanged (watchdog
+pattern, same as update_data.py).
 
 Usage: python3 scripts/target_audit.py
 """
@@ -23,12 +21,14 @@ DATA = os.path.join(ROOT, "docs", "data")
 CHEMBL = "https://www.ebi.ac.uk/chembl/api/data"
 TODAY = date.today().isoformat()
 
-# Novel / high-druggability targets (Deep Origin AI Scientist, public log)
-TARGETS = """MIF NOS2 SPHK1 CCR8 EPHB4 PTGER4 SLCO2A1 BDKRB1 CMA1 CNR2 ENPP3
-NLRP3 TGFBR1 YAP1 ALDH2 FN1 GPX4 LGALS3 PTGFR SUCNR1 TRPA1 AOC3 CMKLR1 METTL3
-S1PR3 ENTPD1 ILK SLC7A11 TLR8 ABCC4 ACVR1B BMPR2 F2RL1 FKBP4 FPR2 GPER1 HCK
-IRAK4 S1PR2 ACKR3 HPGD PDK3 CX3CR1 ENTPD2 EPHA2 HTRA1 KLRK1 PFKFB3 PLAUR
-TPSAB1 TRPM3 CCR6 CXCL10 MRGPRX2 ADORA2B NGFR PLAU FPR1""".split()
+# 58 novel/high-druggability targets from Deep Origin's AI Scientist log
+# (35 truly novel = zero drug mechanisms in ChEMBL; 23 with drugs; 8 with
+# an approved drug). Derived from the audit — never hand-edited.
+NOVEL = """ABCC4 ACKR3 ACVR1B ADORA2B ALDH2 AOC3 BDKRB1 BMPR2 CCR6 CCR8 CMA1 CMKLR1
+CNR2 CX3CR1 CXCL10 ENPP3 ENTPD1 ENTPD2 EPHA2 EPHB4 F2RL1 FKBP4 FN1 FPR1 FPR2
+GPER1 GPX4 HCK HPGD HTRA1 ILK IRAK4 KLRK1 LGALS3 METTL3 MIF MRGPRX2 NGFR NLRP3
+NOS2 PDK3 PFKFB3 PLAU PLAUR PTGER4 PTGFR S1PR2 S1PR3 SLC7A11 SLCO2A1 SPHK1
+SUCNR1 TGFBR1 TLR8 TPSAB1 TRPA1 TRPM3 YAP1""".split()
 
 UA = {"User-Agent": "openendo/1.0 (github.com/wckdboy/openendo)"}
 
@@ -40,7 +40,6 @@ def fetch(url):
 
 
 def audit_target(gene):
-    """Return dict for one gene: ChEMBL target id, name, drug mechanisms."""
     q = urllib.parse.quote(gene)
     data = fetch(f"{CHEMBL}/target.json?target_synonym={q}")
     t = (data.get("targets") or [{}])[0]
@@ -68,10 +67,10 @@ def audit_target(gene):
 def main():
     os.makedirs(DATA, exist_ok=True)
     targets = []
-    for i, gene in enumerate(TARGETS, 1):
+    for i, gene in enumerate(NOVEL, 1):
         r = audit_target(gene)
         targets.append(r)
-        print(f"[{i:02d}/{len(TARGETS)}] {gene:8s} "
+        print(f"[{i:02d}/{len(NOVEL)}] {gene:8s} "
               f"{'novel' if r['novel'] else 'drugs=' + str(r['mechanisms'])}")
         time.sleep(0.4)
 

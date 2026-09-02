@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -25,6 +25,7 @@
     <nav class="nav-links">
       <a href="#why" data-i18n="nav_why">Why</a>
       <a href="#dashboard" data-i18n="nav_dashboard">Dashboard</a>
+      <a href="#targets" data-i18n="nav_targets">Targets</a>
       <a href="#funding" data-i18n="nav_funding">Funding</a>
       <a href="#action" data-i18n="nav_action">Take action</a>
       <a href="#resources" data-i18n="nav_resources">Resources</a>
@@ -88,21 +89,21 @@
         <div class="panel">
           <h3 data-i18n="tbl_global_title">Recruiting trials — worldwide</h3>
           <div class="table-wrap"><table><thead><tr>
-            <th data-i18n="th_title">Trial</th><th data-i18n="th_phase">Phase</th>
-            <th data-i18n="th_sponsor">Sponsor</th><th data-i18n="th_countries">Countries</th>
+            <th scope="col" data-i18n="th_title">Trial</th><th scope="col" data-i18n="th_phase">Phase</th>
+            <th scope="col" data-i18n="th_sponsor">Sponsor</th><th scope="col" data-i18n="th_countries">Countries</th>
           </tr></thead><tbody id="tbl-global"></tbody></table></div>
         </div>
         <div class="panel">
           <h3 data-i18n="tbl_denmark_title">All registered trials — Denmark</h3>
           <div class="table-wrap"><table><thead><tr>
-            <th data-i18n="th_title">Trial</th><th data-i18n="th_status">Status</th>
-            <th data-i18n="th_sponsor">Sponsor</th>
+            <th scope="col" data-i18n="th_title">Trial</th><th scope="col" data-i18n="th_status">Status</th>
+            <th scope="col" data-i18n="th_sponsor">Sponsor</th>
           </tr></thead><tbody id="tbl-denmark"></tbody></table></div>
         </div>
         <div class="panel">
           <h3 data-i18n="tbl_papers_title">New research — last 7 days</h3>
           <div class="table-wrap"><table><thead><tr>
-            <th data-i18n="th_date">Date</th><th data-i18n="th_title">Paper</th><th data-i18n="th_journal">Journal</th>
+            <th scope="col" data-i18n="th_date">Date</th><th scope="col" data-i18n="th_title">Paper</th><th scope="col" data-i18n="th_journal">Journal</th>
           </tr></thead><tbody id="tbl-papers"></tbody></table></div>
         </div>
       </div>
@@ -141,6 +142,27 @@
       <div class="grid cards-3" id="resources-grid"><!-- rendered from content.json --></div>
     </div>
   </section>
+
+  <section id="targets" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow"><span class="num">06</span><span data-i18n="nav_targets">Targets</span></p>
+        <h2 data-i18n="sec_targets_title">Target intelligence</h2>
+        <p class="sub" data-i18n="sec_targets_sub">Where drug discovery could happen next — novel druggable targets for endometriosis, verified against ChEMBL.</p>
+      </div>
+      <div class="kpis" id="kpis-targets"><!-- target KPIs --></div>
+      <div class="charts">
+        <div class="chart-card"><h3 data-i18n="chart_targets_title">Target maturity</h3><canvas id="chart-targets"></canvas></div>
+        <div class="chart-card wide">
+          <h3 data-i18n="tbl_targets_title">Novel drug targets — the discovery space</h3>
+          <p class="sub" id="targets-note"></p>
+          <div class="table-wrap"><table><thead><tr>
+            <th scope="col" data-i18n="th_gene">Gene</th><th scope="col" data-i18n="th_name">Protein</th><th scope="col" data-i18n="th_drugs">Known drugs</th>
+          </tr></thead><tbody id="tbl-targets"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -173,6 +195,6 @@
 }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-<script src="app.js?v=4"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
