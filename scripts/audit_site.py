@@ -132,7 +132,7 @@ def main() -> int:
                 # 4. touch targets: buttons ≥ 44px (AAA 2.5.5), links ≥ 24px (AA 2.5.8)
                 if w <= 960:  # touch-sized viewports
                     small = page.evaluate(
-                        """(sels44, sels24) => {
+                        """(a) => {
                           const out = [];
                           const check = (els, min, kind) => {
                             for (const el of els) {
@@ -144,12 +144,11 @@ def main() -> int:
                               }
                             }
                           };
-                          check(document.querySelectorAll(sels44.join(',')), 44, 'btn');
-                          check(document.querySelectorAll(sels24.join(',')), 24, 'link');
+                          check(document.querySelectorAll(a.sels44.join(',')), 44, 'btn');
+                          check(document.querySelectorAll(a.sels24.join(',')), 24, 'link');
                           return out.slice(0, 6);
                         }""",
-                        ["button", ".btn", ".nav-toggle", "#lang-toggle"],
-                        [".nav-links a", "a[class]", ".kb-card h3 a"],
+                        {"sels44": ["button", ".btn", ".nav-toggle", "#lang-toggle"], "sels24": [".nav-links a", "a[class]", ".kb-card h3 a"]},
                     )
                     if small:
                         page_issues.append(f"touch target too small: {small}")
