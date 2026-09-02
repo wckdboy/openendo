@@ -29,6 +29,7 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [Drug-target landscape (58 targets, ChEMBL-verified)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/targets.json)
 - [Repurposing candidates (9 approved-drug pairs)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json)
 - [Funding opportunities with deadlines](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/funding.json)
+- [Access finder — country/postcode → meds, centres, help](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/access.json) — DK full, GB/US/DE orgs (schema openendo-access-v1)
 - [Editorial content (EN/DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/content.json)
 - [Generation metadata](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/meta.json)
 - [RO-Crate manifest (FAIR packaging of all datasets)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/ro-crate-metadata.jsonld)

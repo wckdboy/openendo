@@ -1,0 +1,314 @@
+{
+  "schema": "openendo-access-v1",
+  "updated": "2026-09-02",
+  "maintained_by": "OpenEndo agents (Jaeger + Percival) — curated, sourced, confidence-tagged. Never edit without a source.",
+  "disclaimer": {
+    "en": "OpenEndo access data is curated from public sources with per-entry confidence and verified dates. It is NOT medical advice. Reimbursement, availability and prices change — always verify with the pharmacy, your doctor, or the linked official sources before acting. Entries without a confidence tag are unverified placeholders.",
+    "da": "OpenEndos adgangsdata er kurateret fra offentlige kilder med konfidens- og verifikationsdato pr. opslag. Det er IKKE lægefaglig rådgivning. Tilskud, tilgængelighed og priser ændrer sig — verificér altid hos apoteket, din læge eller de linkede officielle kilder, før du handler."
+  },
+  "countries": {
+    "DK": {
+      "name": { "en": "Denmark", "da": "Danmark" },
+      "coverage": "full",
+      "verified": "2026-09-02",
+      "medications": [
+        {
+          "id": "ryeqo",
+          "name": "Ryeqo (relugolix 40 mg + estradiol + NETA)",
+          "class": "GnRH-antagonist combination (oral)",
+          "approved": true,
+          "approval_note": { "en": "EU central procedure, endometriosis indication Nov 2023", "da": "EU-central procedure, endometriose-indikation nov. 2023" },
+          "access_level": "reimbursed",
+          "access_note": {
+            "en": "General reimbursement (generelt tilskud) — automatic at the pharmacy for the endometriosis indication.",
+            "da": "Generelt tilskud — automatisk på apoteket til endometriose-indikationen."
+          },
+          "prescription_note": { "en": "Specialist prescription (gyn/obs, dispensing group NBS)", "da": "Specialistrecept (gyn/obs, udleveringsgruppe NBS)" },
+          "price_note": { "en": "~849 DKK / 28 tablets (~28–30 DKK/day), Sep 2026", "da": "~849 kr. / 28 tabletter (~28–30 kr./dag), sep. 2026" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://laegemiddelstyrelsen.dk/da/nyheder/2024/ryeqo-bevarer-generelt-tilskud/",
+            "https://medicin.dk/Medicin/Praeparater/9905",
+            "https://www.ema.europa.eu/en/medicines/human/EPAR/ryeqo"
+          ]
+        },
+        {
+          "id": "yselty",
+          "name": "Yselty (linzagolix 100/200 mg)",
+          "class": "GnRH-antagonist (oral)",
+          "approved": true,
+          "approval_note": { "en": "EU central procedure — endometriosis indication Dec 2024 (200 mg + add-back)", "da": "EU-central procedure — endometriose-indikation dec. 2024 (200 mg + add-back)" },
+          "access_level": "out_of_pocket",
+          "access_note": {
+            "en": "Authorised in Denmark, but NO general reimbursement for endometriosis (fibroid-only clause). Out-of-pocket at the pharmacy unless the region grants individual reimbursement (enkelttilskud) on application.",
+            "da": "Godkendt i Danmark, men INTET generelt tilskud til endometriose (kun fibrom-klausul). Betales selv på apoteket, medmindre regionen giver enkelttilskud efter ansøgning."
+          },
+          "prescription_note": { "en": "Specialist prescription (gyn/obs, NBS)", "da": "Specialistrecept (gyn/obs, NBS)" },
+          "price_note": { "en": "Danish list price confidential; UK ~£1,100/year (NICE). Ask pharmacy.", "da": "Dansk listepris fortrolig; UK ~£1.100/år (NICE). Spørg apoteket." },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://www.ema.europa.eu/en/medicines/human/EPAR/yselty",
+            "https://www.nice.org.uk/guidance/ta1067",
+            "https://laegemiddelstyrelsen.dk/da/tilskud/generelle-tilskud/"
+          ]
+        },
+        {
+          "id": "standard-first-line",
+          "name": "First-line hormonal + pain treatment",
+          "class": "Combined oral contraceptive · hormonal IUD / progestin · NSAID + paracetamol",
+          "approved": true,
+          "approval_note": { "en": "Standard care, widely available", "da": "Standardbehandling, bredt tilgængelig" },
+          "access_level": "prescription",
+          "access_note": {
+            "en": "Continuous combined pill, hormonal IUD or progestin, plus NSAID/paracetamol — first-line per Danish guidance (Lægehåndbogen). Reimbursement follows the normal per-product rules; many products carry general reimbursement.",
+            "da": "Kontinuerlig kombinations-p-pille, hormonspiral eller gestagen samt NSAID/paracetamol — førstelinje jf. Lægehåndbogen. Tilskud følger de almindelige regler pr. produkt; mange produkter har generelt tilskud."
+          },
+          "prescription_note": { "en": "GP or gynecologist", "da": "Praktiserende læge eller gynækolog" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://www.sundhed.dk/sundhedsfaglig/laegehaandbogen/gynaekologi/tilstande-og-sygdomme/menstruationsproblemer/endometriose/",
+            "https://www.sundhed.dk/sundhedsfaglig/information-til-praksis/hovedstaden/almen-praksis/patientbehandling/patientforloeb/forloebsbeskrivelser-efter-speciale/gynaekologi-og-obstetrik/skyggeside-endometriose/"
+          ]
+        },
+        {
+          "id": "gnrh-analogues",
+          "name": "GnRH analogues (injection/implant)",
+          "class": "GnRH agonist — temporary suppression",
+          "approved": true,
+          "approval_note": { "en": "Standard care for severe cases", "da": "Standardbehandling ved svære tilfælde" },
+          "access_level": "specialist",
+          "access_note": {
+            "en": "Used for severe disease, max ~6 months, with add-back (estrogen/progestin) to reduce side effects. Hospital/specialist setting.",
+            "da": "Anvendes ved svær sygdom, maks. ~6 mdr., med add-back (østrogen/gestagen) mod bivirkninger. Hospitals-/specialistområdet."
+          },
+          "prescription_note": { "en": "Specialist / hospital", "da": "Specialist / hospital" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://www.sundhed.dk/sundhedsfaglig/information-til-praksis/hovedstaden/almen-praksis/patientbehandling/patientforloeb/forloebsbeskrivelser-efter-speciale/gynaekologi-og-obstetrik/skyggeside-endometriose/"
+          ]
+        }
+      ],
+      "centers": [
+        {
+          "id": "rigshospitalet",
+          "name": { "en": "Rigshospitalet — Endometriosis team (Copenhagen)", "da": "Rigshospitalet — Endometriose-teamet (København)" },
+          "type": "specialized_center",
+          "area": { "en": "Eastern Denmark (landsdelsfunktion)", "da": "Østdanmark (landsdelsfunktion)" },
+          "note": {
+            "en": "One of two Danish highly specialised centres for severe/advanced endometriosis — multidisciplinary team, laparoscopic + robot-assisted surgery, incl. deep infiltrating endometriosis (bowel/bladder). Referral from GP or gynecologist.",
+            "da": "Et af Danmarks to højt specialiserede centre for svær/fremskreden endometriose — tværfagligt team, kikkert- og robotkirurgi, inkl. dyb infiltrerende endometriose (tarm/blære). Henvisning fra egen læge eller gynækolog."
+          },
+          "url": "https://www.rigshospitalet.dk",
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://www.sundhed.dk/sundhedsfaglig/information-til-praksis/hovedstaden/almen-praksis/patientbehandling/patientforloeb/forloebsbeskrivelser-efter-speciale/gynaekologi-og-obstetrik/skyggeside-endometriose/",
+            "https://www.endo.dk/mere-viden/rettigheder/patient-rettigheder/",
+            "https://nfog.org/about-us/centres-special-skills-interest/"
+          ]
+        },
+        {
+          "id": "auh-skejby",
+          "name": { "en": "Aarhus University Hospital, Skejby — Clinic for Women's Diseases (Endometriosis team)", "da": "Aarhus Universitetshospital, Skejby — Klinik for Kvindesygdomme (Endometriose-teamet)" },
+          "type": "specialized_center",
+          "area": { "en": "Western Denmark (landsdelsfunktion)", "da": "Vestdanmark (landsdelsfunktion)" },
+          "note": {
+            "en": "One of two Danish highly specialised centres for severe/advanced endometriosis — multidisciplinary team (4 specialised nurses, 4 senior doctors), high volume, works with urology/gastro/plastic surgery for complex cases.",
+            "da": "Et af Danmarks to højt specialiserede centre for svær/fremskreden endometriose — tværfagligt team (4 specialesygeplejersker, 4 overlæger), stort patientvolumen, samarbejde med urinvejs-/mave-tarm-/plastikkirurgi ved komplekse tilfælde."
+          },
+          "url": "https://www.auh.dk/afdelinger/kvindesygdomme-og-fodsler/klinik-for-kvindesygdomme/",
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://www.auh.dk/afdelinger/kvindesygdomme-og-fodsler/klinik-for-kvindesygdomme/",
+            "https://nfog.org/about-us/centres-special-skills-interest/",
+            "https://www.endo.dk/mere-viden/rettigheder/patient-rettigheder/"
+          ]
+        },
+        {
+          "id": "general-path",
+          "name": { "en": "GP → gynecologist → hospital department", "da": "Egen læge → gynækolog → gynækologisk afdeling" },
+          "type": "care_path",
+          "area": { "en": "All of Denmark", "da": "Hele Danmark" },
+          "note": {
+            "en": "Mild/moderate endometriosis is managed by your GP or a gynecologist (private practice or hospital out-patient clinic): first-line hormones + pain relief. Persistent pain despite treatment → referral to a gynaecological department. Suspected deep/advanced disease → referral to one of the two specialised centres. Free hospital choice (frit sygehusvalg) applies — your postcode does not restrict access.",
+            "da": "Let/moderat endometriose håndteres af egen læge eller gynækolog (privatpraksis eller hospitalsambulatorium): førstelinje-hormoner + smertelindring. Vedvarende smerter trods behandling → henvisning til gynækologisk afdeling. Mistanke om dyb/fremskreden sygdom → henvisning til et af de to specialiserede centre. Frit sygehusvalg gælder — dit postnummer begrænser ikke adgangen."
+          },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": [
+            "https://www.sundhed.dk/sundhedsfaglig/laegehaandbogen/gynaekologi/tilstande-og-sygdomme/menstruationsproblemer/endometriose/",
+            "https://www.endo.dk/mere-viden/rettigheder/patient-rettigheder/"
+          ]
+        }
+      ],
+      "organizations": [
+        {
+          "id": "endo-faellesskabet",
+          "name": { "en": "Endometriose Fællesskabet (formerly Endometriose Foreningen)", "da": "Endometriose Fællesskabet (tidl. Endometriose Foreningen)" },
+          "services": {
+            "en": "Denmark's patient organisation (member of Danske Patienter). Telephone counselling open to all — members and non-members; legal counselling (rights at work, education, benefits) for members. Founded 1997.",
+            "da": "Danmarks patientforening (medlem af Danske Patienter). Telefonrådgivning åben for alle — medlemmer såvel som ikke-medlemmer; juridisk rådgivning (rettigheder ift. arbejde, uddannelse, sociale ydelser) for medlemmer. Stiftet 1997."
+          },
+          "url": "https://www.endo.dk",
+          "contact": { "en": "Counselling via endo.dk/radgivning", "da": "Rådgivning via endo.dk/radgivning" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": ["https://www.endo.dk/", "https://www.endo.dk/radgivning/"]
+        }
+      ],
+      "access_path": {
+        "en": [
+          "Start with your GP: describe symptoms; first-line options are hormonal treatment and pain relief.",
+          "Mild/moderate disease → GP or gynecologist (private practice or hospital clinic) manages medical treatment.",
+          "Persistent pain despite treatment → your GP/gynecologist refers you to a gynaecological department.",
+          "Suspected deep or advanced endometriosis → referral to one of the two specialised centres (Rigshospitalet, East / AUH Skejby, West). Free hospital choice applies.",
+          "Newer options: Ryeqo (reimbursed, specialist prescription) or Yselty (out-of-pocket / enkelttilskud via region).",
+          "Contact Endometriose Fællesskabet for support and rights guidance at any point."
+        ],
+        "da": [
+          "Start hos egen læge: beskriv symptomerne; førstelinje er hormonel behandling og smertelindring.",
+          "Let/moderat sygdom → egen læge eller gynækolog (privatpraksis eller hospitalsklinik) varetager medicinsk behandling.",
+          "Vedvarende smerter trods behandling → egen læge/gynækolog henviser til gynækologisk afdeling.",
+          "Mistanke om dyb eller fremskreden endometriose → henvisning til et af de to specialiserede centre (Rigshospitalet, øst / AUH Skejby, vest). Frit sygehusvalg gælder.",
+          "Nyere muligheder: Ryeqo (generelt tilskud, specialistrecept) eller Yselty (egenbetaling / enkelttilskud via regionen).",
+          "Kontakt Endometriose Fællesskabet for støtte og rettighedsvejledning — når som helst i forløbet."
+        ]
+      },
+      "postcode": {
+        "supported": true,
+        "format": { "en": "4 digits", "da": "4 cifre" },
+        "region_note": {
+          "en": "Region is shown for orientation only — free hospital choice means your postcode does not restrict access to the specialised centres. Nearest specialised centre is shown by East/West split.",
+          "da": "Region vises kun som orientering — frit sygehusvalg betyder, at dit postnummer ikke begrænser adgangen til de specialiserede centre. Nærmeste specialiserede center vises ud fra øst/vest-opdelingen."
+        },
+        "region_ranges": {
+          "Hovedstaden": [[1000, 2999], [3700, 3799]],
+          "Sjælland": [[3000, 3699], [4000, 4999]],
+          "Syddanmark": [[5000, 5999], [6000, 6999], [7000, 7099]],
+          "Midtjylland": [[7100, 7699], [7800, 7899], [8000, 8999]],
+          "Nordjylland": [[7700, 7799], [7900, 7999], [9000, 9999]]
+        },
+        "confidence": "medium",
+        "note": "Standard 5-region postcode grouping; Greenland (39xx) and Faroe Islands not covered. Verify edge postcodes before relying."
+      }
+    },
+    "GB": {
+      "name": { "en": "United Kingdom", "da": "Storbritannien" },
+      "coverage": "orgs_only",
+      "verified": "2026-09-02",
+      "medications": [
+        {
+          "id": "linzagolix-uk",
+          "name": "Yselty (linzagolix)",
+          "class": "GnRH-antagonist (oral)",
+          "approved": true,
+          "access_level": "nhs_option",
+          "access_note": {
+            "en": "NICE guidance TA1067 (2025) recommends linzagolix as an option for moderate-to-severe symptoms of endometriosis in England. Access via NHS specialist services — check local commissioning.",
+            "da": "NICE-guideline TA1067 (2025) anbefaler linzagolix som mulighed ved moderate til svære endometriosesymptomer i England. Adgang via NHS-specialist — tjek lokal finansiering."
+          },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": ["https://www.nice.org.uk/guidance/ta1067", "https://www.ema.europa.eu/en/medicines/human/EPAR/yselty"]
+        }
+      ],
+      "organizations": [
+        {
+          "id": "endometriosis-uk",
+          "name": { "en": "Endometriosis UK", "da": "Endometriosis UK" },
+          "services": {
+            "en": "National charity. Free confidential helpline 0808 808 2227 (trained volunteers), nurse-led support line (NICE-based, bookable call-back), web chat, local support groups, online community.",
+            "da": "National velgørenhed. Gratis fortrolig hotline 0808 808 2227 (trænede frivillige), sygeplejerske-støttelinje (NICE-baseret, bookbart opkald), webchat, lokale støttegrupper, online fællesskab."
+          },
+          "url": "https://www.endometriosis-uk.org",
+          "contact": { "en": "Helpline: 0808 808 2227 · Nurse line via endometriosis-uk.org/nurse-support", "da": "Hotline: 0808 808 2227 · Sygeplejerskelinje via endometriosis-uk.org/nurse-support" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": ["https://www.endometriosis-uk.org/helpline", "https://www.endometriosis-uk.org/get-support"]
+        }
+      ],
+      "access_path": {
+        "en": [
+          "Start with your GP; NICE guidance (NG73) covers diagnosis and management of endometriosis in the NHS.",
+          "Your GP can refer you to a gynaecology service; endometriosis specialist centres exist across the UK (NHS — BSGE-accredited centres).",
+          "Medication access and surgery follow NHS commissioning in your area; some treatments (e.g. linzagilix) follow NICE technology appraisal guidance.",
+          "Endometriosis UK offers support at every stage — helpline, nurse line, local groups."
+        ]
+      },
+      "postcode": { "supported": false }
+    },
+    "US": {
+      "name": { "en": "United States", "da": "USA" },
+      "coverage": "orgs_only",
+      "verified": "2026-09-02",
+      "organizations": [
+        {
+          "id": "endofound",
+          "name": { "en": "Endometriosis Foundation of America (EndoFound)", "da": "Endometriosis Foundation of America (EndoFound)" },
+          "services": {
+            "en": "Non-profit (501c3) focused on disease recognition, advocacy, expert surgical training and research funding. Education, doctor-finder resources, events.",
+            "da": "Non-profit (501c3) med fokus på sygdomsanerkendelse, advocacy, kirurgisk uddannelse og forskningsfinansiering. Uddannelse, læge-finder-ressourcer, events."
+          },
+          "url": "https://www.endofound.org",
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": ["https://www.endofound.org/", "https://www.endofound.org/about-us"]
+        },
+        {
+          "id": "endo-association",
+          "name": { "en": "Endometriosis Association", "da": "Endometriosis Association" },
+          "services": {
+            "en": "Founded 1980, the world's first endometriosis organisation. International self-help network (66 countries), support, education and research. HQ Milwaukee, WI.",
+            "da": "Grundlagt 1980, verdens første endometriose-organisation. International selv hjælps-netværk (66 lande), støtte, uddannelse og forskning. Hovedkvarter Milwaukee, WI."
+          },
+          "url": "https://endometriosisassn.org",
+          "contact": { "en": "Toll free: 1.800.992.3636 · support@endometriosisassn.org", "da": "Gratis: 1.800.992.3636 · support@endometriosisassn.org" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": ["https://endometriosisassn.org/", "https://endometriosisassn.org/about/"]
+        }
+      ],
+      "access_path": {
+        "en": [
+          "Access depends on your insurance plan — start with your primary care provider or OB-GYN.",
+          "Endometriosis specialist surgeons are often found through patient organisations (EndoFound, Endometriosis Association) or professional directories.",
+          "Medication reimbursement varies by insurer and plan; the organisations above keep current education and resources."
+        ]
+      },
+      "postcode": { "supported": false }
+    },
+    "DE": {
+      "name": { "en": "Germany", "da": "Tyskland" },
+      "coverage": "orgs_only",
+      "verified": "2026-09-02",
+      "organizations": [
+        {
+          "id": "endometriose-vereinigung",
+          "name": { "en": "Endometriose-Vereinigung Deutschland e.V.", "da": "Endometriose-Vereinigung Deutschland e.V." },
+          "services": {
+            "en": "Germany's largest and oldest self-help organisation (founded 1996, 4,500+ members). Nationwide free counselling — ~50 weekly appointments, phone or video; social-law counselling for members.",
+            "da": "Tysklands største og ældste selv hjælps-organisation (grundlagt 1996, 4.500+ medlemmer). Landsdækkende gratis rådgivning — ~50 ugentlige samtaler, telefonisk eller video; socialretlig rådgivning for medlemmer."
+          },
+          "url": "https://www.endometriose-vereinigung.de",
+          "contact": { "en": "+49 341 3065304 · info@endometriose-vereinigung.de", "da": "+49 341 3065304 · info@endometriose-vereinigung.de" },
+          "confidence": "high",
+          "verified": "2026-09-02",
+          "sources": ["https://www.endometriose-vereinigung.de/", "https://www.endometriose-vereinigung.de/beratung/"]
+        }
+      ],
+      "access_path": {
+        "en": [
+          "Start with your Hausarzt or Frauenarzt (gynecologist); hormonal treatment and pain relief are first-line.",
+          "Germany has certified endometriosis centres (Endometriose-Zentren) — the Vereinigung keeps information on specialised care.",
+          "The Vereinigung offers free nationwide counselling by phone/video and can point you to local self-help groups."
+        ]
+      },
+      "postcode": { "supported": false }
+    }
+  }
+}

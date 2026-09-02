@@ -42,6 +42,7 @@
 - [ ] **M3 candidate validation** — 9 candidates, depth-check each (mechanism fit in endometriosis biology, ChEMBL/PubMed evidence, safety, novelty vs current care). DoD: ranked shortlist (confidence-tagged) merged to `docs/research/evidence/` + wiki entity pages + llms.txt; CI green. *Percival — this week*
 - [x] **Yselty (linzagolix) DK status — VERIFIED 2026-09-02** — no general reimbursement for endometriosis (fibroid-only clause; out-of-pocket or regional enkelttilskud); yselty.md + comparison page updated to `high`. *Jaeger*
 - [ ] **AlphaFold run decision** — 35 FASTA files ready; decide compute path (RunPod serverless vs MacBook M3 Pro local vs Google Colab) + cost estimate. DoD: decision + cost sheet in `docs/research/structures/fold_input/`, then run or defer. *Jaeger*
+- [ ] **Access-finder segment (website)** — country/postcode input → up-to-date access to meds, centres/doctors, help. Data: `docs/data/access.json` (v1: DK full, GB/US/DE orgs). UI build in Lovable app (fetch model — pilot for top-3 #2). DoD: live segment on openendo.org, data verified + sourced, CI green. *Jaeger — in progress (data v1 done 2026-09-02; UI build next)*
 - [ ] **Lovable ↔ repo content sync** — after top-3 #2 decision: implement (port or fetch), verify on live site. DoD: knowledge/funding from repo visible on openendo.org; PR notes `needs-lovable-sync` workflow. *Jaeger*
 
 ### 🟡 Medium priority
