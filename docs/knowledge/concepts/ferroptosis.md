@@ -22,9 +22,29 @@ Ferroptosis is a regulated, **iron-dependent form of cell death** driven by lipi
 - **Direct overlap with OpenEndo's target audit:** both **GPX4** and **SLC7A11** are among the 35 novel drug targets (no known drug mechanisms in ChEMBL) in the M1 fold-input pack.^[https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/structures/fold_input/README.md]
 - **M3 screen convergence:** the ChEMBL-based repurposing screen flags **sulfasalazine** (an approved xCT/SLC7A11 inhibitor) against SLC7A11 — the same axis the mechanism literature points at. Hypothesis-generating, not clinical.^[https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json]
 
+## Direction of effect — resolved (2026-09-02, MEDIUM confidence)
+
+Detailed verdict: `docs/research/evidence/ferroptosis-direction.md`. In short:
+ferroptosis is **compartment-dependent** — in lesion epithelial/stromal cells
+it is a growth *brake* that lesions actively evade (MGST3, HSD11B1,
+FZD7→SLC7A11 up-regulation), and forcing it back on (erastin, andrographolide,
+xCT blockade) reproducibly shrinks lesions in 2026 models; but ferroptosis
+striking lesional CD8⁺ T cells disables anti-lesion immunity and helps the
+lesion,^[https://pubmed.ncbi.nlm.nih.gov/41146213/] and ferroptosis in eutopic
+endometrium harms decidualization/fertility.^[https://pubmed.ncbi.nlm.nih.gov/41722688/]
+The SEMA3C finding is sub-lethal ferroptotic *signaling* exploited by lesion
+cells, not evidence that lethal ferroptosis drives lesions. For the M3 screen
+this **supports the therapeutic direction of SLC7A11/xCT inhibition in lesion
+cells** (sulfasalazine), while flagging that systemic (non-lesion-targeted)
+induction carries immune-cell and fertility risks — one reason sulfasalazine
+stays WATCHLIST.
+
 ## Caveats
 
-- Early-stage mechanism science: whether ferroptosis *induction* or *inhibition* is desirable likely depends on cell type, lesion stage and context — direction of effect is unresolved.
+- Mechanism science is 2025–2026 and largely preclinical; clinical evidence in
+  endometriosis is absent (no registered xCT-inhibitor trial).
+- Cell type and lesion stage matter: induction vs inhibition is not a
+  one-size answer across compartments.
 - In-vitro potency ≠ clinical efficacy; nothing here is treatment guidance.
 
 ## Related
