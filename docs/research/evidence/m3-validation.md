@@ -20,7 +20,7 @@ cross-reference below.
 | 1 | **Sirolimus → FKBP4** | TOP TIER | MEDIUM-HIGH | mTOR inhibition has independent endo evidence (senescence/infertility), antiproliferative direction, chronic-use safety data |
 | 2 | **Cetrorelix → MRGPRX2** | VALIDATED AXIS | MEDIUM | MRGPRX2 = mast-cell pain mechanism in endo; drug already used in endo — target-validating, not novel repurposing |
 | 3 | Tacrolimus/Cyclosporine → FKBP4 | WATCHLIST | LOW-MEDIUM | rat-model efficacy, but immunosuppressant baggage; FKBP4 hit ≠ clinical pharmacology (FKBP12-mediated) |
-| 4 | **Sulfasalazine → SLC7A11** | WATCHLIST | LOW-MEDIUM | strong target axis, but ferroptosis direction-of-effect unresolved + xCT-dose toxicity |
+| 4 | **Sulfasalazine → SLC7A11** | WATCHLIST | LOW-MEDIUM | target axis real + direction now resolved (lesion-cell induction therapeutic; systemic/immune + xCT-dose caveats) |
 | 5 | Crizotinib/Dabrafenib → ACVR1B | WATCHLIST | LOW | ACVR1B/ALK4→aromatase mechanism is real, but cancer-TKI fertility baggage + off-target heavy |
 | — | Estradiol → GPER1 | ✗ WRONG DIRECTION | — | agonist of a proliferation-driving receptor — target-validating only |
 | — | Dinoprostone → SLCO2A1 | ✗ WRONG DIRECTION | — | it IS PGE2; therapy would need transporter *blockade* |
@@ -31,9 +31,15 @@ cross-reference below.
 
 **Verdict: WATCHLIST — LOW-MEDIUM.** Specific xCT inhibitor → GSH
 depletion → ferroptosis (strong cancer preclinical, PMC7400102;
-Oncogene 2015, 10.1038/onc.2015.60). ⚠️ Direction of effect unresolved:
-SEMA3C/ferroptosis paper (Sep 2026) links ferroptosis to lesion
-progression — must be read in full before ranking higher. Safety split:
+Oncogene 2015, 10.1038/onc.2015.60). ⚠️ Direction of effect —
+**RESOLVED 2026-09-02** (`ferroptosis-direction.md`, MEDIUM confidence):
+ferroptosis induction in lesion cells is therapeutic (lesions evade it via
+MGST3/HSD11B1/FZD7–SLC7A11; forcing it shrinks lesions in 2026 models);
+SEMA3C's ferroptotic signaling is sub-lethal/exploitative, not evidence
+against induction. Remaining blockers are systemic/selectivity: xCT blockade
+also ferroptoses lesional CD8⁺ T cells (pro-lesion, PMID 41146213) and
+eutopic endometrium (fertility) — argues lesion-targeted use, and xCT-active
+doses carry real toxicity. Safety split:
 fine at RA doses; xCT-active doses (4.5–6 g) — 2010 glioma trial
 terminated (ISRCTN45828668, mean 7.2 AEs/patient) vs 2026 phase 1
 (NCT04205357, Redox Biol 10.1016/j.redox.2026.104241) well tolerated at
