@@ -30,7 +30,7 @@
 | T7 | Lab software modernization (DK ELN) | ✅ merged · 📋 interviews next | 2026-09-02 | Percival |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival |
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival |
-| WIKI | Knowledge base (6 pages, wiki.html, llms.txt) | 🟡 growing — needs M2/M3 ingest | 2026-09-02 | Jaeger |
+| WIKI | Knowledge base (9 pages, wiki.html, llms.txt) | 🟢 live — M2 ingest part 1 done; diversity/registry pages next | 2026-09-02 | Jaeger |
 | DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 | 2026-09-02 | Jaeger (cron) |
 
 ---
@@ -40,13 +40,13 @@
 ### 🔴 High priority
 
 - [ ] **M3 candidate validation** — for each of 9 candidates: mechanism fit (endometriosis biology), existing evidence (ChEMBL/PubMed), safety profile, novelty vs current care. Deliverable: ranked shortlist with confidence tags → wiki page. *Percival — this week*
-- [ ] **Yselty (linzagolix) DK availability** — flagged `confidence: medium` in wiki; verify Danish access/reimbursement status (Medicinrådet/Lægemiddelstyrelsen) and update the page. *Jaeger — next monitor run*
+- [x] **Yselty (linzagolix) DK status — VERIFIED 2026-09-02** — no general reimbursement for endometriosis (fibroid-only clause; out-of-pocket or regional enkelttilskud); yselty.md + comparison page updated to `high`. *Jaeger*
 - [ ] **AlphaFold run decision** — 35 FASTA files are ready; decide compute path (RunPod serverless vs MacBook M3 Pro local vs Google Colab) and estimated cost before folding. *Jaeger*
 
 ### 🟡 Medium priority
 
-- [ ] **Wiki ingest of M2 digest** — simvastatin/primaquine POC, SEMA3C→ferroptosis, diversity gap, Ziwig benchmark → knowledge pages (concepts/entities). *Jaeger*
-- [ ] **MY-ENDO trial (NCT06211231) page** — recruiting in DK now; patient-relevant entity page with inclusion/exclusion summary. *Jaeger*
+- [ ] **Wiki ingest of M2 digest (part 2)** — ferroptosis + computational-drug-repurposing pages live (part 1, 2026-09-02); still open: diversity-gap page, Danish-registries/registry-analytics page. *Jaeger*
+- [x] **MY-ENDO trial (NCT06211231) page** — live; patient-relevant page with inclusion/exclusion summary from CT.gov. *Jaeger*
 - [ ] **T7 ELN interviews** — interview guide (DK) exists; identify 2–3 Danish labs to interview; publish anonymized write-up. *Percival*
 - [ ] **RO-Crate CI wiring** — regenerate `ro-crate-metadata.jsonld` automatically in the weekly data refresh, not manually. *Percival or Jaeger*
 - [ ] **Nationalt Center for Forskning i Kvinders Sundhed** — track consortium decision; is endometriosis a priority theme? *Jaeger (monitor)*
@@ -64,7 +64,6 @@
 ## 🚧 Blockers / open questions
 
 - **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
-- **Yselty DK status** — unverified; blocks a `high` confidence rating on the page.
 - **AlphaFold compute budget** — no decision yet; folding 35 proteins costs real money on RunPod.
 - **Percival profile state** — was stopped 2026-08-31 per user request; PRs still land from his workstream. Confirm whether he should keep producing research (his branches are merged, so yes — but checkpoint ownership needs the user's blessing for ongoing work).
 
@@ -72,6 +71,7 @@
 
 ## ✅ Recently done (change log)
 
+- **2026-09-02** — Wiki growth (Jaeger): Yselty DK status verified from EMA SmPC + Lægemiddelstyrelsen → page to `high` (no general reimbursement for endometriosis; fibroid-only clause). New pages: MY-ENDO trial, ferroptosis, computational-drug-repurposing. ryeqo-vs-yselty corrected (endo dose = 200 mg + ABT). wiki.html hub + llms.txt + index updated (9 pages).
 - **2026-09-02** — Merged PRs #8 (M2 evidence + M3 screen), #9 (RO-Crate contract), #10 (perf fix + target intel §06). All checks green after CI self-scan bug fix.
 - **2026-09-02** — Fixed CI: PII-scan was matching its own workflow file (`.github/` now excluded from grep).
 - **2026-09-02** — Wiki published for humans (wiki.html) + agents (raw markdown via raw.githubusercontent.com); discovered GitHub Pages does not serve `.md`.

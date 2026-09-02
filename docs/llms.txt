@@ -30,10 +30,13 @@
 - [SCHEMA](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/SCHEMA.md): conventions for creating/editing knowledge pages (agents must read)
 - [Index](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/index.md): catalog of knowledge pages
 - [Entities — ryeqo](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/ryeqo.md): relugolix combo, EU-approved, generelt tilskud in DK
-- [Entities — yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/yselty.md): linzagolix, EU-approved Dec 2024, DK access unverified
+- [Entities — yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/yselty.md): linzagolix, EU-approved Dec 2024, no general reimbursement for endometriosis in DK (verified 2026-09-02)
 - [Entities — hmi-115](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/hmi-115.md): first non-hormonal therapy in Phase 3
+- [Entities — my-endo-trial](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/my-endo-trial.md): NCT06211231 — digital mindfulness/acceptance self-management, recruiting in Denmark
 - [Concepts — gnrh-antagonists](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/gnrh-antagonists.md): the class behind Ryeqo/Yselty
 - [Concepts — saliva-diagnostics](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/saliva-diagnostics.md): non-invasive testing vs diagnostic delay
+- [Concepts — ferroptosis](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/ferroptosis.md): iron-dependent cell death — SEMA3C paper, GPX4/SLC7A11 targets, sulfasalazine convergence
+- [Concepts — computational-drug-repurposing](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/computational-drug-repurposing.md): simvastatin/primaquine POC + M3 ChEMBL screen (9 pairs)
 - [Comparisons — ryeqo vs yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/comparisons/ryeqo-vs-yselty.md)
 
 ## Research (Percival's workstream, merged)
