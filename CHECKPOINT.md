@@ -73,12 +73,14 @@
 
 - **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
 - **AlphaFold compute budget** — no decision yet; folding 35 proteins costs real money on RunPod.
-- **Percival profile state** — ✅ RESOLVED 2026-09-02: user confirmed ongoing research work ("Great continue", "Keep working, solve this"). Percival keeps producing research + data + repo maintenance; checkpoint ownership confirmed. Re-confirmed 2026-09-02: user will have Percival attack the laid-out problems (top-3 #1 M3 validation first).
+- **Percival profile state** — ✅ RESOLVED 2026-09-02: user confirmed ongoing research work ("Great continue", "Keep working, solve this"). Percival keeps producing research + data + repo maintenance; checkpoint ownership confirmed. Re-confirmed 2026-09-02: user will have Percival attack the laid-out problems (top-3 #1 M3 validation first). **Gateway physically restarted 2026-09-02 ~22:40 UTC** — profile had been stopped since Aug 31 (gateway_state=stopped); s6 slot up + watchdog resumed (10-min cadence).
 - **Lovable app content wiring — ✅ DECIDED 2026-09-02** — human greenlit sync; fetch model (repo canonical). Pilot (what-we-know → `/research`) building in Lovable; funding/knowledge articles remain hard-coded until same pattern applied.
 
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-02 (evening)** — Night shift started (Dearwolf request): **Percival's gateway physically restarted** (was stopped since Aug 31; s6 `gateway-percival` up, state=running, 10-min watchdog resumed via `percival_activate.sh` / `percival_watch_tg.sh`). Overnight shifts Sept 2→3 execute Percival's open DoD + horizon (sequential, CI-gated): ① ferroptosis-direction deep-dive (unblocks sulfasalazine) ② M3 SCHEMA knowledge pages ③ Phase 0.5 lesion-expression GEO ④ T7 Phase A shortlist + outreach draft (DK) ⑤ wiki part 2 (diversity-gap + danish-registries) ⑥ AlphaFold decision memo. Checkpoint watchdog paused overnight (resumes 08:30). *Jaeger*
 
 - **2026-09-02** — **Lovable sync pilot LIVE + verified**: what-we-know explainer → https://openendo.org/research (fetch model, repo canonical; sandboxed srcDoc iframe; fonts/content render verified; console clean). Access-finder also live → /access (same Lovable build run). *Jaeger*
 - **2026-09-02** — Research explainer (Jaeger): `docs/what-we-know.html` — visual, plain-language tour: what we know (sourced), what we're testing (docking/ladder), what we don't know yet (honest gaps), jargon explainers, evidence ladder + repurposing verdicts, structure-coverage graphic. Local OFL fonts under `docs/assets/fonts/`; PDF renderable.
