@@ -20,3 +20,11 @@ jobs:
             echo "::error::Personal identifiers found in the public repo — remove them before merging."
             exit 1
           fi
+      - name: RO-Crate manifest freshness (diff-verified)
+        run: |
+          python3 scripts/gen_ro_crate.py
+          if ! git diff --exit-code --quiet -- docs/data/ro-crate-metadata.jsonld; then
+            echo "::error::ro-crate-metadata.jsonld is out of date — regenerate with: python3 scripts/gen_ro_crate.py"
+            git diff -- docs/data/ro-crate-metadata.jsonld | head -40
+            exit 1
+          fi
