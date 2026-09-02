@@ -71,6 +71,7 @@
 
 ## ✅ Recently done (change log)
 
+- **2026-09-02** — Site hardening (Jaeger): Playwright audit (7 pages × 3 viewports: overflow, touch-targets AA/AAA, a11y DOM, console/JS errors, mobile-nav + EN/DA toggle) runs as CI on every push (`.github/workflows/site-audit.yml`, screenshots uploaded). SEO: canonical + OpenGraph + Twitter cards on all 7 pages, JSON-LD (WebSite + Dataset) on index, robots.txt + sitemap.xml, brand OG image `assets/og-card.png` (generator: `scripts/gen_og_card.py`).
 - **2026-09-02** — Wiki growth (Jaeger): Yselty DK status verified from EMA SmPC + Lægemiddelstyrelsen → page to `high` (no general reimbursement for endometriosis; fibroid-only clause). New pages: MY-ENDO trial, ferroptosis, computational-drug-repurposing. ryeqo-vs-yselty corrected (endo dose = 200 mg + ABT). wiki.html hub + llms.txt + index updated (9 pages).
 - **2026-09-02** — Merged PRs #8 (M2 evidence + M3 screen), #9 (RO-Crate contract), #10 (perf fix + target intel §06). All checks green after CI self-scan bug fix.
 - **2026-09-02** — Fixed CI: PII-scan was matching its own workflow file (`.github/` now excluded from grep).
