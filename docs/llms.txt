@@ -19,8 +19,9 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [One-pager for decision-makers (EN)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-en.html)
 - [One-pager for decision-makers (DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-dk.html)
 
-## Machine-readable data (JSON, weekly)
-- [Recruiting trials worldwide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_global_recruiting.json)
+## Machine-readable data (JSON)
+- [Data layer contract](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/README.md): file → content → source → cadence → owner (agents: read before editing datasets)
+- [Recruiting trials worldwide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_global_recruiting.json) — generated weekly
 - [All registered trials in Denmark](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_denmark.json)
 - [New/updated trials, last 7 days](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_recent.json)
 - [New papers, last 7 days](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/pubmed_recent.json)

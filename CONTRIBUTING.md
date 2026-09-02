@@ -4,9 +4,9 @@ Thank you for helping make an invisible disease impossible to ignore. 💛
 
 ## First, read
 
-- [How to support OpenEndo](https://openendo.org/support.html) — the seven ways to help
+- [How to support OpenEndo](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/support.html) — the seven ways to help
 - [BRAND.md](BRAND.md) — brand tokens, voice and repo conventions (agents: this is your spec)
-- [Style guide](https://openendo.org/styleguide.html) — the visual design system
+- [Style guide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/styleguide.html) — the visual design system
 
 ## Good first issues
 
