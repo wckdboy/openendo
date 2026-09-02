@@ -32,6 +32,7 @@
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival |
 | WIKI | Knowledge base (9 pages, wiki.html, llms.txt) | 🟢 live — M2 ingest part 1 done; diversity/registry pages next | 2026-09-02 | Jaeger |
 | DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 | 2026-09-02 | Jaeger (cron) |
+| VIRT | Virtual testing pipeline (structure/docking/MD) | 🔄 Phase 0 ✅ — Phase 1 next | 2026-09-02 | Jaeger |
 
 ---
 
@@ -41,7 +42,9 @@
 
 - [ ] **M3 candidate validation** — 9 candidates, depth-check each (mechanism fit in endometriosis biology, ChEMBL/PubMed evidence, safety, novelty vs current care). DoD: ranked shortlist (confidence-tagged) merged to `docs/research/evidence/` + wiki entity pages + llms.txt; CI green. *Percival — this week*
 - [x] **Yselty (linzagolix) DK status — VERIFIED 2026-09-02** — no general reimbursement for endometriosis (fibroid-only clause; out-of-pocket or regional enkelttilskud); yselty.md + comparison page updated to `high`. *Jaeger*
-- [ ] **AlphaFold run decision** — 35 FASTA files ready; decide compute path (RunPod serverless vs MacBook M3 Pro local vs Google Colab) + cost estimate. DoD: decision + cost sheet in `docs/research/structures/fold_input/`, then run or defer. *Jaeger*
+- [ ] **Virtual testing Phase 1 — docking (~$10–25)** — ColabFold for 8 AFDB-missing M1 targets (4090) · Vina: sirolimus→FKBP4 + FKBP12-kontrol, cetrorelix→MRGPRX2 (7S8L), sulfasalazin→xCT (7CCS) · ADMET-AI/RDKit-profil af 9 M3-kandidater. DoD: poses+scores+ADMET i `docs/research/virtual/phase1/`, top-poses MD-ready. *Jaeger — plan i docs/research/virtual-testing.md; Phase 0 ✅ 2026-09-02*
+- [ ] **Virtual testing Phase 0.5 — endo-lesion expression (~$0)** — GEO/single-cell: er FKBP4/MRGPRX2/SLC7A11 hævet i endo-læsioner (mastceller)? MRGPRX2 "not detected" i HPA-normalvæv gør dette spørgsmål skarpere. *Jaeger*
+- [ ] **AlphaFold run decision** — 35 FASTA files ready; **27/35 findes allerede i AFDB → kun 8 skal foldes (~$1–3)**. Decide compute path (RunPod serverless vs MacBook M3 Pro local vs Google Colab). DoD: decision + cost sheet in `docs/research/structures/fold_input/`, then run or defer. *Jaeger (decide) / Percival (prepare)*
 - [ ] **Access-finder segment (website)** — country/postcode input → up-to-date access to meds, centres/doctors, help. Data: `docs/data/access.json` (v1: DK full, GB/US/DE orgs). UI build in Lovable app (fetch model — pilot for top-3 #2). DoD: live segment on openendo.org, data verified + sourced, CI green. *Jaeger — in progress (data v1 done 2026-09-02; UI build next)*
 - [ ] **Lovable ↔ repo content sync** — after top-3 #2 decision: implement (port or fetch), verify on live site. DoD: knowledge/funding from repo visible on openendo.org; PR notes `needs-lovable-sync` workflow. *Jaeger*
 
@@ -73,6 +76,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-02** — Virtual testing pipeline started (Jaeger): `docs/research/virtual-testing.md` (validation ladder: AFDB/PDB → docking → MD → ML; infra med live RunPod-priser; faser 0–3). **Phase 0 audit done**: AFDB dækker 27/35 M1-targets (kun 8 skal foldes, ~$1–3); eksperimentelle PDB-strukturer findes for ALLE M3-mål (FKBP4/FKBP12/MRGPRX2 7S8L/xCT 7CCS/ACVR1B); HPA-ekspression (MRGPRX2 "not detected" i bulk = mastcelle-artefakt → Phase 0.5); ChEMBL-registrering bekræftet. Script `scripts/phase0_structure_expression.py`, data `docs/research/virtual/phase0.json` + `phase0.md`.
 
 - **2026-09-02** — Repo hardened for agentic work (Jaeger): AGENTS.md v2 — mission + two-agent protocol (claim-first workflow, branch naming `<agent>/<topic>`, file zones, merge discipline, definition of done). CHECKPOINT top-3 + 🔴/🟡 tasks now carry explicit DoD; new blocker: Lovable content wiring decision. Attribution fix: the Lovable app at openendo.org was built by the **user** in Lovable (not by Jaeger) — Hermes connects via Lovable API (OAuth). Merged PR #11 (deployment reality — repo = canonical data layer).
 - **2026-09-02** — Deployment reality documented (Percival): live site openendo.org is a **Lovable app** (user's; built in Lovable); GitHub Pages is CNAME-redirected and serves nothing; repo content is only reachable via raw.githubusercontent.com. Fixed README (live-site + what's-inside + agent-discovery), AGENTS.md (rule 5 + quick reference), docs/llms.txt (all links now absolute raw URLs; stale targets path corrected). ⚠️ Open for Jaeger: if the Lovable app should serve data/wiki, wire it to fetch from the repo raw URLs — currently openendo.org/data/* 404s.

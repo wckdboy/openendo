@@ -1,0 +1,379 @@
+{
+ "targets": {
+  "ABCC4": "O15439",
+  "ACKR3": "P25106",
+  "ACVR1B": "P36896",
+  "AOC3": "Q16853",
+  "CCR6": "O00421",
+  "CCR8": "P51685",
+  "CMKLR1": "Q99788",
+  "CX3CR1": "P49238",
+  "ENTPD1": "P49961",
+  "ENTPD2": "",
+  "F2RL1": "P55085",
+  "FKBP4": "Q02790",
+  "FPR1": "P21462",
+  "FPR2": "P25090",
+  "GPER1": "Q99527",
+  "GPX4": "P36969",
+  "HPGD": "P15428",
+  "HTRA1": "Q92743",
+  "ILK": "Q13418",
+  "KLRK1": "P26718",
+  "METTL3": "",
+  "MRGPRX2": "",
+  "NGFR": "P08138",
+  "PDK3": "Q15120",
+  "PFKFB3": "Q16875",
+  "PLAUR": "Q03405",
+  "S1PR2": "O95136",
+  "S1PR3": "Q99500",
+  "SLC7A11": "",
+  "SLCO2A1": "Q92959",
+  "SPHK1": "",
+  "SUCNR1": "",
+  "TPSAB1": "Q15661",
+  "TRPM3": "",
+  "YAP1": "P46937"
+ },
+ "checked": "2026-09-02T14:48:56Z",
+ "afdb": {
+  "ABCC4": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-O15439-F1-model_v6.pdb",
+   "uniprot": "O15439",
+   "created": ""
+  },
+  "ACKR3": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P25106-F1-model_v6.pdb",
+   "uniprot": "P25106",
+   "created": ""
+  },
+  "ACVR1B": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P36896-F1-model_v6.pdb",
+   "uniprot": "P36896",
+   "created": ""
+  },
+  "AOC3": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q16853-F1-model_v6.pdb",
+   "uniprot": "Q16853",
+   "created": ""
+  },
+  "CCR6": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-O00421-F1-model_v6.pdb",
+   "uniprot": "O00421",
+   "created": ""
+  },
+  "CCR8": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P51685-F1-model_v6.pdb",
+   "uniprot": "P51685",
+   "created": ""
+  },
+  "CMKLR1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q99788-F1-model_v6.pdb",
+   "uniprot": "Q99788",
+   "created": ""
+  },
+  "CX3CR1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P49238-F1-model_v6.pdb",
+   "uniprot": "P49238",
+   "created": ""
+  },
+  "ENTPD1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P49961-F1-model_v6.pdb",
+   "uniprot": "P49961",
+   "created": ""
+  },
+  "ENTPD2": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "F2RL1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P55085-F1-model_v6.pdb",
+   "uniprot": "P55085",
+   "created": ""
+  },
+  "FKBP4": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q02790-F1-model_v6.pdb",
+   "uniprot": "Q02790",
+   "created": ""
+  },
+  "FPR1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P21462-F1-model_v6.pdb",
+   "uniprot": "P21462",
+   "created": ""
+  },
+  "FPR2": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P25090-F1-model_v6.pdb",
+   "uniprot": "P25090",
+   "created": ""
+  },
+  "GPER1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q99527-F1-model_v6.pdb",
+   "uniprot": "Q99527",
+   "created": ""
+  },
+  "GPX4": {
+   "status": "missing",
+   "uniprot": "P36969"
+  },
+  "HPGD": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P15428-F1-model_v6.pdb",
+   "uniprot": "P15428",
+   "created": ""
+  },
+  "HTRA1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q92743-F1-model_v6.pdb",
+   "uniprot": "Q92743",
+   "created": ""
+  },
+  "ILK": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q13418-F1-model_v6.pdb",
+   "uniprot": "Q13418",
+   "created": ""
+  },
+  "KLRK1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P26718-F1-model_v6.pdb",
+   "uniprot": "P26718",
+   "created": ""
+  },
+  "METTL3": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "MRGPRX2": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "NGFR": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P08138-F1-model_v6.pdb",
+   "uniprot": "P08138",
+   "created": ""
+  },
+  "PDK3": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q15120-F1-model_v6.pdb",
+   "uniprot": "Q15120",
+   "created": ""
+  },
+  "PFKFB3": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q16875-F1-model_v6.pdb",
+   "uniprot": "Q16875",
+   "created": ""
+  },
+  "PLAUR": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q03405-F1-model_v6.pdb",
+   "uniprot": "Q03405",
+   "created": ""
+  },
+  "S1PR2": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-O95136-F1-model_v6.pdb",
+   "uniprot": "O95136",
+   "created": ""
+  },
+  "S1PR3": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q99500-F1-model_v6.pdb",
+   "uniprot": "Q99500",
+   "created": ""
+  },
+  "SLC7A11": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "SLCO2A1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q92959-F1-model_v6.pdb",
+   "uniprot": "Q92959",
+   "created": ""
+  },
+  "SPHK1": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "SUCNR1": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "TPSAB1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-Q15661-F1-model_v6.pdb",
+   "uniprot": "Q15661",
+   "created": ""
+  },
+  "TRPM3": {
+   "status": "missing",
+   "uniprot": ""
+  },
+  "YAP1": {
+   "status": "afdb",
+   "model_url": "https://alphafold.ebi.ac.uk/files/AF-P46937-F1-model_v6.pdb",
+   "uniprot": "P46937",
+   "created": ""
+  }
+ },
+ "pdb": {
+  "FKBP4": {
+   "count": 12,
+   "examples": [
+    "1N1A_1",
+    "1P5Q_1",
+    "1Q1C_1"
+   ]
+  },
+  "MRGPRX2": {
+   "count": 14,
+   "examples": [
+    "7S8L_1",
+    "7S8M_5",
+    "7S8N_4"
+   ]
+  },
+  "SLC7A11": {
+   "count": 4,
+   "examples": [
+    "7CCS_2",
+    "7EPZ_2",
+    "7P9U_2"
+   ]
+  },
+  "ACVR1B": {
+   "count": 2,
+   "examples": [
+    "7MRZ_2",
+    "7OLY_4"
+   ]
+  },
+  "GPER1": {
+   "count": 6,
+   "examples": [
+    "8XOF_5",
+    "8XOG_5",
+    "8XOH_5"
+   ]
+  },
+  "SLCO2A1": {
+   "count": 8,
+   "examples": [
+    "3MRR_3",
+    "8KGI_1",
+    "8KGV_1"
+   ]
+  },
+  "FKBP1A(FKBP12)": {
+   "count": 115,
+   "examples": [
+    "1A7X_1",
+    "1B6C_1",
+    "1BKF_1"
+   ]
+  }
+ },
+ "hpa": {
+  "FKBP4": {
+   "specificity": "Low tissue specificity",
+   "distribution": null
+  },
+  "MRGPRX2": {
+   "specificity": "Not detected",
+   "distribution": null
+  },
+  "SLC7A11": {
+   "specificity": "Tissue enhanced",
+   "distribution": null
+  },
+  "ACVR1B": {
+   "specificity": "Low tissue specificity",
+   "distribution": null
+  },
+  "GPER1": {
+   "specificity": "Tissue enhanced",
+   "distribution": null
+  },
+  "SLCO2A1": {
+   "specificity": "Tissue enhanced",
+   "distribution": null
+  },
+  "FKBP1A(FKBP12)": {
+   "specificity": "Low tissue specificity",
+   "distribution": null
+  }
+ },
+ "chembl": {
+  "FKBP4": {
+   "present": true,
+   "chembl_id": "CHEMBL4050",
+   "n_hits": 1
+  },
+  "FKBP1A": {
+   "present": true,
+   "chembl_id": "CHEMBL1902",
+   "n_hits": 8
+  },
+  "MRGPRX2": {
+   "present": true,
+   "chembl_id": "CHEMBL5849",
+   "n_hits": 2
+  },
+  "SLC7A11": {
+   "present": true,
+   "chembl_id": "CHEMBL1075149",
+   "n_hits": 1
+  },
+  "ACVR1B": {
+   "present": true,
+   "chembl_id": "CHEMBL5310",
+   "n_hits": 1
+  },
+  "sirolimus_rapamycin": [
+   {
+    "name": "SIROLIMUS",
+    "chembl": "CHEMBL413",
+    "mechanisms": []
+   },
+   {
+    "name": null,
+    "chembl": "CHEMBL263752",
+    "mechanisms": []
+   },
+   {
+    "name": null,
+    "chembl": "CHEMBL436696",
+    "mechanisms": []
+   }
+  ],
+  "cetrorelix": [
+   {
+    "name": "CETRORELIX ACETATE",
+    "chembl": "CHEMBL2103735",
+    "mechanisms": []
+   },
+   {
+    "name": "CETRORELIX",
+    "chembl": "CHEMBL1200490",
+    "mechanisms": []
+   }
+  ]
+ }
+}
