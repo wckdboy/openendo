@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-09-01T23:14:16+00:00",
- "updated": "2026-09-01",
+ "generated_at": "2026-09-02T00:09:55+00:00",
+ "updated": "2026-09-02",
  "counts": {
-  "recruiting_global": 50,
-  "denmark": 18,
+  "recruiting_global": 38,
+  "denmark": 15,
   "denmark_recruiting": 2,
-  "recent": 10,
+  "recent": 5,
   "pubmed_7d": 15,
   "pubmed_max_month": 327
  }

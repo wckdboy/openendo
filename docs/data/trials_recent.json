@@ -1,37 +1,6 @@
 {
- "updated": "2026-09-01",
+ "updated": "2026-09-02",
  "trials": [
-  {
-   "nct_id": "NCT06952751",
-   "title": "Optimization of the Isolation Protocol for Extracellular Vesicles (EVs) From Human Follicular Fluid",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "University Hospital, Ghent",
-   "countries": [
-    "Belgium"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06952751"
-  },
-  {
-   "nct_id": "NCT07795606",
-   "title": "An Observational Study to Learn How Mirena and Other Progestogen Treatments Are Used for Endometrial Protection in Women 40+ With a Uterus in the United States Receiving Estrogen Therapy, and Their Respective Health Outcomes",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "N/A",
-   "sponsor": "Bayer",
-   "countries": [
-    "United States"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07795606"
-  },
-  {
-   "nct_id": "NCT07783841",
-   "title": "Evaluating ERr 731 in Chinese Women With Urinary Incontinence: A Prospective Open-Label Study",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "NA",
-   "sponsor": "Wuxi Maternity and Child Health Care Hospital",
-   "countries": [],
-   "url": "https://clinicaltrials.gov/study/NCT07783841"
-  },
   {
    "nct_id": "NCT07793162",
    "title": "A Phase Ia Trial Comparing the Pharmacokinetics/Pharmacodynamics, Safety, and Preliminary Efficacy of HHK001 and Enantone in Patients With Endometriosis",
@@ -75,17 +44,6 @@
    "url": "https://clinicaltrials.gov/study/NCT07202741"
   },
   {
-   "nct_id": "NCT07786688",
-   "title": "Prevalence of Childhood Maltreatment Among Women With Dysmenorrhea.",
-   "status": "ENROLLING_BY_INVITATION",
-   "phase": "NA",
-   "sponsor": "University Hospital, Clermont-Ferrand",
-   "countries": [
-    "France"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07786688"
-  },
-  {
    "nct_id": "NCT07472842",
    "title": "Study on the Outcomes of Patients Treated in Gynecological Emergency Departments for Pelvic Endometriosis or Suspected Pelvic Endometriosis",
    "status": "RECRUITING",
@@ -95,17 +53,6 @@
     "France"
    ],
    "url": "https://clinicaltrials.gov/study/NCT07472842"
-  },
-  {
-   "nct_id": "NCT07774858",
-   "title": "Ureterolysis in Laparoscopic Total Hysterectomy: Routine Approach",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "NA",
-   "sponsor": "ClinAmygate",
-   "countries": [
-    "Egypt"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07774858"
   }
  ]
 }
