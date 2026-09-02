@@ -28,10 +28,10 @@ PAGES = [
     "ai-agenda.html",
     "styleguide.html",
 ]
-VIEWPORTS = [
-    ("mobile-375", 375, 812),
-    ("tablet-768", 768, 1024),
-    ("desktop-1440", 1440, 900),
+DEVICES = [
+    ("mobile-390", "iPhone 13"),   # touch: coarse pointer → CSS @media(pointer:coarse) active
+    ("tablet-768", "iPad Mini"),
+    ("desktop-1440", None),        # fine pointer (mouse)
 ]
 # Resource-load noise that should not fail a run (fonts/CDN hiccups etc.)
 IGNORE_CONSOLE = re.compile(r"Failed to load resource|net::ERR_|favicon|404")
@@ -95,11 +95,16 @@ def main() -> int:
     with sync_playwright() as p:
         browser = p.chromium.launch()
         for page_name in PAGES:
-            for vp_name, w, h in VIEWPORTS:
+            for vp_name, dev_name in DEVICES:
                 if wanted and vp_name not in wanted:
                     continue
                 tag = f"{page_name} @ {vp_name}"
-                ctx = browser.new_context(viewport={"width": w, "height": h})
+                if dev_name is None:
+                    ctx = browser.new_context(viewport={"width": 1440, "height": 900})
+                    has_touch = False
+                else:
+                    ctx = browser.new_context(**p.devices[dev_name])
+                    has_touch = True
                 page = ctx.new_page()
                 js_errors, console_errs = [], []
                 page.on("pageerror", lambda e: js_errors.append(str(e)))
@@ -130,7 +135,7 @@ def main() -> int:
                 if state["overflow"] > 1:
                     page_issues.append(f"horizontal overflow {state['overflow']}px (doc {state['scrollW']} vs viewport {state['clientW']}); offenders: {state['offenders'][:3]}")
                 # 4. touch targets: buttons ≥ 44px (AAA 2.5.5), links ≥ 24px (AA 2.5.8)
-                if w <= 960:  # touch-sized viewports
+                if has_touch:  # real touch devices only (coarse pointer)
                     small = page.evaluate(
                         """(a) => {
                           const out = [];
@@ -138,6 +143,7 @@ def main() -> int:
                             for (const el of els) {
                               const st = getComputedStyle(el);
                               if (st.display === 'none' || st.visibility === 'hidden') continue;
+                              if (kind === 'link' && st.display === 'inline') continue; // sentence/text links exempt (WCAG 2.5.8)
                               const r = el.getBoundingClientRect();
                               if (r.width > 0 && (r.width < min || r.height < min)) {
                                 out.push(`${kind} ${el.tagName.toLowerCase()}.${[...el.classList].slice(0,2).join('.')} ${Math.round(r.width)}x${Math.round(r.height)}`);
@@ -166,8 +172,8 @@ def main() -> int:
                 if not state["mainLandmark"]:
                     page_issues.append("no <main> landmark")
 
-                # 6. functional: mobile nav opens on mobile viewports
-                if w <= 960 and page.locator("#nav-toggle").count():
+                # 6. functional: mobile nav opens on touch devices
+                if has_touch and page.locator("#nav-toggle").count():
                     try:
                         page.click("#nav-toggle")
                         page.wait_for_timeout(250)
@@ -178,7 +184,7 @@ def main() -> int:
                     except Exception as e:  # noqa: BLE001
                         page_issues.append(f"mobile nav interaction failed: {e}")
 
-                # 7. functional: EN/DA toggle on index
+                # 7. functional: EN/DA toggle on index (desktop run only)
                 if page_name == "index.html" and vp_name == "desktop-1440" and page.locator("#lang-toggle").count():
                     try:
                         page.click("#lang-toggle")
