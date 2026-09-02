@@ -20,7 +20,8 @@ FIELDS = ("protocolSection.identificationModule.briefTitle,"
           "protocolSection.statusModule.overallStatus,"
           "protocolSection.designModule.phases,"
           "protocolSection.sponsorCollaboratorsModule.leadSponsor,"
-          "protocolSection.contactsLocationsModule.locations.country")
+          "protocolSection.contactsLocationsModule.locations.country,"
+          "protocolSection.conditionsModule.conditions")
 
 
 def fetch(url):
@@ -49,11 +50,25 @@ def fetch(url):
     raise last
 
 
+def _is_relevant(ident, p):
+    """Keep only trials that actually study endometriosis — the free-text
+    query.term matches any field (e.g. 'Danazol for cytopenias in cirrhosis'
+    or pediatric surgery programs), which pollutes the dashboard with noise.
+    Relevance = 'endometriosis' in title OR in the studied conditions."""
+    title = (ident.get("briefTitle") or "").lower()
+    conds = " ".join(p.get("conditionsModule", {}).get("conditions") or []).lower()
+    return "endometriosis" in title or "endometriosis" in conds
+
+
 def trials_from(data, n=999):
     out = []
+    dropped = 0
     for s in (data.get("studies") or [])[:n]:
         p = s.get("protocolSection", {})
         ident = p.get("identificationModule", {})
+        if not _is_relevant(ident, p):
+            dropped += 1
+            continue
         status = p.get("statusModule", {})
         des = p.get("designModule", {})
         spon = p.get("sponsorCollaboratorsModule", {})
@@ -69,6 +84,8 @@ def trials_from(data, n=999):
             "countries": countries,
             "url": f"https://clinicaltrials.gov/study/{nct}",
         })
+    if dropped:
+        print(f"  (filtreret {dropped} ikke-relevante forsøg)")
     return out
 
 

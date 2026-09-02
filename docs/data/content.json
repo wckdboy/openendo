@@ -104,7 +104,16 @@
         "da": "En one-page, kildebaseret fact-side til regionsråd og folketingskandidater — inkl. 13. september-fristen for de 160 mio. kr. til kvinders sundhed og tre spørgsmål værd at stille."
       },
       "url": "https://openendo.org/one-pager-dk.html",
-      "cta": {"en": "Open the one-pager", "da": "Åbn one-pager'en"}
+      "cta": {"en": "Open the one-pager (DA)", "da": "Åbn one-pager'en"}
+    },
+    {
+      "title": {"en": "One-pager for decision-makers (EN)", "da": "One-pager til beslutningstagere (EN)"},
+      "body": {
+        "en": "The international version of the fact sheet — for ministers, funders and representatives worldwide, with the 22 September PRMRP deadline and three concrete asks.",
+        "da": "Den internationale udgave af fact-siden — til ministre, fonde og politikere verden over, med 22. september-PRMRP-fristen og tre konkrete krav."
+      },
+      "url": "https://openendo.org/one-pager-en.html",
+      "cta": {"en": "Open the one-pager (EN)", "da": "Åbn one-pager'en (EN)"}
     },
     {
       "title": {"en": "Support research", "da": "Støt forskning"},
