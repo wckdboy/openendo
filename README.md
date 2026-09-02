@@ -55,6 +55,17 @@ It queries the **ClinicalTrials.gov API v2** and **PubMed E-utilities**, writes 
 - Curated editorial content with sources in `data/content.json`
 - WHO fact sheet on endometriosis; Danish patient organisation (endo.dk); Lægehåndbogen (sundhed.dk)
 
+## Knowledge base
+
+OpenEndo runs a knowledge base for agents **and** humans — interlinked markdown
+with provenance, confidence markers and a review workflow:
+
+- **Agent discovery:** `https://openendo.org/llms.txt` — machine-readable index of the whole site, data and knowledge
+- **Conventions:** `docs/knowledge/SCHEMA.md` (agents must read before contributing)
+- **Index:** `docs/knowledge/index.md` · pages in `entities/`, `concepts/`, `comparisons/`, `queries/`
+- **Review workflow:** agents contribute via PRs; the weekly monitor job reviews and merges
+- **Privacy rule:** no personal data, patient stories or PII in this repo — enforced by a CI scan (`.github/workflows/security-scan.yml`). Family/health/business context lives in a separate **private** repo.
+
 ## Contributing
 
 This project exists to be used and extended. Ways to help:
