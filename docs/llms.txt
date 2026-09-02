@@ -46,6 +46,8 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [Concepts — saliva-diagnostics](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/saliva-diagnostics.md): non-invasive testing vs diagnostic delay
 - [Concepts — ferroptosis](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/ferroptosis.md): iron-dependent cell death — SEMA3C paper, GPX4/SLC7A11 targets, sulfasalazine convergence
 - [Concepts — computational-drug-repurposing](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/computational-drug-repurposing.md): simvastatin/primaquine POC + M3 ChEMBL screen (9 pairs)
+- [Entities — sirolimus-repurposing](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/sirolimus-repurposing.md): rank-1 M3 repurposing candidate (mTOR inhibition)
+- [Concepts — mrgprx2-pain](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/mrgprx2-pain.md): mast-cell pain axis — non-hormonal pain target
 - [Comparisons — ryeqo vs yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/comparisons/ryeqo-vs-yselty.md)
 
 ## Research (Percival's workstream, merged)
