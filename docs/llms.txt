@@ -22,20 +22,20 @@
 - [Generation metadata](data/meta.json)
 
 ## Knowledge base
-> Raw markdown is served at these paths (no Jekyll — .nojekyll). The [human hub](wiki.html) renders the same content with design.
-- [SCHEMA](docs/knowledge/SCHEMA.md): conventions for creating/editing knowledge pages (agents must read)
-- [Index](docs/knowledge/index.md): catalog of knowledge pages
-- [Entities — ryeqo](docs/knowledge/entities/ryeqo.md): relugolix combo, EU-approved, generelt tilskud in DK
-- [Entities — yselty](docs/knowledge/entities/yselty.md): linzagolix, EU-approved Dec 2024, DK access unverified
-- [Entities — hmi-115](docs/knowledge/entities/hmi-115.md): first non-hormonal therapy in Phase 3
-- [Concepts — gnrh-antagonists](docs/knowledge/concepts/gnrh-antagonists.md): the class behind Ryeqo/Yselty
-- [Concepts — saliva-diagnostics](docs/knowledge/concepts/saliva-diagnostics.md): non-invasive testing vs diagnostic delay
-- [Comparisons — ryeqo vs yselty](docs/knowledge/comparisons/ryeqo-vs-yselty.md)
+> Knowledge pages are served as raw markdown from raw.githubusercontent.com (GitHub Pages does not serve .md files). The [human hub](wiki.html) renders the same content with design.
+- [SCHEMA](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/SCHEMA.md): conventions for creating/editing knowledge pages (agents must read)
+- [Index](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/index.md): catalog of knowledge pages
+- [Entities — ryeqo](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/ryeqo.md): relugolix combo, EU-approved, generelt tilskud in DK
+- [Entities — yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/yselty.md): linzagolix, EU-approved Dec 2024, DK access unverified
+- [Entities — hmi-115](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/hmi-115.md): first non-hormonal therapy in Phase 3
+- [Concepts — gnrh-antagonists](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/gnrh-antagonists.md): the class behind Ryeqo/Yselty
+- [Concepts — saliva-diagnostics](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/saliva-diagnostics.md): non-invasive testing vs diagnostic delay
+- [Comparisons — ryeqo vs yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/comparisons/ryeqo-vs-yselty.md)
 
 ## Research (from Percival's workstream, merged)
-- [M1 fold-input pack](docs/research/structures/fold_input/README.md): 35 novel drug targets, AlphaFold-ready
-- [Target audit data](docs/research/targets/targets.json): 58 targets, ChEMBL-verified, 35 novel
-- [T7 lab software modernization track](docs/research/lab-software-modernization.md): Danish lab software roadmap
+- [M1 fold-input pack](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/structures/fold_input/README.md): 35 novel drug targets, AlphaFold-ready
+- [Target audit data](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/targets/targets.json): 58 targets, ChEMBL-verified, 35 novel
+- [T7 lab software modernization track](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/lab-software-modernization.md): Danish lab software roadmap
 
 ## Contributing
 - [CONTRIBUTING](CONTRIBUTING.md): PR checklist, quality bar, review workflow
