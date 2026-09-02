@@ -1,0 +1,151 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.1/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.jsonld",
+   "@type": "CreativeWork",
+   "about": {
+    "@id": "./"
+   },
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "sdPublisher": {
+    "@id": "https://github.com/wckdboy/openendo"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "OpenEndo — open endometriosis research data",
+   "description": "Open, weekly-refreshed datasets on endometriosis: clinical trials (ClinicalTrials.gov), papers (PubMed), drug targets (ChEMBL), repurposing candidates, funding and site content. MIT licensed.",
+   "license": {
+    "@id": "https://spdx.org/licenses/MIT"
+   },
+   "publisher": {
+    "@id": "https://github.com/wckdboy/openendo"
+   },
+   "url": "https://openendo.org/",
+   "datePublished": "2026-09-02",
+   "hasPart": [
+    {
+     "@id": "data/content.json"
+    },
+    {
+     "@id": "data/funding.json"
+    },
+    {
+     "@id": "data/meta.json"
+    },
+    {
+     "@id": "data/pubmed_monthly.json"
+    },
+    {
+     "@id": "data/pubmed_recent.json"
+    },
+    {
+     "@id": "data/trials_denmark.json"
+    },
+    {
+     "@id": "data/trials_global_recruiting.json"
+    },
+    {
+     "@id": "data/trials_recent.json"
+    }
+   ],
+   "keywords": [
+    "endometriosis",
+    "clinical trials",
+    "drug targets",
+    "women's health",
+    "open data"
+   ]
+  },
+  {
+   "@id": "https://github.com/wckdboy/openendo",
+   "@type": "Organization",
+   "name": "OpenEndo (wckdboy/openendo)",
+   "url": "https://github.com/wckdboy/openendo"
+  },
+  {
+   "@id": "data/content.json",
+   "@type": "File",
+   "name": "Site content: stats, actions, resources (EN/DA)",
+   "encodingFormat": "application/json",
+   "contentSize": "13391"
+  },
+  {
+   "@id": "data/funding.json",
+   "@type": "File",
+   "name": "Endometriosis funding opportunities with deadlines",
+   "encodingFormat": "application/json",
+   "contentSize": "2865"
+  },
+  {
+   "@id": "data/meta.json",
+   "@type": "File",
+   "name": "Generation timestamp and counts",
+   "encodingFormat": "application/json",
+   "contentSize": "222",
+   "isBasedOn": {
+    "@id": "generated"
+   },
+   "dateModified": "2026-09-02"
+  },
+  {
+   "@id": "data/pubmed_monthly.json",
+   "@type": "File",
+   "name": "Monthly endometriosis paper counts (6 months)",
+   "encodingFormat": "application/json",
+   "contentSize": "331",
+   "isBasedOn": {
+    "@id": "https://pubmed.ncbi.nlm.nih.gov/"
+   },
+   "dateModified": "2026-09-02"
+  },
+  {
+   "@id": "data/pubmed_recent.json",
+   "@type": "File",
+   "name": "Endometriosis papers from the last 7 days",
+   "encodingFormat": "application/json",
+   "contentSize": "4695",
+   "isBasedOn": {
+    "@id": "https://pubmed.ncbi.nlm.nih.gov/"
+   },
+   "dateModified": "2026-09-02"
+  },
+  {
+   "@id": "data/trials_denmark.json",
+   "@type": "File",
+   "name": "Endometriosis trials registered in Denmark",
+   "encodingFormat": "application/json",
+   "contentSize": "5293",
+   "isBasedOn": {
+    "@id": "https://clinicaltrials.gov/api/v2"
+   },
+   "dateModified": "2026-09-02"
+  },
+  {
+   "@id": "data/trials_global_recruiting.json",
+   "@type": "File",
+   "name": "Recruiting endometriosis trials worldwide",
+   "encodingFormat": "application/json",
+   "contentSize": "12366",
+   "isBasedOn": {
+    "@id": "https://clinicaltrials.gov/api/v2"
+   },
+   "dateModified": "2026-09-02"
+  },
+  {
+   "@id": "data/trials_recent.json",
+   "@type": "File",
+   "name": "Endometriosis trials new/updated last 7 days",
+   "encodingFormat": "application/json",
+   "contentSize": "1783",
+   "isBasedOn": {
+    "@id": "https://clinicaltrials.gov/api/v2"
+   },
+   "dateModified": "2026-09-02"
+  }
+ ]
+}
