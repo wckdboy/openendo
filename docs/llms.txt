@@ -32,10 +32,16 @@
 - [Concepts — saliva-diagnostics](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/concepts/saliva-diagnostics.md): non-invasive testing vs diagnostic delay
 - [Comparisons — ryeqo vs yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/comparisons/ryeqo-vs-yselty.md)
 
-## Research (from Percival's workstream, merged)
+## Research (Percival's workstream, merged)
 - [M1 fold-input pack](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/structures/fold_input/README.md): 35 novel drug targets, AlphaFold-ready
 - [Target audit data](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/targets/targets.json): 58 targets, ChEMBL-verified, 35 novel
 - [T7 lab software modernization track](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/lab-software-modernization.md): Danish lab software roadmap
+- [M2 living evidence — latest digest](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md): weekly evidence synthesis (PubMed + Europe PMC)
+- [M2 evidence weekly data](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/weekly/2026-09-02.json): machine-readable evidence snapshot
+- [M3 repurposing screen](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md): 9 drug-repurposing candidates (see digest)
+- [Integration contract — RO-Crate](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/tools-and-integration.md): how the hub plugs into ELN/LIMS/repositories
+- [RO-Crate manifest (machine-readable)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/ro-crate-metadata.jsonld): FAIR packaging of all datasets
+- [Target intelligence (site section 06)](index.html): doughnut + KPIs — 35 novel / 8 approved / 58 audited
 
 ## Contributing
 - [CONTRIBUTING](https://raw.githubusercontent.com/wckdboy/openendo/main/CONTRIBUTING.md): PR checklist, quality bar, review workflow
