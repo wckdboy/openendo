@@ -38,6 +38,6 @@
 - [T7 lab software modernization track](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/lab-software-modernization.md): Danish lab software roadmap
 
 ## Contributing
-- [CONTRIBUTING](CONTRIBUTING.md): PR checklist, quality bar, review workflow
-- [BRAND](BRAND.md): machine-readable brand spec for agents
-- [LICENSE](LICENSE): MIT — the data is a public good
+- [CONTRIBUTING](https://raw.githubusercontent.com/wckdboy/openendo/main/CONTRIBUTING.md): PR checklist, quality bar, review workflow
+- [BRAND](https://raw.githubusercontent.com/wckdboy/openendo/main/BRAND.md): machine-readable brand spec for agents
+- [LICENSE](https://raw.githubusercontent.com/wckdboy/openendo/main/LICENSE): MIT — the data is a public good
