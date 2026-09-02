@@ -157,7 +157,20 @@ footer h3{font-size:13px;font-weight:600;letter-spacing:1.2px;text-transform:upp
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,199,89,.45)}70%{box-shadow:0 0 0 9px rgba(52,199,89,0)}100%{box-shadow:0 0 0 0 rgba(52,199,89,0)}}
 footer .wordmark{font-family:var(--font-display);font-size:22px;font-weight:600;letter-spacing:-.01em;margin-bottom:20px}
 footer .wordmark em{font-style:italic;font-weight:500;background:linear-gradient(90deg,var(--rose-deep),var(--lav));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-@media(max-width:640px){.trust{gap:10px}}
+/* ---------- QA-fixes (2. sep 2026) ---------- */
+.chart-card{height:300px;position:relative}
+.chart-card.wide{height:280px}
+.chart-card canvas{position:absolute;inset:0;width:100% !important;height:100% !important}
+.hero .stats{margin-top:28px;padding-top:24px}
+.hero .stats .stat:last-child{grid-column:1/-1;max-width:520px;margin:0 auto;text-align:center}
+.stat .label{font-size:12.5px;line-height:1.35}
+.section{padding:60px 0}
+.card{display:flex;flex-direction:column}
+.card .cta,.card .deadline{margin-top:auto}
+.cta{font-size:12px}
+.days{font-size:12.5px;font-weight:700;padding:3px 10px}
+.deadline.closed{background:#e8e8ed;color:#6e6e73;font-weight:600;font-style:italic}
+td.j{max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
 
 /* ---------- subpages: styleguide / support / agenda ---------- */
 :root{--text:#3a3a3c}

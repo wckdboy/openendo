@@ -176,9 +176,9 @@ function renderTrials(id, trials, withStatus) {
 function renderPapers(papers) {
   document.getElementById("tbl-papers").innerHTML = papers.slice(0, 10).map(p => `
     <tr>
-      <td style="white-space:nowrap">${esc(p.date)}</td>
+      <td style="white-space:nowrap">${esc(p.date.replace(/^2026\s?/, ""))}</td>
       <td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></td>
-      <td style="color:var(--muted)">${esc(p.journal)}</td>
+      <td class="j" title="${esc(p.journal)}">${esc(p.journal)}</td>
     </tr>`).join("") || `<tr><td colspan="3" class="loading">—</td></tr>`;
 }
 
@@ -195,14 +195,15 @@ function renderFunding(funding) {
     } else if (f.open) {
       dl = `<div class="deadline"><span class="open-now">● ${t("funding_open")}</span></div>`;
     } else {
-      dl = `<div class="deadline">${t("funding_closed")}</div>`;
+      dl = `<div class="deadline closed">${t("funding_closed")}</div>`;
     }
+    const host = (() => { try { return new URL(f.url).hostname.replace(/^www\./, ""); } catch { return f.url; } })();
     return `<div class="card">
       <h4>${esc(f.name)}</h4>
       <div class="src">${esc(f.org)} · ${esc(f.country)}</div>
       <p>${esc(langObj(f.desc))}</p>
       ${dl}
-      <a class="cta" href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.url.replace(/^https?:\/\/(www\.)?/, ""))} ↗</a>
+      <a class="cta" href="${esc(f.url)}" target="_blank" rel="noopener">${esc(host)} ↗</a>
     </div>`;
   }).join("");
 }
@@ -236,8 +237,13 @@ function renderCharts(glob, dk, monthly) {
 
   makeChart("chart-country", {
     type: "bar",
-    data: { labels: countryTop.map(c => c[0]), datasets: [{ data: countryTop.map(c => c[1]), backgroundColor: "#0071e3", borderRadius: 6, maxBarThickness: 34 }] },
-    options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
+    data: { labels: countryTop.map(c => c[0]), datasets: [{ data: countryTop.map(c => c[1]), backgroundColor: "#0071e3", borderRadius: 6, maxBarThickness: 18 }] },
+    options: {
+      indexAxis: "y",
+      plugins: { legend: { display: false } },
+      scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } }, y: { ticks: { font: { size: 11 } } } },
+      maintainAspectRatio: false
+    }
   });
 
   makeChart("chart-status", {
@@ -248,8 +254,8 @@ function renderCharts(glob, dk, monthly) {
 
   makeChart("chart-pubmed", {
     type: "line",
-    data: { labels: monthly.map(m => m.month), datasets: [{ data: monthly.map(m => m.count), borderColor: "#0071e3", backgroundColor: "rgba(0,113,227,0.10)", fill: true, tension: 0.32, pointBackgroundColor: "#0071e3", pointRadius: 3, borderWidth: 2.5 }] },
-    options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
+    data: { labels: monthly.map(m => m.month), datasets: [{ data: monthly.map(m => m.count), borderColor: "#4fd1c5", backgroundColor: "rgba(79,209,197,0.15)", fill: true, tension: 0.3, pointBackgroundColor: "#4fd1c5" }] },
+    options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 50, maxTicksLimit: 7 } } }, maintainAspectRatio: false }
   });
 }
 
