@@ -4,6 +4,7 @@
 
 ## Site
 - [Dashboard](index.html): live analytics — recruiting trials worldwide/by country, Denmark status, PubMed output, funding watch with deadlines
+- [Knowledge base (human hub)](wiki.html): rendered wiki index — entities, concepts, comparisons, research program
 - [Style guide](styleguide.html): design system, brand, logo, colors, typography, voice & tone
 - [How to support](support.html): seven ways to contribute, effort-tagged
 - [AI & compute agenda](ai-agenda.html): how AI/agents/compute can move endometriosis research
@@ -21,6 +22,7 @@
 - [Generation metadata](data/meta.json)
 
 ## Knowledge base
+> Raw markdown is served at these paths (no Jekyll — .nojekyll). The [human hub](wiki.html) renders the same content with design.
 - [SCHEMA](docs/knowledge/SCHEMA.md): conventions for creating/editing knowledge pages (agents must read)
 - [Index](docs/knowledge/index.md): catalog of knowledge pages
 - [Entities — ryeqo](docs/knowledge/entities/ryeqo.md): relugolix combo, EU-approved, generelt tilskud in DK
