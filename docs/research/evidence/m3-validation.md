@@ -17,7 +17,7 @@ Status: 9/9 depth-checked (2026-09-02). Input:
 | 1 | **Sirolimus → FKBP4** | TOP TIER | MEDIUM-HIGH | mTOR inhibition has independent endo evidence (senescence/infertility), antiproliferative direction, chronic-use safety data |
 | 2 | **Cetrorelix → MRGPRX2** | VALIDATED AXIS | MEDIUM | MRGPRX2 = mast-cell pain mechanism in endo; drug already used in endo — target-validating, not novel repurposing |
 | 3 | Tacrolimus/Cyclosporine → FKBP4 | WATCHLIST | LOW-MEDIUM | rat-model efficacy, but immunosuppressant baggage; FKBP4 hit ≠ clinical pharmacology (FKBP12-mediated) |
-| 4 | **Sulfasalazine → SLC7A11** | WATCHLIST | LOW-MEDIUM | strong target axis, but ferroptosis direction-of-effect unresolved + xCT-dose toxicity |
+| 4 | ~~Sulfasalazine → SLC7A11~~ | ✗ WRONG-DIRECTION | MEDIUM | deep-dive verdict ([ferroptosis-direction.md](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/ferroptosis-direction.md)): ferroptotic signaling tilts disease-supporting (SEMA3C/Fer-1, VEGFA/IL8 angiogenesis); xCT-dose toxicity adds weight |
 | 5 | Crizotinib/Dabrafenib → ACVR1B | WATCHLIST | LOW | ACVR1B/ALK4→aromatase mechanism is real, but cancer-TKI fertility baggage + off-target heavy |
 | — | Estradiol → GPER1 | ✗ WRONG DIRECTION | — | agonist of a proliferation-driving receptor — target-validating only |
 | — | Dinoprostone → SLCO2A1 | ✗ WRONG DIRECTION | — | it IS PGE2; therapy would need transporter *blockade* |
