@@ -1,0 +1,317 @@
+{
+ "updated": "2026-09-02",
+ "pipeline": "ChEMBL activity + drug max_phase join (repurpose_screen.py)",
+ "pchembl_cutoff": 6.0,
+ "note": "Approved drugs (max_phase 4) with measured potency (pchembl>=6) against a novel endometriosis target. Hypothesis-generation only; direction of effect requires mechanism review.",
+ "per_target": {
+  "ABCC4": {
+   "chembl": "CHEMBL1743128",
+   "potent_actives": 2,
+   "candidates": []
+  },
+  "ACKR3": {
+   "chembl": "CHEMBL2010631",
+   "potent_actives": 82,
+   "candidates": []
+  },
+  "ACVR1B": {
+   "chembl": "CHEMBL5310",
+   "potent_actives": 84,
+   "candidates": [
+    {
+     "molecule": "CHEMBL601719",
+     "name": "CHEMBL601719",
+     "pchembl": 6.07,
+     "phase": 4.0
+    },
+    {
+     "molecule": "CHEMBL2028663",
+     "name": "CHEMBL2028663",
+     "pchembl": 6.22,
+     "phase": 4.0
+    }
+   ]
+  },
+  "AOC3": {
+   "chembl": "CHEMBL3265",
+   "potent_actives": 7,
+   "candidates": []
+  },
+  "CCR6": {
+   "chembl": "CHEMBL4423",
+   "potent_actives": 67,
+   "candidates": []
+  },
+  "CCR8": {
+   "chembl": "CHEMBL4596",
+   "potent_actives": 92,
+   "candidates": []
+  },
+  "CMKLR1": {
+   "chembl": "CHEMBL3540",
+   "potent_actives": 73,
+   "candidates": []
+  },
+  "CX3CR1": {
+   "chembl": "CHEMBL4843",
+   "potent_actives": 62,
+   "candidates": []
+  },
+  "ENTPD1": {
+   "chembl": "CHEMBL2766",
+   "potent_actives": 0,
+   "candidates": []
+  },
+  "ENTPD2": {
+   "chembl": "CHEMBL5049",
+   "potent_actives": 0,
+   "candidates": []
+  },
+  "F2RL1": {
+   "chembl": "CHEMBL5963",
+   "potent_actives": 61,
+   "candidates": []
+  },
+  "FKBP4": {
+   "chembl": "CHEMBL4050",
+   "potent_actives": 16,
+   "candidates": [
+    {
+     "molecule": "CHEMBL160",
+     "name": "CHEMBL160",
+     "pchembl": 7.8,
+     "phase": 4.0
+    },
+    {
+     "molecule": "CHEMBL413",
+     "name": "CHEMBL413",
+     "pchembl": 8.38,
+     "phase": 4.0
+    },
+    {
+     "molecule": "CHEMBL269732",
+     "name": "CHEMBL269732",
+     "pchembl": 7.64,
+     "phase": 4.0
+    }
+   ]
+  },
+  "FPR1": {
+   "chembl": "CHEMBL3359",
+   "potent_actives": 69,
+   "candidates": []
+  },
+  "FPR2": {
+   "chembl": "CHEMBL4227",
+   "potent_actives": 86,
+   "candidates": []
+  },
+  "GPER1": {
+   "chembl": "CHEMBL5872",
+   "potent_actives": 87,
+   "candidates": [
+    {
+     "molecule": "CHEMBL135",
+     "name": "CHEMBL135",
+     "pchembl": 9.52,
+     "phase": 4.0
+    }
+   ]
+  },
+  "GPX4": {
+   "chembl": "CHEMBL4295754",
+   "potent_actives": 31,
+   "candidates": []
+  },
+  "HPGD": {
+   "chembl": "CHEMBL1293255",
+   "potent_actives": 94,
+   "candidates": []
+  },
+  "HTRA1": {
+   "chembl": "CHEMBL4523419",
+   "potent_actives": 100,
+   "candidates": []
+  },
+  "ILK": {
+   "chembl": "CHEMBL5247",
+   "potent_actives": 100,
+   "candidates": []
+  },
+  "KLRK1": {
+   "chembl": "CHEMBL5483005",
+   "potent_actives": 20,
+   "candidates": []
+  },
+  "METTL3": {
+   "chembl": "CHEMBL4106140",
+   "potent_actives": 100,
+   "candidates": []
+  },
+  "MRGPRX2": {
+   "chembl": "CHEMBL5849",
+   "potent_actives": 22,
+   "candidates": [
+    {
+     "molecule": "CHEMBL1200490",
+     "name": "CHEMBL1200490",
+     "pchembl": 6.21,
+     "phase": 4.0
+    }
+   ]
+  },
+  "NGFR": {
+   "chembl": "CHEMBL4762",
+   "potent_actives": 1,
+   "candidates": []
+  },
+  "PDK3": {
+   "chembl": "CHEMBL3893",
+   "potent_actives": 23,
+   "candidates": []
+  },
+  "PFKFB3": {
+   "chembl": "CHEMBL2331053",
+   "potent_actives": 93,
+   "candidates": []
+  },
+  "PLAUR": {
+   "chembl": "CHEMBL4883",
+   "potent_actives": 16,
+   "candidates": []
+  },
+  "S1PR2": {
+   "chembl": "CHEMBL2955",
+   "potent_actives": 76,
+   "candidates": []
+  },
+  "S1PR3": {
+   "chembl": "CHEMBL3892",
+   "potent_actives": 87,
+   "candidates": []
+  },
+  "SLC7A11": {
+   "chembl": "CHEMBL1075149",
+   "potent_actives": 17,
+   "candidates": [
+    {
+     "molecule": "CHEMBL421",
+     "name": "CHEMBL421",
+     "pchembl": 6.8,
+     "phase": 4.0
+    }
+   ]
+  },
+  "SLCO2A1": {
+   "chembl": "CHEMBL2073680",
+   "potent_actives": 25,
+   "candidates": [
+    {
+     "molecule": "CHEMBL815",
+     "name": "CHEMBL815",
+     "pchembl": 7.35,
+     "phase": 4.0
+    }
+   ]
+  },
+  "SPHK1": {
+   "chembl": "CHEMBL4394",
+   "potent_actives": 86,
+   "candidates": []
+  },
+  "SUCNR1": {
+   "chembl": "CHEMBL2150838",
+   "potent_actives": 74,
+   "candidates": []
+  },
+  "TPSAB1": {
+   "chembl": "CHEMBL2617",
+   "potent_actives": 96,
+   "candidates": []
+  },
+  "TRPM3": {
+   "chembl": "CHEMBL3559708",
+   "potent_actives": 0,
+   "candidates": []
+  },
+  "YAP1": {
+   "chembl": "CHEMBL3334415",
+   "potent_actives": 17,
+   "candidates": []
+  }
+ },
+ "candidates": [
+  {
+   "target": "ACVR1B",
+   "target_chembl": "CHEMBL5310",
+   "molecule": "CHEMBL601719",
+   "name": "Crizotinib",
+   "pchembl": 6.07,
+   "phase": 4.0
+  },
+  {
+   "target": "ACVR1B",
+   "target_chembl": "CHEMBL5310",
+   "molecule": "CHEMBL2028663",
+   "name": "Dabrafenib",
+   "pchembl": 6.22,
+   "phase": 4.0
+  },
+  {
+   "target": "FKBP4",
+   "target_chembl": "CHEMBL4050",
+   "molecule": "CHEMBL160",
+   "name": "Cyclosporine",
+   "pchembl": 7.8,
+   "phase": 4.0
+  },
+  {
+   "target": "FKBP4",
+   "target_chembl": "CHEMBL4050",
+   "molecule": "CHEMBL413",
+   "name": "Sirolimus (rapamycin)",
+   "pchembl": 8.38,
+   "phase": 4.0
+  },
+  {
+   "target": "FKBP4",
+   "target_chembl": "CHEMBL4050",
+   "molecule": "CHEMBL269732",
+   "name": "Tacrolimus",
+   "pchembl": 7.64,
+   "phase": 4.0
+  },
+  {
+   "target": "GPER1",
+   "target_chembl": "CHEMBL5872",
+   "molecule": "CHEMBL135",
+   "name": "Estradiol",
+   "pchembl": 9.52,
+   "phase": 4.0
+  },
+  {
+   "target": "MRGPRX2",
+   "target_chembl": "CHEMBL5849",
+   "molecule": "CHEMBL1200490",
+   "name": "Cetrorelix",
+   "pchembl": 6.21,
+   "phase": 4.0
+  },
+  {
+   "target": "SLC7A11",
+   "target_chembl": "CHEMBL1075149",
+   "molecule": "CHEMBL421",
+   "name": "Sulfasalazine",
+   "pchembl": 6.8,
+   "phase": 4.0
+  },
+  {
+   "target": "SLCO2A1",
+   "target_chembl": "CHEMBL2073680",
+   "molecule": "CHEMBL815",
+   "name": "Dinoprostone (PGE2)",
+   "pchembl": 7.35,
+   "phase": 4.0
+  }
+ ]
+}
