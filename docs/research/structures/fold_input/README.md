@@ -1,5 +1,11 @@
 # Fold input pack — the 35 novel drug targets (M1)
 
+> **Update 2026-09-03:** structure-coverage decision memo — see
+> `af2-decision.md` in this folder. Live re-audit: **34/35 already in AFDB**
+> (full-length canonical v6 models) and GPX4 (the 1 AFDB gap) has 23
+> experimental PDB entries → **0 targets need folding**; Phase 1 docking has no
+> folding prerequisite.
+
 Ready-to-fold sequences for the **35 truly novel endometriosis targets**
 (zero drug mechanisms in ChEMBL — see `docs/data/targets.json` after merge /
 `scripts/target_audit.py`). Source: UniProtKB, reviewed human (`organism_id:9606

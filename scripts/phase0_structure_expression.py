@@ -47,7 +47,8 @@ def fasta_targets():
         gene = fn[:-6]
         acc = ""
         for part in head.split("|"):
-            if part.startswith(("P", "Q", "O", "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N")) and len(part) == 6 and part[1:].isdigit():
+            # UniProt canonical accession: [OPQ][0-9][A-Z0-9]{3}[0-9] (letters allowed in the middle 3 chars)
+            if len(part) == 6 and part[0] in "OPQ" and part[1].isdigit() and part[5].isdigit():
                 acc = part
                 break
         targets[gene] = acc

@@ -9,6 +9,16 @@ RCSB PDB, Human Protein Atlas, ChEMBL — all public APIs.
 **27/35 already have AF2 models** — only **8 need folding** (ColabFold, Phase 1).
 Coverage details per gene in `phase0.json` → `afdb`.
 
+> **⚠️ CORRECTED 2026-09-03** (see `structures/fold_input/af2-decision.md`):
+> the "8 need folding" figure was an audit artifact. A UniProt-accession
+> parsing bug in `scripts/phase0_structure_expression.py`
+> (`part[1:].isdigit()` rejected accessions with letters, e.g. Q9Y5L3)
+> marked 7 covered targets as missing. Live re-audit (AFDB API 2026-09-03):
+> **34/35 have full-length canonical AFDB v6 models**; the remaining target
+> (GPX4, P36969 — genuinely absent from AFDB) has **23 experimental PDB
+> structures**. → **0 of 35 targets need folding. Cost $0.** `phase0.json` is
+> stale until the fixed script is re-run (JSON deliberately untouched 2026-09-03).
+
 ## Result 2 — Experimental structures exist for every M3-relevant target
 
 | Target | PDB entries (UniProt match) | Example |

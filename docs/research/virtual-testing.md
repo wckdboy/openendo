@@ -40,7 +40,7 @@
 | (watchlist) CsA/Tacro | FKBP4 | as FKBP4 | only if sirolimus path validates |
 | (watchlist) TKIs | ACVR1B (P36896) | AFDB ✅ + PDB 2 (7MRZ) | skip — conclusion was *selective* inhibitor needed → Tier 5 later |
 | (wrong direction) | GPER1, SLCO2A1 | structures exist (8XOF, 3MRR) | none — target-validating only |
-| M1 35 targets | — | **27/35 in AFDB** → fold only 8 | ColabFold batch on RunPod |
+| M1 35 targets | — | **34/35 in AFDB + GPX4 experimental → 0 to fold** (see `structures/fold_input/af2-decision.md`) | Phase 1 docking direct (no ColabFold leg) |
 
 ## Infrastructure (prices live, RunPod community, 2026-09-02)
 
@@ -53,7 +53,9 @@
 | Netcup VPS | Vina (CPU), RDKit, ADMET, orchestration, APIs | owned |
 | Hetzner BX41 20 TB | trajectories/artifacts (rclone) | owned |
 
-Estimates: fold 8 targets ≈ $1–3 (4090) · docking 3 candidates + control ≈ <$1 CPU ·
+Estimates: fold 8 targets ≈ $1–3 (4090) → **corrected 2026-09-03: $0 — 0 to
+fold** (34/35 in AFDB, GPX4 in PDB; see `fold_input/af2-decision.md`) ·
+docking 3 candidates + control ≈ <$1 CPU ·
 MD 100–500 ns per complex ≈ $5–25 (4090). Phase 1 total ≈ **$10–25**.
 
 ## Phases
@@ -61,7 +63,8 @@ MD 100–500 ns per complex ≈ $5–25 (4090). Phase 1 total ≈ **$10–25**.
 - **Phase 0 — coverage audit** ✅ 2026-09-02 (`virtual/phase0.json` + `phase0.md`):
   AFDB 27/35 · PDB experimental structures for all M3-relevant targets ·
   HPA expression summary · ChEMBL target registration.
-- **Phase 1 — docking (~$10–25):** ColabFold for the 8 missing M1 targets ·
+- **Phase 1 — docking (~$10–25):** ~~ColabFold for the 8 missing M1 targets~~ →
+  *corrected 2026-09-03: 0 to fold* (see `fold_input/af2-decision.md`) ·
   Vina: sirolimus→FKBP4 + FKBP12 control, cetrorelix→MRGPRX2 (7S8L),
   sulfasalazine→xCT (7CCS) · ADMET-AI + RDKit profile of 9 M3 candidates.
   DoD: poses + scores + ADMET table in `virtual/phase1/`, top poses MD-ready.
