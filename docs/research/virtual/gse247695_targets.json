@@ -1,0 +1,678 @@
+{
+ "dataset": "GSE247695",
+ "targets": {
+  "FKBP4": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.244,
+    "frac_detected": 0.395
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.144,
+    "frac_detected": 0.229
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.155,
+    "frac_detected": 0.356
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.164,
+    "frac_detected": 0.382
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.208,
+    "frac_detected": 0.36
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.297,
+    "frac_detected": 0.412
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.09,
+    "frac_detected": 0.083
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.076,
+    "frac_detected": 0.071
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.114,
+    "frac_detected": 0.104
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.081,
+    "frac_detected": 0.094
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.173,
+    "frac_detected": 0.397
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.257,
+    "frac_detected": 0.429
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.113,
+    "frac_detected": 0.127
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 0.017,
+    "frac_detected": 0.021
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.133,
+    "frac_detected": 0.208
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.091,
+    "frac_detected": 0.167
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.069,
+    "frac_detected": 0.067
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.072,
+    "frac_detected": 0.078
+   }
+  },
+  "MRGPRX2": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.003,
+    "frac_detected": 0.001
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.002,
+    "frac_detected": 0.002
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.003,
+    "frac_detected": 0.002
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.004,
+    "frac_detected": 0.003
+   }
+  },
+  "SLC7A11": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.034,
+    "frac_detected": 0.059
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.006,
+    "frac_detected": 0.011
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.174,
+    "frac_detected": 0.245
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.017,
+    "frac_detected": 0.046
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.029,
+    "frac_detected": 0.049
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.006,
+    "frac_detected": 0.009
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.003,
+    "frac_detected": 0.003
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.001
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.002
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.037,
+    "frac_detected": 0.094
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.056,
+    "frac_detected": 0.143
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.164,
+    "frac_detected": 0.113
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.177,
+    "frac_detected": 0.156
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.016,
+    "frac_detected": 0.013
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.004,
+    "frac_detected": 0.003
+   }
+  },
+  "CPA3": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.001
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.003,
+    "frac_detected": 0.001
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   }
+  },
+  "TPSAB1": {
+   "not_detected": true
+  },
+  "MS4A2": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.001
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.001
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.005,
+    "frac_detected": 0.048
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   }
+  },
+  "KIT": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.003,
+    "frac_detected": 0.006
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.005,
+    "frac_detected": 0.01
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.31,
+    "frac_detected": 0.375
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.029,
+    "frac_detected": 0.053
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.007,
+    "frac_detected": 0.017
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.024,
+    "frac_detected": 0.036
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.006,
+    "frac_detected": 0.005
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.029,
+    "frac_detected": 0.021
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.014,
+    "frac_detected": 0.014
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.064,
+    "frac_detected": 0.047
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.004,
+    "frac_detected": 0.022
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.032,
+    "frac_detected": 0.143
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 1.669,
+    "frac_detected": 0.81
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 2.024,
+    "frac_detected": 0.915
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.036,
+    "frac_detected": 0.038
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.04,
+    "frac_detected": 0.049
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.014,
+    "frac_detected": 0.009
+   }
+  },
+  "FCER1A": {
+   "Stromal|eutopic": {
+    "cells": 5043,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.001
+   },
+   "Stromal|lesion": {
+    "cells": 716,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.001
+   },
+   "Endothelial|eutopic": {
+    "cells": 413,
+    "mean_log1p": 0.011,
+    "frac_detected": 0.027
+   },
+   "Endothelial|lesion": {
+    "cells": 1838,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.004
+   },
+   "Perivascular|eutopic": {
+    "cells": 470,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Perivascular|lesion": {
+    "cells": 2668,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.001
+   },
+   "T cells|eutopic": {
+    "cells": 760,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "T cells|lesion": {
+    "cells": 1779,
+    "mean_log1p": 0.001,
+    "frac_detected": 0.001
+   },
+   "NK cells|eutopic": {
+    "cells": 578,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "NK cells|lesion": {
+    "cells": 64,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|eutopic": {
+    "cells": 363,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Epithelial|lesion": {
+    "cells": 21,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Mast cells|lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "Macrophage/Mono|eutopic": {
+    "cells": 159,
+    "mean_log1p": 0.555,
+    "frac_detected": 0.358
+   },
+   "Macrophage/Mono|lesion": {
+    "cells": 486,
+    "mean_log1p": 0.733,
+    "frac_detected": 0.465
+   },
+   "B cells|eutopic": {
+    "cells": 75,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   },
+   "B cells|lesion": {
+    "cells": 319,
+    "mean_log1p": 0.0,
+    "frac_detected": 0.0
+   }
+  }
+ },
+ "mast_cells": {
+  "MRGPRX2": {
+   "eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac": 0.0
+   },
+   "lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac": 0.0
+   }
+  },
+  "CPA3": {
+   "eutopic": {
+    "cells": 63,
+    "mean_log1p": 0.0,
+    "frac": 0.0
+   },
+   "lesion": {
+    "cells": 47,
+    "mean_log1p": 0.0,
+    "frac": 0.0
+   }
+  }
+ }
+}
