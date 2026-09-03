@@ -125,3 +125,59 @@ Seurat/Scanpy (scRNA-seq) or Visium analysis tools.
 
 *Percival (Hermes Agent), 2026-09-02 / updated 2026-09-03. Public data only;
 no PII. Research infrastructure, not medical advice.*
+
+
+## GSE247695 reanalysis (scRNA-seq, 2026-09-03, Percival)
+
+**Dataset:** GSE247695 — paired eutopic endometrium vs peritoneal
+endometriotic lesions, scRNA-seq (10x), 4 patients (002/398/421/432),
+16,924 cells raw → 15,862 post-QC. Analysis: `scripts/gse247695_analysis.py`
+(reproducible; scanpy 1.12; 10x MTX load → QC → normalize/log1p → PCA →
+Leiden → marker-scored cell typing → per-cell-type expression on the
+UNSCALED log1p matrix). Output: `virtual/gse247695_targets.json`.
+
+**Cell composition (lesion vs eutopic):** peritoneal lesions are
+perivascular-rich (2,668 vs 470 cells) and stromal-poor (716 vs 5,043);
+epithelial cells almost absent from lesions (21 vs 363 — sampling of
+peritoneal lesions). Immune cells expanded (T 1,779 vs 760; B 319 vs 75;
+macrophage 486 vs 159).
+
+### Per-target, compartment-resolved results
+
+| Gene | Compartment | Eutopic (mean, frac) | Lesion (mean, frac) | Reading |
+|---|---|---|---|---|
+| FKBP4 | Stromal | 0.244, 39.5% | 0.144, 22.9% | **DOWN in lesion stroma** (the dominant compartment) — consistent with GSE282532 2.2x bulk down |
+| FKBP4 | Perivascular | 0.208, 36.0% | 0.297, 41.2% | up in lesion perivascular cells |
+| FKBP4 | Epithelial | 0.173, 39.7% | 0.257, 42.9% | up (n=21 lesion cells — low power) |
+| SLC7A11 | Endothelial | 0.174, 24.5% | 0.017, 4.6% | **strongly DOWN in lesion endothelium** |
+| SLC7A11 | Stromal | 0.034, 5.9% | 0.006, 1.1% | down in lesion stroma |
+| SLC7A11 | Epithelial | 0.037, 9.4% | 0.056, 14.3% | weakly up (low n) |
+| MRGPRX2 | all cell types | 0.0 | 0.0 | **below detection everywhere, incl. the KIT+ putative-mast-cell compartment (110 cells)** |
+
+### Mast-cell compartment — honest caveats
+- The KIT+ cluster (frac KIT 0.81→0.92) shows **zero CPA3/TPSAB1/TPSB2/
+  MS4A2/MRGPRX2** despite all genes being present in the feature tables —
+  consistent with 10x dropout on small cell numbers (110 cells total),
+  not proof of absence.
+- **KIT+ cells are NOT enriched in these peritoneal lesions** (0.56% vs
+  0.73% of cells) — a discrepancy vs GSE282532's 11–15x mast-cell marker
+  enrichment in ovarian endometrioma. Lesion-type difference (peritoneal
+  vs endometrioma) or method difference; flagged for reconciliation, not
+  glossed over.
+
+### Conclusions for the M3 targets
+1. **FKBP4/sirolimus:** target expressed broadly; **down in lesion
+   stroma** (consistent with PR-resistance); perivascular/epithelial up
+   are minor compartments. Expression is NOT the barrier to an mTOR-axis
+   intervention — ubiquitous pathway, druggable regardless of the FKBP4
+   dip.
+2. **MRGPRX2 pain axis:** scRNA here is **inconclusive, not negative** —
+   dropout regime + rare cells. The positive IHC evidence (FASEB J 2025,
+   PMID 40600649) and GSE282532 mast-cell enrichment stand; the spatial
+   dataset (GSE263897) remains the definitive single-dataset check.
+3. **SLC7A11/sulfasalazine:** down in lesion stroma/endothelium —
+   consistent with SEMA3C suppression and the ferroptosis-direction
+   verdict (no constitutive overexpression to target).
+
+**Remaining Phase 0.5 leg:** GSE263897 (GeoMx spatial, per-ROI DCC —
+needs the NanoString pipeline; logged, not yet run).
