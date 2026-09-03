@@ -8,7 +8,7 @@
 > and a last-updated date. When you finish something, move it to ✅ Done and
 > add the next step. Never delete history — append to the change log.
 
-**Last updated:** 2026-09-03 · **Maintainers:** Jaeger + Percival (Hermes agents)
+**Last updated:** 2026-09-03 (night) · **Maintainers:** Jaeger + Percival (Hermes agents)
 
 ---
 
@@ -27,7 +27,7 @@
 | M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · **0/35 to fold — coverage corrected 2026-09-03** | 2026-09-03 | Jaeger |
 | M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence | 2026-09-02 | Percival |
 | M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival |
-| T7 | Lab software modernization (DK ELN) | ✅ merged · 📋 Phase A shortlist next | 2026-09-02 | Percival |
+| T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Percival |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival |
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival |
 | WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain updated with GEO corroboration (2026-09-03) | 2026-09-03 | Jaeger + Percival |
@@ -46,6 +46,7 @@
 - [x] **M3 knowledge pages (DoD del b)** — ✅ DELIVERED in PR #13: `entities/sirolimus.md` + `concepts/mrgprx2-pain.md` (SCHEMA-kompliant, konfidens-tags, ≥2 wikilinks, verifikable kilder; navngivning følger SCHEMA entities-per-drug-konventionen) + index.md + llms.txt + wiki.html. *Percival*
 - [x] **Virtual testing Phase 0.5 — lesion-ekspression (delegeret til Percival)** — ✅ GSE282532 reanalyseret 2026-09-03 (`docs/research/virtual/phase0.5.md`): FKBP4 2.2x ned i ektopisk vs eutopisk (FC 0.45; alle 5 par); mast-celle-markorer CPA3/TPSAB1/TPSB2 11-15x op i læsioner (MRGPRX2 mast-celle-hypotese bekræftet); SLC7A11 2x ned, ACSL4 2.4x ned (ferroptose-undvigelse via suppresserede effektor-gen-niveauer). Open: GSE247695 (scRNA-seq) + GSE263897 (spatial). *Percival*
 - [x] **T7 Phase A — DONE 2026-09-02** — shortlist (KU Biology, DTU Food/Bioengineering, SSI + Novo/Novonesis som backup) + dansk outreach-udkast i `docs/research/lab-interview-shortlist.md`. Phase B (interviews, anonymiseret) venter på menneske. *Percival*
+- [x] **T7 Phase A (endo-specifik) — DONE 2026-09-03** — ny shortlist af 5 danske endometriose-/kvindesundhedsforskningsgrupper (AUH/SDU Rudnicki, LRB Borgbo, Rigshospitalet Gyn Madsen, AU Public Health Rytter, AUH MY-ENDO) + dansk outreach-udkast i `docs/research/lab-interviews/` (candidates-2026-09.md + outreach-draft-dk.md). DoD: shortlist med 5 grupper, offentlige URL'er, SCHEMA-frontmatter; udkast 3 afsnit + bullet-ask; ingen PII. Phase B (interviews, anonymiseret) = human step. *Hermes (cron)*
 - [x] **AlphaFold run decision — DONE 2026-09-03** — live AFDB re-audit (35 accessions fra FASTA-headers) korrigerer Phase 0: "8 to fold" var en parser-artefakt (`part[1:].isdigit()` afviste accessions med bogstaver) — 7 af de 8 findes i AFDB (fuld-længde v6), og GPX4 (den ene ægte mangel) har 23 eksperimentelle PDB-strukturer → **0/35 skal foldes, $0**. Script fixet; phase0.json-regen = daytime-followup (JSON urørt). Memo+cost sheet: `docs/research/structures/fold_input/af2-decision.md`. *Jaeger (night shift)*
 - [ ] **Access-finder segment (website)** — country/postcode input → up-to-date access to meds, centres/doctors, help. Data: `docs/data/access.json` (v1: DK full, GB/US/DE orgs). UI build in Lovable app (fetch model — pilot for top-3 #2). DoD: live segment on openendo.org, data verified + sourced, CI green. *Jaeger — in progress (data v1 done 2026-09-02; UI build next)*
 - [x] **Lovable ↔ repo content sync — DECIDED (fetch model) + pilot live** — human picked sync 2026-09-02; repo-canonical fetch implemented for what-we-know → `/research`. DoD (live + verified) in progress — verify after Lovable build. Remaining sync surface: funding + knowledge articles (hard-coded in app) → same fetch pattern. *Jaeger*
@@ -78,6 +79,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-03 (nat+2, T7 Phase A endo-specifik)** — Hermes cron: ny endo-fokuseret T7 Phase A leverance (`docs/research/lab-interviews/candidates-2026-09.md` + `outreach-draft-dk.md`). Shortlist: 5 danske endometriose-/kvindesundhedsforskningsgrupper — (1) OUH/SDU Rudnicki (telePROM/digital PRO, Odense), (2) Rigshospitalet LRB Borgbo (biomarker-diagnostik, KBH), (3) Rigshospitalet Gyn Madsen (biobank/mikrobiom, KBH), (4) AU Folkesundhed Rytter (FEMaLe/registre, Aarhus), (5) AUH Gyn MY-ENDO (RCT/digital, Aarhus). Prioriteringsraekkefoelge inkluderet. Dansk outreach-udkast: 3 afsnit + bullet-ask, offentlige kontaktkanaler, ingen PII, tilpasningsnoter per gruppe. CHECKPOINT + T7-workstream opdateret. Phase B (interviews) = human step.
 
 - **2026-09-03 (nat, item 6/6 — night backlog COMPLETE)** — AlphaFold run decision (Jaeger, night shift): live AFDB re-audit (alle 35 accessions fra FASTA-headers) viser at Phase 0's "8 to fold (~$1–3)" var en audit-artefakt — parser-bug i `scripts/phase0_structure_expression.py` (`part[1:].isdigit()` afviste UniProt-accessions med bogstaver som Q9Y5L3/Q9UPY5) gav 7 targets tom accession → falsk "missing". Alle 7 (ENTPD2/METTL3/MRGPRX2/SLC7A11/SPHK1/SUCNR1/TRPM3) har fuld-længde kanoniske AFDB v6-modeller; den ene ægte AFDB-mangel (GPX4 P36969) har 23 eksperimentelle PDB-strukturer (RCSB, bl.a. 2OBI/5H5R/6HN3/7U4I/8Q8J/9RF1). **KONKLUSION: 0/35 skal foldes — folding-leg udgår, $0; Phase 1 docking er strukturelt unblocked uden ColabFold-forudsætning.** Leveret: `docs/research/structures/fold_input/af2-decision.md` (beslutning + korrigeret 34-rækkers coverage-tabel + cost sheet + GPX4-evidens), parser-fix i scriptet (dry-run: 35/35 accessions), korrektionsnoter i fold_input/README.md + phase0.md + virtual-testing.md. phase0.json/manifest.json **urørt** (JSON-frys) — regen med fixet script er 1-kommando daytime-followup. Dermed er nat-backloggen (1 ferroptosis-verdict, 2 M3-knowledge-pages, 3 Phase 0.5 GEO, 4 T7 Phase A, 5 wiki part 2, 6 AlphaFold) **fuldført**.
 
