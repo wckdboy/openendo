@@ -5,7 +5,7 @@
   {
    "gene": "ABCC4",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "O15439",
    "length": 1325,
    "provenance": "reviewed",
    "file": "ABCC4.fasta"
@@ -13,7 +13,7 @@
   {
    "gene": "ACKR3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P25106",
    "length": 362,
    "provenance": "reviewed",
    "file": "ACKR3.fasta"
@@ -21,7 +21,7 @@
   {
    "gene": "ACVR1B",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P36896",
    "length": 505,
    "provenance": "reviewed",
    "file": "ACVR1B.fasta"
@@ -29,7 +29,7 @@
   {
    "gene": "AOC3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q16853",
    "length": 763,
    "provenance": "reviewed",
    "file": "AOC3.fasta"
@@ -37,7 +37,7 @@
   {
    "gene": "CCR6",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "O00421",
    "length": 718,
    "provenance": "reviewed",
    "file": "CCR6.fasta"
@@ -45,7 +45,7 @@
   {
    "gene": "CCR8",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P51685",
    "length": 355,
    "provenance": "reviewed",
    "file": "CCR8.fasta"
@@ -53,7 +53,7 @@
   {
    "gene": "CMKLR1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q99788",
    "length": 373,
    "provenance": "reviewed",
    "file": "CMKLR1.fasta"
@@ -61,7 +61,7 @@
   {
    "gene": "CX3CR1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P49238",
    "length": 355,
    "provenance": "reviewed",
    "file": "CX3CR1.fasta"
@@ -69,7 +69,7 @@
   {
    "gene": "ENTPD1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P49961",
    "length": 510,
    "provenance": "reviewed",
    "file": "ENTPD1.fasta"
@@ -77,7 +77,7 @@
   {
    "gene": "ENTPD2",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q9Y5L3",
    "length": 495,
    "provenance": "reviewed",
    "file": "ENTPD2.fasta"
@@ -85,7 +85,7 @@
   {
    "gene": "F2RL1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P55085",
    "length": 397,
    "provenance": "reviewed",
    "file": "F2RL1.fasta"
@@ -93,7 +93,7 @@
   {
    "gene": "FKBP4",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q02790",
    "length": 459,
    "provenance": "reviewed",
    "file": "FKBP4.fasta"
@@ -101,7 +101,7 @@
   {
    "gene": "FPR1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P21462",
    "length": 350,
    "provenance": "reviewed",
    "file": "FPR1.fasta"
@@ -109,7 +109,7 @@
   {
    "gene": "FPR2",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P25090",
    "length": 351,
    "provenance": "reviewed",
    "file": "FPR2.fasta"
@@ -117,7 +117,7 @@
   {
    "gene": "GPER1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q99527",
    "length": 375,
    "provenance": "reviewed",
    "file": "GPER1.fasta"
@@ -125,7 +125,7 @@
   {
    "gene": "GPX4",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P36969",
    "length": 197,
    "provenance": "reviewed",
    "file": "GPX4.fasta"
@@ -133,7 +133,7 @@
   {
    "gene": "HPGD",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P15428",
    "length": 266,
    "provenance": "reviewed",
    "file": "HPGD.fasta"
@@ -141,7 +141,7 @@
   {
    "gene": "HTRA1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q92743",
    "length": 480,
    "provenance": "reviewed",
    "file": "HTRA1.fasta"
@@ -149,7 +149,7 @@
   {
    "gene": "ILK",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q13418",
    "length": 452,
    "provenance": "reviewed",
    "file": "ILK.fasta"
@@ -157,7 +157,7 @@
   {
    "gene": "KLRK1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P26718",
    "length": 216,
    "provenance": "reviewed",
    "file": "KLRK1.fasta"
@@ -165,7 +165,7 @@
   {
    "gene": "METTL3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q86U44",
    "length": 580,
    "provenance": "reviewed",
    "file": "METTL3.fasta"
@@ -173,7 +173,7 @@
   {
    "gene": "MRGPRX2",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q96LB1",
    "length": 330,
    "provenance": "reviewed",
    "file": "MRGPRX2.fasta"
@@ -181,7 +181,7 @@
   {
    "gene": "NGFR",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P08138",
    "length": 427,
    "provenance": "reviewed",
    "file": "NGFR.fasta"
@@ -189,7 +189,7 @@
   {
    "gene": "PDK3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q15120",
    "length": 406,
    "provenance": "reviewed",
    "file": "PDK3.fasta"
@@ -197,7 +197,7 @@
   {
    "gene": "PFKFB3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q16875",
    "length": 520,
    "provenance": "reviewed",
    "file": "PFKFB3.fasta"
@@ -205,7 +205,7 @@
   {
    "gene": "PLAUR",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q03405",
    "length": 335,
    "provenance": "reviewed",
    "file": "PLAUR.fasta"
@@ -213,7 +213,7 @@
   {
    "gene": "S1PR2",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "O95136",
    "length": 353,
    "provenance": "reviewed",
    "file": "S1PR2.fasta"
@@ -221,7 +221,7 @@
   {
    "gene": "S1PR3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q99500",
    "length": 378,
    "provenance": "reviewed",
    "file": "S1PR3.fasta"
@@ -229,7 +229,7 @@
   {
    "gene": "SLC7A11",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q9UPY5",
    "length": 501,
    "provenance": "reviewed",
    "file": "SLC7A11.fasta"
@@ -237,7 +237,7 @@
   {
    "gene": "SLCO2A1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q92959",
    "length": 643,
    "provenance": "reviewed",
    "file": "SLCO2A1.fasta"
@@ -245,7 +245,7 @@
   {
    "gene": "SPHK1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q9NYA1",
    "length": 384,
    "provenance": "reviewed",
    "file": "SPHK1.fasta"
@@ -253,7 +253,7 @@
   {
    "gene": "SUCNR1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q9BXA5",
    "length": 334,
    "provenance": "reviewed",
    "file": "SUCNR1.fasta"
@@ -261,7 +261,7 @@
   {
    "gene": "TPSAB1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q15661",
    "length": 275,
    "provenance": "reviewed",
    "file": "TPSAB1.fasta"
@@ -269,7 +269,7 @@
   {
    "gene": "TRPM3",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "Q9HCF6",
    "length": 1732,
    "provenance": "reviewed",
    "file": "TRPM3.fasta"
@@ -277,7 +277,7 @@
   {
    "gene": "YAP1",
    "status": "ok",
-   "uniprot": "",
+   "uniprot": "P46937",
    "length": 504,
    "provenance": "reviewed",
    "file": "YAP1.fasta"
