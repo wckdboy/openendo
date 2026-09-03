@@ -59,9 +59,11 @@ def parse_fasta(fasta):
     header = lines[0][1:] if lines else ""
     seq = "".join(l.strip() for l in lines[1:] if not l.startswith(">"))
     acc = ""
-    for part in header.split("|"):
-        if part.startswith("sp|") or part.startswith("tr|"):
-            acc = part.split("|")[1]
+    parts = header.split("|")
+    # FASTA header: ">sp|Q9NYA1|SPHK1_HUMAN ..." -> parts[1] is the accession.
+    # (previous code checked startswith("sp|") which can never match after split)
+    if len(parts) >= 2 and parts[0] in ("sp", "tr"):
+        acc = parts[1]
     return header, acc, len(seq)
 
 
