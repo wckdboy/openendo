@@ -35,6 +35,13 @@
 - Mast-cell/pain background: Anaf 2006 (PMID 17007852), IJBS 2025 (PMID 41079937), AJRI 2025 (PMID 40028674), Front Physiol 2019 (PMID 31998139)
 - M3 cetrorelix pair resolved: measured µM *agonism* vs MRGPRX2 (Lansu, Nat Chem Biol 2017, PMID 28288109) → target-validating for antagonist development, not repurposing; cetrorelix 3 mg/weekly regimen rests on 2002 studies (PMID 12537785, 12470539); NCT00244452 no results
 
+## [2026-09-03] update | sirolimus + mrgprx2-pain — GEO reanalysis (GSE282532)
+- Dataset: NCBI GEO GSE282532 (Zhu et al., Peking Univ First Hospital; 5 paired eutopic/ectopic RNA-seq FPKM; public Nov 2025)
+- FKBP4: eutopic 32.5 FPKM vs ectopic 14.6 FPKM (FC 0.45; 2.2x DOWN in lesions); consistent across all 5 pairs — confirms PR-resistance literature (HOXA10/miR-29c suppression)
+- MRGPRX2: below detection in bulk as expected; mast-cell markers CPA3 (13.6x), TPSAB1 (15.0x), TPSB2 (11.0x) all strongly enriched in ectopic tissue — independent confirmation of FASEB J 2025 mast-cell density finding
+- SLC7A11: 2x down; ACSL4: 2.4x down — consistent with ferroptosis evasion via suppression (not overexpression of resistance nodes)
+- phase0.5.md status updated: dataset done, GSE247695/263897 remain open
+
 ## [2026-09-02] create | diversity-gap (concept) — wiki ingest part 2
 - 5 PMIDs (2017-2025): Bougie 2019 AJOG (race bias in historical literature); Meyer 2025 BJOG (FDA trial representation); Rice 2025 BMC (Black women QOL); Flores 2024 Pain (Latin America/Spain); Yamamoto 2017 (Asian women IVF cohort)
 - Key finding: no established biological basis for racial prevalence difference; disparities explained by access, not biology

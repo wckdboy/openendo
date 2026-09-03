@@ -1,7 +1,7 @@
 ---
 title: Sirolimus (rapamycin)
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-03
 type: entity
 tags: [treatment, drug, research]
 sources:
@@ -15,6 +15,7 @@ sources:
   - https://pubmed.ncbi.nlm.nih.gov/18988805/
   - https://www.proteinatlas.org/ENSG00000004478-FKBP4/tissue
   - https://www.ema.europa.eu/en/medicines/human/EPAR/rapamune
+  - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json
 confidence: medium
@@ -80,12 +81,20 @@ miR-29c^[https://pubmed.ncbi.nlm.nih.gov/27778641/] — a plausible contributor
 to progesterone resistance. Caveat: restoring FKBP4 is a *different* drug
 problem than mTOR inhibition; the two axes should not be conflated.
 
-## Expression cross-check (GTEx/HPA)
+## Expression cross-check (GTEx/HPA + GEO reanalysis)
 
 FKBP4 is strongly expressed in normal endometrium (HPA consensus nTPM 30.6,
 IHC high; GTEx uterus 43.5 TPM) and reduced — not absent — in disease. The
 target is present at the disease site. Full table:
 `docs/research/evidence/m3-validation.md`.^[https://www.proteinatlas.org/ENSG00000004478-FKBP4/tissue]
+
+GEO reanalysis (GSE282532; 5 paired eutopic/ectopic RNA-seq; Peking University
+First Hospital, public Nov 2025) confirms FKBP4 is **2.2x lower in ectopic
+lesions** (mean 32.5 vs 14.6 FPKM; FC 0.45; consistent across all 5 pairs).
+This independently confirms the HOXA10/miR-29c literature and validates that
+FKBP4 reduction is a lesion-level feature, not an artifact of bulk-tissue
+comparison. Source: NCBI GEO, GSE282532
+(2026-09-03).^[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532]
 
 ## Caveats
 

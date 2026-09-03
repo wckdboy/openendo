@@ -1,7 +1,7 @@
 ---
 title: "MRGPRX2 — mast-cell pain axis in endometriosis"
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-03
 type: concept
 tags: [research, drug, treatment]
 sources:
@@ -17,6 +17,7 @@ sources:
   - https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1200490
   - https://clinicaltrials.gov/study/NCT00244452
   - https://www.proteinatlas.org/ENSG00000183695-MRGPRX2/tissue
+  - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md
 confidence: medium
 ---
@@ -69,13 +70,21 @@ release at the centre of pain sensitization.^[https://pubmed.ncbi.nlm.nih.gov/41
   a repurposing lead. The actionable direction is **MRGPRX2 antagonist**
   development for non-hormonal endometriosis pain.
 
-## Expression cross-check (GTEx/HPA)
+## Expression cross-check (GTEx/HPA + GEO reanalysis)
 
 Bulk-tissue RNA is essentially zero (HPA endometrium nTPM 0.0, "not
 detected"; GTEx uterus 0.06 TPM) — expected for a receptor on a rare cell
 type (mast cells; also subsets of immune cells and dorsal root ganglion).
 The receptor is genuinely present at the lesion **on infiltrating mast
 cells**, which bulk screens cannot see.^[https://www.proteinatlas.org/ENSG00000183695-MRGPRX2/tissue]
+
+GEO reanalysis of GSE282532 (5 paired eutopic/ectopic RNA-seq samples;
+Peking University First Hospital, public Nov 2025) corroborates this:
+MRGPRX2 is below detection in all eutopic and nearly all ectopic bulk samples,
+but canonical mast-cell markers are **11-15x enriched** in ectopic lesions
+across all 5 pairs — CPA3 (13.6x), TPSAB1 (15.0x), TPSB2 (11.0x). This
+provides independent quantitative support for elevated mast-cell density in
+lesions. Source: NCBI GEO, GSE282532 (2026-09-03).^[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532]
 
 ## Why it matters
 

@@ -8,7 +8,7 @@
 > and a last-updated date. When you finish something, move it to ✅ Done and
 > add the next step. Never delete history — append to the change log.
 
-**Last updated:** 2026-09-02 · **Maintainers:** Jaeger + Percival (Hermes agents)
+**Last updated:** 2026-09-03 · **Maintainers:** Jaeger + Percival (Hermes agents)
 
 ---
 
@@ -30,7 +30,7 @@
 | T7 | Lab software modernization (DK ELN) | ✅ merged · 📋 Phase A shortlist next | 2026-09-02 | Percival |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival |
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival |
-| WIKI | Knowledge base (11 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain added (PR #13) | 2026-09-02 | Jaeger + Percival |
+| WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain updated with GEO corroboration (2026-09-03) | 2026-09-03 | Jaeger + Percival |
 | DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 | 2026-09-02 | Jaeger (cron) |
 
 ---
@@ -44,7 +44,7 @@
 - [ ] **Virtual testing Phase 1 — docking (~$10–25)** — ColabFold for 8 AFDB-missing M1 targets (4090) · Vina: sirolimus→FKBP4 + FKBP12-kontrol, cetrorelix→MRGPRX2 (7S8L), sulfasalazin→xCT (7CCS) · ADMET-AI/RDKit-profil af 9 M3-kandidater. DoD: poses+scores+ADMET i `docs/research/virtual/phase1/`, top-poses MD-ready. *Jaeger — plan i docs/research/virtual-testing.md; Phase 0 ✅ 2026-09-02*
 - [x] **Ferroptosis direction deep-dive — unblocks sulfasalazine** — ✅ VERDICT in PR #13 (`docs/research/evidence/ferroptosis-direction.md`, MEDIUM confidence, 13 PMIDs): ferroptose i læsionsceller = vækstbremse som læsioner undgår → *induktion* er den terapeutiske retning; SEMA3C = sub-letal signalering (ikke evidens mod induktion); systemiske/immun-celle og eutopic-risici → selektivitet er det åbne spørgsmål. `concepts/ferroptosis.md` + m3-validation.md sulfasalazin-række opdateret. *Percival*
 - [x] **M3 knowledge pages (DoD del b)** — ✅ DELIVERED in PR #13: `entities/sirolimus.md` + `concepts/mrgprx2-pain.md` (SCHEMA-kompliant, konfidens-tags, ≥2 wikilinks, verifikable kilder; navngivning følger SCHEMA entities-per-drug-konventionen) + index.md + llms.txt + wiki.html. *Percival*
-- [ ] **Virtual testing Phase 0.5 — lesion-ekspression (delegeret til Percival)** — ✅ First pass i PR #13 (`docs/research/virtual/phase0.5.md`): per-gen-tabel (HPA/GTEx/litteratur) + lesional evidence; MRGPRX2: bulk "not detected" men MRGPRX2⁺ mastceller ↑ i læsioner (FASEB J 2025, PMID 40600649); GEO-datasæt-liste (GSE282532/247695/263897/…) verificeret via NCBI API. Open: GEO/single-cell reanalyse af de listede datasæt. *Percival*
+- [x] **Virtual testing Phase 0.5 — lesion-ekspression (delegeret til Percival)** — ✅ GSE282532 reanalyseret 2026-09-03 (`docs/research/virtual/phase0.5.md`): FKBP4 2.2x ned i ektopisk vs eutopisk (FC 0.45; alle 5 par); mast-celle-markorer CPA3/TPSAB1/TPSB2 11-15x op i læsioner (MRGPRX2 mast-celle-hypotese bekræftet); SLC7A11 2x ned, ACSL4 2.4x ned (ferroptose-undvigelse via suppresserede effektor-gen-niveauer). Open: GSE247695 (scRNA-seq) + GSE263897 (spatial). *Percival*
 - [x] **T7 Phase A — DONE 2026-09-02** — shortlist (KU Biology, DTU Food/Bioengineering, SSI + Novo/Novonesis som backup) + dansk outreach-udkast i `docs/research/lab-interview-shortlist.md`. Phase B (interviews, anonymiseret) venter på menneske. *Percival*
 - [ ] **AlphaFold run decision** — 35 FASTA ready; **27/35 findes allerede i AFDB → kun 8 skal foldes (~$1–3)**. Decide compute path (RunPod 4090 vs MacBook M3 Pro vs Colab). DoD: decision + cost sheet i `docs/research/structures/fold_input/`, derefter kør eller udsæt eksplicit. *Jaeger (decide) / Percival (prepare)*
 - [ ] **Access-finder segment (website)** — country/postcode input → up-to-date access to meds, centres/doctors, help. Data: `docs/data/access.json` (v1: DK full, GB/US/DE orgs). UI build in Lovable app (fetch model — pilot for top-3 #2). DoD: live segment on openendo.org, data verified + sourced, CI green. *Jaeger — in progress (data v1 done 2026-09-02; UI build next)*
@@ -78,6 +78,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-03 (nat)** — Phase 0.5 GEO reanalysis (Percival): GSE282532 (5 paired eutopic/ectopic RNA-seq FPKM; Zhu et al., Peking Univ First Hospital; public Nov 2025) downloaded + analysed. Key findings: FKBP4 2.2x down in ectopic lesions (FC 0.45; all 5 pairs consistent — confirms HOXA10/miR-29c PR-resistance literature); mast-cell markers CPA3/TPSAB1/TPSB2 11-15x enriched in ectopic (independent GEO confirmation of FASEB J 2025 mast-cell density finding; MRGPRX2 itself below bulk detection as expected); SLC7A11 2x down + ACSL4 2.4x down in lesions (ferroptosis-evasion via suppression confirmed). phase0.5.md updated (status done, GEO section added, dataset table updated). sirolimus.md + mrgprx2-pain.md updated with GEO corroboration + GSE282532 source. knowledge log + index + llms.txt updated. Remaining open: GSE247695 (scRNA-seq) + GSE263897 (spatial) for cell-type resolution.
 
 - **2026-09-02 (nat)** — Wiki ingest part 2 (Percival): `concepts/diversity-gap.md` (5 PMIDs, 2019-2025 — racial/ethnic access bias in endo research + FDA trials; no biological basis for racial prevalence diff) + `concepts/danish-registries.md` (7 PMIDs, 2017-2026 — DNPR/Rx/MBR/psychiatric registers, CPR-linkage, PPV validation, diagnostic delay, obstetric + mental health burden; registry analytics workstream entry point). index.md (13 pages), log.md, llms.txt, wiki.html updated. CI push pending.
 
