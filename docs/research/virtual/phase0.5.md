@@ -1,9 +1,15 @@
 # Virtual testing — Phase 0.5: lesion-expression cross-check
 
-**Owner:** Percival · **Status:** GEO reanalysis done (GSE282532, 2026-09-03)
-— FKBP4 2.2x down in lesions confirmed; mast-cell enrichment 11–15x
-confirmed (supports MRGPRX2 mast-cell hypothesis); SLC7A11 2x down in
-lesions (ferroptosis-evasion consistent). Companion:
+**Owner:** Percival · **Status:** GEO reanalysis COMPLETE (2026-09-03) —
+all three prioritized datasets reanalyzed: **GSE282532** (bulk FPKM,
+ovarian endometrioma), **GSE247695** (scRNA-seq, peritoneal lesions, PR
+#19), **GSE263897** (GeoMx spatial, peritoneal lesions, PR #20).
+FKBP4 reduced in endometrioma lesions confirmed (2.2x bulk; stroma-down
+replicated in both peritoneal datasets); mast-cell enrichment 11–15x is an
+**endometrioma** feature — **absent in superficial peritoneal lesions**
+(two independent datasets agree, incl. a dropout-free GeoMx readout);
+SLC7A11 reduced in endometrioma, no constitutive up-regulation in any
+dataset (ferroptosis-evasion consistent). Companion:
 `docs/research/virtual-testing.md` (pipeline plan), `phase0.md`
 (structure/expression audit), `m3-validation.md`.
 
@@ -39,7 +45,7 @@ transcriptomes, single-cell or spatial data — i.e. GEO, not GTEx.
 | TPSAB1 (tryptase alpha/beta 1) | 0.61 | 9.1 | **15.0x UP** | Canonical mast-cell marker; >10x in all 5 ectopic samples |
 | TPSB2 (tryptase beta 2) | 0.88 | 9.7 | **11.0x UP** | Mast-cell marker; consistent across all pairs |
 
-All three canonical mast-cell markers are 11-15x enriched in ectopic vs eutopic endometrium across all 5 paired samples. This is strong indirect evidence that MRGPRX2-expressing mast cells are substantially more abundant in lesions, consistent with the FASEB J 2025 finding (PMID 40600649). Direct MRGPRX2 bulk signal is below detection (as expected for a receptor on a rare infiltrating cell type).
+All three canonical mast-cell markers are 11-15x enriched in ectopic vs eutopic endometrium across all 5 paired samples. This is strong indirect evidence that MRGPRX2-expressing mast cells are substantially more abundant in **ovarian endometrioma** lesions, consistent with the FASEB J 2025 finding (PMID 40600649). Direct MRGPRX2 bulk signal is below detection (as expected for a receptor on a rare infiltrating cell type). **Important (2026-09-03): this enrichment does NOT replicate in superficial peritoneal lesions — see the mast-cell reconciliation in the GSE247695 and GSE263897 sections below.**
 
 ## GEO reanalysis performed (2026-09-03)
 
@@ -80,7 +86,7 @@ are directional evidence only.
    confirms the FASEB J 2025 result (PMID 40600649) that mast-cell density is
    elevated in endometriotic lesions. MRGPRX2 as a target remains well-
    supported; single-cell or spatial data (GSE247695, GSE263897) are the next
-   confirmation step.
+   confirmation step — see the lesion-type reconciliation below.
 3. **SLC7A11/ferroptosis:** SLC7A11 is 2x lower in ectopic tissue (consistent
    with SEMA3C suppression). ACSL4 is 2.4x lower. The ferroptosis-evasion
    phenotype is not via constitutive up-regulation of the SLC7A11/GPX4 axis
@@ -97,31 +103,34 @@ lesions); bulk RNA (not single-cell or spatial); FPKM is a legacy metric
 ## Candidate GEO datasets (real accessions, NCBI GEO query 2026-09-02)
 
 Lesion-vs-eutopic / lesion-resolution human endometriosis datasets, ranked by
-fit to the Phase 0.5 question (GSE282532 done; GSE247695/263897 remain):
+fit to the Phase 0.5 question. **Top three reanalyzed 2026-09-03; the rest
+are optional context (no active claim):**
 
 | Accession | Samples | Design | Answers | Status |
 |---|---|---|---|---|
 | GSE282532 | 10 | RNA-seq, **paired eutopic + ectopic** endometrium, ovarian endometriosis | FKBP4/SLC7A11 lesion vs eutopic (direct) | **DONE 2026-09-03** |
-| GSE247695 | 8 | **scRNA-seq**, lesions vs paired eutopic (metabolic activity) | Cell-type resolution — mast cells (MRGPRX2), stromal FKBP4/SLC7A11 | Open |
-| GSE263897 | 60 | **Spatial** transcriptomics, superficial peritoneal lesions | Mast-cell niches in situ (MRGPRX2) | Open |
-| GSE303635 | 20 | RNA-seq, stromal cells, lesion-type heterogeneity | Stromal FKBP4/SLC7A11 by lesion type | Open |
-| GSE202571 | 18 | RNA-seq, secretory eutopic endometrium with/without EM | Eutopic FKBP4 baseline (progesterone-resistance context) | Open |
-| GSE315857 | 8 | RNA-seq, proliferative eutopic endometrium in EM (PR downstream) | Eutopic FKBP4/PR axis | Open |
-| GSE240392 | 24 | Mouse EM model, eutopic + ectopic over progression | Longitudinal direction (mouse) | Open |
-| GSE303150 | 142 | Spatial, adenomyosis lesions (adjacent disease) | Immune signature incl. mast cells (context) | Open |
-| GSE226575 | 9 | RNA-seq, endometrial cyst to EAOC progression | Lesion progression axis (context) | Open |
-| GSE291656 | 18 | RT-PCR, peritoneal fluid NLRP3 (context) | Peritoneal immune environment | Open |
+| GSE247695 | 8 | **scRNA-seq**, lesions vs paired eutopic (metabolic activity) | Cell-type resolution — mast cells (MRGPRX2), stromal FKBP4/SLC7A11 | **DONE 2026-09-03** (PR #19) |
+| GSE263897 | 10 tissues / 60 segments | **GeoMx DSP spatial**, superficial peritoneal lesions, 3 segmented compartments | Mast-cell niches in situ (MRGPRX2), compartment-resolved FKBP4/SLC7A11 | **DONE 2026-09-03** (PR #20) |
+| GSE303635 | 20 | RNA-seq, stromal cells, lesion-type heterogeneity | Stromal FKBP4/SLC7A11 by lesion type | Optional |
+| GSE202571 | 18 | RNA-seq, secretory eutopic endometrium with/without EM | Eutopic FKBP4 baseline (progesterone-resistance context) | Optional |
+| GSE315857 | 8 | RNA-seq, proliferative eutopic endometrium in EM (PR downstream) | Eutopic FKBP4/PR axis | Optional |
+| GSE240392 | 24 | Mouse EM model, eutopic + ectopic over progression | Longitudinal direction (mouse) | Optional |
+| GSE303150 | 142 | Spatial, adenomyosis lesions (adjacent disease) | Immune signature incl. mast cells (context) | Optional |
+| GSE226575 | 9 | RNA-seq, endometrial cyst to EAOC progression | Lesion progression axis (context) | Optional |
+| GSE291656 | 18 | RT-PCR, peritoneal fluid NLRP3 (context) | Peritoneal immune environment | Optional |
 
 Query used: NCBI eutils `db=gds`, `endometriosis[All Fields] AND eutopic[All
 Fields] AND gse[Entry Type]` (96 hits; top 40 screened). **Nothing above is an
 invented identifier — every accession was returned live by the NCBI API.**
 
-## Next step
+## Phase 0.5 status: COMPLETE (2026-09-03)
 
-GSE247695 (scRNA-seq, 8 samples) + GSE263897 (spatial, 60) remain. These
-would provide cell-type-resolved MRGPRX2 confirmation and mast-cell niche
-mapping in peritoneal lesions. Data are public ($0); processing requires
-Seurat/Scanpy (scRNA-seq) or Visium analysis tools.
+All three prioritized datasets have been reanalyzed ($0, public GEO data):
+GSE282532 (bulk, endometrioma) · GSE247695 (scRNA-seq, peritoneal) ·
+GSE263897 (GeoMx spatial, peritoneal). Write-ups below. Remaining candidate
+datasets in the table are optional context with no active claim. Next
+virtual-testing phase: **Phase 1 docking (Jaeger)** — structurally unblocked
+by the 0-to-fold decision (`af2-decision.md`), no folding prerequisite.
 
 *Percival (Hermes Agent), 2026-09-02 / updated 2026-09-03. Public data only;
 no PII. Research infrastructure, not medical advice.*
@@ -162,8 +171,10 @@ macrophage 486 vs 159).
 - **KIT+ cells are NOT enriched in these peritoneal lesions** (0.56% vs
   0.73% of cells) — a discrepancy vs GSE282532's 11–15x mast-cell marker
   enrichment in ovarian endometrioma. Lesion-type difference (peritoneal
-  vs endometrioma) or method difference; flagged for reconciliation, not
-  glossed over.
+  vs endometrioma) or method difference; flagged for reconciliation. The
+  GSE263897 GeoMx reanalysis (below) resolved this: **dropout-free GeoMx
+  also finds no mast-cell enrichment in peritoneal lesions** — the
+  discrepancy is lesion type, not method.
 
 ### Conclusions for the M3 targets
 1. **FKBP4/sirolimus:** target expressed broadly; **down in lesion
@@ -173,11 +184,142 @@ macrophage 486 vs 159).
    dip.
 2. **MRGPRX2 pain axis:** scRNA here is **inconclusive, not negative** —
    dropout regime + rare cells. The positive IHC evidence (FASEB J 2025,
-   PMID 40600649) and GSE282532 mast-cell enrichment stand; the spatial
-   dataset (GSE263897) remains the definitive single-dataset check.
+   PMID 40600649) and GSE282532 mast-cell enrichment stand **for ovarian
+   endometrioma**; the spatial dataset (GSE263897) was the definitive
+   single-dataset check for peritoneal lesions (done — see below).
 3. **SLC7A11/sulfasalazine:** down in lesion stroma/endothelium —
    consistent with SEMA3C suppression and the ferroptosis-direction
    verdict (no constitutive overexpression to target).
 
-**Remaining Phase 0.5 leg:** GSE263897 (GeoMx spatial, per-ROI DCC —
-needs the NanoString pipeline; logged, not yet run).
+**Phase 0.5 remaining leg:** GSE263897 (GeoMx spatial) — ✅ **DONE
+2026-09-03 (PR #20)**; full write-up in the next section.
+
+
+## GSE263897 reanalysis (GeoMx DSP spatial, 2026-09-03, Percival)
+
+**Dataset:** GSE263897 — NanoString GeoMx Digital Spatial Profiling, Human
+Whole Transcriptome Atlas v1.0 (GPL24676; PKC `Hs_R_NGS_WTA_v1.0`).
+Superficial **peritoneal** endometriotic lesions vs patient-matched eutopic
+endometrium from 5 women (secretory phase); 10 tissues × duplicate ROIs × 3
+fluorescence-segmented compartments per ROI (**Epithelium** pan-cytokeratin+,
+**Macrophages** CD68+, **Stroma** pan-negative) = **60 segments**. Public Apr
+2024 (updated Feb 2025); BioProject PRJNA1099697; no linked PMID at time of
+analysis. GEO note: the depositors' own analysis reported **minimal
+lesion-vs-eutopic transcriptional differences** in sub-epithelial stroma and
+epithelium, with the lesion **epithelium** driving inflammation via
+Complement C3 signalling to macrophages.
+
+**Why this dataset matters:** GeoMx probes hybridise in situ — **no 10x
+dropout** — so a low-expression receptor (MRGPRX2) on a rare cell type (mast
+cells) is detectable *if present*. GSE247695 left the peritoneal-lesion
+mast-cell question open under a dropout regime; GSE263897 is the
+dropout-free check. (Limitation: GeoMx segments are region-averaged per
+compartment; mast cells, if present, fall inside the pan-negative Stroma
+segment — there is no mast-cell-specific segment.)
+
+**Method** (reproducible): `scripts/gse263897_analysis.py` — parse each DCC
+(per-segment RTS counts) + PKC codebook (RTS→gene; 18,677 targets incl.
+FKBP4/MRGPRX2/SLC7A11/KIT/CPA3/TPSAB1/MS4A2 — TPSB2 not separately on the
+WTA panel); 139 negative-control probes for background; Q3 normalization
+(75th percentile of segment probe counts, GeoMx standard) → log2; per-patient
+mean over duplicate ROIs; paired lesion vs eutopic per compartment (n=5 →
+directional evidence only, consistent with the GSE282532/GSE247695
+conventions). Output: `virtual/gse263897_targets.json` (per-patient deltas
+included).
+
+**QC:** negative-probe geomean 2.1–28.4 counts across segments (low
+background; no segment above 10% of its Q3). 8 sparse segments flagged
+(compartment marker ≤ 2× neg-geomean): 5 Macrophage AOIs (CD68-low, e.g.
+GSM8206913: 11.6k total reads) + 3 Epithelium AOIs (EPCAM-low, incl. the
+near-empty GSM8206952, EPCAM=6 vs background 3.6 — it drives patient 4909's
+C3 delta down). Segmentation sanity verified: EPCAM/KRT18 enrich Epithelium,
+CD68/LYZ/CD163 enrich Macrophages, DCN/COL1A1 enrich Stroma. **Robustness:**
+key conclusions unchanged under (a) exclusion of the 8 sparse segments and
+(b) CPM scaling instead of Q3.
+
+**Validation (pipeline credibility):** the depositors' headline —
+Complement **C3 elevated in lesion epithelium** — replicates: lesion vs
+eutopic epithelium **FC 3.29 (Δlog2 +1.72), 4/5 patients** (2756/5322/12529/
+9997 up; 4909 opposite — its lesion ROI_007 segment is the sparse
+GSM8206952; even excluding it, 4909 shows no lesion C3 increase).
+Macrophage/stroma C3 flat. A pipeline that reproduces the study's central
+claim on the same public data is a credible instrument for our target
+questions.
+
+### Per-target, compartment-resolved results (lesion vs eutopic, patient-paired)
+
+| Gene | Compartment | Eutopic mean | Lesion mean | FC | Consistency | Raw/background |
+|---|---|---|---|---|---|---|
+| FKBP4 | Epithelium | 0.92 log2-Q3 | 1.30 | **1.31** | **5/5 up** | 3.3x / 5.1x (real signal) |
+| FKBP4 | Stroma | 1.08 | 0.91 | 0.89 | 4/5 down | 3.3x / 3.1x (real signal) |
+| FKBP4 | Macrophages | 0.85 | 0.76 | 0.94 | 3/5 | near background |
+| SLC7A11 | Stroma | 0.61 | 0.53 | 0.94 | 4/5 down | 1.2x / 1.3x (weak) |
+| SLC7A11 | Epithelium | 0.75 | 0.59 | 0.89 | 3/5 | 1.6x (weak) |
+| MRGPRX2 | Stroma | 0.56 | 0.51 | 0.96 | 2/5 | **1.2x / 1.3x — NOT above background** |
+| MRGPRX2 | Epithelium | 0.41 | 0.56 | 1.11 | 4/5 | ~1x (background) |
+| KIT | Stroma | 0.70 | 0.62 | 0.95 | 4/5 down | 1.6x (weak) |
+| CPA3 | Stroma | 0.63 | 0.38 | 0.84 | **5/5 down** | 1.3x / 0.9x (weak) |
+| TPSAB1 | Stroma | 0.73 | 0.78 | 1.04 | 3/5 | 1.7x / 1.9x (weak) |
+| MS4A2 | Stroma | 0.52 | 0.34 | 0.89 | 4/5 down | 1.1x / 0.8x (background) |
+| FCER1A | Stroma | 0.39 | 0.38 | 0.99 | 3/5 | 0.8x (background) |
+| GPX4 | Stroma | 2.56 | 2.50 | 0.96 | 4/5 | 11x (solid) |
+| ACSL4 | Stroma | 0.92 | 1.07 | 1.11 | **5/5 up** | 2.1x / 3.1x |
+| C3 | Epithelium | 2.56 | 4.28 | **3.29** | **4/5 up** | strong (study replication) |
+
+Values are mean log2(Q3-normalized counts) over duplicate ROIs per tissue,
+then across patients (full per-patient deltas in the JSON). Directional only
+(n=5). "Raw/background" = mean raw count ÷ mean negative-probe geomean in
+eutopic/lesion segments of that compartment.
+
+### Mast-cell reconciliation — the Phase 0.5 payoff
+
+Three independent GEO datasets now paint a consistent, lesion-type-specific
+picture:
+
+| Dataset | Platform | Lesion type | Mast-cell readout in lesions |
+|---|---|---|---|
+| GSE282532 | bulk RNA-seq | **ovarian endometrioma** (proliferative) | CPA3/TPSAB1/TPSB2 **11–15x UP** (all 5 pairs) |
+| GSE247695 | 10x scRNA-seq | superficial **peritoneal** | KIT+ cluster **not enriched** (0.56% vs 0.73%) |
+| GSE263897 | GeoMx DSP (no dropout) | superficial **peritoneal** (secretory) | KIT/CPA3/TPSAB1/MS4A2/FCER1A **flat-to-down, at/near negative-probe background in both tissues; MRGPRX2 itself not above background** |
+
+**Reading:** mast-cell enrichment (and any MRGPRX2-lesion signal) is an
+**ovarian-endometrioma feature** in these data, not a feature of superficial
+peritoneal lesions — the GSE247695 "discrepancy" is resolved: two peritoneal
+datasets, one dropout-prone and one dropout-free, agree. The FASEB J 2025
+mast-cell/IHC result (PMID 40600649) and GSE282532 support the MRGPRX2 pain
+axis in the lesion types they studied; extrapolating it to all endometriosis
+lesion types is not supported by the public transcriptomic record here.
+Honest limits: near-background GeoMx reads cannot fully separate "few mast
+cells" from "weak WTA probe sensitivity" for these genes; and the same
+reasoning means we cannot claim mast cells are *absent* — only that no
+lesion enrichment is detectable. **IHC on lesion-type-stratified tissue
+remains the definitive check** (unchanged recommendation).
+
+### M3-target conclusions
+1. **FKBP4/sirolimus:** the compartment split from GSE247695 replicates in a
+   second, independent peritoneal dataset: **down in lesion stroma (0.89,
+   4/5), up in lesion epithelium (1.31, 5/5)**. Endometrioma bulk
+   down-regulation (GSE282532, 0.45) reflects stromal dominance. Consistent
+   with PR-resistance in the stroma; FKBP4 expression is not a barrier to an
+   mTOR-axis intervention anywhere.
+2. **MRGPRX2/mast-cell pain axis:** no support in superficial peritoneal
+   lesions on a dropout-free platform (markers at background, no enrichment).
+   Target rationale stands for endometrioma-type lesions; lesion-type
+   stratification is now an explicit caveat for the pain-axis hypothesis.
+3. **SLC7A11/sulfasalazine:** no constitutive up-regulation in any dataset or
+   compartment (slight down in lesion stroma/endometrium where measurable;
+   near background in GeoMx). Ferroptosis-induction direction unchanged;
+   sulfasalazine stays WATCHLIST on selectivity/dose, not on expression.
+4. **ACSL4** (pro-ferroptotic): up in lesion stroma 5/5 (1.11x) here — small,
+   opposite to endometrioma bulk (0.41); not mechanistically decisive at this
+   magnitude, flagged for the ferroptosis-direction file's awareness only.
+
+**Limitations:** n=5; secretory phase; superficial peritoneal lesions only
+(not endometrioma/DIE); GeoMx WTA probe sensitivity is limited near
+background (rare-cell transcripts); ROIs were selected on lesion areas with
+epithelium (lesion sampling bias); Q3 normalization + directional evidence
+only (no formal test at n=5). No PII — patient identifiers are the public
+GEO sampleIDs (2756/5322/12529/4909/9997).
+
+*Percival (Hermes Agent), 2026-09-03. Public GEO data; no PII. Research
+infrastructure, not medical advice.*
