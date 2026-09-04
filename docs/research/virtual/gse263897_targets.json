@@ -1,0 +1,1698 @@
+{
+ "dataset": "GSE263897",
+ "platform": "NanoString GeoMx DSP, Human WTA v1.0 (GPL24676); PKC Hs_R_NGS_WTA_v1.0",
+ "design": "5 women (secretory phase), patient-matched eutopic endometrium vs superficial peritoneal endometriotic lesion, duplicate ROIs, 3 segments per ROI (Epithelium panCK+ / Macrophages CD68+ / Stroma pan-negative) = 60 segments",
+ "n_segments": 60,
+ "analysis": "DCC raw counts -> Q3 normalisation (75th pct of segment probe counts) -> log2; per-patient mean over duplicate ROIs; paired lesion vs eutopic; n=5 -> directional evidence only (no formal test, consistent with GSE282532/GSE247695)",
+ "qc": {
+  "neg_probe_geomean": {
+   "min": 2.09,
+   "median": 3.95,
+   "max": 28.36
+  },
+  "sparse_segments": [
+   {
+    "gsm": "GSM8206910",
+    "title": "Macrophages-Slide_1-ROI_001",
+    "total_raw": 13186,
+    "neg_geomean": 2.1,
+    "marker_raw": 4
+   },
+   {
+    "gsm": "GSM8206913",
+    "title": "Macrophages-Slide_1-ROI_002",
+    "total_raw": 11628,
+    "neg_geomean": 2.3,
+    "marker_raw": 3
+   },
+   {
+    "gsm": "GSM8206916",
+    "title": "Macrophages-Slide_1-ROI_003",
+    "total_raw": 18143,
+    "neg_geomean": 2.2,
+    "marker_raw": 4
+   },
+   {
+    "gsm": "GSM8206923",
+    "title": "Epithelium-Slide_1-ROI_005",
+    "total_raw": 53357,
+    "neg_geomean": 2.6,
+    "marker_raw": 4
+   },
+   {
+    "gsm": "GSM8206929",
+    "title": "Epithelium-Slide_1-ROI_007",
+    "total_raw": 105347,
+    "neg_geomean": 3.0,
+    "marker_raw": 4
+   },
+   {
+    "gsm": "GSM8206934",
+    "title": "Macrophages-Slide_3-ROI_001",
+    "total_raw": 26434,
+    "neg_geomean": 2.6,
+    "marker_raw": 1
+   },
+   {
+    "gsm": "GSM8206952",
+    "title": "Epithelium-Slide_3-ROI_007",
+    "total_raw": 99986,
+    "neg_geomean": 3.6,
+    "marker_raw": 6
+   },
+   {
+    "gsm": "GSM8206957",
+    "title": "Macrophages-Slide_3-ROI_010",
+    "total_raw": 41887,
+    "neg_geomean": 2.5,
+    "marker_raw": 5
+   }
+  ]
+ },
+ "results": {
+  "FKBP4": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "FKBP4",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.916,
+    "lesion_mean_log2q3": 1.305,
+    "delta_log2_lesion_minus_eutopic": 0.389,
+    "fold_change_lesion_over_eutopic": 1.31,
+    "patients_matching_direction": "5/5",
+    "per_patient_delta_log2": {
+     "2756": 0.422,
+     "5322": 0.689,
+     "12529": 0.351,
+     "4909": 0.234,
+     "9997": 0.247
+    }
+   },
+   "Macrophages": {
+    "gene": "FKBP4",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.847,
+    "lesion_mean_log2q3": 0.762,
+    "delta_log2_lesion_minus_eutopic": -0.085,
+    "fold_change_lesion_over_eutopic": 0.94,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 1.161,
+     "5322": -0.208,
+     "12529": -1.029,
+     "4909": -0.424,
+     "9997": 0.076
+    }
+   },
+   "Stroma": {
+    "gene": "FKBP4",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.082,
+    "lesion_mean_log2q3": 0.911,
+    "delta_log2_lesion_minus_eutopic": -0.171,
+    "fold_change_lesion_over_eutopic": 0.89,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.06,
+     "5322": 0.033,
+     "12529": -0.333,
+     "4909": -0.248,
+     "9997": -0.248
+    }
+   }
+  },
+  "MRGPRX2": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "MRGPRX2",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.414,
+    "lesion_mean_log2q3": 0.56,
+    "delta_log2_lesion_minus_eutopic": 0.146,
+    "fold_change_lesion_over_eutopic": 1.11,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.047,
+     "5322": 0.196,
+     "12529": 0.114,
+     "4909": 0.529,
+     "9997": -0.156
+    }
+   },
+   "Macrophages": {
+    "gene": "MRGPRX2",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.455,
+    "lesion_mean_log2q3": 0.864,
+    "delta_log2_lesion_minus_eutopic": 0.409,
+    "fold_change_lesion_over_eutopic": 1.33,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.5,
+     "5322": 0.161,
+     "12529": -0.161,
+     "4909": 0.839,
+     "9997": 0.708
+    }
+   },
+   "Stroma": {
+    "gene": "MRGPRX2",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.557,
+    "lesion_mean_log2q3": 0.505,
+    "delta_log2_lesion_minus_eutopic": -0.052,
+    "fold_change_lesion_over_eutopic": 0.96,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.241,
+     "5322": 0.009,
+     "12529": -0.43,
+     "4909": -0.125,
+     "9997": 0.044
+    }
+   }
+  },
+  "SLC7A11": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "SLC7A11",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.752,
+    "lesion_mean_log2q3": 0.588,
+    "delta_log2_lesion_minus_eutopic": -0.164,
+    "fold_change_lesion_over_eutopic": 0.89,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.348,
+     "5322": -0.27,
+     "12529": 0.186,
+     "4909": 0.016,
+     "9997": -0.401
+    }
+   },
+   "Macrophages": {
+    "gene": "SLC7A11",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.245,
+    "lesion_mean_log2q3": 0.617,
+    "delta_log2_lesion_minus_eutopic": 0.372,
+    "fold_change_lesion_over_eutopic": 1.29,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.792,
+     "5322": 0.208,
+     "12529": 0.339,
+     "4909": 0.632,
+     "9997": -0.111
+    }
+   },
+   "Stroma": {
+    "gene": "SLC7A11",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.615,
+    "lesion_mean_log2q3": 0.532,
+    "delta_log2_lesion_minus_eutopic": -0.083,
+    "fold_change_lesion_over_eutopic": 0.94,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.264,
+     "5322": 0.267,
+     "12529": -0.062,
+     "4909": -0.249,
+     "9997": -0.106
+    }
+   }
+  },
+  "GPX4": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "GPX4",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.856,
+    "lesion_mean_log2q3": 2.685,
+    "delta_log2_lesion_minus_eutopic": -0.171,
+    "fold_change_lesion_over_eutopic": 0.89,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.629,
+     "5322": -0.556,
+     "12529": -0.636,
+     "4909": -0.717,
+     "9997": 0.425
+    }
+   },
+   "Macrophages": {
+    "gene": "GPX4",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.105,
+    "lesion_mean_log2q3": 2.514,
+    "delta_log2_lesion_minus_eutopic": 0.41,
+    "fold_change_lesion_over_eutopic": 1.33,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.792,
+     "5322": -0.2,
+     "12529": 1.361,
+     "4909": -0.519,
+     "9997": 0.614
+    }
+   },
+   "Stroma": {
+    "gene": "GPX4",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.561,
+    "lesion_mean_log2q3": 2.503,
+    "delta_log2_lesion_minus_eutopic": -0.057,
+    "fold_change_lesion_over_eutopic": 0.96,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.039,
+     "5322": -0.335,
+     "12529": 0.399,
+     "4909": -0.305,
+     "9997": -0.008
+    }
+   }
+  },
+  "ACSL4": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "ACSL4",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.383,
+    "lesion_mean_log2q3": 1.847,
+    "delta_log2_lesion_minus_eutopic": 0.464,
+    "fold_change_lesion_over_eutopic": 1.38,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.204,
+     "5322": 2.55,
+     "12529": 0.171,
+     "4909": -0.656,
+     "9997": 0.46
+    }
+   },
+   "Macrophages": {
+    "gene": "ACSL4",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.161,
+    "lesion_mean_log2q3": 0.749,
+    "delta_log2_lesion_minus_eutopic": -0.411,
+    "fold_change_lesion_over_eutopic": 0.75,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.208,
+     "5322": -1.085,
+     "12529": -0.819,
+     "4909": -0.161,
+     "9997": -0.2
+    }
+   },
+   "Stroma": {
+    "gene": "ACSL4",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.915,
+    "lesion_mean_log2q3": 1.07,
+    "delta_log2_lesion_minus_eutopic": 0.156,
+    "fold_change_lesion_over_eutopic": 1.11,
+    "patients_matching_direction": "5/5",
+    "per_patient_delta_log2": {
+     "2756": 0.228,
+     "5322": 0.384,
+     "12529": 0.131,
+     "4909": 0.031,
+     "9997": 0.004
+    }
+   }
+  },
+  "KIT": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "KIT",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.562,
+    "lesion_mean_log2q3": 0.529,
+    "delta_log2_lesion_minus_eutopic": -0.033,
+    "fold_change_lesion_over_eutopic": 0.98,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.054,
+     "5322": 0.085,
+     "12529": 0.082,
+     "4909": -0.244,
+     "9997": -0.142
+    }
+   },
+   "Macrophages": {
+    "gene": "KIT",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.356,
+    "lesion_mean_log2q3": 0.432,
+    "delta_log2_lesion_minus_eutopic": 0.076,
+    "fold_change_lesion_over_eutopic": 1.05,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.0,
+     "5322": -0.085,
+     "12529": 0.368,
+     "4909": 0.132,
+     "9997": -0.035
+    }
+   },
+   "Stroma": {
+    "gene": "KIT",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.698,
+    "lesion_mean_log2q3": 0.619,
+    "delta_log2_lesion_minus_eutopic": -0.079,
+    "fold_change_lesion_over_eutopic": 0.95,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.215,
+     "5322": -0.007,
+     "12529": -0.36,
+     "4909": 0.352,
+     "9997": -0.163
+    }
+   }
+  },
+  "CPA3": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "CPA3",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.534,
+    "lesion_mean_log2q3": 0.382,
+    "delta_log2_lesion_minus_eutopic": -0.152,
+    "fold_change_lesion_over_eutopic": 0.9,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.35,
+     "5322": -0.02,
+     "12529": 0.311,
+     "4909": -0.296,
+     "9997": -0.404
+    }
+   },
+   "Macrophages": {
+    "gene": "CPA3",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.798,
+    "lesion_mean_log2q3": 0.845,
+    "delta_log2_lesion_minus_eutopic": 0.047,
+    "fold_change_lesion_over_eutopic": 1.03,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": -0.708,
+     "5322": 0.368,
+     "12529": 1.272,
+     "4909": -0.565,
+     "9997": -0.132
+    }
+   },
+   "Stroma": {
+    "gene": "CPA3",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.634,
+    "lesion_mean_log2q3": 0.384,
+    "delta_log2_lesion_minus_eutopic": -0.25,
+    "fold_change_lesion_over_eutopic": 0.84,
+    "patients_matching_direction": "5/5",
+    "per_patient_delta_log2": {
+     "2756": -0.354,
+     "5322": -0.269,
+     "12529": -0.054,
+     "4909": -0.186,
+     "9997": -0.386
+    }
+   }
+  },
+  "TPSAB1": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "TPSAB1",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.682,
+    "lesion_mean_log2q3": 0.55,
+    "delta_log2_lesion_minus_eutopic": -0.132,
+    "fold_change_lesion_over_eutopic": 0.91,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.453,
+     "5322": -0.161,
+     "12529": -0.222,
+     "4909": 0.283,
+     "9997": -0.107
+    }
+   },
+   "Macrophages": {
+    "gene": "TPSAB1",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.645,
+    "lesion_mean_log2q3": 1.768,
+    "delta_log2_lesion_minus_eutopic": 0.123,
+    "fold_change_lesion_over_eutopic": 1.09,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": -2.404,
+     "5322": 0.0,
+     "12529": 3.529,
+     "4909": -1.17,
+     "9997": 0.661
+    }
+   },
+   "Stroma": {
+    "gene": "TPSAB1",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.727,
+    "lesion_mean_log2q3": 0.781,
+    "delta_log2_lesion_minus_eutopic": 0.053,
+    "fold_change_lesion_over_eutopic": 1.04,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.257,
+     "5322": -0.186,
+     "12529": 0.265,
+     "4909": 0.104,
+     "9997": -0.173
+    }
+   }
+  },
+  "MS4A2": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "MS4A2",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.5,
+    "lesion_mean_log2q3": 0.39,
+    "delta_log2_lesion_minus_eutopic": -0.11,
+    "fold_change_lesion_over_eutopic": 0.93,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.391,
+     "5322": 0.096,
+     "12529": -0.087,
+     "4909": 0.043,
+     "9997": -0.21
+    }
+   },
+   "Macrophages": {
+    "gene": "MS4A2",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.656,
+    "lesion_mean_log2q3": 0.691,
+    "delta_log2_lesion_minus_eutopic": 0.034,
+    "fold_change_lesion_over_eutopic": 1.02,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.792,
+     "5322": 0.161,
+     "12529": 0.708,
+     "4909": 0.339,
+     "9997": -0.243
+    }
+   },
+   "Stroma": {
+    "gene": "MS4A2",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.519,
+    "lesion_mean_log2q3": 0.345,
+    "delta_log2_lesion_minus_eutopic": -0.173,
+    "fold_change_lesion_over_eutopic": 0.89,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.014,
+     "5322": -0.371,
+     "12529": -0.145,
+     "4909": -0.194,
+     "9997": -0.172
+    }
+   }
+  },
+  "FCER1A": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "FCER1A",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.354,
+    "lesion_mean_log2q3": 0.406,
+    "delta_log2_lesion_minus_eutopic": 0.052,
+    "fold_change_lesion_over_eutopic": 1.04,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.196,
+     "5322": 0.535,
+     "12529": 0.252,
+     "4909": 0.005,
+     "9997": -0.335
+    }
+   },
+   "Macrophages": {
+    "gene": "FCER1A",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.308,
+    "lesion_mean_log2q3": 0.623,
+    "delta_log2_lesion_minus_eutopic": 0.315,
+    "fold_change_lesion_over_eutopic": 1.24,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.0,
+     "5322": 0.292,
+     "12529": 0.708,
+     "4909": 0.208,
+     "9997": 0.368
+    }
+   },
+   "Stroma": {
+    "gene": "FCER1A",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.391,
+    "lesion_mean_log2q3": 0.382,
+    "delta_log2_lesion_minus_eutopic": -0.009,
+    "fold_change_lesion_over_eutopic": 0.99,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.048,
+     "5322": 0.009,
+     "12529": 0.202,
+     "4909": -0.123,
+     "9997": -0.087
+    }
+   }
+  },
+  "C3": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "C3",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.562,
+    "lesion_mean_log2q3": 4.282,
+    "delta_log2_lesion_minus_eutopic": 1.72,
+    "fold_change_lesion_over_eutopic": 3.29,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 1.894,
+     "5322": 2.837,
+     "12529": 3.181,
+     "4909": -1.136,
+     "9997": 1.822
+    }
+   },
+   "Macrophages": {
+    "gene": "C3",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.597,
+    "lesion_mean_log2q3": 2.325,
+    "delta_log2_lesion_minus_eutopic": -0.272,
+    "fold_change_lesion_over_eutopic": 0.83,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.257,
+     "5322": -1.426,
+     "12529": 1.132,
+     "4909": -1.58,
+     "9997": 0.257
+    }
+   },
+   "Stroma": {
+    "gene": "C3",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.022,
+    "lesion_mean_log2q3": 1.731,
+    "delta_log2_lesion_minus_eutopic": -0.291,
+    "fold_change_lesion_over_eutopic": 0.82,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -1.746,
+     "5322": 0.096,
+     "12529": 1.732,
+     "4909": -1.521,
+     "9997": -0.016
+    }
+   }
+  },
+  "PTPRC": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "PTPRC",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.549,
+    "lesion_mean_log2q3": 0.588,
+    "delta_log2_lesion_minus_eutopic": 0.039,
+    "fold_change_lesion_over_eutopic": 1.03,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.208,
+     "5322": 0.208,
+     "12529": 0.032,
+     "4909": -0.179,
+     "9997": -0.071
+    }
+   },
+   "Macrophages": {
+    "gene": "PTPRC",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.185,
+    "lesion_mean_log2q3": 1.836,
+    "delta_log2_lesion_minus_eutopic": 0.651,
+    "fold_change_lesion_over_eutopic": 1.57,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 1.792,
+     "5322": -0.216,
+     "12529": 1.111,
+     "4909": 0.811,
+     "9997": -0.244
+    }
+   },
+   "Stroma": {
+    "gene": "PTPRC",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.001,
+    "lesion_mean_log2q3": 1.255,
+    "delta_log2_lesion_minus_eutopic": 0.254,
+    "fold_change_lesion_over_eutopic": 1.19,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.542,
+     "5322": 0.657,
+     "12529": 0.241,
+     "4909": -0.158,
+     "9997": -0.013
+    }
+   }
+  },
+  "ACTA2": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "ACTA2",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.892,
+    "lesion_mean_log2q3": 1.072,
+    "delta_log2_lesion_minus_eutopic": 0.18,
+    "fold_change_lesion_over_eutopic": 1.13,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.622,
+     "5322": 0.085,
+     "12529": 0.858,
+     "4909": 0.093,
+     "9997": 0.486
+    }
+   },
+   "Macrophages": {
+    "gene": "ACTA2",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.552,
+    "lesion_mean_log2q3": 1.735,
+    "delta_log2_lesion_minus_eutopic": 0.184,
+    "fold_change_lesion_over_eutopic": 1.14,
+    "patients_matching_direction": "1/5",
+    "per_patient_delta_log2": {
+     "2756": -0.208,
+     "5322": -0.132,
+     "12529": 0.0,
+     "4909": -0.276,
+     "9997": 1.534
+    }
+   },
+   "Stroma": {
+    "gene": "ACTA2",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.195,
+    "lesion_mean_log2q3": 1.93,
+    "delta_log2_lesion_minus_eutopic": -0.265,
+    "fold_change_lesion_over_eutopic": 0.83,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.635,
+     "5322": -1.201,
+     "12529": 0.952,
+     "4909": -0.974,
+     "9997": 0.535
+    }
+   }
+  },
+  "VWF": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "VWF",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.653,
+    "lesion_mean_log2q3": 0.548,
+    "delta_log2_lesion_minus_eutopic": -0.106,
+    "fold_change_lesion_over_eutopic": 0.93,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.07,
+     "5322": -0.292,
+     "12529": 0.032,
+     "4909": -0.159,
+     "9997": -0.039
+    }
+   },
+   "Macrophages": {
+    "gene": "VWF",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.917,
+    "lesion_mean_log2q3": 0.649,
+    "delta_log2_lesion_minus_eutopic": -0.268,
+    "fold_change_lesion_over_eutopic": 0.83,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -1.0,
+     "5322": 0.5,
+     "12529": 0.132,
+     "4909": -0.565,
+     "9997": -0.408
+    }
+   },
+   "Stroma": {
+    "gene": "VWF",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.573,
+    "lesion_mean_log2q3": 1.17,
+    "delta_log2_lesion_minus_eutopic": -0.403,
+    "fold_change_lesion_over_eutopic": 0.76,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.604,
+     "5322": 0.145,
+     "12529": 0.025,
+     "4909": -1.101,
+     "9997": -0.483
+    }
+   }
+  },
+  "PECAM1": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "PECAM1",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.854,
+    "lesion_mean_log2q3": 0.879,
+    "delta_log2_lesion_minus_eutopic": 0.025,
+    "fold_change_lesion_over_eutopic": 1.02,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.096,
+     "5322": 0.509,
+     "12529": -0.197,
+     "4909": -0.107,
+     "9997": -0.174
+    }
+   },
+   "Macrophages": {
+    "gene": "PECAM1",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.138,
+    "lesion_mean_log2q3": 1.415,
+    "delta_log2_lesion_minus_eutopic": 0.276,
+    "fold_change_lesion_over_eutopic": 1.21,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.292,
+     "5322": 0.5,
+     "12529": 1.292,
+     "4909": 0.319,
+     "9997": -0.437
+    }
+   },
+   "Stroma": {
+    "gene": "PECAM1",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.531,
+    "lesion_mean_log2q3": 1.116,
+    "delta_log2_lesion_minus_eutopic": -0.415,
+    "fold_change_lesion_over_eutopic": 0.75,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.687,
+     "5322": -0.565,
+     "12529": 0.048,
+     "4909": -0.73,
+     "9997": -0.142
+    }
+   }
+  },
+  "RGS5": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "RGS5",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.422,
+    "lesion_mean_log2q3": 0.399,
+    "delta_log2_lesion_minus_eutopic": -0.023,
+    "fold_change_lesion_over_eutopic": 0.98,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": -0.128,
+     "5322": -0.146,
+     "12529": -0.083,
+     "4909": 0.32,
+     "9997": -0.079
+    }
+   },
+   "Macrophages": {
+    "gene": "RGS5",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.485,
+    "lesion_mean_log2q3": 0.854,
+    "delta_log2_lesion_minus_eutopic": 0.369,
+    "fold_change_lesion_over_eutopic": 1.29,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 1.0,
+     "5322": 0.085,
+     "12529": 0.0,
+     "4909": 0.73,
+     "9997": 0.029
+    }
+   },
+   "Stroma": {
+    "gene": "RGS5",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.843,
+    "lesion_mean_log2q3": 0.96,
+    "delta_log2_lesion_minus_eutopic": 0.117,
+    "fold_change_lesion_over_eutopic": 1.08,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.034,
+     "5322": -0.302,
+     "12529": 0.301,
+     "4909": 0.573,
+     "9997": 0.048
+    }
+   }
+  },
+  "CD3D": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "CD3D",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.391,
+    "lesion_mean_log2q3": 0.369,
+    "delta_log2_lesion_minus_eutopic": -0.021,
+    "fold_change_lesion_over_eutopic": 0.99,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.05,
+     "5322": 0.196,
+     "12529": -0.345,
+     "4909": 0.227,
+     "9997": -0.135
+    }
+   },
+   "Macrophages": {
+    "gene": "CD3D",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.264,
+    "lesion_mean_log2q3": 0.417,
+    "delta_log2_lesion_minus_eutopic": 0.153,
+    "fold_change_lesion_over_eutopic": 1.11,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.5,
+     "5322": 0.424,
+     "12529": -0.661,
+     "4909": 0.632,
+     "9997": -0.132
+    }
+   },
+   "Stroma": {
+    "gene": "CD3D",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.496,
+    "lesion_mean_log2q3": 0.636,
+    "delta_log2_lesion_minus_eutopic": 0.14,
+    "fold_change_lesion_over_eutopic": 1.1,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.276,
+     "5322": 0.204,
+     "12529": -0.011,
+     "4909": 0.297,
+     "9997": -0.067
+    }
+   }
+  },
+  "MS4A1": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "MS4A1",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.361,
+    "lesion_mean_log2q3": 0.472,
+    "delta_log2_lesion_minus_eutopic": 0.11,
+    "fold_change_lesion_over_eutopic": 1.08,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.365,
+     "5322": 0.354,
+     "12529": 0.307,
+     "4909": -0.02,
+     "9997": -0.454
+    }
+   },
+   "Macrophages": {
+    "gene": "MS4A1",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.508,
+    "lesion_mean_log2q3": 0.558,
+    "delta_log2_lesion_minus_eutopic": 0.051,
+    "fold_change_lesion_over_eutopic": 1.04,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.208,
+     "5322": 0.708,
+     "12529": -0.661,
+     "4909": 0.132,
+     "9997": 0.284
+    }
+   },
+   "Stroma": {
+    "gene": "MS4A1",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.539,
+    "lesion_mean_log2q3": 0.493,
+    "delta_log2_lesion_minus_eutopic": -0.046,
+    "fold_change_lesion_over_eutopic": 0.97,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.434,
+     "5322": -0.08,
+     "12529": -0.042,
+     "4909": -0.365,
+     "9997": -0.179
+    }
+   }
+  },
+  "NKG7": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "NKG7",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.824,
+    "lesion_mean_log2q3": 1.097,
+    "delta_log2_lesion_minus_eutopic": 0.272,
+    "fold_change_lesion_over_eutopic": 1.21,
+    "patients_matching_direction": "5/5",
+    "per_patient_delta_log2": {
+     "2756": 0.313,
+     "5322": 0.72,
+     "12529": 0.152,
+     "4909": 0.062,
+     "9997": 0.115
+    }
+   },
+   "Macrophages": {
+    "gene": "NKG7",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.409,
+    "lesion_mean_log2q3": 2.251,
+    "delta_log2_lesion_minus_eutopic": 0.842,
+    "fold_change_lesion_over_eutopic": 1.79,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 1.368,
+     "5322": 0.536,
+     "12529": 2.219,
+     "4909": -0.661,
+     "9997": 0.746
+    }
+   },
+   "Stroma": {
+    "gene": "NKG7",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.399,
+    "lesion_mean_log2q3": 2.487,
+    "delta_log2_lesion_minus_eutopic": 0.089,
+    "fold_change_lesion_over_eutopic": 1.06,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.868,
+     "5322": 0.554,
+     "12529": 0.67,
+     "4909": -1.649,
+     "9997": 0.001
+    }
+   }
+  },
+  "KRT18": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "KRT18",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.361,
+    "lesion_mean_log2q3": 2.831,
+    "delta_log2_lesion_minus_eutopic": 0.469,
+    "fold_change_lesion_over_eutopic": 1.38,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 1.086,
+     "5322": 0.953,
+     "12529": 0.106,
+     "4909": 0.37,
+     "9997": -0.169
+    }
+   },
+   "Macrophages": {
+    "gene": "KRT18",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.861,
+    "lesion_mean_log2q3": 1.271,
+    "delta_log2_lesion_minus_eutopic": 0.411,
+    "fold_change_lesion_over_eutopic": 1.33,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.0,
+     "5322": 1.076,
+     "12529": 0.0,
+     "4909": 1.0,
+     "9997": -0.023
+    }
+   },
+   "Stroma": {
+    "gene": "KRT18",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.449,
+    "lesion_mean_log2q3": 1.243,
+    "delta_log2_lesion_minus_eutopic": -0.206,
+    "fold_change_lesion_over_eutopic": 0.87,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.089,
+     "5322": 0.172,
+     "12529": -1.013,
+     "4909": 0.013,
+     "9997": -0.29
+    }
+   }
+  },
+  "LYZ": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "LYZ",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.803,
+    "lesion_mean_log2q3": 0.818,
+    "delta_log2_lesion_minus_eutopic": 0.014,
+    "fold_change_lesion_over_eutopic": 1.01,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.389,
+     "5322": 0.23,
+     "12529": 0.401,
+     "4909": -0.231,
+     "9997": -0.718
+    }
+   },
+   "Macrophages": {
+    "gene": "LYZ",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.022,
+    "lesion_mean_log2q3": 2.84,
+    "delta_log2_lesion_minus_eutopic": 0.818,
+    "fold_change_lesion_over_eutopic": 1.76,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 0.937,
+     "5322": -0.355,
+     "12529": 2.297,
+     "4909": 0.719,
+     "9997": 0.493
+    }
+   },
+   "Stroma": {
+    "gene": "LYZ",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.002,
+    "lesion_mean_log2q3": 0.967,
+    "delta_log2_lesion_minus_eutopic": -0.035,
+    "fold_change_lesion_over_eutopic": 0.98,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.086,
+     "5322": 0.047,
+     "12529": 0.359,
+     "4909": -0.129,
+     "9997": -0.364
+    }
+   }
+  },
+  "COL1A1": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "COL1A1",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 2.162,
+    "lesion_mean_log2q3": 1.888,
+    "delta_log2_lesion_minus_eutopic": -0.273,
+    "fold_change_lesion_over_eutopic": 0.83,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": 0.053,
+     "5322": -0.037,
+     "12529": 0.62,
+     "4909": -1.504,
+     "9997": -0.5
+    }
+   },
+   "Macrophages": {
+    "gene": "COL1A1",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 3.936,
+    "lesion_mean_log2q3": 3.849,
+    "delta_log2_lesion_minus_eutopic": -0.087,
+    "fold_change_lesion_over_eutopic": 0.94,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": 0.504,
+     "5322": 0.132,
+     "12529": 1.209,
+     "4909": -2.253,
+     "9997": -0.026
+    }
+   },
+   "Stroma": {
+    "gene": "COL1A1",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 5.033,
+    "lesion_mean_log2q3": 4.843,
+    "delta_log2_lesion_minus_eutopic": -0.191,
+    "fold_change_lesion_over_eutopic": 0.88,
+    "patients_matching_direction": "1/5",
+    "per_patient_delta_log2": {
+     "2756": 0.37,
+     "5322": 0.06,
+     "12529": 1.02,
+     "4909": -2.492,
+     "9997": 0.088
+    }
+   }
+  },
+  "CD163": {
+   "on_panel": true,
+   "Epithelium": {
+    "gene": "CD163",
+    "compartment": "Epithelium",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 0.837,
+    "lesion_mean_log2q3": 0.826,
+    "delta_log2_lesion_minus_eutopic": -0.011,
+    "fold_change_lesion_over_eutopic": 0.99,
+    "patients_matching_direction": "2/5",
+    "per_patient_delta_log2": {
+     "2756": -0.228,
+     "5322": 0.078,
+     "12529": -0.288,
+     "4909": 0.317,
+     "9997": 0.066
+    }
+   },
+   "Macrophages": {
+    "gene": "CD163",
+    "compartment": "Macrophages",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.597,
+    "lesion_mean_log2q3": 2.469,
+    "delta_log2_lesion_minus_eutopic": 0.872,
+    "fold_change_lesion_over_eutopic": 1.83,
+    "patients_matching_direction": "4/5",
+    "per_patient_delta_log2": {
+     "2756": 1.489,
+     "5322": 1.161,
+     "12529": 0.0,
+     "4909": 0.57,
+     "9997": 1.139
+    }
+   },
+   "Stroma": {
+    "gene": "CD163",
+    "compartment": "Stroma",
+    "n_patients": 5,
+    "eutopic_mean_log2q3": 1.006,
+    "lesion_mean_log2q3": 0.958,
+    "delta_log2_lesion_minus_eutopic": -0.048,
+    "fold_change_lesion_over_eutopic": 0.97,
+    "patients_matching_direction": "3/5",
+    "per_patient_delta_log2": {
+     "2756": -0.278,
+     "5322": 0.256,
+     "12529": -0.218,
+     "4909": -0.179,
+     "9997": 0.178
+    }
+   }
+  }
+ },
+ "background_context": {
+  "FKBP4": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 29.6,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 3.34
+    },
+    "lesion": {
+     "mean_raw": 31.3,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 5.12
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 2.9,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 1.06
+    },
+    "lesion": {
+     "mean_raw": 1.7,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.68
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 47.7,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 3.28
+    },
+    "lesion": {
+     "mean_raw": 28.0,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 3.06
+    }
+   }
+  },
+  "MRGPRX2": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 8.3,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 0.94
+    },
+    "lesion": {
+     "mean_raw": 7.3,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 1.19
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 1.1,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 0.4
+    },
+    "lesion": {
+     "mean_raw": 2.0,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.8
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 17.7,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 1.22
+    },
+    "lesion": {
+     "mean_raw": 11.9,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 1.3
+    }
+   }
+  },
+  "SLC7A11": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 14.0,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 1.58
+    },
+    "lesion": {
+     "mean_raw": 9.2,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 1.5
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 0.7,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 0.26
+    },
+    "lesion": {
+     "mean_raw": 1.1,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.44
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 17.9,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 1.23
+    },
+    "lesion": {
+     "mean_raw": 12.2,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 1.33
+    }
+   }
+  },
+  "GPX4": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 111.0,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 12.52
+    },
+    "lesion": {
+     "mean_raw": 80.5,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 13.16
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 10.4,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 3.8
+    },
+    "lesion": {
+     "mean_raw": 10.0,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 4.01
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 164.3,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 11.31
+    },
+    "lesion": {
+     "mean_raw": 120.5,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 13.17
+    }
+   }
+  },
+  "ACSL4": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 54.5,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 6.15
+    },
+    "lesion": {
+     "mean_raw": 56.5,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 9.24
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 3.6,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 1.31
+    },
+    "lesion": {
+     "mean_raw": 1.6,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.64
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 29.8,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 2.05
+    },
+    "lesion": {
+     "mean_raw": 28.2,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 3.08
+    }
+   }
+  },
+  "KIT": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 10.6,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 1.2
+    },
+    "lesion": {
+     "mean_raw": 7.1,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 1.16
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 0.9,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 0.33
+    },
+    "lesion": {
+     "mean_raw": 1.0,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.4
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 22.8,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 1.57
+    },
+    "lesion": {
+     "mean_raw": 14.6,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 1.6
+    }
+   }
+  },
+  "CPA3": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 11.8,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 1.33
+    },
+    "lesion": {
+     "mean_raw": 7.3,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 1.19
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 2.2,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 0.8
+    },
+    "lesion": {
+     "mean_raw": 2.0,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.8
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 18.6,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 1.28
+    },
+    "lesion": {
+     "mean_raw": 7.9,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 0.86
+    }
+   }
+  },
+  "TPSAB1": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 12.7,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 1.43
+    },
+    "lesion": {
+     "mean_raw": 8.1,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 1.32
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 7.9,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 2.88
+    },
+    "lesion": {
+     "mean_raw": 9.2,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 3.69
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 24.1,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 1.66
+    },
+    "lesion": {
+     "mean_raw": 16.9,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 1.85
+    }
+   }
+  },
+  "MS4A2": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 7.8,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 0.88
+    },
+    "lesion": {
+     "mean_raw": 4.6,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 0.75
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 1.6,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 0.58
+    },
+    "lesion": {
+     "mean_raw": 1.5,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.6
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 15.5,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 1.07
+    },
+    "lesion": {
+     "mean_raw": 7.1,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 0.78
+    }
+   }
+  },
+  "FCER1A": {
+   "Epithelium": {
+    "eutopic": {
+     "mean_raw": 7.2,
+     "mean_neg_geomean": 8.87,
+     "ratio_raw_to_background": 0.81
+    },
+    "lesion": {
+     "mean_raw": 4.9,
+     "mean_neg_geomean": 6.12,
+     "ratio_raw_to_background": 0.8
+    }
+   },
+   "Macrophages": {
+    "eutopic": {
+     "mean_raw": 0.7,
+     "mean_neg_geomean": 2.74,
+     "ratio_raw_to_background": 0.26
+    },
+    "lesion": {
+     "mean_raw": 1.4,
+     "mean_neg_geomean": 2.5,
+     "ratio_raw_to_background": 0.56
+    }
+   },
+   "Stroma": {
+    "eutopic": {
+     "mean_raw": 11.3,
+     "mean_neg_geomean": 14.52,
+     "ratio_raw_to_background": 0.78
+    },
+    "lesion": {
+     "mean_raw": 7.3,
+     "mean_neg_geomean": 9.15,
+     "ratio_raw_to_background": 0.8
+    }
+   }
+  }
+ }
+}
