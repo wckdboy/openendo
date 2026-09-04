@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02",
+ "updated": "2026-09-04",
  "pipeline": "ChEMBL activity + drug max_phase join (repurpose_screen.py)",
  "pchembl_cutoff": 6.0,
  "note": "Approved drugs (max_phase 4) with measured potency (pchembl>=6) against a novel endometriosis target. Hypothesis-generation only; direction of effect requires mechanism review.",
@@ -247,7 +247,10 @@
    "molecule": "CHEMBL601719",
    "name": "Crizotinib",
    "pchembl": 6.07,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "watchlist",
+   "status_detail": "WATCHLIST \u2014 LOW: real ACVR1B/activin\u2192aromatase mechanism; cancer-TKI fertility/off-target baggage makes drug fit poor.",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "ACVR1B",
@@ -255,7 +258,10 @@
    "molecule": "CHEMBL2028663",
    "name": "Dabrafenib",
    "pchembl": 6.22,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "watchlist",
+   "status_detail": "WATCHLIST \u2014 LOW: real ACVR1B/activin\u2192aromatase mechanism; cancer-TKI fertility/off-target baggage makes drug fit poor.",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "FKBP4",
@@ -263,7 +269,10 @@
    "molecule": "CHEMBL160",
    "name": "Cyclosporine",
    "pchembl": 7.8,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "watchlist",
+   "status_detail": "WATCHLIST: rat-model efficacy but chronic immunosuppression heavy for benign disease; ChEMBL FKBP4 hit = promiscuity (clinical pharmacology via FKBP12/calcineurin).",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "FKBP4",
@@ -271,7 +280,10 @@
    "molecule": "CHEMBL413",
    "name": "Sirolimus (rapamycin)",
    "pchembl": 8.38,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "top-tier",
+   "status_detail": "TOP TIER: independent mTOR endometriosis evidence + chronic-use safety; FKBP4/FKBP52 engagement plausible (PR-chaperone hypothesis; Phase 1.0 docking rapamycin\u2192FKBP52 \u22126.38 vs FKBP12 \u22127.06, 2026-09-04).",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "FKBP4",
@@ -279,7 +291,10 @@
    "molecule": "CHEMBL269732",
    "name": "Tacrolimus",
    "pchembl": 7.64,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "watchlist",
+   "status_detail": "WATCHLIST: rat-model efficacy but chronic immunosuppression/nephrotoxicity heavy for benign disease; FKBP4 hit = promiscuity (pharmacology via FKBP12/calcineurin).",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "GPER1",
@@ -287,7 +302,10 @@
    "molecule": "CHEMBL135",
    "name": "Estradiol",
    "pchembl": 9.52,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "wrong-direction",
+   "status_detail": "WRONG DIRECTION \u2014 target-validating only: endogenous GPER agonist activating a proliferation-driving receptor in endometriosis.",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "MRGPRX2",
@@ -295,7 +313,10 @@
    "molecule": "CHEMBL1200490",
    "name": "Cetrorelix",
    "pchembl": 6.21,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "validated-axis",
+   "status_detail": "VALIDATED AXIS \u2014 target-validating, not repurposing: measured MRGPRX2 agonism (pChEMBL 6.21/6.09) + already an endo treatment; MRGPRX2 antagonism is the drug-development lead. Docking deferred to Phase 2 (tool boundary).",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "SLC7A11",
@@ -303,7 +324,10 @@
    "molecule": "CHEMBL421",
    "name": "Sulfasalazine",
    "pchembl": 6.8,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "watchlist",
+   "status_detail": "WATCHLIST \u2014 LOW-MEDIUM: binds xCT as predicted (Phase 1.0 docking \u22128.52 vs native \u22129.35, 2026-09-04); direction resolved (lesion-cell ferroptosis induction therapeutic); selectivity/toxicity remain the blockers.",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   },
   {
    "target": "SLCO2A1",
@@ -311,7 +335,22 @@
    "molecule": "CHEMBL815",
    "name": "Dinoprostone (PGE2)",
    "pchembl": 7.35,
-   "phase": 4.0
+   "phase": 4.0,
+   "status": "wrong-direction",
+   "status_detail": "WRONG DIRECTION \u2014 target-validating only: dinoprostone IS PGE2; therapy would need SLCO2A1 blockade, not the agonist.",
+   "validation_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md"
   }
- ]
+ ],
+ "validation": {
+  "updated": "2026-09-04",
+  "method": "M3 depth-check 9/9 (2026-09-02) \u2014 mechanism/evidence/safety/novelty + direction-of-effect review (ferroptosis-direction.md); Phase 1.0 docking + ADMET (2026-09-04); Phase 0.5 GEO lesion-expression corroboration (2026-09-03/04)",
+  "shortlist_ref": "https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md",
+  "status_vocabulary": [
+   "top-tier",
+   "watchlist",
+   "validated-axis",
+   "wrong-direction"
+  ],
+  "note": "status reflects the M3 validated shortlist; wrong-direction/validated-axis entries remain target-validating evidence, not repurposing candidates."
+ }
 }

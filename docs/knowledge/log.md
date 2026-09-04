@@ -51,3 +51,9 @@
 - 7 PMIDs (2017-2026): Thomsen 2025 PPV validation; Illum 2022 temporal/regional incidence; Melgaard 2023 + 2025 pre-diagnosis utilisation; Josiasen 2026 mental health; Breintoft 2022 preterm birth; Glavind 2017 pregnancy complications
 - CPR-linkage + DNPR/Rx/MBR/psychiatric register overview; code validity caveats; underutilisation for endo highlighted
 - OpenEndo agenda: registry+EHR analytics workstream entry point
+## [2026-09-04] update | M3 curated layer — validation statuses + GEO corroboration
+- repurposing_candidates.json: per-candidate `status` added (9 verdicts: sirolimus top-tier; sulfasalazine/CsA/tacro/crizotinib/dabrafenib watchlist; cetrorelix validated-axis; estradiol/dinoprostone wrong-direction) + `validation` block linking m3-validation.md — statuses machine-readable, screen dump schema preserved
+- m3-validation.md + concepts/ferroptosis.md: Phase 0.5 GEO lesion-expression corroboration folded in (GSE282532: FKBP4 2.2x down 5/5, SLC7A11 2x down, ACSL4 2.4x down, mast markers 11-15x up; GSE247695 scRNA + GSE263897 GeoMx compartment findings; mast-cell enrichment endometrioma-specific, absent in superficial peritoneal lesions)
+- docs/research/targets/targets.json stale duplicate removed (was 09-01, outside provenance gates) — canonical docs/data/targets.json; wiki.html + computational-drug-repurposing sources repointed
+- llms.txt: IDENTIFIERS.md entry + repurposing descriptor with statuses; data README wording aligned
+- Phase 1.0 docking context (PR #22): sulfasalazine->xCT -8.52, rapamycin->FKBP52 -6.38 vs FKBP12 -7.06

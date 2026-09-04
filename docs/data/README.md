@@ -33,7 +33,7 @@ AND this table AND llms.txt AND the RO-Crate manifest, in one PR.
 | File | Content | Source | Owner zone |
 |---|---|---|---|
 | `targets.json` | 58 drug targets (35 novel), ChEMBL-verified | Deep Origin list + ChEMBL audit (M1) | Percival |
-| `repurposing_candidates.json` | 9 approved-drug candidates | M3 ChEMBL screen | Percival |
+| `repurposing_candidates.json` | 9 M3 shortlisted drug-target pairs with validation status (top-tier / watchlist / validated-axis / wrong-direction) | M3 ChEMBL screen + depth-check | Percival |
 | `funding.json` | funding opportunities + deadlines | curated watch | shared |
 | `content.json` | editorial copy EN/DA | curated | shared |
 | `access.json` | country/postcode access — meds, centres, orgs, care paths | curated research (schema: openendo-access-v1) | shared (claim first) |
