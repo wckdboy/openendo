@@ -1,7 +1,7 @@
 ---
 title: Ferroptosis in endometriosis
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-04
 type: concept
 tags: [research, drug, treatment]
 sources:
@@ -38,6 +38,26 @@ this **supports the therapeutic direction of SLC7A11/xCT inhibition in lesion
 cells** (sulfasalazine), while flagging that systemic (non-lesion-targeted)
 induction carries immune-cell and fertility risks — one reason sulfasalazine
 stays WATCHLIST.
+
+### Lesion-expression corroboration (GEO reanalysis, 2026-09-03/04)
+
+Lesional transcriptomics (3 datasets; methods: `docs/research/virtual/phase0.5.md`)
+support the "lesions evade ferroptosis" read at the expression level:
+
+- **GSE282532** (endometrioma bulk, 5 patient-paired): **SLC7A11 2× down** and
+  **ACSL4 2.4× down** in ectopic vs eutopic tissue — ferroptosis evasion via
+  *suppression of effector genes*, not overexpression of the SLC7A11 resistance
+  node.^[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532]
+- **GSE247695** (scRNA-seq) + **GSE263897** (GeoMx spatial): SLC7A11 down / no
+  constitutive up-regulation in lesion compartments — consistent across
+  platforms.^[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247695]^[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263897]
+
+Implication for the M3 screen: xCT inhibition (sulfasalazine) targets a
+transporter the lesion keeps *low* — consistent with the therapeutic direction
+(forcing ferroptosis back on), while the low lesional expression underlines that
+selectivity/toxicity, not target presence, is the open question. Phase 1.0
+docking (2026-09-04, PR #22) confirms sulfasalazine binds the xCT substrate
+cavity (−8.52 vs native −9.35 kcal/mol).
 
 ## Caveats
 

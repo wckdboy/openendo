@@ -22,13 +22,14 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 
 ## Machine-readable data (JSON)
 - [Data layer contract](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/README.md): file → content → source → cadence → owner (agents: read before editing datasets)
+- [Identifier rules](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/IDENTIFIERS.md): read before touching any dataset — NCT/PMID/CHEMBL/UniProt kept verbatim, never invented
 - [Recruiting trials worldwide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_global_recruiting.json) — generated weekly
 - [All registered trials in Denmark](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_denmark.json)
 - [New/updated trials, last 7 days](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/trials_recent.json)
 - [New papers, last 7 days](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/pubmed_recent.json)
 - [Papers per month, 6 months](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/pubmed_monthly.json)
 - [Drug-target landscape (58 targets, ChEMBL-verified)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/targets.json)
-- [Repurposing candidates (9 approved-drug pairs)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json)
+- [Repurposing candidates — 9 M3 shortlisted pairs with validation status](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json) (top-tier / watchlist / validated-axis / wrong-direction; ranked shortlist + verdicts: [m3-validation.md](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md))
 - [Funding opportunities with deadlines](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/funding.json)
 - [Access finder — country/postcode → meds, centres, help](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/access.json) — DK full, GB/US/DE orgs (schema openendo-access-v1)
 - [Editorial content (EN/DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/content.json)

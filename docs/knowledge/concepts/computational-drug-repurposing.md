@@ -1,14 +1,14 @@
 ---
 title: Computational drug repurposing for endometriosis
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-04
 type: concept
 tags: [research, drug, pipeline]
 sources:
   - https://pubmed.ncbi.nlm.nih.gov/42668641/
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/digest-2026-09-02.md
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json
-  - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/targets/targets.json
+  - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/targets.json
 confidence: medium
 ---
 

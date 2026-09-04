@@ -153,12 +153,47 @@ gtexportal.org/home/gene/&lt;ENSG&gt;.
 
 ---
 
+## Phase 0.5 lesion-expression corroboration (GEO, 2026-09-03/04)
+
+Lesion-level transcriptomic reanalysis (full methods: `docs/research/virtual/phase0.5.md`)
+adds disease-site expression evidence to the GTEx/HPA cross-reference above — the
+GTEx/HPA table reflects *normal* tissue; these are *lesional* measurements.
+
+| Dataset | Design | Findings relevant to M3 |
+|---|---|---|
+| GSE282532 (PR #13/#18) | endometrioma bulk RNA-seq, 5 patient-paired eutopic vs ectopic | **FKBP4 2.2× DOWN** in ectopic (FC 0.45, all 5 pairs — PR-resistance consistent); **SLC7A11 2× down**, ACSL4 2.4× down (ferroptosis-evasion via effector suppression); mast-cell markers CPA3/TPSAB1/TPSB2 **11–15× up** |
+| GSE247695 (PR #19) | scRNA-seq, 4 pairs | FKBP4 down in lesion **stroma** (2 datasets agree); SLC7A11 down (stroma/endothel); MRGPRX2 below scRNA detection (dropout — inconclusive) |
+| GSE263897 (PR #20) | GeoMx spatial, 5 pairs, 60 segments | FKBP4 stroma down (0.89, 4/5) + **epithelium up (1.31, 5/5)** — compartment split replicated; SLC7A11 no constitutive up-regulation; mast-cell markers + MRGPRX2 at negative-probe background → **enrichment is endometrioma-specific, absent in superficial peritoneal lesions** (resolves the GSE247695 discrepancy as lesion type, not method) |
+
+Reading per ranked candidate:
+
+- **Sirolimus → FKBP4 (TOP TIER):** FKBP4 is present and disease-relevant in lesions —
+  *down*-regulation in lesion tissue/stroma is the PR-resistance signature
+  (FKBP4↓ → weaker PR signalling), consistent with the chaperone hypothesis the
+  ChEMBL hit pointed at. Expression data do not contradict FKBP4 engagement;
+  Phase 1.0 docking (PR #22) shows rapamycin fits FKBP52 −6.38 vs FKBP12 −7.06.
+- **Sulfasalazine → SLC7A11 (WATCHLIST):** SLC7A11 is *low/suppressed* in lesion
+  tissue (bulk + scRNA + spatial agree) — ferroptosis-evasion reads as effector
+  suppression, which *supports* the xCT-inhibition direction at the expression
+  level. The thin normal-tissue expression noted above is therefore not the
+  blocker; selectivity/toxicity remain the WATCHLIST issue (unchanged).
+- **Cetrorelix → MRGPRX2 (VALIDATED AXIS):** the mast-cell/MRGPRX2 pain axis is
+  confirmed in **endometrioma** (GSE282532: 11–15× mast markers) but **not in
+  superficial peritoneal lesions** (GSE247695/GSE263897) — lesion-type caveat now
+  explicit; IHC stratified by lesion type is the definitive check. This tempers
+  MRGPRX2-antagonist priority for peritoneal disease, not the target itself.
+
+---
+
 ## Next steps (DoD status)
 1. ✅ Knowledge pages (in this PR): `entities/sirolimus.md` +
    `concepts/mrgprx2-pain.md` (SCHEMA-compliant, confidence tags) +
    knowledge index/log + llms.txt + wiki.html
 2. ✅ GTEx/HPA expression cross-reference (section above)
-3. ⏳ Share ranked list with human (wckdboy) for any clinical-interest
+3. ✅ Phase 0.5 GEO lesion-expression corroboration folded in (2026-09-04) —
+   Phase 1.0 docking complete (PR #22, 2026-09-04): sulfasalazine→xCT −8.52,
+   rapamycin→FKBP52 −6.38; cetrorelix→MRGPRX2 deferred to Phase 2 (tool boundary)
+4. ⏳ Share ranked list with human (wckdboy) for any clinical-interest
    decision — research output, not medical advice (see PR #12)
 
 *Validation by Percival (Hermes Agent), 2026-09-02. All sources above are
