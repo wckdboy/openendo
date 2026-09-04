@@ -8,17 +8,15 @@
 > and a last-updated date. When you finish something, move it to ✅ Done and
 > add the next step. Never delete history — append to the change log.
 
-**Last updated:** 2026-09-03 (Percival cron) · **Maintainers:** Jaeger + Percival (Hermes agents)
+**Last updated:** 2026-09-04 (Percival, P0 reconciliation) · **Maintainers:** Jaeger + Percival (Hermes agents)
 
 ---
 
 ## 🎯 Current focus (top 3)
 
-1. **M3 repurposing validation — ✅ MERGED (PR #13, 2026-09-02) · registry verification done (PR #18)** — 9/9 depth-checked + ranked shortlist (`docs/research/evidence/m3-validation.md`): TOP TIER sirolimus · VALIDATED cetrorelix→MRGPRX2 · WATCHLIST sulfasalazin/CsA/tacro/TKI · estradiol+dinoprostone wrong-direction. PR #13 delivered: (a) **ferroptosis-direction verdict** (`docs/research/evidence/ferroptosis-direction.md`, MEDIUM: lesion-cell ferroptosis induction is the therapeutic direction — SEMA3C = sub-lethal signaling; sulfasalazin stays WATCHLIST on selectivity/dose), (b) SCHEMA knowledge pages `entities/sirolimus.md` + `concepts/mrgprx2-pain.md` + index/llms.txt/wiki.html, (c) Phase 0.5 first pass `docs/research/virtual/phase0.5.md`. Follow-up: live ClinicalTrials.gov check in **PR #18** — sirolimus/rapamycin **0** endo trials (novelty confirmed), cetrorelix 2 (VALIDATED axis) → `docs/research/evidence/registry-verification-2026-09-03.md`. Phase 0.5 reanalysis **COMPLETE 2026-09-03** (all 3 GEO datasets, $0): GSE282532 (endometrioma bulk) DONE; GSE247695 (peritoneal scRNA) DONE (PR #19); **GSE263897 (peritoneal GeoMx spatial) DONE (PR #20)** — dropout-free check: mast-cell/MRGPRX2 enrichment is **endometrioma-specific, absent in superficial peritoneal lesions** (2/2 peritoneal datasets agree — GSE247695 discrepancy resolved as lesion type, not method); FKBP4 stroma-down/epithelium-up + SLC7A11 no-upregulation replicated; C3 lesion-epithelium up 4/5 (depositors' headline replicated). *Owner: Percival — Phase 0.5 complete; next: Phase 1 docking (Jaeger)*
-2. **Lovable app ↔ repo content wiring — DECIDED (fetch model) + PILOT LIVE ✅** — human greenlit the sync (2026-09-02, Telegram: "Ind på lovable sitet"); method: **(b) fetch model** (repo stays canonical — Percival PR #11 recommendation; app fetches raw URLs via server function, no content duplication). Pilot VERIFIED LIVE 2026-09-02: what-we-know research explainer → https://openendo.org/research (server function fetches `docs/what-we-know.html`, rewrites font URLs to raw.githubusercontent, renders in sandboxed srcDoc iframe; Download PDF link; nav item + homepage card). Console clean, fonts/content render verified. **Next:** same fetch pattern for funding + knowledge articles (still hard-coded in app). *Owner: Jaeger*
-3. **M1 fold-input → AlphaFold run — ✅ DECIDED 2026-09-03 (0 to fold)** — live AFDB re-audit corrected Phase 0: **34/35 already in AFDB** (an accession-parser bug had hidden 7 of the "8 missing"), and the 1 genuine gap (GPX4) has 23 experimental PDB entries → **folding leg vacated, $0** (was ~$1–3). Decision memo + cost sheet: `docs/research/structures/fold_input/af2-decision.md`. **Next: Phase 1 docking ($10–25) — no folding prerequisite.** Bulk structure-fetch pattern (repo-size call) still open. *Jaeger*
-
----
+1. **P0 data-layer reconciliation (table review 2026-09-04) — 🔄 IN PROGRESS (Percival, PR #23)** — curated files + docs/research coherence fixes: `repurposing_candidates.json` per-candidate validation statuses (M3 verdicts), Phase 0.5 GEO lesion-expression corroboration folded into m3-validation.md + ferroptosis concept, `docs/research/targets/targets.json` stale duplicate removed (canonical = docs/data), llms.txt/README identifier + data pointers. *Jaeger lane (scripts/.github, queued behind #22): update_data.py pagination/atomicity/push-failure, repurpose_screen.py ordering/organism filter, access.json DK regions.*
+2. **Phase 2 dynamics (MD) — compute decision open** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0): sulfasalazine→xCT −8.52, rapamycin→FKBP52 −6.38 vs FKBP12 −7.06; cetrorelix→MRGPRX2 deferred (tool boundary). Next: OpenMM 100–500 ns on top poses — RunPod (~$5–25, Jaeger books) or knight GPU capacity. *Jaeger*
+3. **Lovable app ↔ repo wiring — PILOT LIVE, remainder open** — fetch model live on /research; remaining: funding + knowledge articles hard-coded in app → same fetch pattern; access-finder UI build (data v1 done). *Jaeger*
 
 ## 📊 Workstreams
 
@@ -38,6 +36,8 @@
 ## 📋 Horizon — tasks needing focus
 
 ### 🔴 High priority
+- [ ] **P0 reconciliation — Percival lane (in progress, PR #23)** — per-candidate `status` in repurposing_candidates.json (9 M3 verdicts: top-tier/watchlist/validated-axis/wrong-direction), GEO Phase 0.5 corroboration added to m3-validation.md + concepts/ferroptosis.md (GSE282532: FKBP4 2.2x down, SLC7A11 2x down, ACSL4 2.4x down; GSE247695/263897 compartment findings), stale `docs/research/targets/targets.json` duplicate removed (2 links repointed to canonical docs/data/targets.json), llms.txt += IDENTIFIERS.md + repurposing descriptor, data README wording. *Percival — claim 2026-09-04*
+
 
 - [x] **M3 candidate validation** — 9/9 depth-checked; ranked shortlist + shortlist rows verified (PR #12 merged). Knowledge pages + Phase 0.5 first pass in **PR #13**. *Percival*
 - [x] **Yselty (linzagolix) DK status — VERIFIED 2026-09-02** — no general reimbursement for endometriosis (fibroid-only clause; out-of-pocket or regional enkelttilskud); yselty.md + comparison page updated to `high`. *Jaeger*
