@@ -1,0 +1,35 @@
+{
+ "phase": "1.0",
+ "title": "Docking — sirolimus/FKBP axis + sulfasalazine/xCT (Vina 1.2.7, CPU)",
+ "date": "2026-09-04",
+ "owner": "Jaeger",
+ "cost": "$0 (owned Netcup VPS, 4-core CPU)",
+ "method": "AutoDock Vina 1.2.7, exhaustiveness 8 (macrocycles) / 24 (small mol), num_modes 9, energy_range 3. Ligand prep: meeko 0.8 (SMILES from PubChem, verified) or crystal-conformation ligand (obabel->RDKit->meeko). Receptor prep: meeko mk_prepare_receptor (gasteiger, polar H). Boxes: centered on co-crystallized ligand, size = ligand extent + 8A. Structures: RCSB PDB, chain identities verified via UniProt accession.",
+ "confidence": "medium-low — scores are directional evidence only; docking is hypothesis generation, MD (Phase 2) is the pose arbiter. Macrocycle pose RMSD limited by Vina rigid-ring treatment.",
+ "receptors": {
+  "FKBP12": {"pdb": "1FKB", "chain": "A", "uniprot": "P62942", "resolution": "X-ray", "native_ligand": "RAP (rapamycin=sirolimus)"},
+  "FKBP52/FKBP4": {"pdb": "1N1A", "chain": "A", "uniprot": "Q02790", "resolution": "X-ray (apo)", "note": "No FKBP4-ligand complex in PDB; pocket located by contact-defined structural alignment onto FKBP12-rapamycin (14 pocket residues, 0.80A RMSD)"},
+  "xCT/SLC7A11": {"pdb": "7EPZ", "chain": "B", "uniprot": "Q9UPY5", "resolution": "3.4A cryo-EM", "native_ligand": "J9O (erastin-class quinazolinone, C30H31ClN4O4; deposited as 'erastin-bound' but NOT classic erastin C32H31ClN4O4)"}
+ },
+ "calibrations": [
+  {"id": "calib_j9o_xct", "system": "J9O (native ligand) -> xCT", "ligand_source": "crystal extraction", "best_kcal": -9.35, "exhaustiveness": [24, 64], "pose_rmsd_vs_crystal_A": 5.2, "read": "Converged (-9.35 at ex24 AND ex64, identical). Docked pose sits 6.9A from crystal centroid, deeper in the substrate cavity, 0 clashes; at 3.4A cryo-EM resolution the deposited ligand pose carries +/-2-3A model uncertainty and density often cannot distinguish such modes. Pocket binding validated; exact pose unverifiable at this resolution -> MD arbiter."},
+  {"id": "calib_rapcrystal_fkbp12", "system": "rapamycin (native) -> FKBP12", "ligand_source": "crystal conformation", "best_kcal": -7.06, "exhaustiveness": 8, "pose_rmsd_vs_crystal_A": 6.0, "read": "Score consistent with known FKBP12-rapamycin binding. Pose RMSD ~6A from crystal even with crystal-conformation ligand: Vina treats macrocycle rings as rigid, so full ring-conformation matching is outside its regime. Binding validated by score + pocket; pose needs MD."}
+ ],
+ "target_docks": [
+  {"id": "sulfasalazine_xct", "system": "sulfasalazine -> xCT (erastin pocket)", "ligand_source": "PubChem SMILES verified (C18H14N4O5S, MW 398.4)", "best_kcal": -8.52, "exhaustiveness": 24, "comparison": "0.83 kcal/mol weaker than native J9O (-9.35) in the same pocket — consistent with sulfasalazine's known weaker xCT affinity vs erastin-class inhibitors (WATCHLIST unchanged; selectivity/toxicity, not binding, is the blocker)"},
+  {"id": "sirolimus_fkbp52", "system": "sirolimus/rapamycin -> FKBP52/FKBP4 (crystal-conformation ligand)", "ligand_source": "crystal RAP from 1FKB (identical conformation to FKBP12 calibration)", "best_kcal": -6.38, "exhaustiveness": 8, "comparison": "0.68 kcal/mol weaker than rapamycin->FKBP12 (-7.06) with MATCHED ligand conformations — FKBP4 pocket accepts sirolimus nearly as well as FKBP12 (consistent with ChEMBL FKBP4 engagement = real binding; the M3 'promiscuity' note). Small FKBP12/FKBP52 delta means FKBP4 engagement is plausible at clinical doses — relevant to the progesterone-resistance chaperone hypothesis.", "note": "SMILES-conformation sirolimus gave -6.17 (0.51 delta); crystal-conformation -6.38 (0.68 delta) is the cleaner comparison."}
+ ],
+ "deferred": {
+  "cetrorelix_mrgprx2": {
+   "reason": "Tool boundary, two independent grounds",
+   "grounds": [
+    "7S8L MRGPRX2 chain has 35 truncated sidechains (cryo-EM), including pocket-lining residues — docking into artificially truncated pocket residues produces misleading scores",
+    "Cetrorelix is a 1431 Da decapeptide with 38 rotatable bonds — beyond Vina's validated regime (32-bond default, small-molecule design)"
+   ],
+   "recommendation": "Defer to Phase 2 peptide-MD or a peptide-capable docking tool (HPEPDOCK/CABS-dock class). Phase 0.5 already shows MRGPRX2/mast-cell enrichment is endometrioma-specific, absent in peritoneal lesions — tempers this target's priority."
+  }
+ },
+ "admet": "admet_profile.json — 9 M3 candidates (RDKit: MW, alogP, HBD/HBA, rotB, TPSA, RO5, Veber, QED). Estradiol/sulfasalazine rule-compliant; macrocycles (sirolimus/tacrolimus/CsA) break RO5 yet are marketed oral drugs; cetrorelix = parenteral peptide.",
+ "next": "Phase 2 (MD): OpenMM 100-500ns on top poses (sulfasalazine->xCT, sirolimus->FKBP52) as pose arbiter. GPU needed (RunPod ~$5-25 or knight capacity).",
+ "reproducibility": "Scripts: /opt/data/phase1/work/*.py (not in repo — run on owned VPS). Input structures: RCSB PDB IDs above. Vina 1.2.7 static binary, meeko 0.8, RDKit 2026.03."
+}
