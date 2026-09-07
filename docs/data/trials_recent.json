@@ -1,25 +1,16 @@
 {
- "updated": "2026-09-02",
+ "updated": "2026-09-07",
  "trials": [
   {
-   "nct_id": "NCT07793162",
-   "title": "A Phase Ia Trial Comparing the Pharmacokinetics/Pharmacodynamics, Safety, and Preliminary Efficacy of HHK001 and Enantone in Patients With Endometriosis",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE1",
-   "sponsor": "The Third Xiangya Hospital of Central South University",
-   "countries": [],
-   "url": "https://clinicaltrials.gov/study/NCT07793162"
-  },
-  {
-   "nct_id": "NCT05480995",
-   "title": "Evaluation of Endometriosis With 18F-fluorofuranylnorprogesterone PET / MRI",
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "University of North Carolina, Chapel Hill",
+   "nct_id": "NCT07800442",
+   "title": "Effect of Fish-Derived Lipids in Women With Endometriosis",
+   "status": "COMPLETED",
+   "phase": "NA",
+   "sponsor": "Angelika Bogusz",
    "countries": [
-    "United States"
+    "Poland"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT05480995"
+   "url": "https://clinicaltrials.gov/study/NCT07800442"
   },
   {
    "nct_id": "NCT07795125",
@@ -33,26 +24,68 @@
    "url": "https://clinicaltrials.gov/study/NCT07795125"
   },
   {
-   "nct_id": "NCT07202741",
-   "title": "Effect of Yoga on Pelvic Pain and Quality of Life in Endometriosis",
-   "status": "COMPLETED",
-   "phase": "NA",
-   "sponsor": "Istanbul University - Cerrahpasa",
+   "nct_id": "NCT06217315",
+   "title": "Endometriosis and Health Care System Utilization in British Columbia",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "N/A",
+   "sponsor": "BC Women's Hospital & Health Centre",
    "countries": [
-    "Turkey (Türkiye)"
+    "Canada"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07202741"
+   "url": "https://clinicaltrials.gov/study/NCT06217315"
   },
   {
-   "nct_id": "NCT07472842",
-   "title": "Study on the Outcomes of Patients Treated in Gynecological Emergency Departments for Pelvic Endometriosis or Suspected Pelvic Endometriosis",
+   "nct_id": "NCT06215937",
+   "title": "Quantitative Sensory Testing and Central Sensitization in Endometriosis",
+   "status": "COMPLETED",
+   "phase": "N/A",
+   "sponsor": "BC Women's Hospital & Health Centre",
+   "countries": [
+    "Canada"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06215937"
+  },
+  {
+   "nct_id": "NCT07799246",
+   "title": "Brain and Blood Vessel Health Following Endometriosis Treatment in People With Endometriosis",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE4",
+   "sponsor": "Colorado State University",
+   "countries": [],
+   "url": "https://clinicaltrials.gov/study/NCT07799246"
+  },
+  {
+   "nct_id": "NCT07503938",
+   "title": "Ultrasound Characterization of Postmenopausal Endometriosis",
+   "status": "COMPLETED",
+   "phase": "N/A",
+   "sponsor": "Simone Ferrero",
+   "countries": [
+    "Italy"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07503938"
+  },
+  {
+   "nct_id": "NCT06997809",
+   "title": "ENDometriosis: Evaluation of Detection and Need for ALGOlogic Care Before Surgery",
    "status": "RECRUITING",
    "phase": "NA",
-   "sponsor": "Centre Hospitalier Intercommunal Creteil",
+   "sponsor": "University Hospital, Limoges",
    "countries": [
     "France"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07472842"
+   "url": "https://clinicaltrials.gov/study/NCT06997809"
+  },
+  {
+   "nct_id": "NCT07755956",
+   "title": "Phase Ia Trial of HHK001 Compared With Enantone in Patients With Endometriosis",
+   "status": "RECRUITING",
+   "phase": "PHASE1",
+   "sponsor": "Zhuhai Huahaikang Pharmaceutical Technology Co., Ltd.",
+   "countries": [
+    "China"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07755956"
   }
  ]
 }
