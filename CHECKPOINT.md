@@ -4,42 +4,50 @@
 > Update it when you start, finish, or reprioritize a task. Humans: this is the
 > single source of truth for "what's happening and what's next".
 >
-> Convention: every task has a status, an owner (Jaeger / Percival / anyone),
-> and a last-updated date. When you finish something, move it to ✅ Done and
+> Convention: every task has a status, an owner (Galahad / anyone), and a
+> last-updated date. When you finish something, move it to ✅ Done and
 > add the next step. Never delete history — append to the change log.
 
-**Last updated:** 2026-09-07 (Galahad, explainer v2 + funding.json sync) · 2026-09-04 (Jaeger, site-split decree + PR #21/#23 merge) · **Maintainers:** Jaeger + Percival (Hermes agents)
+> **🛡 SINGLE-AGENT MODE — since 2026-09-07.** Jaeger and Percival (the former
+> two-agent crew) are retired. **Galahad is the sole Knight** for all lanes and
+> owns every open workstream. Their gateway profiles are gone; nothing they ran
+> (weekly data refresh, M2 digest, night jobs) executes anymore — Galahad
+> resurrects cadence jobs under its own profile. All `*Jaeger*` / `*Percival*`
+> owner tags below are historical; treat open items as Galahad's. The human
+> (wckdboy) remains final reviewer.
+
+**Last updated:** 2026-09-07 (Galahad, single-agent takeover) · **Maintainer:** Galahad (sole agent)
 
 ---
 
 ## 🎯 Current focus (top 3)
 
-1. **Site split (decree 2026-09-04) — 🔄 FLAGGED (Jaeger lane)** — openendo = data/research/analytics ONLY; site moves to wckdboy/openendo-www (Lovable mirror, Vite+React+TS). Website changes ONLY via Lovable API — never hand-edit site files. Consequences: `audit_site.py` re-scope to openendo-www (docs/ HTML surface = legacy); **8 legacy `docs/*.html` flagged for removal/migration** (index, wiki, support, one-pager-en/dk, ai-agenda, styleguide, what-we-know — see horizon). *Jaeger*
-2. **Phase 2 dynamics (MD) — compute decision open** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0): sulfasalazine→xCT −8.52, rapamycin→FKBP52 −6.38 vs FKBP12 −7.06; cetrorelix→MRGPRX2 deferred (tool boundary). Next: OpenMM 100–500 ns on top poses — RunPod (~$5–25, Jaeger books) or knight GPU capacity. *Jaeger*
-3. **Lovable app ↔ repo wiring — funding WIRED + DEPLOYED 2026-09-07, knowledge articles remain** — fetch model live on /research + /access + / (funding section now reads `funding.json` live, fallback to bundled list; PR #26 + Lovable deploy @4695917). Remaining: knowledge articles hard-coded in app → same fetch pattern; access-finder UI build (data v1 done). *Jaeger*
+1. **Site split (decree 2026-09-04) — 🔄 CLAIMED by Galahad 2026-09-07** — openendo = data/research/analytics ONLY; site moves to wckdboy/openendo-www (Lovable mirror, Vite+React+TS). Website changes ONLY via Lovable API — never hand-edit site files. Consequences: `audit_site.py` re-scope to openendo-www (docs/ HTML surface = legacy); **8 legacy `docs/*.html` flagged for removal/migration** (index, wiki, support, one-pager-en/dk, ai-agenda, styleguide, what-we-know — see horizon). *Galahad*
+2. **Phase 2 dynamics (MD) — compute decision open (Galahad 2026-09-07)** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0): sulfasalazine→xCT −8.52, rapamycin→FKBP52 −6.38 vs FKBP12 −7.06; cetrorelix→MRGPRX2 deferred (tool boundary). Next: OpenMM 100–500 ns on top poses — RunPod (~$5–25) or knight GPU capacity. Human input needed on compute budget. *Galahad*
+3. **Lovable app ↔ repo wiring — funding WIRED + DEPLOYED 2026-09-07, knowledge articles remain** — fetch model live on /research + /access + / (funding section now reads `funding.json` live, fallback to bundled list; PR #26 + Lovable deploy @4695917). Remaining: knowledge articles hard-coded in app → same fetch pattern (claimed Galahad). Access-finder UI: **live + verified end-to-end 2026-09-02**; data fixes (DK postcodes) queued under P0. *Galahad*
 
 ## 📊 Workstreams
 
 | ID | Track | Status | Last touched | Owner |
 |----|-------|--------|--------------|-------|
 | M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · **0/35 to fold — coverage corrected 2026-09-03** | 2026-09-03 | Jaeger |
-| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence | 2026-09-02 | Percival |
-| M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival |
-| T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Percival |
-| INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival |
-| SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival |
-| WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain updated with GEO corroboration (2026-09-03) | 2026-09-03 | Jaeger + Percival |
-| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 | 2026-09-02 | Jaeger (cron) |
-| P0 | Data-layer reconciliation (Galahad table review) | ✅ merged — PR #23 (Percival lane); scripts fixes queued (Jaeger) | 2026-09-04 | Percival + Jaeger |
-| SITE | openendo-www split (decree) | 🆕 site → openendo-www via Lovable-only; docs/*.html legacy (8 files) | 2026-09-04 | Galahad + Jaeger |
+| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **cadence DEAD 2026-09-07 (agent retirement); Galahad to resurrect** | 2026-09-07 | Galahad |
+| M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival (done) |
+| T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Galahad (Phase B = human) |
+| INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
+| SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival (done) |
+| WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain updated with GEO corroboration (2026-09-03) | 2026-09-03 | Galahad |
+| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 — **cron DEAD 2026-09-07; Galahad to resurrect under own profile** | 2026-09-07 | Galahad |
+| P0 | Data-layer reconciliation | ✅ merged — PR #23; **scripts fixes CLAIMED by Galahad 2026-09-07** (update_data pagination/atomic/push-check; repurpose_screen; access.json DK postcodes) | 2026-09-07 | Galahad |
+| SITE | openendo-www split (decree) | 🆕 site → openendo-www via Lovable-only; docs/*.html legacy (8 files) | 2026-09-04 | Galahad |
 
 ---
 
 ## 📋 Horizon — tasks needing focus
 
 ### 🔴 High priority
-- [ ] **Site split follow-through (Jaeger lane)** — `audit_site.py` re-scope: stop auditing `docs/` static HTML (legacy); audit the openendo-www product (Vite build / live site) instead. Flag 8 legacy `docs/*.html` (index, wiki, support, one-pager-en, one-pager-dk, ai-agenda, styleguide, what-we-know) for removal/migration — decisions: which exist in openendo-www (Lovable) already → delete; which are unique → migrate via Lovable API. Note: `what-we-know.html` rung 3 still says "docking in progress" (stale post-#22) — moot if deleted, fix if kept. *Jaeger — claim 2026-09-04*
-- [ ] **P0 reconciliation — Jaeger lane scripts fixes (queued)** — `update_data.py`: pagination (CT.gov hardcoded pageSize=50), empty-dataset floor, atomic saves, git-push failure detection (green run ≠ pushed). `repurpose_screen.py`: ordering + organism filter; transient ChEMBL errors must NOT permanently reclassify. `access.json`: DK postcode region fixes (3000–3600 Nordsjælland → Sjælland; 7100+ Vejle → Midtjylland; 6900 Skjern → Syddanmark). *Jaeger — claim 2026-09-04*
+- [ ] **Site split follow-through (CLAIMED by Galahad 2026-09-07)** — `audit_site.py` re-scope: stop auditing `docs/` static HTML (legacy); audit the openendo-www product (Vite build / live site) instead. Flag 8 legacy `docs/*.html` (index, wiki, support, one-pager-en, one-pager-dk, ai-agenda, styleguide, what-we-know) for removal/migration — decisions: which exist in openendo-www (Lovable) already → delete; which are unique → migrate via Lovable API. Note: what-we-know.html rung-3 staleness already FIXED (PR #25, explainer v2). *Galahad*
+- [ ] **P0 reconciliation — scripts fixes (CLAIMED by Galahad 2026-09-07)** — `update_data.py`: pagination (CT.gov hardcoded pageSize=50), empty-dataset floor, atomic saves, git-push failure detection (green run ≠ pushed). `repurpose_screen.py`: ordering + organism filter; transient ChEMBL errors must NOT permanently reclassify. `access.json`: DK postcode region fixes (3000–3600 Nordsjælland → Sjælland; 7100+ Vejle → Midtjylland; 6900 Skjern → Syddanmark). *Galahad*
 - [ ] **P0 reconciliation — Percival lane (in progress, PR #23)** — per-candidate `status` in repurposing_candidates.json (9 M3 verdicts: top-tier/watchlist/validated-axis/wrong-direction), GEO Phase 0.5 corroboration added to m3-validation.md + concepts/ferroptosis.md (GSE282532: FKBP4 2.2x down, SLC7A11 2x down, ACSL4 2.4x down; GSE247695/263897 compartment findings), stale `docs/research/targets/targets.json` duplicate removed (2 links repointed to canonical docs/data/targets.json), llms.txt += IDENTIFIERS.md + repurposing descriptor, data README wording. *Percival — claim 2026-09-04* → ✅ **MERGED as PR #23 (2026-09-04, Jaeger reviewed+merged)**
 
 
@@ -83,6 +91,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-07 (Galahad)** — **SINGLE-AGENT TAKEOVER (user directive)** — Jaeger + Percival retired; Galahad sole Knight. All open lanes claimed (site-split follow-through, P0 scripts fixes, Phase 2 compute decision, site wiring remainder, cadence jobs). Legacy `*Jaeger*`/`*Percival*` tags retained as history; protocol docs updated to single-agent mode.
 
 - **2026-09-07 (Galahad)** — **Research explainer v2 (`docs/what-we-know.html`, PR #25 merged)** — content fix flagged in horizon ("moot if deleted, fix if kept" — kept: openendo.org/research fetches it live): structure bar corrected to 35/35 (0 to fold, audit 2026-09-03), testing list rewritten to post-Phase-1 truth (sirolimus→FKBP4 −6.4 vs FKBP12 −7.1 done; cetrorelix→MRGPRX2 deferred to Phase 2 w/ tool boundary; ferroptosis direction resolved; Phase 0.5 GEO answered; Phase 2 dynamics = next), ladder rung 3 → done w/ caveats, unknowns updated. Versioned v2.
 - **2026-09-07 (Galahad)** — **`funding.json` canonical list merged with the app's curated set (PR #26)** — added the 5 leads the Lovable app hard-codes (Horizon Europe Cluster 1 Health 2026-09-16, Novo Nordisk Foundation Women's Health 2026-10-01, DFF Project 1 2026-10-27, Wellcome Discovery 2026-11-10, NIH R01 standard 2026-10-05) so repo + site converge on one list before the Home funding section is wired to this file (fetch model). Schema unchanged; EN/DA descs; RO-Crate regenerated; 10 entries total.

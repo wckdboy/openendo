@@ -21,18 +21,22 @@ under-researched.
 
 **Read `CHECKPOINT.md` before starting any work.** It is the living source of truth for current focus (top 3), the prioritized horizon, blockers and the change log. `docs/llms.txt` is the machine-readable index of everything else.
 
-## Two-agent operating protocol (Jaeger + Percival)
+## Operating protocol (single agent — Galahad, since 2026-09-07)
 
-1. **Claim before you build** — when you start a task, set `owner` + status in CHECKPOINT.md and commit that FIRST (same push as your first work commit). Never start work that another agent has claimed (`in_progress`).
-2. **Branch naming** — `<your-name>/<topic>`, e.g. `percival/m3-validation`, `jaeger/wiki-diversity`. One task per branch/PR. Never push to `main` directly.
-3. **File zones** (avoid stepping on each other):
-   - `docs/research/` M1/M2/M3/T7 tracks → **Percival's zone** (Jaeger: review only)
-   - `docs/knowledge/`, `docs/data/` curated files (`funding.json`, `targets.json`, `repurposing_candidates.json`) → **shared, one agent at a time** — claim in CHECKPOINT first; knowledge pages follow SCHEMA.md
-   - `scripts/` (pipeline, audit, CI), `.github/` → **Jaeger's zone** (Percival: propose via issue/PR, don't rewrite)
-   - `CHECKPOINT.md`, `AGENTS.md`, `llms.txt`, `README.md` → **shared coordination docs** — edit carefully, append to change log, never delete history
-4. **Pull before push, always** — rebase on `origin/main`. The weekly monitor and data pipeline also commit here.
+> Jaeger and Percival are retired (user directive 2026-09-07). Galahad is the
+> sole agent. The rules below keep the same discipline — claims, branches, zones,
+> green CI, living CHECKPOINT — without a second agent.
+
+1. **Claim before you build** — when you start a task, set `owner` + status in CHECKPOINT.md and commit that FIRST (same push as your first work commit).
+2. **Branch naming** — `galahad/<topic>` (or `<topic>` for tiny fixes). One task per branch/PR. Never push to `main` directly (the automated data-pipeline commit is the sole exception, and it only touches `docs/data/*` + the manifest it regenerates).
+3. **File zones** (organization guide; all owned by Galahad now):
+   - `docs/research/` M1/M2/M3/T7 tracks — research content; knowledge pages follow SCHEMA.md
+   - `docs/knowledge/`, `docs/data/` curated files (`funding.json`, `targets.json`, `repurposing_candidates.json`) — one task at a time, claim in CHECKPOINT first
+   - `scripts/` (pipeline, audit, CI), `.github/` — pipeline and audit tooling; change with tests where feasible
+   - `CHECKPOINT.md`, `AGENTS.md`, `llms.txt`, `README.md` — coordination docs — edit carefully, append to change log, never delete history
+4. **Pull before push, always** — rebase on `origin/main`. The weekly data pipeline commits here too.
 5. **PRs** — title `feat|fix|docs(scope): summary`. Update CHECKPOINT.md in the SAME PR (status, change log). CI must be green (security-scan + site-audit).
-6. **Merge discipline** — the *other* agent (or the human) reviews and merges. Docs-only PRs with green CI may be merged after review; never merge your own PR without a second set of eyes unless the human says otherwise. If a check fails: investigate, fix, re-run — never merge past a red check.
+6. **Merge discipline** — the human (wckdboy) is final reviewer. With the user's standing directive to run the mission, Galahad may self-merge a PR only when: all CI checks are green, the diff is fully reviewed by Galahad, and the PR is docs/data/tooling (no science-content surprises). Any patient-facing research-content change still gets a human look before merge. Never merge with a red check.
 7. **Lovable app** — the UI at openendo.org is the user's Lovable app (Hermes has API access via OAuth). Repo changes do NOT auto-deploy there. If a change affects what the app shows, flag `needs-lovable-sync` in the PR body.
 
 ## Rules for agents
