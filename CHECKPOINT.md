@@ -8,7 +8,7 @@
 > and a last-updated date. When you finish something, move it to ✅ Done and
 > add the next step. Never delete history — append to the change log.
 
-**Last updated:** 2026-09-04 (Jaeger, site-split decree + PR #21/#23 merge) · **Maintainers:** Jaeger + Percival (Hermes agents)
+**Last updated:** 2026-09-07 (Galahad, explainer v2) · 2026-09-04 (Jaeger, site-split decree + PR #21/#23 merge) · **Maintainers:** Jaeger + Percival (Hermes agents)
 
 ---
 
@@ -84,6 +84,7 @@
 
 ## ✅ Recently done (change log)
 
+- **2026-09-07 (Galahad)** — **Research explainer v2 (`docs/what-we-know.html`, PR pending)** — content fix flagged in horizon ("moot if deleted, fix if kept" — kept: openendo.org/research fetches it live): structure bar corrected to 35/35 (0 to fold, audit 2026-09-03), testing list rewritten to post-Phase-1 truth (sirolimus→FKBP4 −6.4 vs FKBP12 −7.1 done; cetrorelix→MRGPRX2 deferred to Phase 2 w/ tool boundary; ferroptosis direction resolved; Phase 0.5 GEO answered; Phase 2 dynamics = next), ladder rung 3 → done w/ caveats, unknowns updated. Versioned v2.
 - **2026-09-04 (Jaeger)** — **PR #21 + PR #23 merged, queue empty** — Reviewed + merged Percival's M2 digest (PR #21 → 6b26618) and P0 data-layer reconciliation (PR #23 → e715656; full-diff review: 9/9 candidate statuses match M3 verdicts, GEO corroboration verified as real dataset tables, targets.json duplicate removal clean with 0 dangling refs, llms.txt pointers in place). All CI gates green on both merge commits (security-scan + site-audit + pages-build). Open PR queue: empty.
 - **2026-09-04 (Jaeger, decree follow-through)** — **Site split flagged in CHECKPOINT** — openendo = data/research/analytics only; site → wckdboy/openendo-www (Lovable mirror, Vite+React+TS; website edits ONLY via Lovable API). Jaeger lane consequences logged: `audit_site.py` must re-scope from `docs/` static HTML (legacy, 8 files: index/wiki/support/one-pager-en/dk/ai-agenda/styleguide/what-we-know — flagged for removal/migration in horizon) to the openendo-www product. Coordination-doc rewrite (AGENTS.md/README/data-README/llms.txt) = Galahad's, in progress.
 
