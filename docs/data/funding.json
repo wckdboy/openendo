@@ -63,5 +63,70 @@
       "en": "Rolling smaller research, awareness and community grants.",
       "da": "Løbende mindre forsknings-, oplysnings- og fællesskabsbevillinger."
     }
+  },
+  {
+    "id": "horizon-cluster1-health",
+    "name": "Horizon Europe — Cluster 1 Health calls",
+    "org": "European Commission",
+    "country": "EU",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+    "deadline": "2026-09-16",
+    "open": true,
+    "desc": {
+      "en": "Open calls under the EU health cluster — endometriosis-relevant topics recur. Typical awards €6–12M per project.",
+      "da": "Åbne opslag under EU's sundhedsklynge — endometrioserelevante emner går igen. Typisk 6–12 mio. € pr. projekt."
+    }
+  },
+  {
+    "id": "nnf-womens-health",
+    "name": "Novo Nordisk Foundation — Women's Health",
+    "org": "Novo Nordisk Foundation",
+    "country": "DK",
+    "url": "https://novonordiskfonden.dk/en/grants/",
+    "deadline": "2026-10-01",
+    "open": true,
+    "desc": {
+      "en": "Dedicated women's-health programme. Awards up to DKK 15M.",
+      "da": "Særligt program for kvinders sundhed. Bevillinger op til 15 mio. kr."
+    }
+  },
+  {
+    "id": "dff-project1",
+    "name": "Independent Research Fund Denmark — Project 1",
+    "org": "Danmarks Frie Forskningsfond",
+    "country": "DK",
+    "url": "https://dff.dk/en",
+    "deadline": "2026-10-27",
+    "open": true,
+    "desc": {
+      "en": "DFF research-project grants (open-topic). Typical awards DKK 1–4.5M.",
+      "da": "DFF-forskningsprojektbevillinger (frit emne). Typisk 1–4,5 mio. kr."
+    }
+  },
+  {
+    "id": "wellcome-discovery",
+    "name": "Wellcome Discovery Awards",
+    "org": "Wellcome Trust",
+    "country": "GB",
+    "url": "https://wellcome.org/research-funding",
+    "deadline": "2026-11-10",
+    "open": true,
+    "desc": {
+      "en": "Large, flexible awards for ambitious research programmes. Up to £3M.",
+      "da": "Store, fleksible bevillinger til ambitiøse forskningsprogrammer. Op til 3 mio. £."
+    }
+  },
+  {
+    "id": "nih-r01-standard",
+    "name": "NIH R01 — standard cycle",
+    "org": "National Institutes of Health",
+    "country": "US",
+    "url": "https://grants.nih.gov/funding/searchguide/index.html",
+    "deadline": "2026-10-05",
+    "open": true,
+    "desc": {
+      "en": "NIH's standard research-project grant. Amount varies by topic and institute.",
+      "da": "NIH's standardforskningsbevilling. Beløb varierer efter emne og institut."
+    }
   }
 ]
