@@ -484,6 +484,2705 @@
    "postcode": {
     "supported": false
    }
+  },
+  "PT": {
+   "iso": "PT",
+   "name": {
+    "en": "Portugal",
+    "da": "Portugal"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "mulherendo",
+     "name": {
+      "en": "MulherEndo – Associação Portuguesa de Apoio a Mulheres com Endometriose",
+      "da": "MulherEndo – Associação Portuguesa de Apoio a Mulheres com Endometriose"
+     },
+     "services": {
+      "en": "Portuguese patient association (listed on endometriosis.org) that promotes physical and psychological support, rehabilitation and recovery for women with endometriosis through information and direct cooperation with patients; runs a national petition and advocacy for a national endometriosis strategy. Contact and membership via the website.",
+      "da": "Portuguese patient association (listed on endometriosis.org) that promotes physical and psychological support, rehabilitation and recovery for women with endometriosis through information and direct cooperation with patients; runs a national petition and advocacy for a national endometriosis strategy. Contact and membership via the website."
+     },
+     "url": "https://mulherendo.pt",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://mulherendo.pt/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (médico de família) or a gynaecologist through the public SNS or private care; ultrasound and referral to a gynaecology specialist are the usual next steps.",
+     "Several public hospitals run specialised endometriosis consultations — ask your gynaecologist for a referral to the nearest one.",
+     "MulherEndo is the national patient association for information, community and advocacy; contact via mulherendo.pt."
+    ]
+   }
+  },
+  "ES": {
+   "iso": "ES",
+   "name": {
+    "en": "Spain",
+    "da": "Spanien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "asociacion-endometriosis-espana",
+     "name": {
+      "en": "Asociación de Endometriosis España (AEE)",
+      "da": "Asociación de Endometriosis España (AEE)"
+     },
+     "services": {
+      "en": "National non-profit patient association (founded 2002, Girona; registered with Spain's national associations register) that provides information about endometriosis and its treatments mainly through its website endoinfo.org and social media, and answers questions from affected women by email (info@endoinfo.org).",
+      "da": "National non-profit patient association (founded 2002, Girona; registered with Spain's national associations register) that provides information about endometriosis and its treatments mainly through its website endoinfo.org and social media, and answers questions from affected women by email (info@endoinfo.org)."
+     },
+     "url": "https://www.endoinfo.org",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endoinfo.org/aee/"
+     ]
+    },
+    {
+     "id": "adaem",
+     "name": {
+      "en": "Asociación de Afectadas de Endometriosis de Madrid (ADAEM)",
+      "da": "Asociación de Afectadas de Endometriosis de Madrid (ADAEM)"
+     },
+     "services": {
+      "en": "Madrid-based patient association (listed on endometriosis.org) supporting women affected by endometriosis: information, mutual support and awareness activities, with contact by phone and email (adaem@adaem.org.es).",
+      "da": "Madrid-based patient association (listed on endometriosis.org) supporting women affected by endometriosis: information, mutual support and awareness activities, with contact by phone and email (adaem@adaem.org.es)."
+     },
+     "url": "https://www.adaem.org.es",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.adaem.org.es/"
+     ]
+    },
+    {
+     "id": "endometriosis-catalunya",
+     "name": {
+      "en": "Endometriosis Catalunya",
+      "da": "Endometriosis Catalunya"
+     },
+     "services": {
+      "en": "Catalan association (listed on endometriosis.org, Barcelona) working on endometriosis awareness, information and support for affected women in Catalonia; contact by email (endocatalunya@gmail.com).",
+      "da": "Catalan association (listed on endometriosis.org, Barcelona) working on endometriosis awareness, information and support for affected women in Catalonia; contact by email (endocatalunya@gmail.com)."
+     },
+     "url": "https://endometriosiscatalunya.org",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosiscatalunya.org/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (médico de familia) or a gynaecologist; Spain's national endometriosis strategy guides referral to specialised endometriosis units in hospitals.",
+     "AEE (endoinfo.org) offers nationwide information and answers patient questions by email; regional associations such as ADAEM (Madrid) and Endometriosis Catalunya run local support and awareness activities.",
+     "For suspected severe or complex disease, ask for referral to a specialised endometriosis unit within the public health system (SNS) or a recognised private centre."
+    ]
+   }
+  },
+  "FR": {
+   "iso": "FR",
+   "name": {
+    "en": "France",
+    "da": "Frankrig"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endofrance",
+     "name": {
+      "en": "Association EndoFrance",
+      "da": "Association EndoFrance"
+     },
+     "services": {
+      "en": "France's first national endometriosis association (created 2001; WEO member; approved by the French health ministry). Provides information, support, a helpline, local groups and advocacy to improve recognition and care of endometriosis.",
+      "da": "France's first national endometriosis association (created 2001; WEO member; approved by the French health ministry). Provides information, support, a helpline, local groups and advocacy to improve recognition and care of endometriosis."
+     },
+     "url": "https://www.endofrance.org",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endofrance.org/"
+     ]
+    },
+    {
+     "id": "endomind",
+     "name": {
+      "en": "ENDOmind France",
+      "da": "ENDOmind France"
+     },
+     "services": {
+      "en": "French national patient association (Paris, listed on endometriosis.org) that informs women about endometriosis and works on awareness, support and advocacy so the disease is better recognised; contact by email (contact@endomind.org).",
+      "da": "French national patient association (Paris, listed on endometriosis.org) that informs women about endometriosis and works on awareness, support and advocacy so the disease is better recognised; contact by email (contact@endomind.org)."
+     },
+     "url": "https://www.endomind.org",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endomind.org/"
+     ]
+    },
+    {
+     "id": "info-endometriose",
+     "name": {
+      "en": "Info-Endométriose",
+      "da": "Info-Endométriose"
+     },
+     "services": {
+      "en": "French association focused on information about endometriosis and on advocacy with policy makers for better recognition and care of the disease; active on its website and social media.",
+      "da": "French association focused on information about endometriosis and on advocacy with policy makers for better recognition and care of the disease; active on its website and social media."
+     },
+     "url": "https://www.info-endometriose.fr",
+     "confidence": "medium",
+     "sources": [
+      "https://www.info-endometriose.fr/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (médecin traitant) or a gynaecologist; France has a national endometriosis strategy and a network of specialised expert centres (filières) for complex cases.",
+     "EndoFrance (national helpline and local groups) and ENDOmind provide patient support and information; Info-Endométriose focuses on information and advocacy.",
+     "The Ministry of Health runs an endometriosis information portal; associations can point you to local support and specialised care."
+    ]
+   }
+  },
+  "IT": {
+   "iso": "IT",
+   "name": {
+    "en": "Italy",
+    "da": "Italien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "associazione-italiana-endometriosi",
+     "name": {
+      "en": "Associazione Italiana Endometriosi Onlus (AIE)",
+      "da": "Associazione Italiana Endometriosi Onlus (AIE)"
+     },
+     "services": {
+      "en": "National Italian patient association (listed on endometriosis.org; founded 2001) offering a toll-free helpline (800 031977), information and support for women with endometriosis; it also created the Fondazione Italiana Endometriosi to fund research.",
+      "da": "National Italian patient association (listed on endometriosis.org; founded 2001) offering a toll-free helpline (800 031977), information and support for women with endometriosis; it also created the Fondazione Italiana Endometriosi to fund research."
+     },
+     "url": "https://www.endoassoc.it",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endoassoc.it/"
+     ]
+    },
+    {
+     "id": "progetto-endometriosi",
+     "name": {
+      "en": "A.P.E. ODV – Associazione Progetto Endometriosi",
+      "da": "A.P.E. ODV – Associazione Progetto Endometriosi"
+     },
+     "services": {
+      "en": "National all-volunteer Italian patient association (Parma; listed on endometriosis.org; registered in the national RUNTS third-sector register) providing information, free support groups ('Non sei sola'), courses and awareness campaigns for people with endometriosis.",
+      "da": "National all-volunteer Italian patient association (Parma; listed on endometriosis.org; registered in the national RUNTS third-sector register) providing information, free support groups ('Non sei sola'), courses and awareness campaigns for people with endometriosis."
+     },
+     "url": "https://www.apendometriosi.it",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.apendometriosi.it/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (medico di base) or a gynaecologist (public SSN or private); endometriosis is officially recognised in Italy as a chronic, disabling disease, and many regions have diagnostic-therapeutic pathways (PDTA) and reference centres.",
+     "AIE runs a national toll-free helpline (800 031977) and information services; A.P.E. ODV offers free support groups and information across the country.",
+     "For complex disease, ask your gynaecologist for referral to a regional endometriosis reference centre."
+    ]
+   }
+  },
+  "CH": {
+   "iso": "CH",
+   "name": {
+    "en": "Switzerland",
+    "da": "Schweiz"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-help-schweiz",
+     "name": {
+      "en": "Endo-Help – Schweizerische Endometriose Vereinigung",
+      "da": "Endo-Help – Schweizerische Endometriose Vereinigung"
+     },
+     "services": {
+      "en": "German-speaking Swiss endometriosis association (listed on endometriosis.org and by the Stiftung Endometriose Forschung as Switzerland's central self-help organisation). Offers moderated self-help groups (online and local), practical guidance and information for people living with endometriosis.",
+      "da": "German-speaking Swiss endometriosis association (listed on endometriosis.org and by the Stiftung Endometriose Forschung as Switzerland's central self-help organisation). Offers moderated self-help groups (online and local), practical guidance and information for people living with endometriosis."
+     },
+     "url": "https://www.endo-help.ch",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endo-help.ch/"
+     ]
+    },
+    {
+     "id": "groupe-endometriosis-suisse",
+     "name": {
+      "en": "Groupe Endometriosis Suisse",
+      "da": "Groupe Endometriosis Suisse"
+     },
+     "services": {
+      "en": "French-speaking Swiss endometriosis association (Yvonand; listed on endometriosis.org) providing information, support and awareness for affected women in French-speaking Switzerland; contact by phone or email (laure@endosuisse.ch).",
+      "da": "French-speaking Swiss endometriosis association (Yvonand; listed on endometriosis.org) providing information, support and awareness for affected women in French-speaking Switzerland; contact by phone or email (laure@endosuisse.ch)."
+     },
+     "url": "https://www.endosuisse.ch",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endosuisse.ch/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (Hausarzt / médecin traitant) or gynaecologist; several Swiss hospitals run certified endometriosis centres for specialised diagnosis and surgery.",
+     "Endo-Help covers the German-speaking region with self-help groups and guidance; Groupe Endometriosis Suisse does the same for French-speaking Switzerland.",
+     "Note: the former endometriose.ch address now leads to the Inselspital (Bern) endometriosis centre — it is a hospital service, not a patient association."
+    ]
+   }
+  },
+  "AT": {
+   "iso": "AT",
+   "name": {
+    "en": "Austria",
+    "da": "Østrig"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriose-vereinigung-austria",
+     "name": {
+      "en": "EVA – Endometriose Vereinigung Austria",
+      "da": "EVA – Endometriose Vereinigung Austria"
+     },
+     "services": {
+      "en": "Austrian national patient association (Vienna; listed on endometriosis.org and by the Stiftung Endometriose Forschung as the headquarters of Austria's self-help groups). Provides counselling and information by phone/email (office@eva-info.at) and coordinates endometriosis self-help groups across Austria.",
+      "da": "Austrian national patient association (Vienna; listed on endometriosis.org and by the Stiftung Endometriose Forschung as the headquarters of Austria's self-help groups). Provides counselling and information by phone/email (office@eva-info.at) and coordinates endometriosis self-help groups across Austria."
+     },
+     "url": "https://www.eva-info.at",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.eva-info.at/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (Hausarzt) or a gynaecologist (Frauenarzt); hormonal treatment and pain management are first-line options.",
+     "Austria has specialised endometriosis centres in several hospitals — ask for referral if symptoms are severe or complex.",
+     "EVA is the national self-help association: free counselling and information by phone/email, plus local self-help groups nationwide."
+    ]
+   }
+  },
+  "NL": {
+   "iso": "NL",
+   "name": {
+    "en": "Netherlands",
+    "da": "Nederlandene"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriose-stichting",
+     "name": {
+      "en": "Endometriose Stichting",
+      "da": "Endometriose Stichting"
+     },
+     "services": {
+      "en": "Dutch national patient organisation (WEO member; listed on endometriosis.org). Provides reliable information, a helpline, peer-support activities and advocacy for people with endometriosis; also runs the dedicated youth website (ongewoonongesteld.nl).",
+      "da": "Dutch national patient organisation (WEO member; listed on endometriosis.org). Provides reliable information, a helpline, peer-support activities and advocacy for people with endometriosis; also runs the dedicated youth website (ongewoonongesteld.nl)."
+     },
+     "url": "https://www.endometriose.nl",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endometriose.nl/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (huisarts), who can refer you to a gynaecologist; the Netherlands has specialised endometriosis centres in academic and top-clinical hospitals.",
+     "Endometriose Stichting offers information, a helpline and peer-support (lotgenoten) activities nationwide; its website also lists care-related resources.",
+     "For complex disease, ask your gynaecologist about referral to a specialised endometriosis centre."
+    ]
+   }
+  },
+  "BE": {
+   "iso": "BE",
+   "name": {
+    "en": "Belgium",
+    "da": "Belgien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endohome",
+     "name": {
+      "en": "EndoHome – Endometriosis Association Belgium",
+      "da": "EndoHome – Endometriosis Association Belgium"
+     },
+     "services": {
+      "en": "National Belgian endometriosis association (Eksel; WEO member and listed on endometriosis.org). Provides information, support and awareness for people with endometriosis in Belgium, with contact by phone and email (info@endohome.be).",
+      "da": "National Belgian endometriosis association (Eksel; WEO member and listed on endometriosis.org). Provides information, support and awareness for people with endometriosis in Belgium, with contact by phone and email (info@endohome.be)."
+     },
+     "url": "https://www.endohome.be",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endohome.be/"
+     ]
+    },
+    {
+     "id": "toi-mon-endo",
+     "name": {
+      "en": "Toi Mon Endo ASBL",
+      "da": "Toi Mon Endo ASBL"
+     },
+     "services": {
+      "en": "Belgian (French-speaking) expert association whose goal is to make endometriosis visible and to inform, bring together and support women and girls affected; its website lists where to consult specialised practitioners (e.g. at Erasmus hospital Brussels).",
+      "da": "Belgian (French-speaking) expert association whose goal is to make endometriosis visible and to inform, bring together and support women and girls affected; its website lists where to consult specialised practitioners (e.g. at Erasmus hospital Brussels)."
+     },
+     "url": "https://www.toimonendo.com",
+     "confidence": "medium",
+     "sources": [
+      "https://www.toimonendo.com/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (huisarts / médecin généraliste) or a gynaecologist; several Belgian hospitals have specialised endometriosis clinics.",
+     "EndoHome is the national association for information and support across the country; Toi Mon Endo (French-speaking) offers support and lists specialised consultation options.",
+     "For severe or complex disease, ask for referral to a hospital endometriosis centre."
+    ]
+   }
+  },
+  "IE": {
+   "iso": "IE",
+   "name": {
+    "en": "Ireland",
+    "da": "Irland"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-association-of-ireland",
+     "name": {
+      "en": "Endometriosis Association of Ireland",
+      "da": "Endometriosis Association of Ireland"
+     },
+     "services": {
+      "en": "National Irish patient charity (Dublin; WEO member and listed on endometriosis.org) providing information, support groups, a helpline and awareness for people with endometriosis; formerly at endo.ie, now at endometriosis.ie.",
+      "da": "National Irish patient charity (Dublin; WEO member and listed on endometriosis.org) providing information, support groups, a helpline and awareness for people with endometriosis; formerly at endo.ie, now at endometriosis.ie."
+     },
+     "url": "https://www.endometriosis.ie",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endometriosis.ie/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP; referral to a gynaecologist is available through the public HSE system or private care, and regional specialist endometriosis services exist.",
+     "The Endometriosis Association of Ireland provides information, a helpline and support groups nationwide — a good first point of contact for peer support.",
+     "Ask your gynaecologist about referral to a specialist endometriosis centre for complex or severe disease."
+    ]
+   }
+  },
+  "CY": {
+   "iso": "CY",
+   "name": {
+    "en": "Cyprus",
+    "da": "Cypern"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endomarch-cyprus",
+     "name": {
+      "en": "EndoMarch Cyprus",
+      "da": "EndoMarch Cyprus"
+     },
+     "services": {
+      "en": "Non-profit endometriosis awareness campaign and the official Cyprus representative of the Worldwide EndoMarch movement (active for 11 consecutive years, per 2026 press). Runs yearly March awareness events, storytelling/art exhibitions and open online discussions with a specialist gynaecologist, under the auspices of the Cyprus Ministry of Health.",
+      "da": "Non-profit endometriosis awareness campaign and the official Cyprus representative of the Worldwide EndoMarch movement (active for 11 consecutive years, per 2026 press). Runs yearly March awareness events, storytelling/art exhibitions and open online discussions with a specialist gynaecologist, under the auspices of the Cyprus Ministry of Health."
+     },
+     "url": "https://www.endomarchcyprus.com",
+     "confidence": "medium",
+     "sources": [
+      "https://www.endomarchcyprus.com/",
+      "https://cyprus-mail.com/2026/03/04/endomarch-cyprus-2026-island-takes-part-in-world-endometriosis-drive"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP or a gynaecologist through the public health system (GESY) or private care; laparoscopic surgery by a specialist is the diagnostic gold standard for endometriosis.",
+     "Endometriosis care in Cyprus is mainly provided by gynaecologists and specialised private centres (e.g. the Endometriosis & Fertility Centre); ask your doctor for a specialist referral.",
+     "EndoMarch Cyprus runs annual awareness events and online sessions with specialists each March — a way to find information and community."
+    ]
+   }
+  },
+  "NO": {
+   "iso": "NO",
+   "name": {
+    "en": "Norway",
+    "da": "Norge"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometrioseforeningen",
+     "name": {
+      "en": "Endometrioseforeningen (Norwegian Endometriosis Association)",
+      "da": "Endometrioseforeningen (Norwegian Endometriosis Association)"
+     },
+     "services": {
+      "en": "National patient association for people with endometriosis in Norway. Provides information, peer support and community, raises awareness, and offers a dedicated website section for young people with endometriosis.",
+      "da": "National patient association for people with endometriosis in Norway. Provides information, peer support and community, raises awareness, and offers a dedicated website section for young people with endometriosis."
+     },
+     "url": "https://endometriose.no",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriose.no"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (fastlege), who can refer you to a gynaecologist or a hospital department with endometriosis expertise.",
+     "If symptoms suggest endometriosis, ask about referral to a specialised gynaecology unit or endometriosis centre in your health region.",
+     "Contact Endometrioseforeningen for information, peer support and guidance on navigating diagnosis and treatment in Norway."
+    ]
+   }
+  },
+  "SE": {
+   "iso": "SE",
+   "name": {
+    "en": "Sweden",
+    "da": "Sverige"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosforeningen-sverige",
+     "name": {
+      "en": "Endometriosföreningen Sverige (Swedish Endometriosis Association)",
+      "da": "Endometriosföreningen Sverige (Swedish Endometriosis Association)"
+     },
+     "services": {
+      "en": "National patient association for people with endometriosis in Sweden, with local associations across the country. Provides information, peer support, member meetings and advocacy to improve care and shorten time to diagnosis.",
+      "da": "National patient association for people with endometriosis in Sweden, with local associations across the country. Provides information, peer support, member meetings and advocacy to improve care and shorten time to diagnosis."
+     },
+     "url": "https://endometriosforeningen.com",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosforeningen.com"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP or a gynaecology clinic (gynekologmottagning); Sweden has regional endometriosis teams and specialised centres (e.g. university hospitals) for complex cases.",
+     "Ask your care centre about referral to a specialist endometriosis unit if symptoms are severe or do not improve.",
+     "Contact Endometriosföreningen Sverige or your local association for peer support, information and guidance."
+    ]
+   }
+  },
+  "FI": {
+   "iso": "FI",
+   "name": {
+    "en": "Finland",
+    "da": "Finland"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometrioosiyhdistys",
+     "name": {
+      "en": "Endometrioosiyhdistys ry (Finnish Endometriosis Association)",
+      "da": "Endometrioosiyhdistys ry (Finnish Endometriosis Association)"
+     },
+     "services": {
+      "en": "Finnish patient association for people with endometriosis. Provides information, peer support, member activities and awareness-raising about endometriosis in Finland.",
+      "da": "Finnish patient association for people with endometriosis. Provides information, peer support, member activities and awareness-raising about endometriosis in Finland."
+     },
+     "url": "https://endometrioosiyhdistys.fi",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometrioosiyhdistys.fi"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (terveysasema) or occupational health doctor, who can refer you to a gynaecologist (naistentautien erikoislääkäri).",
+     "For suspected or confirmed endometriosis, ask about referral to a hospital gynaecology unit with endometriosis expertise.",
+     "Contact Endometrioosiyhdistys ry for peer support and reliable information in Finnish."
+    ]
+   }
+  },
+  "IS": {
+   "iso": "IS",
+   "name": {
+    "en": "Iceland",
+    "da": "Island"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endosamtokin",
+     "name": {
+      "en": "Endósamtökin (Endometriosis Association of Iceland)",
+      "da": "Endósamtökin (Endometriosis Association of Iceland)"
+     },
+     "services": {
+      "en": "Icelandic association for people with endometriosis, based in Reykjavik. Offers a members' peer-support group, educational talks, information days and open appointments (including in English), and raises awareness about endometriosis and adenomyosis.",
+      "da": "Icelandic association for people with endometriosis, based in Reykjavik. Offers a members' peer-support group, educational talks, information days and open appointments (including in English), and raises awareness about endometriosis and adenomyosis."
+     },
+     "url": "https://endo.is",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endo.is"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (heimilislæknir), who can refer you to a gynaecologist (kvensjúkdómalæknir).",
+     "Specialised endometriosis care is provided at Landspitali University Hospital in Reykjavik; ask your doctor about referral there for complex cases.",
+     "Contact Endósamtökin (endo.is) for information, peer support and their member support group."
+    ]
+   }
+  },
+  "PL": {
+   "iso": "PL",
+   "name": {
+    "en": "Poland",
+    "da": "Polen"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometrioza-org",
+     "name": {
+      "en": "Pierwszy Polski Portal o Endometriozie (endometrioza.org)",
+      "da": "Pierwszy Polski Portal o Endometriozie (endometrioza.org)"
+     },
+     "services": {
+      "en": "Poland's first endometriosis information portal, run by the Polish Endometriosis Association. Provides reliable information about the disease, diagnosis and treatment, and connects patients with support.",
+      "da": "Poland's first endometriosis information portal, run by the Polish Endometriosis Association. Provides reliable information about the disease, diagnosis and treatment, and connects patients with support."
+     },
+     "url": "https://endometrioza.org",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometrioza.org"
+     ]
+    },
+    {
+     "id": "fundacja-pokonac-endometrioze",
+     "name": {
+      "en": "Fundacja Pokonać Endometriozę (EndoMe Foundation)",
+      "da": "Fundacja Pokonać Endometriozę (EndoMe Foundation)"
+     },
+     "services": {
+      "en": "Polish foundation supporting women with endometriosis through regional peer-support groups, emotional support, education and awareness initiatives, and funding treatment support projects.",
+      "da": "Polish foundation supporting women with endometriosis through regional peer-support groups, emotional support, education and awareness initiatives, and funding treatment support projects."
+     },
+     "url": "https://www.pokonacendometrioze.pl",
+     "confidence": "medium",
+     "sources": [
+      "https://www.pokonacendometrioze.pl",
+      "https://endome.pl"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP or gynaecologist (ginekolog); a referral is needed for specialist hospital care (poradnia ginekologiczna / oddział ginekologii).",
+     "Endometriosis care in Poland is delivered mainly through hospital gynaecology departments; seek out units or specialists with endometriosis experience for suspected deep disease.",
+     "Use endometrioza.org for information and support, or contact Fundacja Pokonać Endometriozę for regional peer-support groups."
+    ]
+   }
+  },
+  "CZ": {
+   "iso": "CZ",
+   "name": {
+    "en": "Czech Republic",
+    "da": "Tjekkiet"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endotalks",
+     "name": {
+      "en": "EndoTalks (ENDOTALKS, z. s.)",
+      "da": "EndoTalks (ENDOTALKS, z. s.)"
+     },
+     "services": {
+      "en": "The first Czech patient organisation focused on endometriosis, founded in 2021. Runs a support centre staffed by trained volunteers with endometriosis, provides information and peer support, raises awareness, and advocates for better care and more certified treatment centres.",
+      "da": "The first Czech patient organisation focused on endometriosis, founded in 2021. Runs a support centre staffed by trained volunteers with endometriosis, provides information and peer support, raises awareness, and advocates for better care and more certified treatment centres."
+     },
+     "url": "https://endotalks.cz",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endotalks.cz"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (praktický lékař) or gynaecologist (gynekolog), who can refer you to hospital gynaecology care.",
+     "Ask about referral to a certified endometriosis centre (e.g. the centre at Podolí, Prague) for complex or deep endometriosis.",
+     "Contact EndoTalks for peer support, information and guidance through its support centre."
+    ]
+   }
+  },
+  "HU": {
+   "iso": "HU",
+   "name": {
+    "en": "Hungary",
+    "da": "Ungarn"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "egyutt-konyebb-noi-egeszsegert-alapitvany",
+     "name": {
+      "en": "\"Együtt könnyebb\" Női Egészségért Alapítvány (Endometriózis Magyarország)",
+      "da": "\"Együtt könnyebb\" Női Egészségért Alapítvány (Endometriózis Magyarország)"
+     },
+     "services": {
+      "en": "Hungarian public-benefit foundation supporting women with endometriosis, running the Endometriózis Magyarország platform. Provides reliable information, community and peer support via its Facebook group, awareness campaigns, and collaborates with doctors and specialists.",
+      "da": "Hungarian public-benefit foundation supporting women with endometriosis, running the Endometriózis Magyarország platform. Provides reliable information, community and peer support via its Facebook group, awareness campaigns, and collaborates with doctors and specialists."
+     },
+     "url": "https://endometriozismagyarorszag.hu",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriozismagyarorszag.hu",
+      "https://noiegeszsegert.hu"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (háziorvos) or gynaecologist (nőgyógyász); hospital gynaecology departments provide specialist care.",
+     "For suspected endometriosis, seek out gynaecologists or hospital units with endometriosis experience, particularly for complex cases.",
+     "Contact the \"Együtt könnyebb\" Női Egészségért Alapítvány / Endometriózis Magyarország for reliable information and peer support."
+    ]
+   }
+  },
+  "RO": {
+   "iso": "RO",
+   "name": {
+    "en": "Romania",
+    "da": "Rumænien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "asociatia-eu-si-endometrioza",
+     "name": {
+      "en": "Asociația Eu și Endometrioza",
+      "da": "Asociația Eu și Endometrioza"
+     },
+     "services": {
+      "en": "Romanian patient association for people with endometriosis, based in Ploiești. Provides information and support for patients, runs awareness campaigns and school education projects, and produced the documentary Endodyssey about endometriosis.",
+      "da": "Romanian patient association for people with endometriosis, based in Ploiești. Provides information and support for patients, runs awareness campaigns and school education projects, and produced the documentary Endodyssey about endometriosis."
+     },
+     "url": "https://eusiendometrioza.ro",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://eusiendometrioza.ro"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (medic de familie) or gynaecologist (medic ginecolog); referral is needed for hospital specialist care.",
+     "Endometriosis surgery and complex care are concentrated in certain hospital gynaecology departments; ask about doctors with endometriosis experience.",
+     "Contact Asociația Eu și Endometrioza for information, peer support and awareness events."
+    ]
+   }
+  },
+  "BG": {
+   "iso": "BG",
+   "name": {
+    "en": "Bulgaria",
+    "da": "Bulgarien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-and-reproductive-health-foundation",
+     "name": {
+      "en": "Endometriosis and Reproductive Health Foundation",
+      "da": "Endometriosis and Reproductive Health Foundation"
+     },
+     "services": {
+      "en": "Bulgarian foundation, based in Sofia, working on endometriosis and reproductive health. Provides information and raises awareness about endometriosis, its diagnosis and treatment, and offers support to affected women.",
+      "da": "Bulgarian foundation, based in Sofia, working on endometriosis and reproductive health. Provides information and raises awareness about endometriosis, its diagnosis and treatment, and offers support to affected women."
+     },
+     "url": "https://endometriosis.bg",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosis.bg"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (личен лекар), who can refer you to a gynaecologist (акушер-гинеколог).",
+     "For suspected endometriosis, seek a gynaecologist or hospital unit with endometriosis experience; complex surgery is available mainly in larger centres.",
+     "Contact the Endometriosis and Reproductive Health Foundation for information and support."
+    ]
+   }
+  },
+  "HR": {
+   "iso": "HR",
+   "name": {
+    "en": "Croatia",
+    "da": "Kroatien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "ja-sam-1-od-10",
+     "name": {
+      "en": "Udruga žena oboljelih od endometrioze \"Ja sam 1 od 10\"",
+      "da": "Udruga žena oboljelih od endometrioze \"Ja sam 1 od 10\""
+     },
+     "services": {
+      "en": "Croatian association of women with endometriosis, founded in 2022 in Zagreb from the \"I am 1 in 10\" citizens' initiative. Provides peer support and community, publishes expert Q&A and information, raises awareness, and advocates for better endometriosis care with health institutions and parliament.",
+      "da": "Croatian association of women with endometriosis, founded in 2022 in Zagreb from the \"I am 1 in 10\" citizens' initiative. Provides peer support and community, publishes expert Q&A and information, raises awareness, and advocates for better endometriosis care with health institutions and parliament."
+     },
+     "url": "https://www.jasam1od10.hr",
+     "confidence": "medium",
+     "sources": [
+      "https://www.jasam1od10.hr",
+      "https://www.jasam1od10.hr/o-udruzi/o-nama.html"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (liječnik obiteljske medicine) or gynaecologist (ginekolog), who can refer you to hospital gynaecology care.",
+     "For suspected endometriosis, ask about referral to an endometriosis outpatient clinic or centre; Zagreb's KBC and other university hospitals provide specialist care.",
+     "Contact the association \"Ja sam 1 od 10\" for peer support, information and advocacy news."
+    ]
+   }
+  },
+  "LV": {
+   "iso": "LV",
+   "name": {
+    "en": "Latvia",
+    "da": "Letland"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "latvijas-endometriozes-biedriba",
+     "name": {
+      "en": "Latvijas Endometriozes biedrība (Endometriosis Association of Latvia)",
+      "da": "Latvijas Endometriozes biedrība (Endometriosis Association of Latvia)"
+     },
+     "services": {
+      "en": "Latvian non-governmental organisation founded by endometriosis patients. Provides support groups, events, lectures and seminars for patients and their families, shares information and research on endometriosis, and educates the public.",
+      "da": "Latvian non-governmental organisation founded by endometriosis patients. Provides support groups, events, lectures and seminars for patients and their families, shares information and research on endometriosis, and educates the public."
+     },
+     "url": "https://www.endometrioze.lv",
+     "confidence": "medium",
+     "sources": [
+      "https://www.endometrioze.lv",
+      "https://www.endometrioze.lv/atbalsts-endometriozes-pacientem/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (ģimenes ārsts), who can refer you to a gynaecologist (ginekologs).",
+     "For suspected endometriosis, seek a gynaecologist or hospital unit with endometriosis experience; larger Riga hospitals provide specialist care.",
+     "Contact Latvijas Endometriozes biedrība (LEnB) for peer support and reliable information."
+    ]
+   }
+  },
+  "SK": {
+   "iso": "SK",
+   "name": {
+    "en": "Slovakia",
+    "da": "Slovakiet"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "femendo",
+     "name": {
+      "en": "FemENDO",
+      "da": "FemENDO"
+     },
+     "services": {
+      "en": "Slovak patient organisation and information platform for women with endometriosis. Provides accessible information in Slovak, community and peer support for women with or suspected of having endometriosis, and raises awareness about the disease and diagnosis.",
+      "da": "Slovak patient organisation and information platform for women with endometriosis. Provides accessible information in Slovak, community and peer support for women with or suspected of having endometriosis, and raises awareness about the disease and diagnosis."
+     },
+     "url": "https://femendo.eu",
+     "confidence": "medium",
+     "sources": [
+      "https://femendo.eu",
+      "https://donio.sk/podporte-skryte-luny"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (všeobecný lekár) or gynaecologist (gynekológ), who can refer you to hospital gynaecology care.",
+     "For suspected endometriosis, ask about referral to a gynaecology department or doctor with endometriosis experience; specialised endometriosis centres are still being established in Slovakia.",
+     "Contact FemENDO for information, community and peer support."
+    ]
+   }
+  },
+  "RS": {
+   "iso": "RS",
+   "name": {
+    "en": "Serbia",
+    "da": "Serbien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "zuto-uze-udruzenje-zena",
+     "name": {
+      "en": "Udruženje žena endometrioza \"Žuto uže\"",
+      "da": "Udruženje žena endometrioza \"Žuto uže\""
+     },
+     "services": {
+      "en": "Serbian association of women with endometriosis, registered in Belgrade (est. 2018). Connects women with endometriosis and related hormonal conditions for mutual support, organises education and talks with gynaecology and health specialists, and raises awareness about the disease.",
+      "da": "Serbian association of women with endometriosis, registered in Belgrade (est. 2018). Connects women with endometriosis and related hormonal conditions for mutual support, organises education and talks with gynaecology and health specialists, and raises awareness about the disease."
+     },
+     "url": "https://www.zutouze.com",
+     "confidence": "medium",
+     "sources": [
+      "https://www.zutouze.com",
+      "https://www.companywall.rs/firma/zuto-uze/MMx0P2izR"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP (lekar opšte prakse) or gynaecologist (ginekolog), who can refer you to hospital gynaecology care.",
+     "For suspected endometriosis, seek a gynaecologist or hospital unit with endometriosis experience; university clinics in Belgrade and Novi Sad provide specialist care.",
+     "Contact the association \"Žuto uže\" for peer support and information."
+    ]
+   }
+  },
+  "CA": {
+   "iso": "CA",
+   "name": {
+    "en": "Canada",
+    "da": "Canada"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "the-endometriosis-network-canada",
+     "name": {
+      "en": "The Endometriosis Network Canada",
+      "da": "The Endometriosis Network Canada"
+     },
+     "services": {
+      "en": "National registered charity providing education, awareness and advocacy on endometriosis; runs free virtual support groups led by trained facilitators and an online resource hub (Endo Hub) for people affected across Canada.",
+      "da": "National registered charity providing education, awareness and advocacy on endometriosis; runs free virtual support groups led by trained facilitators and an online resource hub (Endo Hub) for people affected across Canada."
+     },
+     "url": "https://endometriosisnetwork.com/",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosisnetwork.com/",
+      "https://canadahelps.org/en/charities/the-endometriosis-network-canada"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact The Endometriosis Network Canada via its website or email (info@endometriosisnetwork.ca) for national resources and support.",
+     "Join one of their free, trained-facilitator virtual support groups.",
+     "Use their Endo Hub and educational materials to prepare for medical appointments.",
+     "Seek care from a gynaecologist with endometriosis experience near you."
+    ]
+   }
+  },
+  "MX": {
+   "iso": "MX",
+   "name": {
+    "en": "Mexico",
+    "da": "Mexico"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-mexico",
+     "name": {
+      "en": "Endometriosis México",
+      "da": "Endometriosis México"
+     },
+     "services": {
+      "en": "Patient-run association founded in 2009 that offers peer support, information and community to people with endometriosis in Mexico, and works to raise awareness in a country where diagnosis typically takes around nine years.",
+      "da": "Patient-run association founded in 2009 that offers peer support, information and community to people with endometriosis in Mexico, and works to raise awareness in a country where diagnosis typically takes around nine years."
+     },
+     "url": "https://endometriosismexico.com/",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosismexico.com/"
+     ]
+    },
+    {
+     "id": "fundacion-endometriosis",
+     "name": {
+      "en": "Fundación Endometriosis",
+      "da": "Fundación Endometriosis"
+     },
+     "services": {
+      "en": "Non-profit foundation (Zapopan, Jalisco) whose multidisciplinary specialist team helps women with endometriosis who cannot afford specialised care, providing guidance, access to treatment, education and research.",
+      "da": "Non-profit foundation (Zapopan, Jalisco) whose multidisciplinary specialist team helps women with endometriosis who cannot afford specialised care, providing guidance, access to treatment, education and research."
+     },
+     "url": "https://fundacionendometriosis.org/",
+     "confidence": "medium",
+     "sources": [
+      "https://fundacionendometriosis.org/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact Endometriosis México through its website for peer support and community.",
+     "If you cannot afford specialised care, contact Fundación Endometriosis (Zapopan, Jalisco) about support and treatment access.",
+     "Ask about local endometriosis specialists and multidisciplinary care (surgery, physiotherapy, nutrition) during consultations."
+    ]
+   }
+  },
+  "GT": {
+   "iso": "GT",
+   "name": {
+    "en": "Guatemala",
+    "da": "Guatemala"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-guate",
+     "name": {
+      "en": "Endo Guate (Asociación de Endometriosis Guatemala)",
+      "da": "Endo Guate (Asociación de Endometriosis Guatemala)"
+     },
+     "services": {
+      "en": "Patient-led non-profit association formed entirely by people with endometriosis; provides a peer support network, organises group meetings ('endoconvivencias') with specialists, and campaigns for visibility and timely diagnosis in Guatemala.",
+      "da": "Patient-led non-profit association formed entirely by people with endometriosis; provides a peer support network, organises group meetings ('endoconvivencias') with specialists, and campaigns for visibility and timely diagnosis in Guatemala."
+     },
+     "url": "https://www.facebook.com/endoguate/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endoguate/",
+      "https://www.instagram.com/endometriosisguate/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Message Endo Guate on Facebook or Instagram to join its patient support network.",
+     "Attend their group meetings and awareness events to get information from specialists.",
+     "Ask about gynaecologists in Guatemala experienced with endometriosis and multidisciplinary care."
+    ]
+   }
+  },
+  "CR": {
+   "iso": "CR",
+   "name": {
+    "en": "Costa Rica",
+    "da": "Costa Rica"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "aendocr",
+     "name": {
+      "en": "Asociación Costarricense de Ayuda a Pacientes con Endometriosis (AENDOCR)",
+      "da": "Asociación Costarricense de Ayuda a Pacientes con Endometriosis (AENDOCR)"
+     },
+     "services": {
+      "en": "Non-profit association (San José) supporting and empowering women with endometriosis, adenomyosis and related cancers through monthly talks, resources, confidential membership and community events, while raising awareness of patients' rights.",
+      "da": "Non-profit association (San José) supporting and empowering women with endometriosis, adenomyosis and related cancers through monthly talks, resources, confidential membership and community events, while raising awareness of patients' rights."
+     },
+     "url": "https://www.aendocr.com/",
+     "confidence": "high",
+     "sources": [
+      "https://www.aendocr.com/",
+      "https://livingwithendometriosis.org/organisations"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit the AENDOCR website (aendocr.com) or email info@aendocr.com to ask for help.",
+     "Register as a member (confidential) to access talks, resources and events.",
+     "Ask AENDOCR about specialists and multidisciplinary management of endometriosis in Costa Rica."
+    ]
+   }
+  },
+  "PA": {
+   "iso": "PA",
+   "name": {
+    "en": "Panama",
+    "da": "Panama"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "aenpa",
+     "name": {
+      "en": "Asociación Endometriosis Panamá (AENPA)",
+      "da": "Asociación Endometriosis Panamá (AENPA)"
+     },
+     "services": {
+      "en": "Panamanian patient association (founded 2011/2014) that educates about endometriosis in schools, universities and health fairs, offers counselling and support to patients and families, and partners with clinics such as APLAFA to provide in-person orientation.",
+      "da": "Panamanian patient association (founded 2011/2014) that educates about endometriosis in schools, universities and health fairs, offers counselling and support to patients and families, and partners with clinics such as APLAFA to provide in-person orientation."
+     },
+     "url": "https://www.facebook.com/endometriosispanama/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endometriosispanama/",
+      "https://www.prensa.com/impresa/vivir/Actividades-mes-endometriosis_0_3874112672.html"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact AENPA through its Facebook page to reach the patient community.",
+     "Use APLAFA clinic spaces where AENPA offers free endometriosis orientation and counselling.",
+     "Ask about specialists and diagnostic services for endometriosis in Panama."
+    ]
+   }
+  },
+  "DO": {
+   "iso": "DO",
+   "name": {
+    "en": "Dominican Republic",
+    "da": "Den Dominikanske Republik"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "asoendo",
+     "name": {
+      "en": "Asociación Dominicana de Endometriosis (ASOENDO)",
+      "da": "Asociación Dominicana de Endometriosis (ASOENDO)"
+     },
+     "services": {
+      "en": "First Dominican patient association and digital platform supporting women with endometriosis and their families through information, education, peer support groups and partnerships with health providers; promotes research and awareness nationally.",
+      "da": "First Dominican patient association and digital platform supporting women with endometriosis and their families through information, education, peer support groups and partnerships with health providers; promotes research and awareness nationally."
+     },
+     "url": "https://www.endometriosisrd.com/",
+     "confidence": "high",
+     "sources": [
+      "https://www.endometriosisrd.com/",
+      "https://do.linkedin.com/company/asoendo"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit ASOENDO's website (endometriosisrd.com) for information and contact details.",
+     "Join their patient support groups (mujer a mujer accompaniment) to share experiences.",
+     "Ask ASOENDO about medical partners and specialists for diagnosis and treatment in the Dominican Republic."
+    ]
+   }
+  },
+  "PR": {
+   "iso": "PR",
+   "name": {
+    "en": "Puerto Rico",
+    "da": "Puerto Rico"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "fundacion-puertorriquena-de-pacientes-con-endometriosis",
+     "name": {
+      "en": "Fundación Puertorriqueña de Pacientes con Endometriosis",
+      "da": "Fundación Puertorriqueña de Pacientes con Endometriosis"
+     },
+     "services": {
+      "en": "Non-profit foundation (Ponce) supporting endometriosis patients in Puerto Rico through education for patients and families, peer support ('endochicas') and advocacy, while promoting scientific research on the disease.",
+      "da": "Non-profit foundation (Ponce) supporting endometriosis patients in Puerto Rico through education for patients and families, peer support ('endochicas') and advocacy, while promoting scientific research on the disease."
+     },
+     "url": "https://www.endometriosispr.net/",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://www.endometriosispr.net/",
+      "https://endometriosispr.com/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit the foundation's website or email endopr@gmail.com for support and information.",
+     "Join their patient community and educational activities.",
+     "Ask about gynaecologists and diagnostic services for endometriosis in Puerto Rico."
+    ]
+   }
+  },
+  "BR": {
+   "iso": "BR",
+   "name": {
+    "en": "Brazil",
+    "da": "Brasilien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endomulheres-brasil",
+     "name": {
+      "en": "Associação EndoMulheres (Instituto Endomulheres Brasil)",
+      "da": "Associação EndoMulheres (Instituto Endomulheres Brasil)"
+     },
+     "services": {
+      "en": "Brazilian association offering support and guidance to women living with endometriosis, including clear information on symptoms, diagnosis (e.g. mapped ultrasound and MRI) and treatment options.",
+      "da": "Brazilian association offering support and guidance to women living with endometriosis, including clear information on symptoms, diagnosis (e.g. mapped ultrasound and MRI) and treatment options."
+     },
+     "url": "http://endomulheres.top/",
+     "confidence": "medium",
+     "sources": [
+      "http://endomulheres.top/",
+      "https://www.instagram.com/endomulheresbrasil.oficial/"
+     ]
+    },
+    {
+     "id": "a-endometriose-e-eu",
+     "name": {
+      "en": "A Endometriose e Eu",
+      "da": "A Endometriose e Eu"
+     },
+     "services": {
+      "en": "Long-standing Brazilian patient community and blog offering information, peer support and encouragement to women with endometriosis seeking to restore their quality of life.",
+      "da": "Long-standing Brazilian patient community and blog offering information, peer support and encouragement to women with endometriosis seeking to restore their quality of life."
+     },
+     "url": "https://www.facebook.com/aendometrioseeeu/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/aendometrioseeeu/",
+      "https://www.endometriosemulher.com/2012/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Reach out to EndoMulheres or A Endometriose e Eu via their website/social pages for information and peer support.",
+     "Ask a gynaecologist about specialised imaging (transvaginal ultrasound with bowel preparation or MRI with endometriosis mapping) for diagnosis.",
+     "Endometriosis treatment (clinical or surgical) is available through Brazil's public SUS system and private care - discuss options with a specialist."
+    ]
+   }
+  },
+  "AR": {
+   "iso": "AR",
+   "name": {
+    "en": "Argentina",
+    "da": "Argentina"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endohermanas-argentina",
+     "name": {
+      "en": "EndoHermanas Argentina (Asociación Civil Endohermanas)",
+      "da": "EndoHermanas Argentina (Asociación Civil Endohermanas)"
+     },
+     "services": {
+      "en": "Grassroots civil association of women with endometriosis ('mujeres autoconvocadas') active across Argentina; provides peer support and workshops, raises awareness that menstrual pain is not normal, and advocates for endometriosis laws and comprehensive care.",
+      "da": "Grassroots civil association of women with endometriosis ('mujeres autoconvocadas') active across Argentina; provides peer support and workshops, raises awareness that menstrual pain is not normal, and advocates for endometriosis laws and comprehensive care."
+     },
+     "url": "https://www.facebook.com/endohermanasargentina/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endohermanasargentina/",
+      "https://linktr.ee/endohermanasargentina",
+      "https://www.boletinoficial.gob.ar/detalleAviso/primera/298507/20231116"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact EndoHermanas Argentina on Facebook/Instagram to find local peer support groups across the country.",
+     "Participate in their workshops and awareness activities.",
+     "Ask about the national network of endometriosis specialists (e.g. the SAE federal map) for a referral near you."
+    ]
+   }
+  },
+  "CL": {
+   "iso": "CL",
+   "name": {
+    "en": "Chile",
+    "da": "Chile"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "fundacion-chilena-de-endometriosis",
+     "name": {
+      "en": "Fundación Chilena de Endometriosis (Fuchen)",
+      "da": "Fundación Chilena de Endometriosis (Fuchen)"
+     },
+     "services": {
+      "en": "Foundation that makes endometriosis visible in Chile and helps patients obtain earlier diagnosis; provides information, orientation and support to women with endometriosis and adenomyosis and spreads up-to-date treatment and research news via its website and social channels.",
+      "da": "Foundation that makes endometriosis visible in Chile and helps patients obtain earlier diagnosis; provides information, orientation and support to women with endometriosis and adenomyosis and spreads up-to-date treatment and research news via its website and social channels."
+     },
+     "url": "https://www.fuchen.cl/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.fuchen.cl/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact Fuchen via its website for information and orientation on endometriosis and adenomyosis.",
+     "Follow their social channels for up-to-date treatment and research news.",
+     "Ask your gynaecologist about diagnosis and treatment options; specialised endometriosis care exists mainly in private centres in Chile."
+    ]
+   }
+  },
+  "CO": {
+   "iso": "CO",
+   "name": {
+    "en": "Colombia",
+    "da": "Colombia"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "asocoen",
+     "name": {
+      "en": "Asociación Colombiana de Endometriosis e Infertilidad (ASOCOEN)",
+      "da": "Asociación Colombiana de Endometriosis e Infertilidad (ASOCOEN)"
+     },
+     "services": {
+      "en": "Patient-led nonprofit (Bogotá) run by women living with endometriosis, adenomyosis, fibroids, PCOS and infertility; offers membership community, education on menstrual health, early-diagnosis promotion and a network of allied health professionals (gynaecologists, pelvic-floor physiotherapists, psychologists, nutritionists).",
+      "da": "Patient-led nonprofit (Bogotá) run by women living with endometriosis, adenomyosis, fibroids, PCOS and infertility; offers membership community, education on menstrual health, early-diagnosis promotion and a network of allied health professionals (gynaecologists, pelvic-floor physiotherapists, psychologists, nutritionists)."
+     },
+     "url": "https://www.endometriosiscolombia.com/",
+     "confidence": "high",
+     "sources": [
+      "https://www.endometriosiscolombia.com/",
+      "https://www.facebook.com/EndometriosisColombia/",
+      "https://linkedin.com/company/asociaci%C3%B3n-colombiana-de-endometriosis-e-infertilidad"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit ASOCOEN's website (endometriosiscolombia.com) and request to join the association (email mujer@endometriosiscolombia.com).",
+     "Affiliate to receive a digital membership card and access the community of allied professionals.",
+     "Use their education and referral network to find gynaecologists experienced in endometriosis in Colombia."
+    ]
+   }
+  },
+  "PE": {
+   "iso": "PE",
+   "name": {
+    "en": "Peru",
+    "da": "Peru"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "pacientes-endometriosis-peru",
+     "name": {
+      "en": "Asociación de Pacientes con Endometriosis y Adenomiosis del Perú (Pacientes Endometriosis Perú)",
+      "da": "Asociación de Pacientes con Endometriosis y Adenomiosis del Perú (Pacientes Endometriosis Perú)"
+     },
+     "services": {
+      "en": "Peruvian patient association (active since 2014) providing accompaniment, information and connections to specialists for people with endometriosis and adenomiosis; ran the first national patient survey and helped secure endometriosis Law 31868 (2023) guaranteeing early diagnosis and treatment.",
+      "da": "Peruvian patient association (active since 2014) providing accompaniment, information and connections to specialists for people with endometriosis and adenomiosis; ran the first national patient survey and helped secure endometriosis Law 31868 (2023) guaranteeing early diagnosis and treatment."
+     },
+     "url": "https://www.facebook.com/endometriosisperu/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endometriosisperu/",
+      "https://www.instagram.com/endometriosisperu/",
+      "https://www.nodal.am/2023/09/peru-la-asociacion-de-pacientes-con-endometriosis-y-adenomiosis-calcula-que-esta-enfermedad-es-padecida-por-1-millon-y-medio-de-personas/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact Pacientes Endometriosis Perú via Facebook or Instagram for peer support and guidance.",
+     "Ask about endometriosis Law 31868 - patients have a right to early diagnosis and treatment in the public health system.",
+     "Request referral to gynaecologists and specialised imaging centres through the association's network."
+    ]
+   }
+  },
+  "EC": {
+   "iso": "EC",
+   "name": {
+    "en": "Ecuador",
+    "da": "Ecuador"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "aelce",
+     "name": {
+      "en": "Asociación Ecuatoriana de Lucha contra la Endometriosis (AELCE)",
+      "da": "Asociación Ecuatoriana de Lucha contra la Endometriosis (AELCE)"
+     },
+     "services": {
+      "en": "Ecuadorian patient association (Quito) that accompanies women with endometriosis, offers a support forum, symptom tests and downloadable resources, and advocates for a national endometriosis law recognising the disease as catastrophic; partners with centres abroad (e.g. in Colombia and Peru) for specialised diagnostic mapping.",
+      "da": "Ecuadorian patient association (Quito) that accompanies women with endometriosis, offers a support forum, symptom tests and downloadable resources, and advocates for a national endometriosis law recognising the disease as catastrophic; partners with centres abroad (e.g. in Colombia and Peru) for specialised diagnostic mapping."
+     },
+     "url": "https://www.aelce.com/",
+     "confidence": "high",
+     "sources": [
+      "https://www.aelce.com/",
+      "https://www.instagram.com/aelce_ec/",
+      "https://periodismopublicoec.com/2026/03/19/endometriosis-una-enfermedad-que-en-ecuador-se-diagnostica-tarde-y-se-vive-en-silencio/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact AELCE through its website (aelce.com) or Instagram (@aelce_ec) to join the community.",
+     "Use their support forum, symptom test and downloadable resource library.",
+     "Ask the association about arranging specialised diagnostic mapping and care referrals."
+    ]
+   }
+  },
+  "BO": {
+   "iso": "BO",
+   "name": {
+    "en": "Bolivia",
+    "da": "Bolivia"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-bolivia",
+     "name": {
+      "en": "Endometriosis Bolivia",
+      "da": "Endometriosis Bolivia"
+     },
+     "services": {
+      "en": "Small patient-led group of people with endometriosis in Bolivia offering peer support, visibility and awareness-raising via social media.",
+      "da": "Small patient-led group of people with endometriosis in Bolivia offering peer support, visibility and awareness-raising via social media."
+     },
+     "url": "https://www.instagram.com/endometriosis_bolivia/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.instagram.com/endometriosis_bolivia/",
+      "https://www.facebook.com/EndoBolivia/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Message Endometriosis Bolivia on Instagram or Facebook for peer support.",
+     "Ask about gynaecologists experienced with endometriosis in your city.",
+     "Request imaging studies (ultrasound/MRI) from a specialist when symptoms suggest endometriosis."
+    ]
+   }
+  },
+  "PY": {
+   "iso": "PY",
+   "name": {
+    "en": "Paraguay",
+    "da": "Paraguay"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "fundacion-endometriosis-paraguay",
+     "name": {
+      "en": "Fundación Endometriosis Paraguay",
+      "da": "Fundación Endometriosis Paraguay"
+     },
+     "services": {
+      "en": "Non-profit foundation supporting and raising awareness for people with endometriosis in Paraguay, including awareness campaigns and community building via its social media.",
+      "da": "Non-profit foundation supporting and raising awareness for people with endometriosis in Paraguay, including awareness campaigns and community building via its social media."
+     },
+     "url": "https://www.facebook.com/fundacionendoparaguay/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/fundacionendoparaguay/",
+      "https://www.facebook.com/FUNDACION-ENDOMETRIOSIS-PARAGUAY-173237596070862/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact Fundación Endometriosis Paraguay via Facebook to reach the patient community.",
+     "Ask for guidance on local specialists for diagnosis and treatment.",
+     "Join their awareness events and campaigns."
+    ]
+   }
+  },
+  "UY": {
+   "iso": "UY",
+   "name": {
+    "en": "Uruguay",
+    "da": "Uruguay"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endocomunidad",
+     "name": {
+      "en": "EndoComunidad",
+      "da": "EndoComunidad"
+     },
+     "services": {
+      "en": "Uruguay-based non-profit educational community that provides reliable information and free resources about endometriosis in Spanish, runs awareness campaigns, and works with the Ministry of Public Health and patient networks to improve early diagnosis and care.",
+      "da": "Uruguay-based non-profit educational community that provides reliable information and free resources about endometriosis in Spanish, runs awareness campaigns, and works with the Ministry of Public Health and patient networks to improve early diagnosis and care."
+     },
+     "url": "https://endocomunidad.com/",
+     "confidence": "high",
+     "sources": [
+      "https://endocomunidad.com/",
+      "https://www.gub.uy/congreso-intendentes/comunicacion/noticias/endometriosis-situacion-personas-mayores-fueron-abordados-comisiones-genero",
+      "https://www.instagram.com/endocomunidad/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit EndoComunidad's website (endocomunidad.com) for free resources and information.",
+     "Follow their campaigns and community activities.",
+     "Uruguay's endometriosis law (Ley 20.374, 2024) guarantees access to diagnosis and treatment - ask your health provider (institution) about coverage."
+    ]
+   }
+  },
+  "VE": {
+   "iso": "VE",
+   "name": {
+    "en": "Venezuela",
+    "da": "Venezuela"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "funendove",
+     "name": {
+      "en": "Fundación de Endometriosis de Venezuela (FUNENDOVE)",
+      "da": "Fundación de Endometriosis de Venezuela (FUNENDOVE)"
+     },
+     "services": {
+      "en": "Venezuelan patient foundation coordinating a national network of patients ('endohermanas') across about 16 regional groups; provides education, awareness and mutual support, mainly through social media.",
+      "da": "Venezuelan patient foundation coordinating a national network of patients ('endohermanas') across about 16 regional groups; provides education, awareness and mutual support, mainly through social media."
+     },
+     "url": "https://www.instagram.com/endometriosisvenezuela/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.instagram.com/endometriosisvenezuela/",
+      "https://www.facebook.com/Funendove/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact FUNENDOVE on Instagram (@endometriosisvenezuela) or Facebook to find your regional patient group.",
+     "Join their awareness and education activities.",
+     "Ask the network for guidance on specialists and care options for endometriosis in Venezuela."
+    ]
+   }
+  },
+  "BB": {
+   "iso": "BB",
+   "name": {
+    "en": "Barbados",
+    "da": "Barbados"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "barbados-association-of-endometriosis-pcos",
+     "name": {
+      "en": "Barbados Association of Endometriosis & PCOS",
+      "da": "Barbados Association of Endometriosis & PCOS"
+     },
+     "services": {
+      "en": "Barbadian patient organisation (WEO member) supporting people affected by endometriosis and PCOS through awareness, education and community, and connecting them with care.",
+      "da": "Barbadian patient organisation (WEO member) supporting people affected by endometriosis and PCOS through awareness, education and community, and connecting them with care."
+     },
+     "url": "https://www.endoandpcosbb.com/",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://www.endoandpcosbb.com/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact the Barbados Association of Endometriosis & PCOS via its website for support and information.",
+     "Ask about local gynaecologists and treatment options for endometriosis and PCOS in Barbados."
+    ]
+   }
+  },
+  "TT": {
+   "iso": "TT",
+   "name": {
+    "en": "Trinidad and Tobago",
+    "da": "Trinidad og Tobago"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "trinidad-tobago-endometriosis-association",
+     "name": {
+      "en": "Trinidad & Tobago Endometriosis Association (TTEA)",
+      "da": "Trinidad & Tobago Endometriosis Association (TTEA)"
+     },
+     "services": {
+      "en": "Patient association (WEO member) raising awareness of endometriosis, educating nurses and health professionals, and supporting patients and families in Trinidad and Tobago through events, advocacy and its active social community.",
+      "da": "Patient association (WEO member) raising awareness of endometriosis, educating nurses and health professionals, and supporting patients and families in Trinidad and Tobago through events, advocacy and its active social community."
+     },
+     "url": "https://www.facebook.com/endott.org/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endott.org/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://endometriosis.org/support/support-groups/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact the TTEA through its Facebook page (@endott.org) for support and community.",
+     "Attend their awareness events and seminars for patients and health professionals.",
+     "Ask for guidance on gynaecologists and diagnostic services for endometriosis in Trinidad and Tobago."
+    ]
+   }
+  },
+  "JM": {
+   "iso": "JM",
+   "name": {
+    "en": "Jamaica",
+    "da": "Jamaica"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "base-foundation-jamaica",
+     "name": {
+      "en": "B.A.S.E. Foundation (Jamaica)",
+      "da": "B.A.S.E. Foundation (Jamaica)"
+     },
+     "services": {
+      "en": "Kingston-based non-profit (Better Awareness and Support for Endometriosis) that supports women with endometriosis in Jamaica, runs school and workplace education programmes (BASE at School, BASE at Work), raises public awareness and promotes endometriosis research and policy in Jamaica.",
+      "da": "Kingston-based non-profit (Better Awareness and Support for Endometriosis) that supports women with endometriosis in Jamaica, runs school and workplace education programmes (BASE at School, BASE at Work), raises public awareness and promotes endometriosis research and policy in Jamaica."
+     },
+     "url": "https://basejamaica.com/",
+     "confidence": "high",
+     "sources": [
+      "https://basejamaica.com/",
+      "https://www.jamaicaobserver.com/2026/03/01/endometriosis-awareness/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Contact the B.A.S.E. Foundation via its website (basejamaica.com) or email hello@basejamaica.com.",
+     "Reach out for support, information and connections to medical care.",
+     "Participate in their awareness and education initiatives, including during Endometriosis Awareness Month in March."
+    ]
+   }
+  },
+  "TR": {
+   "iso": "TR",
+   "name": {
+    "en": "Türkiye",
+    "da": "Tyrkiet"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-turkiye",
+     "name": {
+      "en": "Endo Türkiye",
+      "da": "Endo Türkiye"
+     },
+     "services": {
+      "en": "Patient association raising awareness of endometriosis, sharing reliable information and building community for people affected by the disease in Türkiye. WEO member organisation.",
+      "da": "Patient association raising awareness of endometriosis, sharing reliable information and building community for people affected by the disease in Türkiye. WEO member organisation."
+     },
+     "url": "https://endoturkiye.org/",
+     "confidence": "high",
+     "sources": [
+      "https://endoturkiye.org/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "turkish-endometriosis-adenomyosis-society",
+     "name": {
+      "en": "Turkish Endometriosis & Adenomyosis Society",
+      "da": "Turkish Endometriosis & Adenomyosis Society"
+     },
+     "services": {
+      "en": "Medical society working to improve diagnosis, treatment and education on endometriosis and adenomyosis in Türkiye; publishes patient-oriented information. WEO member organisation.",
+      "da": "Medical society working to improve diagnosis, treatment and education on endometriosis and adenomyosis in Türkiye; publishes patient-oriented information. WEO member organisation."
+     },
+     "url": "https://endometriozis.org/",
+     "confidence": "high",
+     "sources": [
+      "https://endometriozis.org/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Browse the organisation websites (Endo Türkiye for patient support; endometriozis.org, in Turkish, for the medical society) for contact and activity details.",
+     "Use the sites' contact pages or social channels to reach the support community.",
+     "Ask a gynaecologist about endometriosis specialist centres; both organisations publish awareness and referral material."
+    ]
+   }
+  },
+  "IL": {
+   "iso": "IL",
+   "name": {
+    "en": "Israel",
+    "da": "Israel"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-israel",
+     "name": {
+      "en": "Endometriosis Israel",
+      "da": "Endometriosis Israel"
+     },
+     "services": {
+      "en": "Patient association (registered charity, founded 2019 by endometriosis activists) providing an Israeli support community, reliable information, patient-rights guidance and a directory of endometriosis clinics across the country.",
+      "da": "Patient association (registered charity, founded 2019 by endometriosis activists) providing an Israeli support community, reliable information, patient-rights guidance and a directory of endometriosis clinics across the country."
+     },
+     "url": "https://endoisrael.org/",
+     "confidence": "high",
+     "sources": [
+      "https://endoisrael.org/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit endoisrael.org (Hebrew) and use the FAQ and rights sections to understand diagnosis, treatment and entitlements.",
+     "Use the site's clinic list to find a public endometriosis centre; a referral form (form 17) from your HMO gynaecologist is usually needed.",
+     "Contact the association through the website for peer support and community activities."
+    ]
+   }
+  },
+  "LB": {
+   "iso": "LB",
+   "name": {
+    "en": "Lebanon",
+    "da": "Libanon"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-lebanon",
+     "name": {
+      "en": "Endometriosis Lebanon",
+      "da": "Endometriosis Lebanon"
+     },
+     "services": {
+      "en": "Patient community raising awareness of endometriosis and offering peer support and information for people affected in Lebanon. Active on Facebook and Instagram.",
+      "da": "Patient community raising awareness of endometriosis and offering peer support and information for people affected in Lebanon. Active on Facebook and Instagram."
+     },
+     "url": "https://www.facebook.com/p/Endometriosis-Lebanon-100063669963751/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/p/Endometriosis-Lebanon-100063669963751/",
+      "https://www.instagram.com/endometriosis.lb/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Follow the Endometriosis Lebanon Facebook page or Instagram account for awareness content and community news.",
+     "Message the page to ask about local support meetings or patient experiences.",
+     "Seek a gynaecologist experienced in endometriosis; the community can help with referral experiences."
+    ]
+   }
+  },
+  "EG": {
+   "iso": "EG",
+   "name": {
+    "en": "Egypt",
+    "da": "Egypten"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-egypt",
+     "name": {
+      "en": "Endo Egypt (Endometriosis Egypt)",
+      "da": "Endo Egypt (Endometriosis Egypt)"
+     },
+     "services": {
+      "en": "Non-profit organisation providing support, resources, advocacy and awareness for women with endometriosis and adenomyosis in Egypt, including myth-busting education and events for patients and doctors.",
+      "da": "Non-profit organisation providing support, resources, advocacy and awareness for women with endometriosis and adenomyosis in Egypt, including myth-busting education and events for patients and doctors."
+     },
+     "url": "https://endoegypt.com/",
+     "confidence": "high",
+     "sources": [
+      "https://endoegypt.com/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit the Endo Egypt website to read about the organisation, symptoms and treatment myths.",
+     "Use the site's contact/social channels to reach the team for support.",
+     "Follow their awareness campaigns and events, including the annual Endo Egypt congress for the medical community."
+    ]
+   }
+  },
+  "MA": {
+   "iso": "MA",
+   "name": {
+    "en": "Morocco",
+    "da": "Marokko"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "amsfae",
+     "name": {
+      "en": "Association Marocaine de Soutien aux Femmes Atteintes d'Endométriose (AMSFAE)",
+      "da": "Association Marocaine de Soutien aux Femmes Atteintes d'Endométriose (AMSFAE)"
+     },
+     "services": {
+      "en": "Moroccan public-benefit association offering medically reviewed information on endometriosis, patient support groups and advocacy for better diagnosis and care in Morocco.",
+      "da": "Moroccan public-benefit association offering medically reviewed information on endometriosis, patient support groups and advocacy for better diagnosis and care in Morocco."
+     },
+     "url": "https://endometriose.ma/fr/",
+     "confidence": "high",
+     "sources": [
+      "https://endometriose.ma/fr/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit endometriose.ma (French) to learn about symptoms, diagnosis and treatment options.",
+     "Use the support/contact section to join AMSFAE support groups or ask for guidance.",
+     "Follow their awareness events; the site also covers fertility and living-with-endo topics relevant in Morocco."
+    ]
+   }
+  },
+  "TN": {
+   "iso": "TN",
+   "name": {
+    "en": "Tunisia",
+    "da": "Tunesien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriose-tunisie",
+     "name": {
+      "en": "Endométriose Tunisie",
+      "da": "Endométriose Tunisie"
+     },
+     "services": {
+      "en": "Patient group raising awareness of endometriosis and providing peer support and information for affected women in Tunisia.",
+      "da": "Patient group raising awareness of endometriosis and providing peer support and information for affected women in Tunisia."
+     },
+     "url": "https://www.facebook.com/endometriosetunis/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endometriosetunis/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Follow the Endométriose Tunisie Facebook page for awareness content and community updates.",
+     "Message the page to connect with other patients and local support.",
+     "Ask your gynaecologist about endometriosis expertise; the community shares referral experiences."
+    ]
+   }
+  },
+  "DZ": {
+   "iso": "DZ",
+   "name": {
+    "en": "Algeria",
+    "da": "Algeriet"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-algerie",
+     "name": {
+      "en": "Association Algérienne de Lutte Contre l'Endométriose (Endo Algérie)",
+      "da": "Association Algérienne de Lutte Contre l'Endométriose (Endo Algérie)"
+     },
+     "services": {
+      "en": "Algerian association raising awareness about endometriosis, breaking taboos around the disease and advocating better care and support for patients in Algeria.",
+      "da": "Algerian association raising awareness about endometriosis, breaking taboos around the disease and advocating better care and support for patients in Algeria."
+     },
+     "url": "https://www.facebook.com/alea2022/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/alea2022/",
+      "https://lalgerieaujourdhui.dz/endometriose-endo-algerie-brise-les-tabous-pour-une-meilleure-prise-en-charge/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Follow the Endo Algérie Facebook page (Association Algérienne de Lutte Contre l'Endométriose) for awareness and event information.",
+     "Message the page to reach the association for support.",
+     "Ask a gynaecologist about endometriosis referral options; awareness of the disease is growing through the association's campaigns."
+    ]
+   }
+  },
+  "ZA": {
+   "iso": "ZA",
+   "name": {
+    "en": "South Africa",
+    "da": "Sydafrika"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "pase",
+     "name": {
+      "en": "Pan African Society of Endometriosis (PASE)",
+      "da": "Pan African Society of Endometriosis (PASE)"
+     },
+     "services": {
+      "en": "Durban-based society working so that no woman in Africa suffers in silence from endometriosis, promoting awareness, early diagnosis and compassionate care, and organising professional congresses.",
+      "da": "Durban-based society working so that no woman in Africa suffers in silence from endometriosis, promoting awareness, early diagnosis and compassionate care, and organising professional congresses."
+     },
+     "url": "https://pase.africa/",
+     "confidence": "high",
+     "sources": [
+      "https://pase.africa/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit pase.africa to learn about the society's awareness and support mission.",
+     "Use the site's contact or social channels to ask about patient-facing activities and events.",
+     "Ask your doctor about specialist endometriosis care; PASE also links clinicians across South Africa."
+    ]
+   }
+  },
+  "NG": {
+   "iso": "NG",
+   "name": {
+    "en": "Nigeria",
+    "da": "Nigeria"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endosurvivours",
+     "name": {
+      "en": "EndoSurvivours International Foundation",
+      "da": "EndoSurvivours International Foundation"
+     },
+     "services": {
+      "en": "Nigerian non-profit supporting endometriosis patients and survivors through awareness, advocacy, education and community. WEO member organisation.",
+      "da": "Nigerian non-profit supporting endometriosis patients and survivors through awareness, advocacy, education and community. WEO member organisation."
+     },
+     "url": "https://endosurvivors.org/",
+     "confidence": "high",
+     "sources": [
+      "https://endosurvivors.org/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "endometriosis-support-group-nigeria",
+     "name": {
+      "en": "Endometriosis Support Group Nigeria (ESGN)",
+      "da": "Endometriosis Support Group Nigeria (ESGN)"
+     },
+     "services": {
+      "en": "Lagos-based support group providing community and awareness for people with endometriosis in Nigeria, including nationwide school essay competitions to promote early diagnosis. Active on Facebook; former websites (esgn.org) are offline.",
+      "da": "Lagos-based support group providing community and awareness for people with endometriosis in Nigeria, including nationwide school essay competitions to promote early diagnosis. Active on Facebook; former websites (esgn.org) are offline."
+     },
+     "url": "https://www.facebook.com/endometriosis.sgn/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endometriosis.sgn/",
+      "https://guardian.ng/saturday-magazine/esgn-expands-annual-endometriosis-essay-competition-across-nigeria"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit endosurvivors.org (EndoSurvivours International Foundation) for support and awareness resources.",
+     "Follow the Endometriosis Support Group Nigeria Facebook page to join the community and learn about campaigns.",
+     "Ask a gynaecologist about endometriosis care; both groups work on reducing diagnostic delay in Nigeria."
+    ]
+   }
+  },
+  "GH": {
+   "iso": "GH",
+   "name": {
+    "en": "Ghana",
+    "da": "Ghana"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-foundation-ghana",
+     "name": {
+      "en": "Endometriosis Foundation Ghana (EFG)",
+      "da": "Endometriosis Foundation Ghana (EFG)"
+     },
+     "services": {
+      "en": "Non-profit (WEO member, founded by patient advocate Fareeda) doing awareness, education and support for endometriosis in Ghana. Active on Facebook; the former website (endometriosisghana.org) no longer belongs to the foundation.",
+      "da": "Non-profit (WEO member, founded by patient advocate Fareeda) doing awareness, education and support for endometriosis in Ghana. Active on Facebook; the former website (endometriosisghana.org) no longer belongs to the foundation."
+     },
+     "url": "https://www.facebook.com/endometriosisGhana/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endometriosisGhana/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://www.livingwithendometriosis.org/organisations/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Follow the Endometriosis Foundation Ghana (EFG) Facebook page for awareness campaigns and updates.",
+     "Message the page to connect with the foundation's support network.",
+     "Ask a gynaecologist about endometriosis; EFG also educates schools and communities on the disease."
+    ]
+   }
+  },
+  "KE": {
+   "iso": "KE",
+   "name": {
+    "en": "Kenya",
+    "da": "Kenya"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-sisters-east-africa",
+     "name": {
+      "en": "Endo Sisters East Africa Foundation",
+      "da": "Endo Sisters East Africa Foundation"
+     },
+     "services": {
+      "en": "Foundation supporting women and girls with endometriosis in Kenya and East Africa through awareness, education, community and advocacy. WEO member organisation.",
+      "da": "Foundation supporting women and girls with endometriosis in Kenya and East Africa through awareness, education, community and advocacy. WEO member organisation."
+     },
+     "url": "https://endosisterseastafrica.org/",
+     "confidence": "high",
+     "sources": [
+      "https://endosisterseastafrica.org/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "endometriosis-foundation-kenya",
+     "name": {
+      "en": "Endometriosis Foundation of Kenya",
+      "da": "Endometriosis Foundation of Kenya"
+     },
+     "services": {
+      "en": "Non-profit (WEO member, led by Elsie Wandera-Odhiambo) raising awareness of endometriosis and supporting patients in Kenya. Active on Facebook and Instagram; the former website (endofoundke.org) is currently offline.",
+      "da": "Non-profit (WEO member, led by Elsie Wandera-Odhiambo) raising awareness of endometriosis and supporting patients in Kenya. Active on Facebook and Instagram; the former website (endofoundke.org) is currently offline."
+     },
+     "url": "https://www.facebook.com/Endometriosiskenya/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/Endometriosiskenya/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit endosisterseastafrica.org (Endo Sisters East Africa) for support, education and awareness resources.",
+     "Follow the Endometriosis Foundation of Kenya Facebook page for campaigns and patient activities.",
+     "Ask a gynaecologist about endometriosis referral options in Kenya."
+    ]
+   }
+  },
+  "ZW": {
+   "iso": "ZW",
+   "name": {
+    "en": "Zimbabwe",
+    "da": "Zimbabwe"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "zimbabwe-endometriosis-support-network",
+     "name": {
+      "en": "Zimbabwe Endometriosis Support Network",
+      "da": "Zimbabwe Endometriosis Support Network"
+     },
+     "services": {
+      "en": "Peer support network for people affected by endometriosis in Zimbabwe, raising awareness and connecting patients. WEO member organisation, active on Facebook.",
+      "da": "Peer support network for people affected by endometriosis in Zimbabwe, raising awareness and connecting patients. WEO member organisation, active on Facebook."
+     },
+     "url": "https://www.facebook.com/Zimendosupportnetwork/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/Zimendosupportnetwork/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://www.livingwithendometriosis.org/organisations/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Follow the Zimbabwe Endometriosis Support Network Facebook page for awareness content and peer support.",
+     "Message the page to join the network or ask about local meet-ups.",
+     "Ask a gynaecologist about endometriosis care; the network works to counter normalisation of severe period pain in Zimbabwe."
+    ]
+   }
+  },
+  "UG": {
+   "iso": "UG",
+   "name": {
+    "en": "Uganda",
+    "da": "Uganda"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-foundation-uganda",
+     "name": {
+      "en": "Endometriosis Foundation Uganda",
+      "da": "Endometriosis Foundation Uganda"
+     },
+     "services": {
+      "en": "Ugandan non-profit (founded 2019 by endo warrior Grace Nagawa) advocating better services, timely diagnosis and treatment, awareness, research and economic empowerment for women affected by endometriosis.",
+      "da": "Ugandan non-profit (founded 2019 by endo warrior Grace Nagawa) advocating better services, timely diagnosis and treatment, awareness, research and economic empowerment for women affected by endometriosis."
+     },
+     "url": "https://endouganda.org/",
+     "confidence": "high",
+     "sources": [
+      "https://endouganda.org/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Visit endouganda.org to learn about the foundation's advocacy, events and endo-warrior stories.",
+     "Contact the foundation (email or phone on the website) for support, guidance and events.",
+     "Ask a gynaecologist about endometriosis care; the foundation campaigns for better access to diagnosis and treatment in Uganda."
+    ]
+   }
+  },
+  "CI": {
+   "iso": "CI",
+   "name": {
+    "en": "Côte d'Ivoire",
+    "da": "Elfenbenskysten"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endo-cote-divoire",
+     "name": {
+      "en": "Endo Côte d'Ivoire",
+      "da": "Endo Côte d'Ivoire"
+     },
+     "services": {
+      "en": "Ivorian association based in Abidjan helping women better understand endometriosis through awareness and information activities; featured in TV5Monde Afrique coverage. Active on Facebook.",
+      "da": "Ivorian association based in Abidjan helping women better understand endometriosis through awareness and information activities; featured in TV5Monde Afrique coverage. Active on Facebook."
+     },
+     "url": "https://www.facebook.com/100075858583419/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/100075858583419/",
+      "https://information.tv5monde.com/afrique/cote-divoire-une-association-aide-mieux-comprendre-lendometriose-1234675"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Follow the Endo Côte d'Ivoire Facebook page (Abidjan) for awareness content and activities.",
+     "Message the page to reach the association for information or support.",
+     "Ask a gynaecologist about endometriosis; awareness campaigns in Côte d'Ivoire are expanding through such associations."
+    ]
+   }
+  },
+  "IN": {
+   "iso": "IN",
+   "name": {
+    "en": "India",
+    "da": "Indien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-society-india",
+     "name": {
+      "en": "Endometriosis Society India",
+      "da": "Endometriosis Society India"
+     },
+     "services": {
+      "en": "National society founded in 2003 (Kolkata) that raises awareness of endometriosis, supports patients, and organises professional education including the International Congress on Endometriosis (ICE). Contactable by phone/email for guidance on diagnosis and treatment. Official website (endosocindia.org) is offline; the current site and active page are endosocind.org and its Facebook page.",
+      "da": "National society founded in 2003 (Kolkata) that raises awareness of endometriosis, supports patients, and organises professional education including the International Congress on Endometriosis (ICE). Contactable by phone/email for guidance on diagnosis and treatment. Official website (endosocindia.org) is offline; the current site and active page are endosocind.org and its Facebook page."
+     },
+     "url": "https://endosocind.org",
+     "confidence": "high",
+     "sources": [
+      "https://endosocind.org/",
+      "https://www.facebook.com/p/Endometriosis-Society-India-100090769481664/",
+      "https://endometriosis.org/support/support-groups/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Endometriosis care is available through both public and private hospitals; start with a gynaecologist (often reached via GP or directly in private clinics).",
+     "Major cities have endometriosis-focused clinics and laparoscopic surgeons; patient organisations can help identify specialists.",
+     "Endometriosis Society India provides awareness material and contact support (endosocindia@gmail.com) for patients seeking information."
+    ]
+   }
+  },
+  "JP": {
+   "iso": "JP",
+   "name": {
+    "en": "Japan",
+    "da": "Japan"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "jema",
+     "name": {
+      "en": "Japan Endometriosis Association (JEMA)",
+      "da": "Japan Endometriosis Association (JEMA)"
+     },
+     "services": {
+      "en": "Japan Endometriosis Association (JEMA) — patient association offering information, support and awareness in Japan. Listed in the endometriosis.org national-organisations directory (org website jemanet.org is currently unreachable due to an invalid security certificate; the directory entry carries current contact details).",
+      "da": "Japan Endometriosis Association (JEMA) — patient association offering information, support and awareness in Japan. Listed in the endometriosis.org national-organisations directory (org website jemanet.org is currently unreachable due to an invalid security certificate; the directory entry carries current contact details)."
+     },
+     "url": "https://endometriosis.org/support/support-groups/",
+     "confidence": "medium",
+     "sources": [
+      "https://endometriosis.org/support/support-groups/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "See a gynaecologist (sanfujinka) at a clinic or hospital; endometriosis is covered under public health insurance (shahokokuho/kokumin kenko hoken) once diagnosed.",
+     "Ask about accredited endometriosis specialists or university-hospital gynaecology departments for complex cases.",
+     "JEMA (Japan Endometriosis Association) offers Japanese-language information and consultation for patients and families."
+    ]
+   }
+  },
+  "MY": {
+   "iso": "MY",
+   "name": {
+    "en": "Malaysia",
+    "da": "Malaysia"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "myendosis",
+     "name": {
+      "en": "MyEndosis (Persatuan Endometriosis Malaysia)",
+      "da": "MyEndosis (Persatuan Endometriosis Malaysia)"
+     },
+     "services": {
+      "en": "Endometriosis patient organisation established in 2013 by founder Surita Mogan. Raises nationwide awareness, supports Malaysian patients through education and peer networks, and advocates for better care; affiliated with Worldwide EndoMarch and the World Endometriosis Organization (WEO).",
+      "da": "Endometriosis patient organisation established in 2013 by founder Surita Mogan. Raises nationwide awareness, supports Malaysian patients through education and peer networks, and advocates for better care; affiliated with Worldwide EndoMarch and the World Endometriosis Organization (WEO)."
+     },
+     "url": "https://myendosis.org",
+     "confidence": "high",
+     "sources": [
+      "https://myendosis.org",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Public care: get a referral from a GP/Klinik Kesihatan to the gynaecology department of a government hospital (low-cost, may involve waiting lists).",
+     "Private option: see an obstetrician-gynaecologist directly at a private hospital if you can afford out-of-pocket or have private insurance.",
+     "MyEndosis provides patient education, peer support and advocacy; its social channels announce events and awareness activities."
+    ]
+   }
+  },
+  "SG": {
+   "iso": "SG",
+   "name": {
+    "en": "Singapore",
+    "da": "Singapore"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "e-for-endometriosis",
+     "name": {
+      "en": "E for Endometriosis (Endo Support SG)",
+      "da": "E for Endometriosis (Endo Support SG)"
+     },
+     "services": {
+      "en": "Singapore non-profit (founded 2012, registered 2017) that runs the Singapore Endometriosis Support Group on Facebook, organises education and awareness events (Wear Yellow SG EndoMarch), hosts quarterly expert live streams, and curates a list of endometriosis-experienced doctors.",
+      "da": "Singapore non-profit (founded 2012, registered 2017) that runs the Singapore Endometriosis Support Group on Facebook, organises education and awareness events (Wear Yellow SG EndoMarch), hosts quarterly expert live streams, and curates a list of endometriosis-experienced doctors."
+     },
+     "url": "https://www.endosupport.sg",
+     "confidence": "high",
+     "sources": [
+      "https://www.endosupport.sg/",
+      "https://www.endosupport.sg/vision",
+      "https://www.endosupport.sg/support-in-singapore"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Public route: obtain a referral from a GP/polyclinic to a public hospital (restructured hospital) gynaecology service for subsidised care.",
+     "Private route: see a gynaecologist at a private hospital or clinic; E for Endometriosis maintains a curated list of doctors experienced with endometriosis.",
+     "Join the Singapore Endometriosis Support Group (Facebook, via endosupport.sg) for peer support and updates on events and talks."
+    ]
+   }
+  },
+  "ID": {
+   "iso": "ID",
+   "name": {
+    "en": "Indonesia",
+    "da": "Indonesien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "yayasan-endometriosis-indonesia",
+     "name": {
+      "en": "Yayasan Endometriosis Indonesia (Indonesian Endometriosis Foundation)",
+      "da": "Yayasan Endometriosis Indonesia (Indonesian Endometriosis Foundation)"
+     },
+     "services": {
+      "en": "Legally registered foundation (est. 2015) that shelters the patient community Komunitas Endometriosis Indonesia (IEC) and the professional Indonesian Endometriosis Society (IES). Provides information, community activities and support for women with endometriosis across Indonesia.",
+      "da": "Legally registered foundation (est. 2015) that shelters the patient community Komunitas Endometriosis Indonesia (IEC) and the professional Indonesian Endometriosis Society (IES). Provides information, community activities and support for women with endometriosis across Indonesia."
+     },
+     "url": "https://yayasanendometriosis.or.id",
+     "confidence": "high",
+     "sources": [
+      "https://yayasanendometriosis.or.id/",
+      "https://www.facebook.com/indonesian.endometriosis.community/"
+     ]
+    },
+    {
+     "id": "komunitas-endometriosis-indonesia",
+     "name": {
+      "en": "Komunitas Endometriosis Indonesia (Indonesian Endometriosis Community, IEC)",
+      "da": "Komunitas Endometriosis Indonesia (Indonesian Endometriosis Community, IEC)"
+     },
+     "services": {
+      "en": "Patient-led community (est. 2015, 19,000+ active members) offering peer support, education, advocacy and events for women with endometriosis ('EndoSisters') in Indonesia; coordinates via Facebook, WhatsApp and Telegram.",
+      "da": "Patient-led community (est. 2015, 19,000+ active members) offering peer support, education, advocacy and events for women with endometriosis ('EndoSisters') in Indonesia; coordinates via Facebook, WhatsApp and Telegram."
+     },
+     "url": "https://endometriosis-indonesia.id",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosis-indonesia.id/",
+      "https://endometriosis-indonesia.id/tentang/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Care is delivered through public hospitals (RSUD/RSUP, often via BPJS Kesehatan national health insurance) and private hospitals/clinics — start with a dokter kandungan (gynaecologist).",
+     "Endometriosis centres exist at some teaching/referral hospitals (e.g. RSUP Fatmawati's endometriosis centre in Jakarta), which cooperate with the Indonesian Endometriosis Community for patient support.",
+     "Join Komunitas Endometriosis Indonesia / Yayasan Endometriosis Indonesia channels for education, peer support and community events."
+    ]
+   }
+  },
+  "AU": {
+   "iso": "AU",
+   "name": {
+    "en": "Australia",
+    "da": "Australien"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-australia",
+     "name": {
+      "en": "Endometriosis Australia",
+      "da": "Endometriosis Australia"
+     },
+     "services": {
+      "en": "National charity raising awareness, funding research and providing education and advocacy for the roughly one million Australians with endometriosis; runs workplace accreditation programs, events and research grants.",
+      "da": "National charity raising awareness, funding research and providing education and advocacy for the roughly one million Australians with endometriosis; runs workplace accreditation programs, events and research grants."
+     },
+     "url": "https://endometriosisaustralia.org",
+     "confidence": "high",
+     "sources": [
+      "https://endometriosisaustralia.org/",
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "qendo",
+     "name": {
+      "en": "Endometriosis Association (Qld) Inc (QENDO)",
+      "da": "Endometriosis Association (Qld) Inc (QENDO)"
+     },
+     "services": {
+      "en": "Australian patient organisation offering free nationwide support: QENDOCare telehealth clinic (physiotherapy, counselling, dietetics, nursing), the 1800 ASK QENDO helpline, a mentoring program and volunteer-led local community groups.",
+      "da": "Australian patient organisation offering free nationwide support: QENDOCare telehealth clinic (physiotherapy, counselling, dietetics, nursing), the 1800 ASK QENDO helpline, a mentoring program and volunteer-led local community groups."
+     },
+     "url": "https://qendo.org.au",
+     "confidence": "high",
+     "sources": [
+      "https://qendo.org.au/",
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "pelvic-pain-foundation",
+     "name": {
+      "en": "Pelvic Pain Foundation of Australia (PPFA)",
+      "da": "Pelvic Pain Foundation of Australia (PPFA)"
+     },
+     "services": {
+      "en": "National health-promotion charity (WEO member) providing education and resources on pelvic pain including endometriosis, with school and community education programs and a website of clinical and self-help information.",
+      "da": "National health-promotion charity (WEO member) providing education and resources on pelvic pain including endometriosis, with school and community education programs and a website of clinical and self-help information."
+     },
+     "url": "https://www.pelvicpain.org.au",
+     "confidence": "high",
+     "sources": [
+      "https://www.pelvicpain.org.au/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with a GP; a referral is needed for Medicare-subsidised specialist (gynaecologist) care. Several states run public endometriosis and pelvic pain clinics that accept GP referrals.",
+     "Diagnosis typically involves ultrasound and specialist review; laparoscopic surgery by an excision specialist is performed in both public and private systems.",
+     "For support and navigation while waiting or between appointments, contact QENDO's helpline/telehealth, Endometriosis Australia, or PPFA's education resources."
+    ]
+   }
+  },
+  "NZ": {
+   "iso": "NZ",
+   "name": {
+    "en": "New Zealand",
+    "da": "New Zealand"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-new-zealand",
+     "name": {
+      "en": "Endometriosis New Zealand",
+      "da": "Endometriosis New Zealand"
+     },
+     "services": {
+      "en": "National charity providing a free support line (0800 733277), education for schools and health professionals, advocacy and resources for people affected by endometriosis in New Zealand.",
+      "da": "National charity providing a free support line (0800 733277), education for schools and health professionals, advocacy and resources for people affected by endometriosis in New Zealand."
+     },
+     "url": "https://www.nzendo.org.nz",
+     "confidence": "high",
+     "sources": [
+      "https://www.nzendo.org.nz",
+      "https://endometriosis.org/support/support-groups/",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "endo-warriors-aotearoa",
+     "name": {
+      "en": "Endo Warriors Aotearoa",
+      "da": "Endo Warriors Aotearoa"
+     },
+     "services": {
+      "en": "Patient-led New Zealand charity (WEO member) raising awareness of endometriosis and providing peer support, community connection and advocacy for people with endometriosis across Aotearoa.",
+      "da": "Patient-led New Zealand charity (WEO member) raising awareness of endometriosis and providing peer support, community connection and advocacy for people with endometriosis across Aotearoa."
+     },
+     "url": "https://www.endowarriorsaotearoa.com",
+     "confidence": "high",
+     "sources": [
+      "https://www.endowarriorsaotearoa.com",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/"
+     ]
+    },
+    {
+     "id": "insight-endometriosis",
+     "name": {
+      "en": "Insight Endometriosis New Zealand",
+      "da": "Insight Endometriosis New Zealand"
+     },
+     "services": {
+      "en": "Community-funded New Zealand charity (Hamilton) providing information, resources and individual support requests for people living with endometriosis, plus awareness and education activities.",
+      "da": "Community-funded New Zealand charity (Hamilton) providing information, resources and individual support requests for people living with endometriosis, plus awareness and education activities."
+     },
+     "url": "https://insightendometriosis.org.nz",
+     "confidence": "high",
+     "sources": [
+      "https://insightendometriosis.org.nz/",
+      "https://insightendometriosis.org.nz/about-us"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Start with your GP; public gynaecology services are accessed by referral through the public health system (may involve waiting lists).",
+     "Private gynaecologists and endometriosis specialists are available for faster assessment at your own cost or via insurance.",
+     "Endometriosis New Zealand's support line (0800 733277) and Endo Warriors Aotearoa / Insight Endometriosis provide information and peer support at all stages."
+    ]
+   }
+  },
+  "PH": {
+   "iso": "PH",
+   "name": {
+    "en": "Philippines",
+    "da": "Filippinerne"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-philippines",
+     "name": {
+      "en": "Endometriosis Philippines",
+      "da": "Endometriosis Philippines"
+     },
+     "services": {
+      "en": "Patient community and awareness organisation whose official Facebook page (10,000+ followers) raises awareness of endometriosis in the Philippines and connects patients; affiliated support groups offer peer discussion for patients and families.",
+      "da": "Patient community and awareness organisation whose official Facebook page (10,000+ followers) raises awareness of endometriosis in the Philippines and connects patients; affiliated support groups offer peer discussion for patients and families."
+     },
+     "url": "https://www.facebook.com/endometriosisphilippines/",
+     "confidence": "medium",
+     "sources": [
+      "https://www.facebook.com/endometriosisphilippines/",
+      "https://www.facebook.com/groups/327885403414499/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "See an obstetrician-gynaecologist at a public (DOH/LGU) hospital for subsidised care or at a private hospital/clinic; PhilHealth covers some hospital episodes.",
+     "Endometriosis is often managed by gynaecologists with laparoscopic surgery expertise in metro centres (e.g. Manila).",
+     "Join Endometriosis Philippines' Facebook page/groups for awareness material, doctor recommendations from peers and community support."
+    ]
+   }
+  },
+  "LK": {
+   "iso": "LK",
+   "name": {
+    "en": "Sri Lanka",
+    "da": "Sri Lanka"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "esaf-sri-lanka",
+     "name": {
+      "en": "ESAF Sri Lanka (Endometriosis Support & Awareness Foundation)",
+      "da": "ESAF Sri Lanka (Endometriosis Support & Awareness Foundation)"
+     },
+     "services": {
+      "en": "Foundation supporting people with endometriosis across Sri Lanka through awareness campaigns, advocacy for early diagnosis and community/peer support; active on Instagram (@esaf.srilanka) and states recognition as a member of the World Endometriosis Organization.",
+      "da": "Foundation supporting people with endometriosis across Sri Lanka through awareness campaigns, advocacy for early diagnosis and community/peer support; active on Instagram (@esaf.srilanka) and states recognition as a member of the World Endometriosis Organization."
+     },
+     "url": "https://esafsrilanka.lk",
+     "confidence": "high",
+     "sources": [
+      "https://esafsrilanka.lk/",
+      "https://www.instagram.com/esaf.srilanka/"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Gynaecology care is free through the public health system (Ministry of Health hospitals, via GP or OPD referral) or available privately at your own cost.",
+     "Laparoscopic surgery for endometriosis is performed at tertiary and teaching hospitals in Colombo and other major cities.",
+     "ESAF Sri Lanka provides awareness material and peer support; contact it via its website or Instagram to connect with the patient community."
+    ]
+   }
+  },
+  "BD": {
+   "iso": "BD",
+   "name": {
+    "en": "Bangladesh",
+    "da": "Bangladesh"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-society-bangladesh",
+     "name": {
+      "en": "Endometriosis Society Bangladesh",
+      "da": "Endometriosis Society Bangladesh"
+     },
+     "services": {
+      "en": "Patient-support organisation raising awareness of endometriosis in Bangladesh and supporting patients; its official presence is a Facebook page and it is listed as a member of the World Endometriosis Organization (WEO). Bangladeshi doctors also organise national endometriosis conferences (e.g. Dhaka, 2024).",
+      "da": "Patient-support organisation raising awareness of endometriosis in Bangladesh and supporting patients; its official presence is a Facebook page and it is listed as a member of the World Endometriosis Organization (WEO). Bangladeshi doctors also organise national endometriosis conferences (e.g. Dhaka, 2024)."
+     },
+     "url": "https://www.facebook.com/profile.php?id=100063601429618",
+     "confidence": "medium",
+     "sources": [
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://www.facebook.com/profile.php?id=100063601429618",
+      "https://endosocind.org/scientific_program"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Gynaecology care is available through public medical college hospitals (low cost, long waits) and private hospitals/clinics in Dhaka and other cities.",
+     "Ask for a gynaecologist experienced in laparoscopy for endometriosis; specialised endo care is concentrated in Dhaka.",
+     "Endometriosis Society Bangladesh's Facebook page is the main gateway to awareness material and patient community in Bangladesh."
+    ]
+   }
+  },
+  "MV": {
+   "iso": "MV",
+   "name": {
+    "en": "Maldives",
+    "da": "Maldiverne"
+   },
+   "coverage": "orgs_only",
+   "verified": "2026-09-07",
+   "organizations": [
+    {
+     "id": "endometriosis-association-maldives",
+     "name": {
+      "en": "Endometriosis Association of Maldives",
+      "da": "Endometriosis Association of Maldives"
+     },
+     "services": {
+      "en": "NGO representing women living with endometriosis in the Maldives, running awareness campaigns and community support; member of the World Endometriosis Organization (WEO) and listed among active NGOs in the MV+ Community Impact Awards. Its former website is offline; it is currently active on X (@endomaldives).",
+      "da": "NGO representing women living with endometriosis in the Maldives, running awareness campaigns and community support; member of the World Endometriosis Organization (WEO) and listed among active NGOs in the MV+ Community Impact Awards. Its former website is offline; it is currently active on X (@endomaldives)."
+     },
+     "url": "https://x.com/endomaldives",
+     "confidence": "medium",
+     "sources": [
+      "https://x.com/endomaldives",
+      "https://endometriosis.org/support/world-endometriosis-organisations-weo/",
+      "https://plus.mv/communityimpactawards"
+     ]
+    }
+   ],
+   "access_path": {
+    "en": [
+     "Gynaecology services are available at public hospitals (e.g. Indira Gandhi Memorial Hospital, Malé) and private clinics; complex endometriosis surgery often requires referral abroad.",
+     "Seek a gynaecologist with laparoscopic skills for assessment and treatment planning.",
+     "Endometriosis Association of Maldives (X: @endomaldives) runs awareness and support activities for patients."
+    ]
+   }
   }
  }
 }
