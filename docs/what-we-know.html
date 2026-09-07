@@ -242,16 +242,16 @@
         <li><span class="b">✓</span><span class="t"><b>The screening method works.</b> Of 9 repurposing candidates, the computer screen flagged two as "wrong direction" — estradiol (it <i>activates</i> a growth receptor) and dinoprostone (it <i>is</i> the inflammatory signal PGE2). The method caught its own errors. <small>m3-validation.md — 2026-09-02</small></span></li>
         <li><span class="b">✓</span><span class="t"><b>Sirolimus (rapamycin) is the strongest repurposing lead.</b> Its mechanism (mTOR) has independent endometriosis evidence; it has 20+ years of safety data from transplant medicine. <small>M3 validation — 2026-09-02, confidence medium-high</small></span></li>
         <li><span class="b">✓</span><span class="t"><b>MRGPRX2 is a validated pain mechanism.</b> New 2026 studies link this mast-cell receptor to endometriosis pain — a specific, non-hormonal target. <small>M3 validation</small></span></li>
-        <li><span class="b">✓</span><span class="t"><b>We can test these ideas right now.</b> Experimental 3D structures exist for every current test candidate (FKBP4, FKBP12, MRGPRX2, xCT); 27 of 35 novel targets already have predicted structures in AlphaFold DB. <small>Phase 0 audit — 2026-09-02</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>We can test these ideas right now.</b> Every current test candidate has an experimental structure (FKBP4, FKBP12, MRGPRX2, xCT), and a live audit found structures for all 35 novel targets — 34 already in AlphaFold DB, GPX4 covered by 23 experimental PDB entries. Nothing needs folding. <small>audit — 2026-09-03</small></span></li>
       </ul>
     </div>
 
-    <div class="bar"><div class="seg a" style="flex:27">27 of 35 targets — structure already exists</div><div class="seg b" style="flex:8">8 to fold</div></div>
+    <div class="bar"><div class="seg a" style="flex:35">35 of 35 targets — structure already available</div></div>
     <div class="legend">
-      <span><i style="background:var(--ribbon)"></i>already in AlphaFold DB (free, predicted)</span>
-      <span><i style="background:var(--ink)"></i>need one folding run (~$1–3 total)</span>
+      <span><i style="background:var(--ribbon)"></i>34 of 35 in AlphaFold DB (free, predicted)</span>
+      <span><i style="background:var(--ink)"></i>1 (GPX4) has 23 experimental PDB structures — the earlier "8 to fold" was a parser artifact</span>
     </div>
-    <p class="sub" style="margin-top:2mm">Experimental (cryo-EM / X-ray) structures also exist for the drug candidates being tested: FKBP4 · FKBP12 (control) · MRGPRX2 · xCT · ACVR1B.</p>
+    <p class="sub" style="margin-top:2mm">Experimental (cryo-EM / X-ray) structures exist for the drug candidates being tested: FKBP4 · FKBP12 (control) · MRGPRX2 · xCT · ACVR1B.</p>
   </section>
 
   <!-- TESTING -->
@@ -261,20 +261,20 @@
     <div class="band test">
       <h3><span class="chip test"><span class="d"></span>Testing</span> Each test produces a hypothesis — never a conclusion</h3>
       <ul>
-        <li><span class="b">1</span><span class="t"><b>Does sirolimus actually fit its target?</b> Molecular docking: sirolimus → FKBP4, with FKBP12 as a control — because we need to know if it can engage the endometriosis-relevant protein at all. <small>Phase 1 · Vina docking · ~$5</small></span></li>
-        <li><span class="b">2</span><span class="t"><b>Can cetrorelix reach the pain receptor?</b> Docking the peptide drug against the MRGPRX2 cryo-EM structure — testing the pain-pathway idea computationally. <small>Phase 1 · ~$3</small></span></li>
-        <li><span class="b">3</span><span class="t"><b>Does sulfasalazine's target move in the right direction?</b> Its target (xCT) is real — but a 2026 paper suggests ferroptosis may drive lesion growth, not shrink it. Direction must be resolved before this ranks higher. <small>literature + docking · Phase 1</small></span></li>
-        <li><span class="b">4</span><span class="t"><b>Are the targets actually switched on in disease tissue?</b> Next free step: endometriosis-lesion gene data (GEO/single-cell) — is MRGPRX2 elevated in lesion mast cells specifically? <small>Phase 0.5 · ~$0</small></span></li>
-        <li><span class="b">5</span><span class="t"><b>Fold the 8 targets nobody has a structure for.</b> AlphaFold on a rented GPU — a few dollars, a few hours. <small>Phase 1 · ~$1–3</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>Does sirolimus actually fit its target?</b> Answered by docking (Phase 1, done at $0): sirolimus engages FKBP4 almost as well as its known partner FKBP12 (−6.4 vs −7.1 kcal/mol) — consistent with real binding. Whether it <i>helps</i> endometriosis still needs a lab. <small>Phase 1 done · 2026-09-04</small></span></li>
+        <li><span class="b">↷</span><span class="t"><b>Can cetrorelix reach the pain receptor?</b> Deferred, honestly: a 1,431 Da peptide against a cryo-EM receptor is beyond what docking can judge reliably (tool boundary documented). Molecular dynamics is the right tool. <small>deferred to Phase 2</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>Does sulfasalazine's target move in the right direction?</b> Direction resolved by a 13-source evidence review: lesions dodge ferroptosis, so triggering it is the therapeutic direction — sulfasalazine stays a watchlist candidate; selectivity is the open question. <small>direction resolved · 2026-09-03</small></span></li>
+        <li><span class="b">✓</span><span class="t"><b>Are the targets actually switched on in disease tissue?</b> Answered with patient lesion data (3 public GEO datasets, $0): the mast-cell receptor MRGPRX2 is strongly enriched in endometrioma lesions (11–15×) — but not in superficial peritoneal lesions. Lesion type matters. <small>Phase 0.5 done · 2026-09-03</small></span></li>
+        <li><span class="b">1</span><span class="t"><b>Do the top hits stay bound over time?</b> Next step — molecular dynamics (Phase 2): 100–500 ns simulations on the best docking poses to check the drugs don't fall off instantly. Needs a small GPU rental (~$5–25). <small>Phase 2 · next</small></span></li>
       </ul>
     </div>
 
     <h2 style="margin-top:6mm">The evidence ladder — <em>where each candidate stands</em></h2>
-    <p class="sub">For a repurposed drug, the honest path has five rungs. We are climbing rungs 2–3 on computers; rungs 4–5 need laboratories and clinical research.</p>
+    <p class="sub">For a repurposed drug, the honest path has five rungs. Rungs 1–3 are climbed on computers for the tested candidates; rungs 4–5 need laboratories and clinical research.</p>
     <div class="ladder">
       <div class="rung on"><div class="num">1</div><div class="tx"><div class="q">Approved &amp; safe for another disease</div><div class="a">All 9 candidates passed this — that's the point of repurposing. <b>Sirolimus</b> has 20+ years of safety data.</div></div></div>
       <div class="rung on"><div class="num">2</div><div class="tx"><div class="q">Mechanism fits endometriosis biology</div><div class="a">Done for 9/9 (M3 validation): <b>sirolimus</b> strongest · <b>MRGPRX2</b> axis validated · two candidates failed this rung honestly.</div></div></div>
-      <div class="rung on"><div class="num">3</div><div class="tx"><div class="q">Physically binds the target</div><div class="a"><b>In progress</b> — docking on experimental structures (Phase 1). Controls included so we don't fool ourselves.</div></div></div>
+      <div class="rung on"><div class="num">3</div><div class="tx"><div class="q">Physically binds the target</div><div class="a">Phase 1 docking <b>done 2026-09-04 ($0)</b>: sirolimus engages FKBP4 (−6.4 kcal/mol, near its native partner FKBP12 at −7.1) and sulfasalazine fits the xCT cavity as predicted. Docking is suggestive, not proof — dynamics (Phase 2) is next.</div></div></div>
       <div class="rung off"><div class="num">4</div><div class="tx"><div class="q">Works in endometriosis models</div><div class="a">Needs a wet lab (cells / animal models). <b>We are looking for a lab partner.</b></div></div></div>
       <div class="rung off"><div class="num">5</div><div class="tx"><div class="q">Helps patients in trials</div><div class="a">Years away — and only clinical research can ever prove it. Our work exists to make that more likely, cheaper and better-targeted.</div></div></div>
     </div>
@@ -294,11 +294,11 @@
       <h3><span class="chip unk"><span class="d"></span>Unknown</span> We'd rather say "we don't know" than pretend</h3>
       <ul>
         <li><span class="b">?</span><span class="t"><b>Does sirolimus actually help endometriosis?</b> No endometriosis trial exists. Docking can say "it fits"; only a lab and trials can say "it helps". <small>the honest ceiling of computer work</small></span></li>
-        <li><span class="b">?</span><span class="t"><b>Which direction does ferroptosis go in endometriosis?</b> A Sept 2026 paper links it to lesion <i>progression</i> — if true, drugs that trigger it (sulfasalazine) could backfire. Unresolved. <small>must-read before ranking</small></span></li>
-        <li><span class="b">?</span><span class="t"><b>Is MRGPRX2 really elevated in lesion mast cells?</b> It's absent from healthy bulk tissue (expected for a mast-cell receptor) — the disease-specific question needs lesion data. <small>Phase 0.5</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Which direction does ferroptosis go in endometriosis?</b> Resolved by a 13-source evidence review (2026-09-03, MEDIUM confidence): lesions dodge ferroptosis, so triggering it is the therapeutic direction. Sulfasalazine stays a watchlist candidate until its selectivity question is answered. <small>direction resolved · 2026-09-03</small></span></li>
+        <li><span class="b">?</span><span class="t"><b>Is MRGPRX2 really elevated in lesion mast cells?</b> Answered with patient lesion data: strongly enriched in endometrioma mast cells (11–15×), but not in superficial peritoneal lesions (two more datasets agree). Lesion-type-specific — worth knowing before targeting it. <small>Phase 0.5 done · 2026-09-03</small></span></li>
         <li><span class="b">?</span><span class="t"><b>Does a good computer binding predict a good real binding?</b> Usually yes-ish, sometimes no. That's why docking is followed by dynamics, and why both still need a lab. <small>methodological humility</small></span></li>
         <li><span class="b">?</span><span class="t"><b>Would a selective ACVR1B inhibitor work?</b> The biology says yes — but no such drug exists. Building one is a decade-scale project. <small>parked honestly</small></span></li>
-        <li><span class="b">?</span><span class="t"><b>Funding.</b> All of this runs on evenings and small GPU rentals. A lab partnership or grant would change the pace completely.</span></li>
+        <li><span class="b">?</span><span class="t"><b>Funding.</b> All of this runs on evenings and small GPU rentals — Phase 1 cost $0; Phase 2 dynamics needs ~$5–25 of rented GPU time. A lab partnership or grant would change the pace completely.</span></li>
       </ul>
     </div>
   </section>
@@ -336,7 +336,7 @@
   <footer>
     <span class="fb"><span class="ys"></span>OpenEndo</span>
     <span>openendo.org · open data on endometriosis research · MIT · evidence-first, patients first</span>
-    <span style="margin-left:auto">Explainer v1 · 2026-09-02</span>
+    <span style="margin-left:auto">Explainer v2 · 2026-09-07</span>
   </footer>
 
 </div>
