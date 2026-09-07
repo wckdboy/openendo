@@ -16,7 +16,7 @@
 
 1. **Site split (decree 2026-09-04) — 🔄 FLAGGED (Jaeger lane)** — openendo = data/research/analytics ONLY; site moves to wckdboy/openendo-www (Lovable mirror, Vite+React+TS). Website changes ONLY via Lovable API — never hand-edit site files. Consequences: `audit_site.py` re-scope to openendo-www (docs/ HTML surface = legacy); **8 legacy `docs/*.html` flagged for removal/migration** (index, wiki, support, one-pager-en/dk, ai-agenda, styleguide, what-we-know — see horizon). *Jaeger*
 2. **Phase 2 dynamics (MD) — compute decision open** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0): sulfasalazine→xCT −8.52, rapamycin→FKBP52 −6.38 vs FKBP12 −7.06; cetrorelix→MRGPRX2 deferred (tool boundary). Next: OpenMM 100–500 ns on top poses — RunPod (~$5–25, Jaeger books) or knight GPU capacity. *Jaeger*
-3. **Lovable app ↔ repo wiring — PILOT LIVE, remainder open** — fetch model live on /research; remaining: funding + knowledge articles hard-coded in app → same fetch pattern; access-finder UI build (data v1 done). *Jaeger*
+3. **Lovable app ↔ repo wiring — funding WIRED + DEPLOYED 2026-09-07, knowledge articles remain** — fetch model live on /research + /access + / (funding section now reads `funding.json` live, fallback to bundled list; PR #26 + Lovable deploy @4695917). Remaining: knowledge articles hard-coded in app → same fetch pattern; access-finder UI build (data v1 done). *Jaeger*
 
 ## 📊 Workstreams
 
