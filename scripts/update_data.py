@@ -85,15 +85,33 @@ def trials_from(data, n=999):
             "url": f"https://clinicaltrials.gov/study/{nct}",
         })
     if dropped:
-        print(f"  (filtreret {dropped} ikke-relevante forsøg)")
+        sys.stderr.write(f"  (filtreret {dropped} ikke-relevante forsøg)\n")
     return out
 
 
-def ctg(query, params):
-    url = ("https://clinicaltrials.gov/api/v2/studies?query.term="
-           + urllib.parse.quote(query) + "&" + params
-           + "&pageSize=50&fields=" + urllib.parse.quote(FIELDS))
-    return fetch(url)
+def ctg(query, params, page_size=1000):
+    """Fetch ALL pages of a ClinicalTrials.gov v2 query (no silent truncation).
+
+    CT.gov paginates with pageToken/nextPageToken; callers used to get at most
+    50 studies (hardcoded pageSize) and never noticed when a registry outgrew
+    it. Now: countTotal=true, pageSize up to 1000, loop until nextPageToken
+    disappears (safety cap 20 pages / 20k studies).
+    """
+    studies, token, total = [], None, None
+    for _ in range(20):
+        url = ("https://clinicaltrials.gov/api/v2/studies?query.term="
+               + urllib.parse.quote(query) + "&" + params
+               + f"&pageSize={page_size}&countTotal=true"
+               + ("&pageToken=" + urllib.parse.quote(token) if token else "")
+               + "&fields=" + urllib.parse.quote(FIELDS))
+        d = fetch(url)
+        studies.extend(d.get("studies") or [])
+        if d.get("totalCount") is not None:
+            total = d["totalCount"]
+        token = d.get("nextPageToken")
+        if not token:
+            break
+    return {"studies": studies, "totalCount": total}
 
 
 def pubmed_ids(mindate, maxdate, retmax=15):
@@ -114,8 +132,43 @@ def pubmed_summary(ids):
 
 
 def save(name, obj):
-    with open(os.path.join(DATA, name), "w", encoding="utf-8") as f:
+    """Atomic write: temp file + os.replace, so a crash mid-run never leaves a
+    truncated/corrupt JSON that the live site (or the weekly RO-Crate diff)
+    would read."""
+    path = os.path.join(DATA, name)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, path)
+
+
+def _load_prev_list(name):
+    """Return the previous run's top-level list (trials/papers) or None."""
+    try:
+        with open(os.path.join(DATA, name), encoding="utf-8") as f:
+            d = json.load(f)
+    except (OSError, ValueError):
+        return None
+    for key in ("trials", "papers"):
+        if isinstance(d, dict) and isinstance(d.get(key), list):
+            return d[key]
+    return None
+
+
+def apply_floor(name, rows):
+    """Empty-dataset floor: if a source comes back empty but we already have a
+    non-empty dataset on disk (transient API hiccup / upstream reset), keep the
+    previous rows and report on stderr — never publish a silently emptied
+    registry. Returns the rows that should be published (caller saves them, so
+    meta counts always match file contents). Watchdog pattern preserved:
+    nothing on stdout when unchanged."""
+    if not rows:
+        prev = _load_prev_list(name)
+        if prev:
+            sys.stderr.write(f"  {name}: kilde tom — beholder tidligere data "
+                             f"({len(prev)} rækker), opdatering sprunget over\n")
+            return prev
+    return rows
 
 
 def git(*args):
@@ -140,6 +193,10 @@ def main():
     t_dk = trials_from(dk)
     t_dkrec = trials_from(dkrec)
     t_rec = trials_from(rec)
+    t_glob = apply_floor("trials_global_recruiting.json", t_glob)
+    t_dk = apply_floor("trials_denmark.json", t_dk)
+    t_rec = apply_floor("trials_recent.json", t_rec)
+    # t_dkrec is a meta count only (subset of t_dk) — no file, no floor
     save("trials_global_recruiting.json", {"updated": TODAY.isoformat(), "trials": t_glob})
     save("trials_denmark.json", {"updated": TODAY.isoformat(), "trials": t_dk})
     save("trials_recent.json", {"updated": TODAY.isoformat(), "trials": t_rec})
@@ -157,6 +214,7 @@ def main():
             "journal": v.get("fulljournalname", ""),
             "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
         })
+    papers = apply_floor("pubmed_recent.json", papers)
     save("pubmed_recent.json", {"updated": TODAY.isoformat(), "papers": papers})
 
     # --- PubMed: monthly counts, last 6 months ---
@@ -195,18 +253,33 @@ def main():
         sys.stderr.write(f"gen_ro_crate fejlede: {r.stderr}\n")
         sys.exit(1)
 
-    # --- git: commit & push only on change ---
+    # --- git: commit & push only on change, and verify the push actually landed ---
     r = git("status", "--porcelain", "--", "docs/data")
     if not r.stdout.strip():
         return  # unchanged — stay silent
     git("add", "docs/data")
-    git("commit", "-m", f"data: refresh {TODAY.isoformat()}")
+    if git("commit", "-m", f"data: refresh {TODAY.isoformat()}").returncode != 0:
+        sys.stderr.write("git commit fejlede\n")
+        sys.exit(1)
     pull = git("pull", "--ff-only")
     if pull.returncode != 0:
-        git("pull", "--rebase")
+        rebase = git("pull", "--rebase")
+        if rebase.returncode != 0:
+            # Conflicts mid-rebase: abort loudly, never leave the repo dirty.
+            git("rebase", "--abort")
+            sys.stderr.write(f"git pull --rebase fejlede (konflikt?): {rebase.stderr}\n")
+            sys.exit(2)
     if git("push").returncode != 0:
         sys.stderr.write("git push fejlede\n")
         sys.exit(1)
+    # Green run ≠ pushed: confirm HEAD is actually on origin/main (server-side).
+    head = git("rev-parse", "HEAD").stdout.strip()
+    ls = subprocess.run(["git", "ls-remote", "origin", "refs/heads/main"],
+                        capture_output=True, text=True).stdout.strip().split()
+    remote = ls[0] if ls else ""
+    if not remote or head != remote:
+        sys.stderr.write(f"push ikke bekræftet: HEAD {head} != origin/main {remote}\n")
+        sys.exit(3)
     print(f"📊 OpenEndo: data opdateret & skubbet "
           f"({len(t_glob)} rekrutterende globalt, {len(t_dk)} i DK, {len(papers)} artikler/7d)")
 
