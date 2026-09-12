@@ -16,18 +16,20 @@ This repo is the **canonical data & knowledge layer**: every dataset, the wiki
 and the research program live in `docs/` and are consumed from GitHub
 (`raw.githubusercontent.com/wckdboy/openendo/main/docs/...`) — see
 [`docs/llms.txt`](docs/llms.txt) for the full agent index.
-The static pages under `docs/` remain in the repo as the open reference
-implementation (GitHub Pages is CNAME-redirected to openendo.org and does not
-serve them).
+Leftover `docs/*.html` is **not** the product UI (GitHub Pages CNAME-redirects
+and does not serve those files). The one live-fetch exception is
+`docs/what-we-know.html` — openendo.org/research loads it from this repo.
 
 ## More
 
 - [docs/llms.txt](docs/llms.txt) — machine-readable index (agents: start here)
 - [BRAND.md](BRAND.md) — brand tokens & conventions, machine-readable (for AI agents)
-- [docs/styleguide.html](docs/styleguide.html) — the design system (visual)
-- [docs/support.html](docs/support.html) — seven ways to help
+- Live product: [openendo.org](https://openendo.org/) · [dashboard](https://openendo.org/dashboard) · [research](https://openendo.org/research) · [access](https://openendo.org/access) · [knowledge](https://openendo.org/knowledge)
+- [docs/what-we-know.html](docs/what-we-know.html) — research explainer (**live contract** for /research — do not delete)
+- [docs/styleguide.html](docs/styleguide.html) — visual design system (legacy HTML; no live route)
+- [docs/support.html](docs/support.html) — seven ways to help (legacy HTML; no live route)
 - [docs/ai-agenda.html](docs/ai-agenda.html) — what agents/algorithms/compute can do for endometriosis
-- [docs/one-pager-dk.html](docs/one-pager-dk.html) — one-pager for Danish politicians
+- [docs/one-pager-dk.html](docs/one-pager-dk.html) — one-pager for Danish politicians (unique; keep)
 - [CONTRIBUTING.md](CONTRIBUTING.md) — PR checklist
 
 ## What's inside

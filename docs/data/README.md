@@ -3,11 +3,11 @@
 Canonical, machine-readable open datasets for endometriosis research.
 FAIR-packaged (RO-Crate), identifier-stable (`IDENTIFIERS.md`), MIT-licensed.
 
-> **Relation to the live site:** openendo.org is a Lovable app that fetches
+> **Relation to the live site:** openendo.org (wckdboy/openendo-www) fetches
 > trials/papers LIVE from ClinicalTrials.gov + PubMed via server functions.
-> These JSON files are the **canonical archival + curated layer** — the app
-> does NOT consume them yet (open decision, see CHECKPOINT top-3 #2). Agents:
-> treat this directory as the source of truth for data, and flag
+> **Live-fetched from this directory today:** `funding.json` (Home) and
+> `access.json` (`/access`). `content.json` is still archival — the app uses a
+> bundled copy. Agents: treat this directory as the source of truth, and flag
 > `needs-lovable-sync` on PRs that change what the site should show.
 
 ## File contract

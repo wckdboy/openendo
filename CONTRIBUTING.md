@@ -16,10 +16,10 @@ Thank you for helping make an invisible disease impossible to ignore. 💛
 ## PR checklist
 
 - [ ] Links verified (HTTP 200) — no invented sources, ever
-- [ ] UI strings added to `app.js` I18N in **both** EN and DA (or `{en, da}` in JSON)
+- [ ] UI strings bilingual EN + DA (`{en, da}` in JSON). Do not edit the Lovable app from this repo
 - [ ] JSON schema unchanged (see BRAND.md); `python3 scripts/update_data.py` run if trial data changed
-- [ ] `?v=N` bumped in `index.html` if `app.js`/`style.css` changed
 - [ ] Style guide / BRAND.md updated if you changed a token or component
+- [ ] Leftover `docs/*.html` is not the product UI — do not delete `what-we-know.html` (live `/research` fetch)
 - [ ] Voice check: patient-first, evidence-first, hope not hype
 
 ## What never ships

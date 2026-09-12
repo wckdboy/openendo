@@ -1,6 +1,6 @@
 # BRAND.md — OpenEndo brand & contribution guide (for humans and AI agents)
 
-This file is the machine-readable companion to the [visual style guide](https://openendo.org/styleguide.html). If you are an agent contributing to this repo, follow this file exactly.
+This file is the machine-readable companion to the [visual style guide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/styleguide.html) (legacy HTML; not served on openendo.org). If you are an agent contributing to this repo, follow this file exactly.
 
 ## Identity
 
@@ -45,7 +45,7 @@ Container `1060px`; frosted sticky nav `64px`; section padding `88px` (64 on mob
 - **i18n:** every user-facing string lives in `app.js` `I18N` (EN + DA at minimum) or as `{en, da}` in JSON. Never hardcode UI strings.
 - **Assets:** bump `?v=N` in `index.html` for `app.js`/`style.css` changes — GitHub Pages caches aggressively.
 - **Pipeline:** `scripts/update_data.py` regenerates `docs/data/`. ClinicalTrials.gov v2: use `filter.overallStatus=RECRUITING`, `query.locn=Denmark`, ISO dates in `RANGE[...]` — naive advanced filters return HTTP 400. Handle 429 with backoff (already in the script).
-- **Pages:** site publishes from `/docs` on `main`. Canonical URL `https://openendo.org/`.
+- **Pages:** the public UI is the Lovable app at `https://openendo.org/` (wckdboy/openendo-www). This repo does not publish those routes. Leftover `docs/*.html` is archive / unique source — except `docs/what-we-know.html`, which `/research` fetches live.
 
 ## Agent rules
 

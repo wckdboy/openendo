@@ -58,4 +58,5 @@ under-researched.
 - Research tracks: `docs/research/` (M1 fold-input, M2 evidence, M3 repurposing, T7 lab software)
 - Data layer contract: `docs/data/README.md` (file → source → cadence → owner)
 - Data pipeline: `scripts/update_data.py` (weekly, Mon 08:00)
-- Human wiki hub: `docs/wiki.html`
+- Human wiki hub: `docs/wiki.html` (legacy static). Live `/knowledge` fetches `docs/knowledge/index.md` + listed pages (bundled fallback). Markdown is canonical.
+- Site audit: `scripts/audit_site.py` checks the live-app contract (what-we-know.html, funding/access/content JSON, knowledge index) and smokes openendo.org routes — it does **not** audit leftover `docs/*.html` as product UI
