@@ -2,7 +2,9 @@
 
 > How OpenEndo moves drug-target candidates (M1/M3) from literature hits to
 > **computationally tested hypotheses** — structure, docking, dynamics, ML.
-> Status: Phase 0 complete (2026-09-02). Machine data: `virtual/phase0.json`.
+> Status: Phase 0 + 0.5 + 1.0 complete; Phase 2 run package ready 2026-09-12
+> (not started — budget open). Machine data: `virtual/phase0.json`,
+> `virtual/phase1/`, `virtual/phase2/phase2-plan.json`.
 
 ## Integrity rules (non-negotiable)
 
@@ -63,13 +65,17 @@ MD 100–500 ns per complex ≈ $5–25 (4090). Phase 1 total ≈ **$10–25**.
 - **Phase 0 — coverage audit** ✅ 2026-09-02 (`virtual/phase0.json` + `phase0.md`):
   AFDB 27/35 · PDB experimental structures for all M3-relevant targets ·
   HPA expression summary · ChEMBL target registration.
-- **Phase 1 — docking (~$10–25):** ~~ColabFold for the 8 missing M1 targets~~ →
-  *corrected 2026-09-03: 0 to fold* (see `fold_input/af2-decision.md`) ·
-  Vina: sirolimus→FKBP4 + FKBP12 control, cetrorelix→MRGPRX2 (7S8L),
-  sulfasalazine→xCT (7CCS) · ADMET-AI + RDKit profile of 9 M3 candidates.
-  DoD: poses + scores + ADMET table in `virtual/phase1/`, top poses MD-ready.
-- **Phase 2 — dynamics (~$50–150):** OpenMM 100–500 ns on top poses (RMSD/RMSF,
-  binding stability); DiffDock cross-check; DeepPurpose/Chemprop DTI layer.
+- **Phase 1 — docking:** ✅ DONE 2026-09-04 (`virtual/phase1/`, $0 CPU) —
+  Vina sirolimus→FKBP4 + FKBP12 control, sulfasalazine→xCT; cetrorelix→MRGPRX2
+  deferred (tool boundary). ADMET of 9 M3 candidates. Top poses converted for
+  MD in `virtual/phase2/inputs/`.
+- **Phase 2 — dynamics:** run package ready 2026-09-12
+  (`virtual/phase2/phase2-plan.md` + `phase2-plan.json`) — **not started**.
+  First job **P2-A (~$5–18 community / ~$10–18 secure RTX 4090):** 100 ns
+  OpenMM on FKBP12 + crystal RAP (protocol control) then FKBP52 Vina pose.
+  Full original envelope (~$50–150) would add xCT membrane + peptide-MD +
+  500 ns stretches and still needs a second human go-ahead. Human budget
+  approval is the only start blocker. DiffDock / DTI layer remain later.
 - **Phase 0.5/3 — expression + broad screen:** endo-lesion omics (GEO) for
   FKBP4/MRGPRX2/SLC7A11 · selective ACVR1B screen over ZINC (needs batch infra).
 

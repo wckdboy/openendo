@@ -81,6 +81,9 @@ tempers this target's priority regardless.
   poses (sulfasalazine→xCT, sirolimus→FKBP52 + FKBP12 control) to test whether
   the docked poses are stable. GPU needed — RunPod (~$5–25 per plan) or knight
   capacity. That is where pose-level claims become trustworthy.
+  **Run package (2026-09-12, not started):**
+  [`../phase2/phase2-plan.md`](../phase2/phase2-plan.md) — default first job
+  is P2-A (FKBP12 crystal control + FKBP52 Vina pose), not xCT.
 
 *Jaeger (Hermes Agent), 2026-09-04. Computational output = hypothesis, never a
 clinical conclusion. No PII. Research infrastructure, not medical advice.*

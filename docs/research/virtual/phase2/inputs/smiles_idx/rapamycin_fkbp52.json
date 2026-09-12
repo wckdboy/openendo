@@ -1,0 +1,274 @@
+{
+  "id": "rapamycin_fkbp52",
+  "source_pdbqt": "docs/research/virtual/phase1/poses/rapamycin_fkbp52_top.pdbqt",
+  "smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](O)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+  "smiles_idx": [
+    {
+      "smiles_atom": 22,
+      "pdbqt_serial": 1
+    },
+    {
+      "smiles_atom": 21,
+      "pdbqt_serial": 2
+    },
+    {
+      "smiles_atom": 20,
+      "pdbqt_serial": 3
+    },
+    {
+      "smiles_atom": 19,
+      "pdbqt_serial": 4
+    },
+    {
+      "smiles_atom": 18,
+      "pdbqt_serial": 5
+    },
+    {
+      "smiles_atom": 17,
+      "pdbqt_serial": 6
+    },
+    {
+      "smiles_atom": 23,
+      "pdbqt_serial": 7
+    },
+    {
+      "smiles_atom": 24,
+      "pdbqt_serial": 8
+    },
+    {
+      "smiles_atom": 25,
+      "pdbqt_serial": 9
+    },
+    {
+      "smiles_atom": 26,
+      "pdbqt_serial": 10
+    },
+    {
+      "smiles_atom": 39,
+      "pdbqt_serial": 11
+    },
+    {
+      "smiles_atom": 40,
+      "pdbqt_serial": 12
+    },
+    {
+      "smiles_atom": 41,
+      "pdbqt_serial": 13
+    },
+    {
+      "smiles_atom": 42,
+      "pdbqt_serial": 14
+    },
+    {
+      "smiles_atom": 43,
+      "pdbqt_serial": 15
+    },
+    {
+      "smiles_atom": 44,
+      "pdbqt_serial": 16
+    },
+    {
+      "smiles_atom": 45,
+      "pdbqt_serial": 17
+    },
+    {
+      "smiles_atom": 46,
+      "pdbqt_serial": 18
+    },
+    {
+      "smiles_atom": 47,
+      "pdbqt_serial": 19
+    },
+    {
+      "smiles_atom": 49,
+      "pdbqt_serial": 20
+    },
+    {
+      "smiles_atom": 52,
+      "pdbqt_serial": 21
+    },
+    {
+      "smiles_atom": 53,
+      "pdbqt_serial": 22
+    },
+    {
+      "smiles_atom": 50,
+      "pdbqt_serial": 24
+    },
+    {
+      "smiles_atom": 51,
+      "pdbqt_serial": 25
+    },
+    {
+      "smiles_atom": 48,
+      "pdbqt_serial": 26
+    },
+    {
+      "smiles_atom": 27,
+      "pdbqt_serial": 28
+    },
+    {
+      "smiles_atom": 28,
+      "pdbqt_serial": 29
+    },
+    {
+      "smiles_atom": 29,
+      "pdbqt_serial": 30
+    },
+    {
+      "smiles_atom": 30,
+      "pdbqt_serial": 31
+    },
+    {
+      "smiles_atom": 38,
+      "pdbqt_serial": 32
+    },
+    {
+      "smiles_atom": 31,
+      "pdbqt_serial": 33
+    },
+    {
+      "smiles_atom": 35,
+      "pdbqt_serial": 34
+    },
+    {
+      "smiles_atom": 32,
+      "pdbqt_serial": 35
+    },
+    {
+      "smiles_atom": 33,
+      "pdbqt_serial": 36
+    },
+    {
+      "smiles_atom": 36,
+      "pdbqt_serial": 37
+    },
+    {
+      "smiles_atom": 37,
+      "pdbqt_serial": 38
+    },
+    {
+      "smiles_atom": 34,
+      "pdbqt_serial": 39
+    },
+    {
+      "smiles_atom": 15,
+      "pdbqt_serial": 41
+    },
+    {
+      "smiles_atom": 16,
+      "pdbqt_serial": 42
+    },
+    {
+      "smiles_atom": 13,
+      "pdbqt_serial": 43
+    },
+    {
+      "smiles_atom": 14,
+      "pdbqt_serial": 44
+    },
+    {
+      "smiles_atom": 10,
+      "pdbqt_serial": 45
+    },
+    {
+      "smiles_atom": 8,
+      "pdbqt_serial": 46
+    },
+    {
+      "smiles_atom": 12,
+      "pdbqt_serial": 47
+    },
+    {
+      "smiles_atom": 7,
+      "pdbqt_serial": 48
+    },
+    {
+      "smiles_atom": 5,
+      "pdbqt_serial": 49
+    },
+    {
+      "smiles_atom": 6,
+      "pdbqt_serial": 50
+    },
+    {
+      "smiles_atom": 9,
+      "pdbqt_serial": 51
+    },
+    {
+      "smiles_atom": 11,
+      "pdbqt_serial": 52
+    },
+    {
+      "smiles_atom": 4,
+      "pdbqt_serial": 54
+    },
+    {
+      "smiles_atom": 3,
+      "pdbqt_serial": 55
+    },
+    {
+      "smiles_atom": 2,
+      "pdbqt_serial": 56
+    },
+    {
+      "smiles_atom": 1,
+      "pdbqt_serial": 57
+    },
+    {
+      "smiles_atom": 64,
+      "pdbqt_serial": 58
+    },
+    {
+      "smiles_atom": 63,
+      "pdbqt_serial": 59
+    },
+    {
+      "smiles_atom": 65,
+      "pdbqt_serial": 60
+    },
+    {
+      "smiles_atom": 62,
+      "pdbqt_serial": 61
+    },
+    {
+      "smiles_atom": 61,
+      "pdbqt_serial": 62
+    },
+    {
+      "smiles_atom": 60,
+      "pdbqt_serial": 63
+    },
+    {
+      "smiles_atom": 59,
+      "pdbqt_serial": 64
+    },
+    {
+      "smiles_atom": 57,
+      "pdbqt_serial": 65
+    },
+    {
+      "smiles_atom": 58,
+      "pdbqt_serial": 66
+    },
+    {
+      "smiles_atom": 56,
+      "pdbqt_serial": 67
+    },
+    {
+      "smiles_atom": 54,
+      "pdbqt_serial": 68
+    },
+    {
+      "smiles_atom": 55,
+      "pdbqt_serial": 69
+    }
+  ],
+  "vina_kcal": -6.378,
+  "n_atoms": 68,
+  "centroid_A": [
+    3.001,
+    10.917,
+    14.609
+  ]
+}

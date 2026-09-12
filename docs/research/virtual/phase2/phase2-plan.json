@@ -1,0 +1,234 @@
+{
+  "phase": "2.0",
+  "title": "OpenMM run package — pose arbiter for Phase 1 docks",
+  "status": "run-package-ready",
+  "done": false,
+  "date": "2026-09-12",
+  "owner": "Galahad",
+  "cost_so_far_usd": 0,
+  "confidence": "medium — protocol is specified from Phase 1 artifacts; ns/day and therefore dollars are ±2×; 1N1A alignment is 11 CA pairs (1.005 Å) not the unpublished 14-pair VPS superposition",
+  "disclaimer": "Computational hypothesis generation only. Not medical advice. Do not rent a GPU until a human approves budget.",
+  "blocker": {
+    "type": "human_compute_budget",
+    "required": true,
+    "suggested_usd": "10-25",
+    "suggested_sku": "RunPod RTX 4090 Community Cloud if available, else Secure",
+    "do_not_invent_spend": true,
+    "other_human_input_required_to_start_p2a": false
+  },
+  "sources": {
+    "phase1_md": "docs/research/virtual/phase1/phase1.md",
+    "docking_results": "docs/research/virtual/phase1/docking_results.json",
+    "poses_dir": "docs/research/virtual/phase1/poses",
+    "virtual_testing": "docs/research/virtual-testing.md",
+    "m3_validation": "docs/research/evidence/m3-validation.md"
+  },
+  "recommended_first_run": {
+    "id": "P2-A",
+    "system_ids": ["p2a_fkbp12_crystal", "p2a_fkbp52_vina"],
+    "production_ns_each": 100,
+    "order": ["p2a_fkbp12_crystal", "p2a_fkbp52_vina"],
+    "kill_switch": "If p2a_fkbp12_crystal ligand COM leaves the pocket by 20 ns, stop the pod. Do not run p2a_fkbp52_vina until the protocol is reviewed.",
+    "optional_stretch": ["p2a_fkbp12_vina"],
+    "not_in_first_run": ["p2b_sulfasalazine_xct", "p2b_j9o_xct_calib", "p2c_cetrorelix_mrgprx2"],
+    "rationale": "Highest scientific value per GPU-hour: protocol control + TOP-TIER FKBP4 pose question, both soluble. xCT is membrane (setup risk) and cannot change the WATCHLIST label."
+  },
+  "systems": [
+    {
+      "id": "p2a_fkbp12_crystal",
+      "rank": 1,
+      "first_run": true,
+      "role": "protocol_control",
+      "protein": "FKBP12",
+      "uniprot": "P62942",
+      "pdb": "1FKB",
+      "chain": "A",
+      "ligand": "rapamycin/sirolimus (deposited RAP A108)",
+      "complex_pdb": "docs/research/virtual/phase2/inputs/complexes/p2a_fkbp12_crystal_rap.pdb",
+      "protein_pdb": "docs/research/virtual/phase2/inputs/receptors/1FKB_A_protein.pdb",
+      "ligand_pdb": "docs/research/virtual/phase2/inputs/ligands/rapamycin_1fkb_crystal.pdb",
+      "phase1_vina_kcal": null,
+      "cost_class": "soluble"
+    },
+    {
+      "id": "p2a_fkbp52_vina",
+      "rank": 2,
+      "first_run": true,
+      "role": "hypothesis",
+      "protein": "FKBP52/FKBP4 FK1",
+      "uniprot": "Q02790",
+      "pdb": "1N1A",
+      "chain": "A",
+      "ligand": "rapamycin/sirolimus (Phase 1 Vina top pose)",
+      "complex_pdb": "docs/research/virtual/phase2/inputs/complexes/p2a_fkbp52_vina_rap.pdb",
+      "protein_pdb": "docs/research/virtual/phase2/inputs/receptors/1N1A_A_aligned_to_1FKB.pdb",
+      "ligand_pdb": "docs/research/virtual/phase2/inputs/ligands/rapamycin_fkbp52_top.pdb",
+      "ligand_pdbqt": "docs/research/virtual/phase1/poses/rapamycin_fkbp52_top.pdbqt",
+      "smiles_idx": "docs/research/virtual/phase2/inputs/smiles_idx/rapamycin_fkbp52.json",
+      "phase1_vina_kcal": -6.378,
+      "cost_class": "soluble",
+      "caveat": "1N1A missing residues 72-75 (Arg42-loop homolog). Do not homology-model on first run."
+    },
+    {
+      "id": "p2a_fkbp12_vina",
+      "rank": 3,
+      "first_run": false,
+      "role": "vina_pose_control",
+      "protein": "FKBP12",
+      "uniprot": "P62942",
+      "pdb": "1FKB",
+      "chain": "A",
+      "ligand": "rapamycin/sirolimus (Phase 1 Vina top pose)",
+      "complex_pdb": "docs/research/virtual/phase2/inputs/complexes/p2a_fkbp12_vina_rap.pdb",
+      "protein_pdb": "docs/research/virtual/phase2/inputs/receptors/1FKB_A_protein.pdb",
+      "ligand_pdb": "docs/research/virtual/phase2/inputs/ligands/rapamycin_fkbp12_calib_top.pdb",
+      "ligand_pdbqt": "docs/research/virtual/phase1/poses/rapamycin_fkbp12_calib_top.pdbqt",
+      "smiles_idx": "docs/research/virtual/phase2/inputs/smiles_idx/rapamycin_fkbp12_calib.json",
+      "phase1_vina_kcal": -7.063,
+      "cost_class": "soluble"
+    },
+    {
+      "id": "p2b_sulfasalazine_xct",
+      "rank": 4,
+      "first_run": false,
+      "role": "watchlist_target",
+      "protein": "xCT/SLC7A11",
+      "uniprot": "Q9UPY5",
+      "pdb": "7EPZ",
+      "chain": "B",
+      "ligand": "sulfasalazine (Phase 1 Vina top pose)",
+      "ligand_pdb": "docs/research/virtual/phase2/inputs/ligands/sulfasalazine_xct_top.pdb",
+      "ligand_pdbqt": "docs/research/virtual/phase1/poses/sulfasalazine_xct_top.pdbqt",
+      "smiles_idx": "docs/research/virtual/phase2/inputs/smiles_idx/sulfasalazine_xct.json",
+      "phase1_vina_kcal": -8.524,
+      "cost_class": "membrane",
+      "prep": "Fetch 7EPZ; extract chain B; CHARMM-GUI (or equivalent) POPC embed. Do not water-solvate. Deprotonate carboxylate (net -1).",
+      "why_not_first": "Binding is not the WATCHLIST blocker; membrane setup can consume the whole first-run budget."
+    },
+    {
+      "id": "p2b_j9o_xct_calib",
+      "rank": 5,
+      "first_run": false,
+      "role": "xct_native_calib",
+      "protein": "xCT/SLC7A11",
+      "uniprot": "Q9UPY5",
+      "pdb": "7EPZ",
+      "chain": "B",
+      "ligand": "J9O erastin-class (Phase 1 Vina calib)",
+      "ligand_pdb": "docs/research/virtual/phase2/inputs/ligands/j9o_xct_calib_top.pdb",
+      "ligand_pdbqt": "docs/research/virtual/phase1/poses/j9o_xct_calib_top.pdbqt",
+      "smiles_idx": "docs/research/virtual/phase2/inputs/smiles_idx/j9o_xct_calib.json",
+      "phase1_vina_kcal": -9.354,
+      "cost_class": "membrane",
+      "note": "Run only as protocol control if p2b_sulfasalazine_xct is launched."
+    },
+    {
+      "id": "p2c_cetrorelix_mrgprx2",
+      "rank": 6,
+      "first_run": false,
+      "role": "deferred_peptide",
+      "protein": "MRGPRX2",
+      "uniprot": "Q96LB1",
+      "pdb": "7S8L",
+      "chain": "R",
+      "ligand": "cetrorelix (no Phase 1 pose — tool boundary)",
+      "phase1_vina_kcal": null,
+      "cost_class": "membrane_peptide",
+      "why_not_first": "35 truncated sidechains + 1431 Da decapeptide; Phase 0.5 already tempers lesion-type relevance."
+    }
+  ],
+  "alignment": {
+    "method": "Kabsch on 11 homolog pocket CA atoms (1N1A → 1FKB)",
+    "pairs": [
+      {"fkbp52_resi": 57, "fkbp12_resi": 26, "resname": "TYR"},
+      {"fkbp52_resi": 67, "fkbp12_resi": 36, "resname": "PHE"},
+      {"fkbp52_resi": 68, "fkbp12_resi": 37, "resname": "ASP"},
+      {"fkbp52_resi": 77, "fkbp12_resi": 46, "resname": "PHE"},
+      {"fkbp52_resi": 85, "fkbp12_resi": 54, "resname": "GLU"},
+      {"fkbp52_resi": 86, "fkbp12_resi": 55, "resname": "VAL"},
+      {"fkbp52_resi": 87, "fkbp12_resi": 56, "resname": "ILE"},
+      {"fkbp52_resi": 90, "fkbp12_resi": 59, "resname": "TRP"},
+      {"fkbp52_resi": 113, "fkbp12_resi": 82, "resname": "TYR"},
+      {"fkbp52_resi": 122, "fkbp12_resi": 90, "resname": "ILE"},
+      {"fkbp52_resi": 130, "fkbp12_resi": 99, "resname": "PHE"}
+    ],
+    "pocket_ca_rmsd_A": 1.005,
+    "phase1_reported_14pair_rmsd_A": 0.8,
+    "vina_vs_crystal_centroid_delta_A": 2.26,
+    "note": "1N1A residues 72-75 absent in the deposited structure, so Phase 1's 14-pair list cannot be reproduced exactly."
+  },
+  "protocol": {
+    "engine": "OpenMM 8.x",
+    "platform": "CUDA",
+    "protein_ff": "amber14-all.xml (ff14SB)",
+    "ligand_ff": "openff-2.2.1",
+    "water": "amber14/tip3pfb.xml",
+    "ionic_strength_M": 0.15,
+    "padding_nm": 1.2,
+    "constraints": "HBonds",
+    "hydrogen_mass_amu": 1.5,
+    "timestep_fs": 4.0,
+    "temperature_K": 300.0,
+    "pressure_bar": 1.0,
+    "integrator": "LangevinMiddle",
+    "friction_per_ps": 1.0,
+    "minimize_max_iter": 5000,
+    "equilibration_ns": 1.0,
+    "production_ns_default": 100.0,
+    "dcd_interval_ps": 100,
+    "checkpoint_interval_ns": 1.0,
+    "seed_default": 20260912,
+    "entrypoint": "scripts/phase2_run_openmm.py"
+  },
+  "analysis": [
+    "protein_ca_rmsd_vs_first_frame",
+    "ligand_rmsd_after_protein_fit_vs_start_pose",
+    "ligand_com_to_pocket_ca_centroid",
+    "pocket_heavy_contacts_le_4A_occupancy_last_50ns",
+    "fraction_frames_ligand_rmsd_lt_3A"
+  ],
+  "success_fail": {
+    "bound_definition": "ligand COM within 8 Å of pocket CA centroid AND ≥3 pocket contacts at ≥30% occupancy (last 50 ns)",
+    "outcomes": ["A_protocol_and_pose_ok", "B_pose_drifts_but_bound", "C_fkbp52_unbound_control_ok", "D_protocol_fail", "E_both_unbound_treat_as_D"]
+  },
+  "m3_impact": {
+    "sirolimus_fkbp4": {
+      "current": "TOP TIER (MEDIUM-HIGH) — driven by mTOR/senescence evidence",
+      "can_100ns_change_label": false,
+      "narrow_edit_if_outcome_C": "Downgrade only the Phase 1 side-claim that FKBP4 engagement is plausible at clinical doses (structural confidence → low). Do not demote TOP TIER."
+    },
+    "sulfasalazine_slc7a11": {
+      "current": "WATCHLIST (LOW-MEDIUM) — blocker is selectivity/toxicity",
+      "can_100ns_change_label": false
+    }
+  },
+  "cost_bands_usd": {
+    "price_as_of": "2026-08 public RunPod list (console wins on launch day)",
+    "rtx4090_community_per_h": 0.34,
+    "rtx4090_secure_per_h": 0.69,
+    "a100_sxm80_per_h": 1.39,
+    "p2a_2x100ns": {
+      "gpu_hours_conservative": 26,
+      "gpu_hours_optimistic": 14,
+      "community_usd": "5-9",
+      "secure_usd": "10-18"
+    },
+    "p2a_2x500ns": {
+      "community_usd": "25-45",
+      "note": "Outside the $10-25 first-run band on conservative throughput."
+    },
+    "p2b_xct_100ns": {
+      "community_usd": "7-20",
+      "note": "Plus embed-failure risk. Not first-run."
+    },
+    "uncertainty": "ns/day ±2×"
+  },
+  "prep": {
+    "script": "scripts/phase2_prep.py",
+    "pdbqt_notes": "Drop meeko G0 dummy atoms; map CG0→C. Ligands are pose-frame coordinates.",
+    "protonation": {
+      "rapamycin": "neutral, use smiles_idx SMILES",
+      "sulfasalazine": "deprotonate carboxylate (net -1) only when P2-B runs"
+    }
+  }
+}

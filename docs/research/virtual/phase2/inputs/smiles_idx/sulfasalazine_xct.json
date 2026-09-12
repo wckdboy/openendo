@@ -1,0 +1,126 @@
+{
+  "id": "sulfasalazine_xct",
+  "source_pdbqt": "docs/research/virtual/phase1/poses/sulfasalazine_xct_top.pdbqt",
+  "smiles": "O=C(O)c1cc(N=Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O",
+  "smiles_idx": [
+    {
+      "smiles_atom": 8,
+      "pdbqt_serial": 1
+    },
+    {
+      "smiles_atom": 7,
+      "pdbqt_serial": 2
+    },
+    {
+      "smiles_atom": 9,
+      "pdbqt_serial": 3
+    },
+    {
+      "smiles_atom": 12,
+      "pdbqt_serial": 4
+    },
+    {
+      "smiles_atom": 11,
+      "pdbqt_serial": 5
+    },
+    {
+      "smiles_atom": 23,
+      "pdbqt_serial": 6
+    },
+    {
+      "smiles_atom": 10,
+      "pdbqt_serial": 7
+    },
+    {
+      "smiles_atom": 24,
+      "pdbqt_serial": 8
+    },
+    {
+      "smiles_atom": 13,
+      "pdbqt_serial": 9
+    },
+    {
+      "smiles_atom": 14,
+      "pdbqt_serial": 10
+    },
+    {
+      "smiles_atom": 15,
+      "pdbqt_serial": 11
+    },
+    {
+      "smiles_atom": 16,
+      "pdbqt_serial": 12
+    },
+    {
+      "smiles_atom": 17,
+      "pdbqt_serial": 14
+    },
+    {
+      "smiles_atom": 19,
+      "pdbqt_serial": 15
+    },
+    {
+      "smiles_atom": 20,
+      "pdbqt_serial": 16
+    },
+    {
+      "smiles_atom": 18,
+      "pdbqt_serial": 17
+    },
+    {
+      "smiles_atom": 21,
+      "pdbqt_serial": 18
+    },
+    {
+      "smiles_atom": 22,
+      "pdbqt_serial": 19
+    },
+    {
+      "smiles_atom": 6,
+      "pdbqt_serial": 20
+    },
+    {
+      "smiles_atom": 5,
+      "pdbqt_serial": 21
+    },
+    {
+      "smiles_atom": 25,
+      "pdbqt_serial": 22
+    },
+    {
+      "smiles_atom": 4,
+      "pdbqt_serial": 23
+    },
+    {
+      "smiles_atom": 26,
+      "pdbqt_serial": 24
+    },
+    {
+      "smiles_atom": 27,
+      "pdbqt_serial": 25
+    },
+    {
+      "smiles_atom": 2,
+      "pdbqt_serial": 26
+    },
+    {
+      "smiles_atom": 1,
+      "pdbqt_serial": 27
+    },
+    {
+      "smiles_atom": 3,
+      "pdbqt_serial": 28
+    },
+    {
+      "smiles_atom": 28,
+      "pdbqt_serial": 30
+    }
+  ],
+  "vina_kcal": -8.524,
+  "n_atoms": 31,
+  "centroid_A": [
+    145.56,
+    144.585,
+    124.992
+  ]
+}
