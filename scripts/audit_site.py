@@ -214,6 +214,27 @@ def check_content(issues: list[str]) -> dict:
         if not isinstance(val, list) or not val:
             _fail(issues, f"content.json.{key} must be a non-empty array")
             info["ok"] = False
+    # Action/resource URLs must resolve for patients: absolute https, never
+    # leftover openendo.org/*.html (CNAME → Lovable; those paths 404).
+    stale = 0
+    for section in ("actions", "resources"):
+        rows = data.get(section) or []
+        if not isinstance(rows, list):
+            continue
+        for i, row in enumerate(rows):
+            if not isinstance(row, dict):
+                continue
+            url = str(row.get("url") or "").strip()
+            if not url.startswith("https://"):
+                _fail(issues, f"content.json.{section}[{i}] url must be absolute https (got {url!r})")
+                info["ok"] = False
+                stale += 1
+                continue
+            if "openendo.org/" in url and url.split("?", 1)[0].rstrip("/").endswith(".html"):
+                _fail(issues, f"content.json.{section}[{i}] dead openendo.org/*.html: {url}")
+                info["ok"] = False
+                stale += 1
+    info["stale_urls"] = stale
     info["keys"] = sorted(data.keys())
     return info
 
