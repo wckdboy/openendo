@@ -16,14 +16,14 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-09-07 (Galahad, single-agent takeover) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-09-12 (Galahad, Phase 2 MD run package) · **Maintainer:** Galahad (sole agent)
 
 ---
 
 ## 🎯 Current focus (top 3)
 
 1. **Site split (decree 2026-09-04) — 🔄 CLAIMED by Galahad 2026-09-07** — openendo = data/research/analytics ONLY; site moves to wckdboy/openendo-www (Lovable mirror, Vite+React+TS). Website changes ONLY via Lovable API — never hand-edit site files. Consequences: `audit_site.py` re-scope to openendo-www (docs/ HTML surface = legacy); **8 legacy `docs/*.html` flagged for removal/migration** (index, wiki, support, one-pager-en/dk, ai-agenda, styleguide, what-we-know — see horizon). *Galahad*
-2. **Phase 2 dynamics (MD) — compute decision open (Galahad 2026-09-07)** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0): sulfasalazine→xCT −8.52, rapamycin→FKBP52 −6.38 vs FKBP12 −7.06; cetrorelix→MRGPRX2 deferred (tool boundary). Next: OpenMM 100–500 ns on top poses — RunPod (~$5–25) or knight GPU capacity. Human input needed on compute budget. *Galahad*
+2. **Phase 2 dynamics (MD) — run package ready, compute budget still open (Galahad 2026-09-12)** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0). Concrete OpenMM job spec: `docs/research/virtual/phase2/phase2-plan.md` + `phase2-plan.json` + assembled P2-A inputs. **Recommended first job: P2-A** (100 ns FKBP12 + crystal RAP control, then 100 ns FKBP52 Vina pose) on one RTX 4090, ~$5–18 community / ~$10–18 secure. **Phase 2 is NOT done** — no trajectories yet. Only blocker: human budget approval (do not invent spend). xCT membrane + cetrorelix peptide are second-wave, not in the $10–25 first run. *Galahad*
 3. **Lovable app ↔ repo wiring — funding WIRED + DEPLOYED 2026-09-07, knowledge articles remain** — fetch model live on /research + /access + / (funding section now reads `funding.json` live, fallback to bundled list; PR #26 + Lovable deploy @4695917). Remaining: knowledge articles hard-coded in app → same fetch pattern (claimed Galahad). Access-finder UI: **live + verified end-to-end 2026-09-02**; data fixes (DK postcodes) queued under P0. *Galahad*
 
 ## 📊 Workstreams
@@ -83,6 +83,7 @@
 
 ## 🚧 Blockers / open questions
 
+- **Phase 2 GPU budget — WAITING ON HUMAN (2026-09-12)** — run package is ready (`docs/research/virtual/phase2/`). Suggested approval: **$10–25**, one RunPod RTX 4090, P2-A only (2 × 100 ns). No cloud GPU has been started. Knight-owned GPU is an allowed $0 substitute. Do not mark Phase 2 done until `phase2.md` + trajectories exist. *Galahad*
 - **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
 - **AlphaFold compute budget — ✅ RESOLVED 2026-09-03** — live re-audit: 34/35 i AFDB (parser-fejl havde skjult 7), GPX4 har 23 eksperimentelle PDB-strukturer → **0 skal foldes, $0**; beslutningsmemo `docs/research/structures/fold_input/af2-decision.md`. Åbent: bulk structure-fetch-mønster (repo-størrelse) før Phase 1 docking. *Jaeger*
 - **Percival profile state** — ✅ RESOLVED 2026-09-02: user confirmed ongoing research work ("Great continue", "Keep working, solve this"). Percival keeps producing research + data + repo maintenance; checkpoint ownership confirmed. Re-confirmed 2026-09-02: user will have Percival attack the laid-out problems (top-3 #1 M3 validation first). **⚠️ Gateway DOWN again 2026-09-02 ~22:35 UTC (user directive: bot token in use by the user's own other Hermes agent — do NOT restart):** s6 `gateway-percival` down, `gateway_state=stopped`, `percival-gateway-watch` + `percival-activate-once` (22:40) paused. Repo-driven research (night-shift cron jobs, CHECKPOINT execution) unaffected — runs without the gateway.
@@ -91,6 +92,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-12 (Galahad)** — **Phase 2 MD run package (NOT a Phase 2 completion)** — `docs/research/virtual/phase2/phase2-plan.md` + `phase2-plan.json`. Grounded in Phase 1 poses: recommended first job **P2-A** (FKBP12 crystal-RAP protocol control + FKBP52 Vina pose, 100 ns each). Converted ligands, 11-CA 1N1A→1FKB alignment (pocket RMSD 1.005 Å; 1N1A gap 72–75 documented), assembled complexes, `scripts/phase2_prep.py` + gated `scripts/phase2_run_openmm.py`. Cost bands from public 2026 RunPod list (~$0.34/h 4090 community). M3 TOP TIER / WATCHLIST labels do not move on 100 ns; only a narrow FKBP4 side-claim could be downgraded if the hypothesis unbinds while the control holds. **Human budget approval remains the only start blocker. Phase 2 status = run-package-ready, not done.**
 
 - **2026-09-11 (Galahad, M2 cron)** — **M2 weekly evidence digest #3** — `docs/research/evidence/digest-2026-09-11.md` — **18 papers** (PubMed E-utilities, week 2026-09-04..09-11). Headline themes: **pain biology** (RNA-seq of symptomatic vs asymptomatic peritoneal lesions, IL16 as candidate severity marker, PMID 42720599) · **genetics with a Danish angle** (25-year GWAS synthesis in *Hum Reprod Update*, QIMR + Aalborg Univ. + Statens Serum Institut co-authors, PMID 42695929) · **treatment** (relugolix-CT 104-week SPIRIT extension, PMID 42719373 — only clinically actionable item) · **mechanisms** (FIN56 ferroptosis via ACACA/ARID5A/NOX4, PMID 42698143; fibrosis-stiffness motility; HDAC/ZEB1 reviews) · **diagnostics** (#Enzian TVS distribution n=394; ANGPTL4 AUC 0.755). No repurposing verdict changes. Snapshot `weekly/2026-09-11.json` (+ `LATEST`), llms.txt digest + weekly-data pointers updated. PR open, unmerged.
 
