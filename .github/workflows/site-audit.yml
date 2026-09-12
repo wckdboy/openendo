@@ -11,21 +11,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install playwright + chromium
-        run: |
-          pip install --quiet playwright
-          python -m playwright install --with-deps chromium
-      - name: Serve docs/ and run audit
-        run: |
-          python3 -m http.server 8080 --directory docs >/tmp/httpd.log 2>&1 &
-          SRV=$!
-          trap "kill $SRV 2>/dev/null" EXIT
-          for i in $(seq 1 30); do
-            curl -sf http://127.0.0.1:8080/index.html >/dev/null 2>&1 && break
-            sleep 1
-          done
-          python3 scripts/audit_site.py --base-url http://127.0.0.1:8080 --artifacts audit-artifacts
-      - name: Upload screenshots
+      # Playwright + a locally served docs/ copy is retired (decree 2026-09-04):
+      # leftover docs/*.html is not the product UI. This job checks the live-app
+      # contract in-checkout (what-we-know.html, funding/access/content JSON)
+      # and smokes https://openendo.org key routes. No chromium install.
+      - name: Product + contract audit
+        run: python3 scripts/audit_site.py --artifacts audit-artifacts
+      - name: Upload audit report
         if: always()
         uses: actions/upload-artifact@v4
         with:

@@ -10,15 +10,24 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [CHECKPOINT.md](https://raw.githubusercontent.com/wckdboy/openendo/main/CHECKPOINT.md): living task board — current focus, horizon tasks, blockers, change log (READ FIRST)
 - [AGENTS.md](https://raw.githubusercontent.com/wckdboy/openendo/main/AGENTS.md): repo rules for agents
 
-## Reference pages (static implementation — rendered by the Lovable app in its own design)
-- [Dashboard](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/index.html): live analytics — recruiting trials worldwide/by country, Denmark status, PubMed output, target intelligence, funding watch
-- [Knowledge base hub (human)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/wiki.html): rendered wiki index
-- [Style guide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/styleguide.html): design system, brand, voice
-- [How to support](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/support.html): seven ways to contribute
-- [AI & compute agenda](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/ai-agenda.html): how AI/agents/compute can move endometriosis research
-- [One-pager for decision-makers (EN)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-en.html)
-- [**What we know / what we don't — research explainer (visual)**](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/what-we-know.html): plain-language tour — targets, repurposing, virtual testing, honest gaps
-- [One-pager for decision-makers (DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-dk.html)
+## Live product (openendo.org — Lovable app in wckdboy/openendo-www)
+The public UI is NOT served from this repo. GitHub Pages CNAME-redirects; `docs/*.html` paths on openendo.org 404.
+- Home: https://openendo.org/
+- Dashboard: https://openendo.org/dashboard
+- Research explainer (fetches `what-we-know.html` live): https://openendo.org/research
+- Access finder (fetches `access.json` live): https://openendo.org/access
+- Knowledge (fetches `docs/knowledge/index.md` + listed pages live; bundled fallback): https://openendo.org/knowledge
+- Danish locale: https://openendo.org/da and the `/da/...` twins of the routes above
+
+## Legacy static HTML (NOT the product UI — kept as source / unique pages)
+- [**What we know / what we don't — research explainer (visual)**](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/what-we-know.html): **LIVE CONTRACT** — `/research` fetches this file. Do not delete. Fonts: `docs/assets/fonts/`. PDF: `docs/what-we-know.pdf`
+- [One-pager for decision-makers (DA)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-dk.html): unique advocacy page; no Lovable route yet — keep
+- [One-pager for decision-makers (EN)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/one-pager-en.html): unique; keep
+- [How to support](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/support.html): seven ways to contribute; no `/support` route — keep
+- [AI & compute agenda](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/ai-agenda.html): unique; keep
+- [Style guide](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/styleguide.html): visual brand (companion: BRAND.md); keep
+- [Knowledge hub (human, legacy HTML)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/wiki.html): catalog of `docs/knowledge/*.md`. Live `/knowledge` fetches the markdown (not this file) with a bundled fallback
+- [Dashboard (legacy HTML)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/index.html): superseded by `/` + `/dashboard`; kept as CSS/nav/brand host for the leftovers
 
 ## Machine-readable data (JSON)
 - [Data layer contract](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/README.md): file → content → source → cadence → owner (agents: read before editing datasets)
@@ -37,7 +46,7 @@ RAW = https://raw.githubusercontent.com/wckdboy/openendo/main
 - [RO-Crate manifest (FAIR packaging of all datasets)](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/ro-crate-metadata.jsonld)
 
 ## Knowledge base
-> Knowledge pages are raw markdown (human hub: wiki.html reference page). SCHEMA first.
+> Knowledge pages are raw markdown — **live contract** for openendo.org/knowledge (index.md + listed pages; bundled fallback). Human hub leftover: wiki.html. SCHEMA first.
 - [SCHEMA](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/SCHEMA.md): conventions for creating/editing knowledge pages (agents must read)
 - [Entities — ryeqo](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/ryeqo.md): relugolix combo, EU-approved, generelt tilskud in DK
 - [Entities — yselty](https://raw.githubusercontent.com/wckdboy/openendo/main/docs/knowledge/entities/yselty.md): linzagolix, EU-approved Dec 2024, no general reimbursement for endometriosis in DK (verified 2026-09-02)

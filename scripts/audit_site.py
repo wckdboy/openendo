@@ -1,220 +1,305 @@
 #!/usr/bin/env python3
-"""OpenEndo responsive + accessibility audit (Playwright).
+"""OpenEndo product + data-contract audit.
 
-Runs every push via .github/workflows/site-audit.yml against a locally
-served copy of docs/ (fast feedback before deploy). Checks, per page and
-viewport: JS/page errors, horizontal overflow, touch-target sizes,
-image alt text, canvas/button accessible names, duplicate IDs, skip-link
-presence, mobile-nav behaviour, and (index only) the EN/DA language toggle.
+Decree 2026-09-04: this repo is data / research / analytics only. The public
+UI lives in wckdboy/openendo-www (Lovable) at https://openendo.org. GitHub
+Pages CNAME-redirects there; leftover docs/*.html is NOT the product.
+
+This script used to Playwright-audit a locally served copy of docs/*.html
+(index, wiki, support, one-pagers, ai-agenda, styleguide). That clung to
+dead static pages after the site split. Playwright viewport/a11y of those
+files is retired.
+
+What we check instead:
+
+  1. Local files the live app depends on (PR-relevant; no network).
+     openendo-www fetches these from raw.githubusercontent.com on main —
+     CI must validate the copies in THIS checkout, not the live raw URLs
+     (those still point at main during a PR).
+       - docs/what-we-know.html + docs/assets/fonts/* + what-we-know.pdf
+         (/research iframe + PDF toolbar)
+       - docs/data/funding.json   (Home funding section)
+       - docs/data/access.json    (/access)
+       - docs/data/content.json   (editorial contract; not yet live-fetched)
+       - docs/knowledge/index.md  (/knowledge live catalog; bundled fallback)
+
+  2. HTTPS smoke of live openendo.org key routes (product availability).
+     Optional: --skip-live / --local-only when offline.
 
 Usage:
-    python3 scripts/audit_site.py [--base-url http://127.0.0.1:8080] [--artifacts dir]
+    python3 scripts/audit_site.py [--artifacts dir] [--skip-live]
 
-Exit code 0 = pass, 1 = issues found. Screenshots always saved to
---artifacts (default: audit-artifacts/) for the Actions upload step.
+Exit 0 = pass, 1 = issues found, 2 = setup/usage error.
 """
+from __future__ import annotations
+
 import argparse
 import json
 import re
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 
-PAGES = [
-    "index.html",
-    "wiki.html",
-    "support.html",
-    "one-pager-en.html",
-    "one-pager-dk.html",
-    "ai-agenda.html",
-    "styleguide.html",
-]
-DEVICES = [
-    ("mobile-390", "iPhone 13"),   # touch: coarse pointer → CSS @media(pointer:coarse) active
-    ("tablet-768", "iPad Mini"),
-    ("desktop-1440", None),        # fine pointer (mouse)
-]
-# Resource-load noise that should not fail a run (fonts/CDN hiccups etc.)
-IGNORE_CONSOLE = re.compile(r"Failed to load resource|net::ERR_|favicon|404")
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+DATA = DOCS / "data"
 
-JS_CHECK = """
-() => {
-  const de = document.documentElement, b = document.body;
-  const vw = window.innerWidth;
-  const offenders = [];
-  for (const el of document.querySelectorAll('*')) {
-    if (el.children.length) continue;              // leaves only
-    const r = el.getBoundingClientRect();
-    if (r.width > 0 && (r.right > vw + 1 || r.left < -1)) {
-      offenders.push(`${el.tagName.toLowerCase()}.${[...el.classList].slice(0,2).join('.')}#${el.id} right=${Math.round(r.right)} left=${Math.round(r.left)}`);
-    }
-  }
-  const imgs = [...document.images].filter(i => !i.hasAttribute('alt')).map(i => i.src.split('/').pop());
-  const canvases = [...document.querySelectorAll('canvas')].filter(c => !c.getAttribute('role') || !c.getAttribute('aria-label')).length;
-  const buttons = [...document.querySelectorAll('button')].filter(b => {
-    const t = (b.textContent || '').trim();
-    return !t && !b.getAttribute('aria-label') && !b.getAttribute('title');
-  }).map(b => b.id || b.className);
-  const ids = [...document.querySelectorAll('[id]')].map(e => e.id);
-  const dupIds = ids.filter((x, i) => ids.indexOf(x) !== i);
-  return {
-    scrollW: de.scrollWidth, clientW: de.clientWidth,
-    bodyScrollW: b ? b.scrollWidth : 0,
-    overflow: Math.max(de.scrollWidth, b ? b.scrollWidth : 0) - vw,
-    offenders: offenders.slice(0, 5),
-    imgsNoAlt: imgs.slice(0, 5),
-    canvasesNoA11y: canvases,
-    buttonsNoName: buttons.slice(0, 5),
-    dupIds: [...new Set(dupIds)].slice(0, 5),
-    skipLink: !!document.querySelector('a.skip-link[href="#main"]'),
-    mainLandmark: !!document.querySelector('main'),
-    lang: document.documentElement.lang,
-  };
-}
-"""
+# Live product routes (Lovable). /da/* are the Danish locale twins.
+LIVE_BASE = "https://openendo.org"
+LIVE_ROUTES = [
+    "/",
+    "/dashboard",
+    "/research",
+    "/access",
+    "/knowledge",
+    "/da",
+    "/da/dashboard",
+    "/da/research",
+    "/da/access",
+    "/da/knowledge",
+]
+
+# Fonts referenced by what-we-know.html (live /research rewrites these to raw URLs).
+FONT_RE = re.compile(r"assets/fonts/([A-Za-z0-9._-]+)")
+USER_AGENT = "OpenEndo-site-audit/2.0 (+https://github.com/wckdboy/openendo)"
+
+
+def _fail(issues: list[str], msg: str) -> None:
+    issues.append(msg)
+
+
+def check_what_we_know(issues: list[str]) -> dict:
+    """Local contract for the /research live fetch."""
+    html_path = DOCS / "what-we-know.html"
+    pdf_path = DOCS / "what-we-know.pdf"
+    info: dict = {"html": str(html_path), "ok": True}
+
+    if not html_path.is_file():
+        _fail(issues, "missing live-fetch target: docs/what-we-know.html")
+        info["ok"] = False
+        return info
+
+    html = html_path.read_text(encoding="utf-8", errors="replace")
+    info["bytes"] = html_path.stat().st_size
+    if info["bytes"] < 2000:
+        _fail(issues, f"docs/what-we-know.html is suspiciously small ({info['bytes']} bytes)")
+        info["ok"] = False
+    if "<html" not in html.lower():
+        _fail(issues, "docs/what-we-know.html is not an HTML document")
+        info["ok"] = False
+    if "what we know" not in html.lower():
+        _fail(issues, "docs/what-we-know.html missing expected explainer heading")
+        info["ok"] = False
+
+    fonts = sorted(set(FONT_RE.findall(html)))
+    info["fonts"] = fonts
+    if not fonts:
+        _fail(issues, "docs/what-we-know.html references no assets/fonts/ (live iframe rewrites these)")
+        info["ok"] = False
+    missing_fonts = [name for name in fonts if not (DOCS / "assets" / "fonts" / name).is_file()]
+    if missing_fonts:
+        _fail(issues, f"what-we-know fonts missing on disk: {missing_fonts}")
+        info["ok"] = False
+
+    if not pdf_path.is_file():
+        _fail(issues, "missing docs/what-we-know.pdf (openendo-www /research toolbar links RESEARCH_PDF_URL)")
+        info["ok"] = False
+    else:
+        magic = pdf_path.read_bytes()[:5]
+        info["pdf_bytes"] = pdf_path.stat().st_size
+        if magic != b"%PDF-":
+            _fail(issues, "docs/what-we-know.pdf does not start with %PDF-")
+            info["ok"] = False
+    return info
+
+
+def check_funding(issues: list[str]) -> dict:
+    path = DATA / "funding.json"
+    info: dict = {"path": str(path), "ok": True}
+    if not path.is_file():
+        _fail(issues, "missing docs/data/funding.json (Home funding section fetches this live)")
+        info["ok"] = False
+        return info
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        _fail(issues, f"funding.json is not valid JSON: {e}")
+        info["ok"] = False
+        return info
+    if not isinstance(data, list) or not data:
+        _fail(issues, "funding.json must be a non-empty JSON array")
+        info["ok"] = False
+        return info
+    bad = [i for i, row in enumerate(data) if not isinstance(row, dict) or not str(row.get("name") or "").strip()]
+    if bad:
+        _fail(issues, f"funding.json entries missing name at index {bad[:5]}")
+        info["ok"] = False
+    info["count"] = len(data)
+    return info
+
+
+def check_access(issues: list[str]) -> dict:
+    path = DATA / "access.json"
+    info: dict = {"path": str(path), "ok": True}
+    if not path.is_file():
+        _fail(issues, "missing docs/data/access.json (/access fetches this live)")
+        info["ok"] = False
+        return info
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        _fail(issues, f"access.json is not valid JSON: {e}")
+        info["ok"] = False
+        return info
+    if not isinstance(data, dict):
+        _fail(issues, "access.json must be a JSON object")
+        info["ok"] = False
+        return info
+    if data.get("schema") != "openendo-access-v1":
+        _fail(issues, f"access.json schema must be openendo-access-v1 (got {data.get('schema')!r})")
+        info["ok"] = False
+    countries = data.get("countries")
+    if not isinstance(countries, dict) or not countries:
+        _fail(issues, "access.json.countries must be a non-empty object")
+        info["ok"] = False
+        return info
+    if "DK" not in countries:
+        _fail(issues, "access.json.countries missing DK (full-coverage home market)")
+        info["ok"] = False
+    info["country_count"] = len(countries)
+    return info
+
+
+def check_knowledge_index(issues: list[str]) -> dict:
+    """Local contract for the /knowledge live fetch (openendo-www #1)."""
+    path = DOCS / "knowledge" / "index.md"
+    schema = DOCS / "knowledge" / "SCHEMA.md"
+    info: dict = {"path": str(path), "ok": True}
+    if not path.is_file():
+        _fail(issues, "missing docs/knowledge/index.md (/knowledge fetches this live)")
+        info["ok"] = False
+        return info
+    text = path.read_text(encoding="utf-8")
+    links = re.findall(r"\[\[([A-Za-z0-9._-]+)\]\]", text)
+    info["pages"] = links
+    if len(links) < 5:
+        _fail(issues, f"docs/knowledge/index.md has too few [[wikilinks]] ({len(links)})")
+        info["ok"] = False
+    if not schema.is_file():
+        _fail(issues, "missing docs/knowledge/SCHEMA.md")
+        info["ok"] = False
+    return info
+
+
+def check_content(issues: list[str]) -> dict:
+    path = DATA / "content.json"
+    info: dict = {"path": str(path), "ok": True}
+    if not path.is_file():
+        _fail(issues, "missing docs/data/content.json (editorial contract)")
+        info["ok"] = False
+        return info
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        _fail(issues, f"content.json is not valid JSON: {e}")
+        info["ok"] = False
+        return info
+    if not isinstance(data, dict):
+        _fail(issues, "content.json must be a JSON object")
+        info["ok"] = False
+        return info
+    for key in ("stats", "problems", "actions", "resources"):
+        val = data.get(key)
+        if not isinstance(val, list) or not val:
+            _fail(issues, f"content.json.{key} must be a non-empty array")
+            info["ok"] = False
+    info["keys"] = sorted(data.keys())
+    return info
+
+
+def http_get(url: str, timeout: float = 20) -> tuple[int, bytes]:
+    req = urllib.request.Request(
+        url,
+        method="GET",
+        headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml,*/*"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            # Read enough to confirm a real document, not an empty 200.
+            body = resp.read(4096)
+            return int(resp.status), body
+    except urllib.error.HTTPError as e:
+        return int(e.code), b""
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"network error: {e.reason}") from e
+
+
+def check_live_routes(issues: list[str]) -> list[dict]:
+    rows = []
+    for route in LIVE_ROUTES:
+        url = f"{LIVE_BASE}{route}"
+        tag = f"live {route}"
+        try:
+            status, body = http_get(url)
+        except Exception as e:  # noqa: BLE001 — surface any transport failure
+            _fail(issues, f"{tag}: {e}")
+            rows.append({"route": route, "status": "ERROR", "detail": str(e)})
+            continue
+        if status >= 400:
+            _fail(issues, f"{tag}: HTTP {status}")
+            rows.append({"route": route, "status": status, "detail": "HTTP error"})
+            continue
+        snippet = body.decode("utf-8", errors="replace")
+        if "openendo" not in snippet.lower():
+            _fail(issues, f"{tag}: HTTP {status} but body does not mention OpenEndo")
+            rows.append({"route": route, "status": status, "detail": "unexpected body"})
+            continue
+        rows.append({"route": route, "status": status, "detail": "OK"})
+    return rows
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--base-url", default="http://127.0.0.1:8080")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--artifacts", default="audit-artifacts")
-    ap.add_argument("--viewport", action="append", help="only run named viewport(s), repeatable")
+    ap.add_argument("--skip-live", "--local-only", dest="skip_live", action="store_true",
+                    help="skip HTTPS smoke of openendo.org (offline / local-only)")
+    # Kept so old CI invocations do not crash; ignored on purpose.
+    ap.add_argument("--base-url", default=None, help=argparse.SUPPRESS)
     args = ap.parse_args()
 
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        print("::error::playwright not installed (run: pip install playwright && python -m playwright install chromium)")
-        return 2
+    if args.base_url:
+        print("note: --base-url is ignored — docs/ static HTML is no longer the product UI", file=sys.stderr)
+
+    issues: list[str] = []
+    report = {
+        "product": "openendo.org (wckdboy/openendo-www)",
+        "legacy_docs_html": "not audited (site-split decree 2026-09-04)",
+        "what_we_know": check_what_we_know(issues),
+        "funding": check_funding(issues),
+        "access": check_access(issues),
+        "content": check_content(issues),
+        "knowledge": check_knowledge_index(issues),
+        "live": None,
+    }
+
+    if not args.skip_live:
+        report["live"] = check_live_routes(issues)
+    else:
+        report["live"] = "skipped"
 
     art = Path(args.artifacts)
     art.mkdir(exist_ok=True)
-    wanted = set(args.viewport or [])
-    issues = []
-    results = []
+    (art / "audit-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        for page_name in PAGES:
-            for vp_name, dev_name in DEVICES:
-                if wanted and vp_name not in wanted:
-                    continue
-                tag = f"{page_name} @ {vp_name}"
-                if dev_name is None:
-                    ctx = browser.new_context(viewport={"width": 1440, "height": 900})
-                    has_touch = False
-                else:
-                    ctx = browser.new_context(**p.devices[dev_name])
-                    has_touch = True
-                page = ctx.new_page()
-                js_errors, console_errs = [], []
-                page.on("pageerror", lambda e: js_errors.append(str(e)))
-                page.on(
-                    "console",
-                    lambda m: console_errs.append(m.text) if m.type == "error" and not IGNORE_CONSOLE.search(m.text) else None,
-                )
-                try:
-                    resp = page.goto(f"{args.base_url}/{page_name}", wait_until="networkidle", timeout=30000)
-                    page.wait_for_timeout(400)
-                    state = page.evaluate(JS_CHECK)
-                except Exception as e:  # noqa: BLE001
-                    issues.append(f"{tag}: load failure — {e}")
-                    results.append((tag, "LOAD_FAIL", str(e)))
-                    ctx.close()
-                    continue
-
-                page_issues = []
-                # 1. JS errors
-                if js_errors:
-                    page_issues.append(f"JS pageerror: {js_errors[0][:160]}")
-                if console_errs:
-                    page_issues.append(f"console error: {console_errs[0][:160]}")
-                # 2. HTTP status
-                if resp is None or resp.status >= 400:
-                    page_issues.append(f"HTTP {resp.status if resp else 'no response'}")
-                # 3. overflow
-                if state["overflow"] > 1:
-                    page_issues.append(f"horizontal overflow {state['overflow']}px (doc {state['scrollW']} vs viewport {state['clientW']}); offenders: {state['offenders'][:3]}")
-                # 4. touch targets: buttons ≥ 44px (AAA 2.5.5), links ≥ 24px (AA 2.5.8)
-                if has_touch:  # real touch devices only (coarse pointer)
-                    small = page.evaluate(
-                        """(a) => {
-                          const out = [];
-                          const check = (els, min, kind) => {
-                            for (const el of els) {
-                              const st = getComputedStyle(el);
-                              if (st.display === 'none' || st.visibility === 'hidden') continue;
-                              if (kind === 'link' && st.display === 'inline') continue; // sentence/text links exempt (WCAG 2.5.8)
-                              const r = el.getBoundingClientRect();
-                              if (r.width > 0 && (r.width < min || r.height < min)) {
-                                out.push(`${kind} ${el.tagName.toLowerCase()}.${[...el.classList].slice(0,2).join('.')} ${Math.round(r.width)}x${Math.round(r.height)}`);
-                              }
-                            }
-                          };
-                          check(document.querySelectorAll(a.sels44.join(',')), 44, 'btn');
-                          check(document.querySelectorAll(a.sels24.join(',')), 24, 'link');
-                          return out.slice(0, 6);
-                        }""",
-                        {"sels44": ["button", ".btn", ".nav-toggle", "#lang-toggle"], "sels24": [".nav-links a", "a[class]", ".kb-card h3 a"]},
-                    )
-                    if small:
-                        page_issues.append(f"touch target too small: {small}")
-                # 5. a11y DOM checks
-                if state["imgsNoAlt"]:
-                    page_issues.append(f"images missing alt: {state['imgsNoAlt']}")
-                if state["canvasesNoA11y"]:
-                    page_issues.append(f"{state['canvasesNoA11y']} canvas(es) without role=img + aria-label")
-                if state["buttonsNoName"]:
-                    page_issues.append(f"buttons without accessible name: {state['buttonsNoName']}")
-                if state["dupIds"]:
-                    page_issues.append(f"duplicate ids: {state['dupIds']}")
-                if not state["skipLink"]:
-                    page_issues.append("no skip-link (a.skip-link[href='#main'])")
-                if not state["mainLandmark"]:
-                    page_issues.append("no <main> landmark")
-
-                # 6. functional: mobile nav opens on touch devices
-                if has_touch and page.locator("#nav-toggle").count():
-                    try:
-                        page.click("#nav-toggle")
-                        page.wait_for_timeout(250)
-                        expanded = page.get_attribute("#nav-toggle", "aria-expanded")
-                        nav_visible = page.is_visible("#mobile-nav a")
-                        if expanded != "true" or not nav_visible:
-                            page_issues.append(f"mobile nav did not open (aria-expanded={expanded}, links visible={nav_visible})")
-                    except Exception as e:  # noqa: BLE001
-                        page_issues.append(f"mobile nav interaction failed: {e}")
-
-                # 7. functional: EN/DA toggle on index (desktop run only)
-                if page_name == "index.html" and vp_name == "desktop-1440" and page.locator("#lang-toggle").count():
-                    try:
-                        page.click("#lang-toggle")
-                        page.wait_for_timeout(300)
-                        lang_da = page.evaluate("document.documentElement.lang")
-                        page.click("#lang-toggle")
-                        page.wait_for_timeout(300)
-                        lang_en = page.evaluate("document.documentElement.lang")
-                        if lang_da != "da" or lang_en != "en":
-                            page_issues.append(f"lang toggle broken (da={lang_da}, en={lang_en})")
-                    except Exception as e:  # noqa: BLE001
-                        page_issues.append(f"lang toggle failed: {e}")
-
-                shot = art / f"{page_name.replace('.html', '')}_{vp_name}.png"
-                page.screenshot(full_page=False, path=str(shot))
-
-                status = "OK" if not page_issues else "FAIL"
-                results.append((tag, status, "; ".join(page_issues)[:300]))
-                for pi in page_issues:
-                    issues.append(f"{tag}: {pi}")
-                ctx.close()
-        browser.close()
-
-    print(json.dumps(results, indent=1, ensure_ascii=False))
+    print(json.dumps(report, indent=2, ensure_ascii=False))
     if issues:
         print("\n::error::audit issues found:")
         for i in issues:
             print(f"  - {i}")
         return 1
-    print(f"\nAll {len(results)} checks passed — screenshots in {art}")
+    n_live = 0 if args.skip_live or not isinstance(report["live"], list) else len(report["live"])
+    print(f"\nContract checks passed (live routes: {n_live}) — report in {art}/audit-report.json")
     return 0
 
 
