@@ -1,91 +1,77 @@
 {
- "updated": "2026-09-07",
+ "updated": "2026-09-14",
  "trials": [
   {
-   "nct_id": "NCT07800442",
-   "title": "Effect of Fish-Derived Lipids in Women With Endometriosis",
-   "status": "COMPLETED",
-   "phase": "NA",
-   "sponsor": "Angelika Bogusz",
-   "countries": [
-    "Poland"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07800442"
-  },
-  {
-   "nct_id": "NCT07795125",
-   "title": "Rimegepant For Endometriosis Pain",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Mayo Clinic",
-   "countries": [
-    "United States"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07795125"
-  },
-  {
-   "nct_id": "NCT06217315",
-   "title": "Endometriosis and Health Care System Utilization in British Columbia",
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "N/A",
-   "sponsor": "BC Women's Hospital & Health Centre",
-   "countries": [
-    "Canada"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06217315"
-  },
-  {
-   "nct_id": "NCT06215937",
-   "title": "Quantitative Sensory Testing and Central Sensitization in Endometriosis",
-   "status": "COMPLETED",
-   "phase": "N/A",
-   "sponsor": "BC Women's Hospital & Health Centre",
-   "countries": [
-    "Canada"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06215937"
-  },
-  {
-   "nct_id": "NCT07799246",
-   "title": "Brain and Blood Vessel Health Following Endometriosis Treatment in People With Endometriosis",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE4",
-   "sponsor": "Colorado State University",
-   "countries": [],
-   "url": "https://clinicaltrials.gov/study/NCT07799246"
-  },
-  {
-   "nct_id": "NCT07503938",
-   "title": "Ultrasound Characterization of Postmenopausal Endometriosis",
-   "status": "COMPLETED",
-   "phase": "N/A",
-   "sponsor": "Simone Ferrero",
-   "countries": [
-    "Italy"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07503938"
-  },
-  {
-   "nct_id": "NCT06997809",
-   "title": "ENDometriosis: Evaluation of Detection and Need for ALGOlogic Care Before Surgery",
+   "nct_id": "NCT07260669",
+   "title": "A Phase 2 Trial to Investigate Efficacy and Safety of Vipoglanstat in Women With Endometriosis",
    "status": "RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Gesynta Pharma AB",
+   "countries": [
+    "Bulgaria",
+    "Czechia",
+    "Hungary",
+    "Italy",
+    "Poland",
+    "Romania",
+    "United Kingdom"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07260669"
+  },
+  {
+   "nct_id": "NCT07810920",
+   "title": "Artificial Intelligence Into Ultrasound Diagnostics in Reproductive Medicine",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "sponsor": "Semmelweis University",
+   "countries": [
+    "Hungary"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07810920"
+  },
+  {
+   "nct_id": "NCT06660043",
+   "title": "Influence of Bodily Practices on the Quality of Life of Women With Endometriosis",
+   "status": "COMPLETED",
    "phase": "NA",
-   "sponsor": "University Hospital, Limoges",
+   "sponsor": "Fondation Hôpital Saint-Joseph",
    "countries": [
     "France"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT06997809"
+   "url": "https://clinicaltrials.gov/study/NCT06660043"
   },
   {
-   "nct_id": "NCT07755956",
-   "title": "Phase Ia Trial of HHK001 Compared With Enantone in Patients With Endometriosis",
+   "nct_id": "NCT07810218",
+   "title": "Personalized Exercise Recommendations for Chronic Pelvic Pain Using Reinforcement Learning",
    "status": "RECRUITING",
-   "phase": "PHASE1",
-   "sponsor": "Zhuhai Huahaikang Pharmaceutical Technology Co., Ltd.",
+   "phase": "NA",
+   "sponsor": "Icahn School of Medicine at Mount Sinai",
    "countries": [
-    "China"
+    "United States"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07755956"
+   "url": "https://clinicaltrials.gov/study/NCT07810218"
+  },
+  {
+   "nct_id": "NCT06955221",
+   "title": "Effect of Alcohol Sclerotherapy on Pelvic Pain and Quality of Life in Women With Ovarian Endometriosis",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Hospital Universitari de Bellvitge",
+   "countries": [
+    "Spain"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06955221"
+  },
+  {
+   "nct_id": "NCT07816133",
+   "title": "Study on the Ultrasound and Biological Characteristics of Atypical Endometriosis.",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "sponsor": "Casa di Cura Dott. Pederzoli",
+   "countries": [
+    "Italy"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07816133"
   }
  ]
 }
