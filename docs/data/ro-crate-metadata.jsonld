@@ -127,7 +127,7 @@
    "@type": "File",
    "name": "Endometriosis papers from the last 7 days",
    "encodingFormat": "application/json",
-   "contentSize": "4633",
+   "contentSize": "7753",
    "dateModified": "2026-09-14",
    "isBasedOn": {
     "@id": "https://pubmed.ncbi.nlm.nih.gov/"
