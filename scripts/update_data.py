@@ -183,6 +183,34 @@ def current_branch():
     return git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
 
 
+def only_generated_at_changed():
+    """True when every change under docs/data is just meta.generated_at.
+
+    Compares the parsed JSON of each modified file against its version at HEAD, so
+    formatting, key order and trailing newlines cannot fake a difference. Any file
+    that is new, unparseable, or different in any other key returns False (a real
+    change — commit it).
+    """
+    changed = [f for f in git("diff", "--name-only", "--", "docs/data").stdout.split() if f]
+    if not changed:
+        return False
+    for rel in changed:
+        old = git("show", f"HEAD:{rel}")
+        if old.returncode != 0:
+            return False                      # not in HEAD -> a real addition
+        try:
+            before = json.loads(old.stdout)
+            after = json.loads(open(os.path.join(ROOT, rel), encoding="utf-8").read())
+        except (OSError, ValueError):
+            return False
+        if rel.endswith("meta.json"):
+            before.pop("generated_at", None)
+            after.pop("generated_at", None)
+        if before != after:
+            return False
+    return True
+
+
 def ensure_main():
     """The refresh must run on main — never on whatever branch the clone sits on.
 
@@ -300,6 +328,17 @@ def main():
     r = git("status", "--porcelain", "--", "docs/data")
     if not r.stdout.strip():
         return  # unchanged — stay silent
+
+    # Watchdog honesty: a run that changed nothing but the generation timestamp is
+    # not a data change. Committing it would break "silent when unchanged" and add
+    # one no-op commit per invocation (2026-09-14: re-fires 40 s apart committed
+    # diffs whose only line was meta.generated_at). Compared SEMANTICALLY — parsed
+    # JSON per file — because a text diff of identical content is not reliable
+    # enough to gate a commit on (formatting/newline/key-order noise).
+    if only_generated_at_changed():
+        git("checkout", "--", "docs/data")
+        return
+
     git("add", "docs/data")
     if git("commit", "-m", f"data: refresh {TODAY.isoformat()}").returncode != 0:
         sys.stderr.write("git commit fejlede\n")
