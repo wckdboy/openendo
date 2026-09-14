@@ -16,7 +16,7 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-09-12 (Galahad, content.json URL retarget) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-09-14 (Galahad, weekly-refresh landing fix + count correctness) · **Maintainer:** Galahad (sole agent)
 
 ---
 
@@ -37,7 +37,7 @@
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival (done) |
 | WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain updated with GEO corroboration (2026-09-03) | 2026-09-03 | Galahad |
-| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 — **RESURRECTED 2026-09-07 (galahad cron, hardened pipeline)** | 2026-09-07 | Galahad |
+| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 — **RESURRECTED 2026-09-07 (galahad cron, hardened pipeline)** · **branch-guarded + true PubMed count 2026-09-14** | 2026-09-14 | Galahad |
 | P0 | Data-layer reconciliation | ✅ merged — PR #23; **scripts fixes CLAIMED by Galahad 2026-09-07** (update_data pagination/atomic/push-check; repurpose_screen; access.json DK postcodes) | 2026-09-07 | Galahad |
 | SITE | openendo-www split (decree) | 🔄 audit re-scoped 2026-09-12; 8 HTML keep/delete decided (all kept this pass) | 2026-09-12 | Galahad |
 
@@ -102,6 +102,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-14 (Galahad)** — **Weekly refresh was NOT reaching main — found, fixed, and the data landed** — the Monday 08:00 cron ran and committed `data: refresh 2026-09-14`; that commit sat on the leftover `galahad/m2-digest-2026-09-11` branch the workspace clone was parked on. A bare `git push` pushed *that* branch, the script's own "is HEAD on origin/main?" gate exited 3, and **main kept serving the 2026-09-07 snapshot for a week** (GitHub API: `docs/data/meta.json` on main read `generated_at 2026-09-07T21:11:15`, `recruiting_global 143`). Actions: fast-forwarded `dd1ae4b` onto `main` and pushed (server-verified: main = `dd1ae4b`, meta = `2026-09-14T08:00:33`, 145 recruiting / 15 DK / 15 papers), deleted the branch the failed push had created. **Hardening in the same PR:** `update_data.py` switches to `main` before fetching (loud abort if it cannot) and pushes with an explicit `origin HEAD:main` refspec, so correctness no longer depends on the checked-out branch. **Second silent cap fixed:** `pubmed_ids(retmax=15)` truncated the weekly paper list *and* `meta.pubmed_7d` reported the cap instead of the count — the live window holds **25** papers, the file reported 15 (now `PUBMED_MAX=100`, meta reports the registry's true count). Count semantics documented in `docs/data/README.md`. *Galahad*
 
 - **2026-09-12 (Galahad)** — **`content.json` action/resource URL retarget** — five stale destinations that 404 on the Lovable site (CNAME, no `*.html` routes) now point at working raw GitHub copies: `one-pager-dk.html`, `one-pager-en.html`, `styleguide.html`, `support.html`, `ai-agenda.html` → `https://raw.githubusercontent.com/wckdboy/openendo/main/docs/...`. Inventory (EN/DA share one `url` field): 2 actions + 3 resources were dead; 5 other actions and 8 other resources already resolved (external 200; sst.dk grant page 429 rate-limit only — not retargeted). No Lovable equivalents exist for the unique leftover pages (`/support` `/styleguide` `/one-pager-*` `/ai-agenda` `/wiki` = 404). Schema and copy unchanged. RO-Crate regenerated (contentSize). `audit_site.py` now rejects relative or `openendo.org/*.html` action/resource URLs. **needs-lovable-sync** if the app still ships a bundled `content.json`.
 
