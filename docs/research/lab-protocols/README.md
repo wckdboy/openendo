@@ -2,9 +2,8 @@
 
 > **What this folder is:** paper-protocol *specifications* for partner organoid / animal / pathology labs — scientific questions, endpoints, controls, go/no-go, ethics.  
 > **What it is not:** DIY recipes, patient self-treatment guides, or medical advice.  
-> **Corpus:** grounded in `/workspace/openendo` (CHECKPOINT + knowledge + Phase 0.5/1 evidence).  
-> **Git:** drafts live under `/workspace/openendo-drafts/` only — **do not push to GitHub** from this pass.  
-> **Date:** 2026-09-14.
+> **Corpus:** grounded in this repo (CHECKPOINT + knowledge + Phase 0.5/1 evidence).  
+> **Date:** 2026-09-14. Knowledge-page drafts from this packet were merged into `docs/knowledge/` the same day.
 
 ---
 
@@ -16,11 +15,11 @@
 | 2 | [`02-mrgprx2-ihc-mast-cell-stratification.md`](./02-mrgprx2-ihc-mast-cell-stratification.md) | **MRGPRX2** IHC / mast-cell stratification by lesion type | **VALIDATED AXIS** (antagonism; not cetrorelix-as-drug) | Histopathology IHC / dual-IF |
 | 3 | [`03-ferroptosis-selectivity-coculture.md`](./03-ferroptosis-selectivity-coculture.md) | Ferroptosis selectivity (lesion epi/stroma vs CD8⁺ / eutopic; **sulfasalazine–xCT**) | **WATCHLIST** — direction resolved; selectivity open | Primary cell / co-culture panel |
 
-### Related draft packets (same parent folder)
-- `../research-agenda-2026-09-14.md` — lead status after registry + literature refresh  
-- `../registry-verification-2026-09-14.md` — CT.gov re-check (0 endo trials for these mechanisms)  
-- `../literature-packet-2026-09-14.md` — PubMed/Europe PMC delta  
-- `../knowledge-updates/{sirolimus,mrgprx2-pain,ferroptosis}.md` — SCHEMA wiki update drafts  
+### Related packets (same research drop)
+- [`../research-agenda-2026-09-14.md`](../research-agenda-2026-09-14.md) — lead status after registry + literature refresh
+- [`../evidence/registry-verification-2026-09-14.md`](../evidence/registry-verification-2026-09-14.md) — CT.gov re-check (0 endo trials for these mechanisms)
+- [`../evidence/literature-packet-2026-09-14.md`](../evidence/literature-packet-2026-09-14.md) — PubMed/Europe PMC delta
+- Canonical knowledge (merged 2026-09-14): [`entities/sirolimus.md`](../../knowledge/entities/sirolimus.md) · [`concepts/mrgprx2-pain.md`](../../knowledge/concepts/mrgprx2-pain.md) · [`concepts/ferroptosis.md`](../../knowledge/concepts/ferroptosis.md)  
 
 ---
 

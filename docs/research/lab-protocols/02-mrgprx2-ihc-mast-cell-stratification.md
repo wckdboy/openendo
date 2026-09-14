@@ -3,7 +3,7 @@
 > **Status:** partner-ready *paper* protocol specification (histopathology / IHC).  
 > **Audience:** pathology-capable endometriosis research lab or biobank partner.  
 > **OpenEndo corpus grounding:** VALIDATED AXIS (antagonism target — **not** cetrorelix-as-drug).  
-> **Draft only:** `/workspace/openendo-drafts/wetlab/` — no GitHub push.  
+> **In-repo path:** `docs/research/lab-protocols/02-mrgprx2-ihc-mast-cell-stratification.md`.  
 > **Not medical advice.** Uncertainty flagged `[UNCERTAIN]`.
 
 ---

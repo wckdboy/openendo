@@ -16,15 +16,15 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-09-14 (Galahad, weekly-refresh landing fix + count correctness) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-09-14 (Galahad, research packet knowledge merge + no-GPU partner asks) · **Maintainer:** Galahad (sole agent)
 
 ---
 
 ## 🎯 Current focus (top 3)
 
 1. **Site split (decree 2026-09-04) — 🔄 PARTIAL 2026-09-12** — openendo = data/research/analytics ONLY; public UI is wckdboy/openendo-www (Lovable). **Audit re-scoped (PR #35):** `audit_site.py` + site-audit CI check live-app contracts and HTTP smoke of openendo.org key routes. **Keep/delete of the 8 legacy HTML files decided (none deleted — see horizon).** **`content.json` action/resource URLs retargeted 2026-09-12** (dead `openendo.org/*.html` + relative leftovers → raw.githubusercontent.com; working external + Lovable destinations kept). Remaining: Lovable-only migration of unique leftover pages. *Galahad*
-2. **Phase 2 dynamics (MD) — run package ready, compute budget still open (Galahad 2026-09-12)** — Phase 1.0 docking DONE 2026-09-04 (PR #22, $0). Concrete OpenMM job spec: `docs/research/virtual/phase2/phase2-plan.md` + `phase2-plan.json` + assembled P2-A inputs. **Recommended first job: P2-A** (100 ns FKBP12 + crystal RAP control, then 100 ns FKBP52 Vina pose) on one RTX 4090, ~$5–18 community / ~$10–18 secure. **Phase 2 is NOT done** — no trajectories yet. Only blocker: human budget approval (do not invent spend). xCT membrane + cetrorelix peptide are second-wave, not in the $10–25 first run. *Galahad*
-3. **Lovable app ↔ repo wiring — funding + knowledge LIVE** — `/research` fetches `what-we-know.html`; Home funding reads `funding.json`; `/access` reads `access.json`; **`/knowledge` now fetches `docs/knowledge/index.md` + listed pages live** (openendo-www #1 merged; bundled articles = fallback only). **`content.json` URLs retargeted 2026-09-12** (no more 404 HTML). Remaining: live-fetch of `content.json` itself (still bundled in the app). Access-finder UI: **live + verified end-to-end 2026-09-02**. *Galahad*
+2. **No-GPU partner asks (elevated 2026-09-14)** — research packet landed. Immediate wet-lab asks: **MRGPRX2 IHC** (lesion-type stratification) + **sirolimus/mTOR PD** (FKBP4/PR as a *separate* readout), specs in `docs/research/lab-protocols/`. Ferroptosis selectivity co-culture is third (WATCHLIST, higher complexity). Lean discovery engine **0.1.2 live** (24 findings vs 49 in 0.1.1; sirolimus named correctly as TOP TIER, not wrong-direction). Canonical knowledge pages merged from `_staging` the same day. **Phase 2 MD deferred to coming weeks** (run package still ready; GPU budget still open — see blockers). *Galahad*
+3. **Lovable app ↔ repo wiring — funding + knowledge LIVE** — `/research` fetches `what-we-know.html`; Home funding reads `funding.json`; `/access` reads `access.json`; **`/knowledge` now fetches `docs/knowledge/index.md` + listed pages live** (openendo-www #1 merged; bundled articles = fallback only). **`content.json` URLs retargeted 2026-09-12** (no more 404 HTML). Remaining: live-fetch of `content.json` itself (still bundled in the app). Access-finder UI: **live + verified end-to-end 2026-09-02**. Knowledge packet 2026-09-14 shows after merge to `main` (live fetch); bundled fallback may lag — **needs-lovable-sync**. *Galahad*
 
 ## 📊 Workstreams
 
@@ -36,7 +36,7 @@
 | T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Galahad (Phase B = human) |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival (done) |
-| WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — sirolimus + MRGPRX2-pain updated with GEO corroboration (2026-09-03) | 2026-09-03 | Galahad |
+| WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — 2026-09-14 packet merged into sirolimus / mrgprx2-pain / ferroptosis (`contested`); staging deleted | 2026-09-14 | Galahad |
 | DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 — **RESURRECTED 2026-09-07 (galahad cron, hardened pipeline)** · **branch-guarded + true PubMed count 2026-09-14** | 2026-09-14 | Galahad |
 | P0 | Data-layer reconciliation | ✅ merged — PR #23; **scripts fixes CLAIMED by Galahad 2026-09-07** (update_data pagination/atomic/push-check; repurpose_screen; access.json DK postcodes) | 2026-09-07 | Galahad |
 | SITE | openendo-www split (decree) | 🔄 audit re-scoped 2026-09-12; 8 HTML keep/delete decided (all kept this pass) | 2026-09-12 | Galahad |
@@ -46,6 +46,8 @@
 ## 📋 Horizon — tasks needing focus
 
 ### 🔴 High priority
+- [x] **Research packet 2026-09-14 (LANDED)** — agenda + registry re-check + literature packet + discovery shortlist + lean 0.1.2 compare + partner-ready lab protocols. Canonical knowledge pages updated (sirolimus / mrgprx2-pain / ferroptosis); `_staging` deleted. No M3 status upgrades. Human review still required before merge to `main` (patient-facing research content). *Galahad*
+- [ ] **No-GPU partner asks (CLAIMED 2026-09-14)** — attach `docs/research/lab-protocols/02-mrgprx2-ihc-mast-cell-stratification.md` and `01-sirolimus-mtor-fkbp4-pr.md` to T7 outreach (human step). Ferroptosis selectivity spec is third. DoD: partner conversation started (anonymized note) or explicit defer. *Galahad — outreach = human*
 - [x] **Site split — audit re-scope (DONE 2026-09-12)** — `audit_site.py` + `.github/workflows/site-audit.yml` no longer serve/audit leftover `docs/*.html` as the product UI (Playwright viewport/a11y of static pages retired). CI now validates the live-app build contract locally (PR-relevant) and smokes https://openendo.org key routes. *Galahad*
 - [ ] **Site split — leftover HTML keep/delete (DECIDED 2026-09-12; no deletes this pass)** — live product routes verified 2026-09-12: `/` `/dashboard` `/research` `/access` `/knowledge` (+ `/da` variants) = 200; every `docs/*.html` path on openendo.org = 404 (CNAME → Lovable, as designed). Decisions (delete only if fully superseded AND not a live fetch / unique page / remaining-page host):
   - **KEEP `what-we-know.html`** (+ `docs/assets/fonts/*` + `what-we-know.pdf`) — openendo-www `/research` fetches it live (`RESEARCH_HTML_URL` / font rewrite / PDF link). Do not delete.
@@ -93,7 +95,7 @@
 
 ## 🚧 Blockers / open questions
 
-- **Phase 2 GPU budget — WAITING ON HUMAN (2026-09-12)** — run package is ready (`docs/research/virtual/phase2/`). Suggested approval: **$10–25**, one RunPod RTX 4090, P2-A only (2 × 100 ns). No cloud GPU has been started. Knight-owned GPU is an allowed $0 substitute. Do not mark Phase 2 done until `phase2.md` + trajectories exist. *Galahad*
+- **Phase 2 GPU budget — DEFERRED TO COMING WEEKS (2026-09-14)** — run package remains ready (`docs/research/virtual/phase2/`). Suggested approval still **$10–25**, one RunPod RTX 4090, P2-A only (2 × 100 ns). No cloud GPU has been started. Knight-owned GPU is an allowed $0 substitute. Do not mark Phase 2 done until `phase2.md` + trajectories exist. Near-term work is no-GPU: MRGPRX2 IHC + mTOR PD partner asks. *Galahad*
 - **GitHub delete_repo scope** — Jaeger's token cannot delete repos; manual action needed for `wckdboy/private-kb` (user: Settings → Danger Zone → Delete). *Waiting on human*
 - **AlphaFold compute budget — ✅ RESOLVED 2026-09-03** — live re-audit: 34/35 i AFDB (parser-fejl havde skjult 7), GPX4 har 23 eksperimentelle PDB-strukturer → **0 skal foldes, $0**; beslutningsmemo `docs/research/structures/fold_input/af2-decision.md`. Åbent: bulk structure-fetch-mønster (repo-størrelse) før Phase 1 docking. *Jaeger*
 - **Percival profile state** — ✅ RESOLVED 2026-09-02: user confirmed ongoing research work ("Great continue", "Keep working, solve this"). Percival keeps producing research + data + repo maintenance; checkpoint ownership confirmed. Re-confirmed 2026-09-02: user will have Percival attack the laid-out problems (top-3 #1 M3 validation first). **⚠️ Gateway DOWN again 2026-09-02 ~22:35 UTC (user directive: bot token in use by the user's own other Hermes agent — do NOT restart):** s6 `gateway-percival` down, `gateway_state=stopped`, `percival-gateway-watch` + `percival-activate-once` (22:40) paused. Repo-driven research (night-shift cron jobs, CHECKPOINT execution) unaffected — runs without the gateway.
@@ -102,6 +104,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-14 (Galahad)** — **Research packet landed; canonical knowledge merged** — `docs/research/research-agenda-2026-09-14.md` + registry/literature packets + discovery shortlist + lean-engine compare + `docs/research/lab-protocols/` (sirolimus/mTOR PD, MRGPRX2 IHC, ferroptosis selectivity). Staging knowledge drafts merged into `entities/sirolimus.md`, `concepts/mrgprx2-pain.md`, `concepts/ferroptosis.md` (`contested: true` for EA/Nrf2 suppress-ferroptosis papers); `_staging` deleted. Registry 2026-09-14: still **0** endo trials for sirolimus/rapalogs/mTOR, sulfasalazine/erastin/ferroptosis, MRGPRX2-named; cetrorelix still 2; dienogest control 40. New PMIDs NCBI-verified (incl. 40532686, 40200774, 40948761, 41516088, 42698143, 42081613, 42155249). **No M3 status upgrades** (TOP TIER / VALIDATED AXIS / WATCHLIST unchanged). Lean engine **0.1.2 live** (24 vs 49 findings; sirolimus named correctly). Phase 2 MD **deferred to coming weeks**. Immediate priorities = no-GPU partner IHC + mTOR PD. *Galahad*
 
 - **2026-09-14 (Galahad)** — **Watchdog honesty: `generated_at`-only runs no longer commit** — a manual re-fire of the refresh job 40 s after the real run produced a commit whose single changed line was `meta.generated_at` (`41d6d39`): the "silent when unchanged" contract could never hold, because the timestamp always differs. `update_data.py` now restores `docs/data` and exits silently when the only diff is `generated_at`. Data unchanged (145 recruiting / 15 DK / 25 papers per 7 d); cron-path re-fire verified `ok`. *Galahad*
 

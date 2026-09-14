@@ -2,7 +2,7 @@
 
 > Curated from `/workspace/findings-live/2026-09-14/` (engine 0.1.1, deepseek-flash, 49 findings).
 > Cross-checked against local `/workspace/openendo` corpus + live NCBI E-utilities / Europe PMC on 2026-09-14.
-> **No invented citations. No GitHub push.** Research support only — not medical advice.
+> **No invented citations.** Research support only — not medical advice.
 
 **Inputs:** `findings.json` + `report.md` (live run 2026-09-14T14:00:39Z) · openendo data/knowledge/M3 · drafts literature/registry packets.
 
@@ -19,7 +19,7 @@
 - **No other PMID/NCT orphans.** All 11 cited PMIDs resolve at NCBI; all 11 cited NCTs are in `trials_global_recruiting.json`.
 - Lean engine PR should fix: **title-only PubMed**, **max_phase not disease-specific**, **redundant uncoupled stages**, and (highest-impact) **unnamed repurposing candidates**.
 
-**Path:** `/workspace/openendo-drafts/findings-shortlist-2026-09-14.md`
+**Path:** `docs/research/discovery/findings-shortlist-2026-09-14.md`
 
 ---
 
@@ -323,8 +323,7 @@ Gaps → leads → hypotheses share no prior-stage memory (`run_discovery` conca
 - Not a status upgrade of sulfasalazine off WATCHLIST.
 - Not a demotion of sirolimus.
 - Not a recommendation to use cetrorelix, estradiol, dinoprostone, crizotinib, or dabrafenib for endometriosis.
-- Not a merge into `wckdboy/openendo`. Draft only.
 
 ---
 
-*Human-review shortlist for DrDoc / Galahad parent. Live identifiers only. Generated 2026-09-14. Path: `/workspace/openendo-drafts/findings-shortlist-2026-09-14.md`*
+*Human-review shortlist for DrDoc / Galahad. Live identifiers only. Generated 2026-09-14. Path: `docs/research/discovery/findings-shortlist-2026-09-14.md`*

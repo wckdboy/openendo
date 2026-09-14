@@ -5,8 +5,8 @@
 > **No invented papers.** Every PMID below was fetched live (E-utilities
 > efetch and/or Europe PMC core) on 2026-09-14.
 >
-> Raw: `_pubmed_raw_2026-09-14.json`, `_pubmed_filtered_2026-09-14.json`,
-> `_epmc_spotcheck_2026-09-14.json`
+> Raw PubMed/Europe PMC dumps from this pass were captured outside this repo
+> (local workspace snapshot); PMIDs below were re-resolved at NCBI on 2026-09-14.
 
 ## Method
 
@@ -127,5 +127,5 @@ Direction verdict PMIDs in `ferroptosis-direction.md` all resolve, including SEM
 
 ---
 
-*Literature packet draft for DrDoc. Live PMIDs only. Not medical advice.
-Prefer merging knowledge updates only after human review of the flagged EA/compartment nuance.*
+*Literature packet for DrDoc / human review. Live PMIDs only. Not medical advice.
+Canonical knowledge pages updated 2026-09-14; EA/compartment nuance is `contested: true` on `concepts/ferroptosis.md`.*

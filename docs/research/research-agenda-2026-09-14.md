@@ -1,7 +1,7 @@
 # OpenEndo research agenda memo — 2026-09-14
 
-> One-pager for DrDoc / human review. Corpus at `/workspace/openendo` @ `67db0b7`.
-> Drafts only under `/workspace/openendo-drafts/` — **no git commit/push** this pass.
+> One-pager for DrDoc / human review. Landed in-repo with the 2026-09-14 research packet.
+> Knowledge-page drafts merged into canonical `docs/knowledge/` on 2026-09-14 (staging deleted).
 > Not medical advice.
 
 ## Top-3 lead status (after registry + literature refresh)
@@ -14,10 +14,10 @@
 
 ## Priorities (next tractable increments — no GPU / no OpenAI key required)
 
-1. **Human-review merge path for drafts** — `registry-verification-2026-09-14.md`, `literature-packet-2026-09-14.md`, and `knowledge-updates/{sirolimus,mrgprx2-pain,ferroptosis}.md`. SCHEMA-compatible; uncertainty flagged; live PMIDs only.
-2. **Ferroptosis contested note** — short append to `ferroptosis-direction.md` documenting EA/Nrf2–GPX4 “suppress ferroptosis” claims vs induction literature; keep MEDIUM confidence + `contested` until reconciled.
+1. **Human-review merge path for drafts** — ✅ packet in-repo; canonical knowledge pages updated 2026-09-14 from `_staging` (sirolimus / mrgprx2-pain / ferroptosis). Remaining: human look before merge to `main` (patient-facing research content).
+2. **Ferroptosis contested note** — ✅ short append on `ferroptosis-direction.md` (2026-09-14); knowledge page `contested: true`. Keep MEDIUM; do not invert lesion-cell induction.
 3. **MRGPRX2 antagonist landscape (literature-only)** — catalogue published MRGPRX2 antagonists from *non-endo* indications (urticaria / AD / itch) as *chemical starting points*, clearly labelled off-indication; no docking until GPU or CPU peptide workflow is defined.
-4. **FKBP4 note hygiene** — keep PR-resistance chaperone thread visually separate from sirolimus TOP TIER on wiki/index so readers never read “sirolimus restores FKBP4.”
+4. **FKBP4 note hygiene** — ✅ knowledge page + index keep PR-resistance chaperone thread visually separate from sirolimus TOP TIER so readers never read “sirolimus restores FKBP4.”
 5. **Weekly evidence cadence without OpenAI** — continue PubMed E-utilities + Europe PMC + CT.gov API v2 (this packet proves the stack works on the box). Optional: thin local summarisation scripts; do **not** invent LLM-dependent steps.
 6. **Danish / access threads (parallel, not lead-blocking)** — T7 Phase B interviews remain a human step; digest carry-overs (relugolix-CT PMID 42719373; IL16 pain signature PMID 42720599) for next M2 ingest.
 
@@ -28,7 +28,7 @@
 | **No GPU** | Phase 2 OpenMM (P2-A FKBP12 RAP control → FKBP52 pose; later xCT membrane; cetrorelix–MRGPRX2 peptide) | Literature/registry/knowledge drafts only; Phase 1.0 docking already done ($0 CPU) |
 | **No OpenAI API key** | Any LLM-assisted abstract triage / embedding search the pipeline might assume | Direct E-utilities + Europe PMC + deterministic filtering by keyword/PMID |
 | **Human budget approval** | Paid GPU cloud for Phase 2 (~$5–18 community / ~$10–18 secure per CHECKPOINT for first P2-A job) | Do not invent spend; leave job package ready in-repo |
-| **Human review bar** | Patient-facing knowledge merges (AGENTS.md) | Drafts staged under `openendo-drafts/` for DrDoc |
+| **Human review bar** | Patient-facing knowledge merges (AGENTS.md) | Canonical pages updated on this branch; human look still required before merge to `main` |
 
 ## Next experiments (ordered by “can run without GPU/OpenAI”)
 
@@ -38,22 +38,19 @@
    - Optional ChEMBL refresh for MRGPRX2 antagonist chemotypes (public API) → table in drafts.
    - Optional FerrDb / GEO gene-set overlap for PMID 42728524 biomarker list vs OpenEndo SLC7A11/GPX4/ACSL4 set (scripted, no LLM).
 3. **When GPU budget clears:** run **P2-A** exactly as `docs/research/virtual/phase2/phase2-plan.md` (100 ns FKBP12 + crystal RAP, then 100 ns FKBP52 Vina pose). Defer xCT membrane + cetrorelix peptide to second wave.
-4. **Do not do:** push/commit into `/workspace/openendo` from this draft pass; fabricate citations; promote cetrorelix as the MRGPRX2 lead; move sulfasalazine off WATCHLIST based on bioinformatics alone.
+4. **Do not do:** fabricate citations; promote cetrorelix as the MRGPRX2 lead; move sulfasalazine off WATCHLIST based on bioinformatics alone.
 
 ## Deliverable index (this pass)
 
 | Path | Content |
 |---|---|
-| `/workspace/openendo-drafts/registry-verification-2026-09-14.md` | CT.gov API v2 re-verification |
-| `/workspace/openendo-drafts/literature-packet-2026-09-14.md` | What changed since digest-2026-09-11 |
-| `/workspace/openendo-drafts/knowledge-updates/sirolimus.md` | SCHEMA draft entity update |
-| `/workspace/openendo-drafts/knowledge-updates/mrgprx2-pain.md` | SCHEMA draft concept update |
-| `/workspace/openendo-drafts/knowledge-updates/ferroptosis.md` | SCHEMA draft concept update (`contested: true`) |
-| `/workspace/openendo-drafts/research-agenda-2026-09-14.md` | This memo |
-| `/workspace/openendo-drafts/_ctgov_raw_2026-09-14.json` | Raw registry JSON |
-| `/workspace/openendo-drafts/_pubmed_raw_2026-09-14.json` | Raw PubMed JSON |
-| `/workspace/openendo-drafts/_pubmed_filtered_2026-09-14.json` | Filtered endo+lead subset |
-| `/workspace/openendo-drafts/_epmc_spotcheck_2026-09-14.json` | Europe PMC corroboration |
+| `docs/research/evidence/registry-verification-2026-09-14.md` | CT.gov API v2 re-verification |
+| `docs/research/evidence/literature-packet-2026-09-14.md` | What changed since digest-2026-09-11 |
+| `docs/knowledge/entities/sirolimus.md` | Canonical entity (merged 2026-09-14) |
+| `docs/knowledge/concepts/mrgprx2-pain.md` | Canonical concept (merged 2026-09-14) |
+| `docs/knowledge/concepts/ferroptosis.md` | Canonical concept (`contested: true`; merged 2026-09-14) |
+| `docs/research/research-agenda-2026-09-14.md` | This memo |
+| `docs/research/lab-protocols/` | Partner-ready wet-lab specs (no GPU) |
 
 ---
 

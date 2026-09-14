@@ -2,8 +2,8 @@
 
 > **Status:** partner-ready *paper* protocol specification (not a DIY recipe; not medical advice).  
 > **Audience:** organoid or animal partner lab (academic / CRO).  
-> **OpenEndo corpus grounding:** `/workspace/openendo` (CHECKPOINT 2026-09-14; M3 TOP TIER).  
-> **Draft location only:** `/workspace/openendo-drafts/wetlab/` — do **not** push to GitHub from this pass.  
+> **OpenEndo corpus grounding:** this repo (CHECKPOINT 2026-09-14; M3 TOP TIER).  
+> **In-repo path:** `docs/research/lab-protocols/01-sirolimus-mtor-fkbp4-pr.md`.  
 > **Uncertainty flags** appear inline as `[UNCERTAIN]`.
 
 ---
@@ -26,7 +26,7 @@
 | FKBP52 deficiency → PR resistance / lesion growth | `sirolimus.md`, Phase 0.5 | **17571166**, **18988805**, **22279148**, **27778641** |
 | FKBP4 ↓ in ectopic lesions (computational corroboration) | `docs/research/virtual/phase0.5.md`, GSE282532 | FKBP4 **2.2× down** ectopic vs eutopic (FC 0.45, 5/5 pairs); stroma-down replicated GSE247695 / GSE263897 (epi up in GeoMx — compartment split) |
 | Structural engagement FKBP4 ≈ FKBP12 (binding, not therapy claim) | `docs/research/virtual/phase1/` | rapamycin→FKBP52 **−6.38** vs FKBP12 **−7.06** kcal/mol (Vina); pose claims deferred to Phase 2 MD |
-| Registry novelty | `docs/research/evidence/registry-verification-2026-09-03.md` (+ drafts `openendo-drafts/registry-verification-2026-09-14.md`) | **0** registered interventional endo trials for sirolimus/rapamycin/mTOR inhibitors (as of 2026-09) |
+| Registry novelty | `docs/research/evidence/registry-verification-2026-09-14.md` | **0** registered interventional endo trials for sirolimus/rapamycin/everolimus/temsirolimus/mTOR (API v2, 2026-09-14; dienogest control 40) |
 
 **Verdict context:** M3 **TOP TIER**, confidence medium–high on biology / novelty; **clinical evidence absent**.
 

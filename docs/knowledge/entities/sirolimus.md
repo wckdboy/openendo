@@ -1,7 +1,7 @@
 ---
 title: Sirolimus (rapamycin)
 created: 2026-09-02
-updated: 2026-09-03
+updated: 2026-09-14
 type: entity
 tags: [treatment, drug, research]
 sources:
@@ -13,10 +13,13 @@ sources:
   - https://pubmed.ncbi.nlm.nih.gov/27778641/
   - https://pubmed.ncbi.nlm.nih.gov/17571166/
   - https://pubmed.ncbi.nlm.nih.gov/18988805/
+  - https://pubmed.ncbi.nlm.nih.gov/40532686/
+  - https://pubmed.ncbi.nlm.nih.gov/40200774/
   - https://www.proteinatlas.org/ENSG00000004478-FKBP4/tissue
   - https://www.ema.europa.eu/en/medicines/human/EPAR/rapamune
   - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md
+  - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/registry-verification-2026-09-14.md
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json
 confidence: medium
 ---
@@ -48,7 +51,7 @@ transcriptional activity, and PR resistance is central to endometriosis —
 but sirolimus ranks on its **own** mechanism (mTOR), which has independent
 endometriosis evidence.^[https://raw.githubusercontent.com/wckdboy/openendo/main/docs/data/repurposing_candidates.json]
 
-## Endometriosis evidence (verified 2026-09-02)
+## Endometriosis evidence (verified 2026-09-02; registry re-checked 2026-09-14)
 
 - **Review:** mTOR pathway is activated in endometriosis; mTOR inhibitors show
   efficacy as monotherapy in models and may relieve hormonal-therapy
@@ -65,11 +68,20 @@ endometriosis evidence.^[https://raw.githubusercontent.com/wckdboy/openendo/main
   markers in follicular fluid and improved oocyte/fertilization outcomes,
   *Reprod Biomed Online* 2024. No trial registration reported; reflects
   off-label use in one centre.^[https://pubmed.ncbi.nlm.nih.gov/37914557/]
-- **No registered interventional trial** of rapamycin/sirolimus/any mTOR
-  inhibitor in endometriosis on ClinicalTrials.gov (checked 2026-09-02) —
-  novelty is high, clinical evidence is absent.
+- **Pathway context (2025–2026, not sirolimus trials):** S1PR4 promotes ectopic
+  stromal-cell viability, invasion and glycolysis via mTOR signalling, with the
+  mTOR inhibitor AZD8055 used as a pathway tool in vitro.^[https://pubmed.ncbi.nlm.nih.gov/40532686/]
+  A preliminary Iranian case–control study reported associations between
+  PIK3CA / AKT1 / mTOR SNPs and endometriosis susceptibility.^[https://pubmed.ncbi.nlm.nih.gov/40200774/]
+  These support pathway relevance; they do **not** upgrade clinical evidence for
+  sirolimus.
+- **No registered interventional trial** of rapamycin/sirolimus/everolimus/
+  temsirolimus/or “mTOR” as intervention in endometriosis (or endometrioma) on
+  ClinicalTrials.gov — re-queried API v2 on **2026-09-14** (0 hits; dienogest
+  control still 40). Novelty remains high; clinical trial evidence remains
+  absent.^[https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/registry-verification-2026-09-14.md]
 
-## The FKBP4/progesterone-resistance link
+## The FKBP4/progesterone-resistance link *(separate axis — do not conflate)*
 
 FKBP52 (FKBP4) governs normal PR function: FKBP52 deficiency confers uterine
 progesterone resistance *in vivo*,^[https://pubmed.ncbi.nlm.nih.gov/17571166/]
@@ -78,8 +90,14 @@ enhanced lesion growth.^[https://pubmed.ncbi.nlm.nih.gov/18988805/] In women,
 FKBP4 mRNA is **reduced** in the endometrium of endometriosis patients, in
 part via HOXA10^[https://pubmed.ncbi.nlm.nih.gov/22279148/] and
 miR-29c^[https://pubmed.ncbi.nlm.nih.gov/27778641/] — a plausible contributor
-to progesterone resistance. Caveat: restoring FKBP4 is a *different* drug
-problem than mTOR inhibition; the two axes should not be conflated.
+to progesterone resistance.
+
+**Uncertainty flag:** restoring FKBP4 is a *different* drug problem than mTOR
+inhibition. Phase 1.0 docking (2026-09-04) showed rapamycin can engage FKBP52
+(−6.38 kcal/mol vs FKBP12 −7.06), which is consistent with ChEMBL binding
+promiscuity, but that does **not** mean sirolimus clinically restores PR
+signalling. Keep mTOR (TOP TIER) and FKBP4/PR-resistance as linked-but-separate
+research notes.
 
 ## Expression cross-check (GTEx/HPA + GEO reanalysis)
 
@@ -100,10 +118,14 @@ comparison. Source: NCBI GEO, GSE282532
 
 - Chronic immunosuppression, teratogenicity and drug-drug interactions make
   systemic sirolimus a heavy intervention for a benign chronic disease.
-- Evidence is preclinical + one retrospective cohort — hypothesis-generating
-  research output, **never treatment advice**. Talk to a specialist about
-  actual endometriosis care (e.g. [[gnrh-antagonists]] such as [[ryeqo]]).
+- Evidence is preclinical + one retrospective cohort + pathway genetics —
+  hypothesis-generating research output, **never treatment advice**. Talk to a
+  specialist about actual endometriosis care (e.g. [[gnrh-antagonists]] such as
+  [[ryeqo]]).
+- Phase 2 MD (FKBP12 crystal RAP control → FKBP52 Vina pose) remains blocked on
+  GPU budget — docking alone does not settle pose claims. Partner-ready mTOR PD
+  spec (no GPU): `docs/research/lab-protocols/01-sirolimus-mtor-fkbp4-pr.md`.
 
 ## Related
 
-[[computational-drug-repurposing]] · [[gnrh-antagonists]] · [[ryeqo-vs-yselty]]
+[[computational-drug-repurposing]] · [[gnrh-antagonists]] · [[ryeqo-vs-yselty]] · [[mrgprx2-pain]] · [[ferroptosis]]

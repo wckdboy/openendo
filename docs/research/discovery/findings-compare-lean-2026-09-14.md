@@ -1,6 +1,6 @@
 # Findings compare: lean 0.1.2 vs prior live (2026-09-14)
 
-**Do not push to GitHub.** Local compare only.
+Landed in-repo with the 2026-09-14 research packet. Original compare was local-only; this file is the canonical note.
 
 ## Runs
 
@@ -41,7 +41,7 @@ Lean is ~half the volume: fewer gaps/conflicts/hypotheses; same repurposing_lead
 
 ## Overlap with prior shortlist themes
 
-Aligned with `/workspace/openendo-drafts/findings-shortlist-2026-09-14.md` KEEP themes:
+Aligned with `docs/research/discovery/findings-shortlist-2026-09-14.md` KEEP themes:
 
 - **K1/K3/K9-ish:** MRGPRX2 / mast-cell proteases (TPSAB1, CMA1) as gaps; cetrorelix agonism conflict
 - **K2:** SLC7A11 / GPX4 ferroptosis + sulfasalazine watchlist
@@ -65,8 +65,8 @@ Lean also surfaces ZEB1/EMT and symptomatic vs asymptomatic pain-split gaps. Pri
 - Lean findings: `/workspace/findings-live-lean/2026-09-14/findings.json`
 - Lean report: `/workspace/findings-live-lean/2026-09-14/report.md`
 - Prior: `/workspace/findings-live/2026-09-14/{findings.json,report.md}`
-- This note: `/workspace/openendo-drafts/findings-compare-lean-2026-09-14.md`
+- This note: `docs/research/discovery/findings-compare-lean-2026-09-14.md`
 
 ## TLDR
 
-Lean **0.1.2** live run produced **24** findings (vs 49 prior), correctly **names sirolimus** and ranks it **top-tier / not wrong-direction**, and overlaps the shortlist KEEP axes (ferroptosis, MRGPRX2/mast cell, mTOR/sirolimus, activin watchlist, fibrosis YAP/ILK, prostaglandin). No GitHub push. No API keys printed.
+Lean **0.1.2** live run produced **24** findings (vs 49 prior), correctly **names sirolimus** and ranks it **top-tier / not wrong-direction**, and overlaps the shortlist KEEP axes (ferroptosis, MRGPRX2/mast cell, mTOR/sirolimus, activin watchlist, fibrosis YAP/ILK, prostaglandin). No API keys printed.

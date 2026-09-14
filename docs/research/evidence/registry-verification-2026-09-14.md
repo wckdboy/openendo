@@ -11,7 +11,7 @@
 > **Sanity control:** dienogest (established endo drug) → **40** hits (same as
 > 2026-09-03) — method still valid.
 >
-> Raw JSON: `/workspace/openendo-drafts/_ctgov_raw_2026-09-14.json`
+> Raw JSON from the 2026-09-14 query was captured outside this repo (local workspace snapshot); method and counts are in this note.
 > Queried at: 2026-09-14T13:48:13Z (UTC).
 
 ## Results (endometriosis + intervention)

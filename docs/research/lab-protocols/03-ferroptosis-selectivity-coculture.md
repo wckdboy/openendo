@@ -3,7 +3,7 @@
 > **Status:** partner-ready *paper* protocol specification (cell / organoid co-culture pharmacology).  
 > **Audience:** wet-lab partner with endometriosis cell models + immune co-culture capacity.  
 > **OpenEndo corpus grounding:** M3 **WATCHLIST** (sulfasalazine → SLC7A11/xCT); direction = **induce ferroptosis in lesion cells**; blocker = **selectivity**.  
-> **Draft only:** `/workspace/openendo-drafts/wetlab/` — no GitHub push.  
+> **In-repo path:** `docs/research/lab-protocols/03-ferroptosis-selectivity-coculture.md`.  
 > **Not medical advice / not a patient recipe.** `[UNCERTAIN]` flags included.
 
 ---
@@ -31,7 +31,7 @@ Can **xCT (SLC7A11) inhibition** (sulfasalazine as tool compound; optional erast
 | GEO: SLC7A11 / ACSL4 ↓ in lesions | `phase0.5.md` | GSE282532 SLC7A11 **2× down**, ACSL4 **2.4× down**; GSE247695/263897 no constitutive SLC7A11↑ |
 | Binding not the blocker | `docs/research/virtual/phase1/` | sulfasalazine→xCT **−8.52** vs native J9O **−9.35** kcal/mol |
 | Registry | registry-verification | **0** xCT-inhibitor endo trials |
-| Contested EA / Nrf2–GPX4 “suppress ferroptosis” papers | `openendo-drafts/research-agenda-2026-09-14.md`, knowledge-updates | PMIDs **42081613**, **42155249** flagged **contested** — do not invert induction lean without review `[UNCERTAIN]` |
+| Contested EA / Nrf2–GPX4 “suppress ferroptosis” papers | `docs/knowledge/concepts/ferroptosis.md`, `ferroptosis-direction.md` 2026-09-14 addendum | PMIDs **42081613**, **42155249** flagged **contested** — do not invert induction lean without review `[UNCERTAIN]` |
 | Newer induction context | digest / literature packet | FIN56 / ACACA axis **42698143** (context) |
 
 ---
