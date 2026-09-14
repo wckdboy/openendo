@@ -33,7 +33,10 @@ recruiting trials: the CT.gov free-text `query.term` matches any field, so
 `_is_relevant()` drops the noise (2026-09-14: 182 API matches → 145 counted; the
 dropped rows are non-endometriosis studies that merely mention the term).
 `meta.counts.pubmed_7d` is the true PubMed result count for the 7-day window, while
-`pubmed_recent.json` stores up to `PUBMED_MAX` (100) of those papers. A refresh must
+`pubmed_recent.json` stores up to `PUBMED_MAX` (100) of those papers.
+`meta.generated_at` alone never counts as a change: a run whose only diff is the
+timestamp restores the files and stays silent, so the weekly cadence keeps one
+commit per real update instead of one per invocation. A refresh must
 land on `main`: the script switches to `main` itself and pushes with an explicit
 `origin HEAD:main` refspec — a refresh committed on a topic branch never reaches the
 site even though the run reports success (2026-09-14: the Monday refresh sat on the
