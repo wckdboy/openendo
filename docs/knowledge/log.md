@@ -57,3 +57,11 @@
 - docs/research/targets/targets.json stale duplicate removed (was 09-01, outside provenance gates) — canonical docs/data/targets.json; wiki.html + computational-drug-repurposing sources repointed
 - llms.txt: IDENTIFIERS.md entry + repurposing descriptor with statuses; data README wording aligned
 - Phase 1.0 docking context (PR #22): sulfasalazine->xCT -8.52, rapamycin->FKBP52 -6.38 vs FKBP12 -7.06
+
+## [2026-09-14] update | sirolimus + mrgprx2-pain + ferroptosis — research packet merge
+- Staging drafts from `docs/research/discovery/_staging/` merged into canonical knowledge pages; staging files deleted (single source of truth)
+- **sirolimus:** registry re-check 2026-09-14 still 0 endo trials (sirolimus/rapamycin/everolimus/temsirolimus/mTOR; dienogest control 40). Pathway context PMIDs 40532686 (S1PR4→mTOR, AZD8055 tool) and 40200774 (PI3K–AKT–mTOR SNPs) added — do **not** upgrade clinical evidence. FKBP4/PR-resistance flagged as a separate axis (docking promiscuity ≠ restoring PR)
+- **mrgprx2-pain:** lead restated as MRGPRX2 **antagonism**; cetrorelix still 2 NCTs (NCT00244452, NCT04071574) and 0 MRGPRX2-named trials. Histamine landscape PMID 41516088 + JAK–STAT/mast review PMID 40948761. Uncertainty: endometrioma vs peritoneal lesion-type split (GSE247695/GSE263897)
+- **ferroptosis:** FIN56 PMID 42698143 induction confirmation; mechanism PMIDs 40983106 / 41422938 / 41452077 / 42728524. `contested: true` for EA/Nrf2–GPX4 “suppress ferroptosis” mouse papers (PMIDs 42081613, 42155249) — compartment model retained; sulfasalazine stays WATCHLIST. Registry: 0 sulfasalazine/erastin/ferroptosis endo trials
+- All new PMIDs re-resolved via NCBI esummary 2026-09-14 before merge. No M3 status upgrades. Not treatment advice
+- Companion: `ferroptosis-direction.md` 2026-09-14 addendum; lab-protocol pointers on the three pages

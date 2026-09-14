@@ -1,7 +1,7 @@
 ---
 title: "MRGPRX2 — mast-cell pain axis in endometriosis"
 created: 2026-09-02
-updated: 2026-09-03
+updated: 2026-09-14
 type: concept
 tags: [research, drug, treatment]
 sources:
@@ -10,15 +10,19 @@ sources:
   - https://pubmed.ncbi.nlm.nih.gov/41079937/
   - https://pubmed.ncbi.nlm.nih.gov/40028674/
   - https://pubmed.ncbi.nlm.nih.gov/31998139/
+  - https://pubmed.ncbi.nlm.nih.gov/28288109/
   - https://pubmed.ncbi.nlm.nih.gov/12537785/
   - https://pubmed.ncbi.nlm.nih.gov/12470539/
-  - https://pubmed.ncbi.nlm.nih.gov/28288109/
+  - https://pubmed.ncbi.nlm.nih.gov/40948761/
+  - https://pubmed.ncbi.nlm.nih.gov/41516088/
   - https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5849/
   - https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1200490
   - https://clinicaltrials.gov/study/NCT00244452
+  - https://clinicaltrials.gov/study/NCT04071574
   - https://www.proteinatlas.org/ENSG00000183695-MRGPRX2/tissue
   - https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532
   - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/m3-validation.md
+  - https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/registry-verification-2026-09-14.md
 confidence: medium
 ---
 
@@ -42,13 +46,26 @@ blockade each relieved the phenotype in models.^[https://pubmed.ncbi.nlm.nih.gov
 (First published 2025 — earlier OpenEndo notes dated it 2026; corrected
 2026-09-02.)
 
-## Background: mast cells and endometriosis pain
+## Background: mast cells, histamine, and endometriosis pain
 
 Mast cells accumulate in peritoneal, ovarian and deep infiltrating lesions,
 often near nerves, in pain-associated patterns (Anaf 2006);^[https://pubmed.ncbi.nlm.nih.gov/17007852/]
 they are present in peritoneal fluid of endometriosis patients;^[https://pubmed.ncbi.nlm.nih.gov/31998139/]
 and recent reviews position mast cells and oestrogen-driven histamine/FGF2
 release at the centre of pain sensitization.^[https://pubmed.ncbi.nlm.nih.gov/41079937/]^[https://pubmed.ncbi.nlm.nih.gov/40028674/]
+
+**2025–2026 additions (live PMIDs):**
+
+- A 2025 review frames endometriosis pain as neuroinflammation converging on
+  JAK/STAT signalling and mast-cell activation, and discusses JAK inhibitors
+  and mast-cell stabilizers as *candidate* repurposing directions — adjacent
+  to, not substituting for, MRGPRX2 antagonism.^[https://pubmed.ncbi.nlm.nih.gov/40948761/]
+- A 2025 histamine-landscape study reports elevated HDC and inflammatory/
+  neurotrophic mediators across peritoneal, deep and ovarian lesions, with
+  HRH1–HRH4 protein on epithelial, immune and nerve structures (transcript
+  levels of the receptors themselves not differentially expressed).^[https://pubmed.ncbi.nlm.nih.gov/41516088/]
+  This supports the **histamine** arm downstream of the MRGPRX2 axis without
+  itself proving MRGPRX2 antagonism.
 
 ## The M3 hit: cetrorelix → MRGPRX2 (measured, but agonism)
 
@@ -63,8 +80,12 @@ release at the centre of pain sensitization.^[https://pubmed.ncbi.nlm.nih.gov/41
 - Cetrorelix (Cetrotide) is an established GnRH antagonist used in
   endometriosis — the 3 mg once-weekly × 8-week regimen is documented in two
   small 2002 German reports (15 patients each).^[https://pubmed.ncbi.nlm.nih.gov/12537785/]^[https://pubmed.ncbi.nlm.nih.gov/12470539/]
-  A registered phase-2 used a different sustained-release single-dose design
-  and never posted results.^[https://clinicaltrials.gov/study/NCT00244452]
+  Registry (re-checked ClinicalTrials.gov API v2, **2026-09-14**): still
+  **2** endometriosis-linked cetrorelix studies
+  ([NCT00244452](https://clinicaltrials.gov/study/NCT00244452) phase-2 SR
+  endometriosis; [NCT04071574](https://clinicaltrials.gov/study/NCT04071574)
+  ICSI stimulation protocol listing a GnRH antagonist) — and **0** trials
+  naming MRGPRX2 as intervention/target.^[https://raw.githubusercontent.com/wckdboy/openendo/main/docs/research/evidence/registry-verification-2026-09-14.md]
 - **Conclusion:** the M3 pair validates MRGPRX2 as an endometriosis-relevant
   target (lesional mast cells + pain readout) but does *not* make cetrorelix
   a repurposing lead. The actionable direction is **MRGPRX2 antagonist**
@@ -86,14 +107,24 @@ across all 5 pairs — CPA3 (13.6x), TPSAB1 (15.0x), TPSB2 (11.0x). This
 provides independent quantitative support for elevated mast-cell density in
 lesions. Source: NCBI GEO, GSE282532 (2026-09-03).^[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282532]
 
+**Uncertainty flag (lesion-type split):** GSE247695 (scRNA) and GSE263897
+(GeoMx spatial) did **not** show mast-cell / MRGPRX2 enrichment in
+*superficial peritoneal* lesions (markers at/under negative-probe background).
+OpenEndo currently reads this as **endometrioma vs peritoneal lesion-type
+difference**, not assay failure (`phase0.5.md` / `m3-validation.md`). Until
+more lesion-stratified human data exist, do not generalise endometrioma mast
+enrichment to all disease forms. Partner-ready IHC spec:
+`docs/research/lab-protocols/02-mrgprx2-ihc-mast-cell-stratification.md`.
+
 ## Why it matters
 
 Most endometriosis treatments are hormonal. A mast-cell/MRGPRX2 pain axis is
 a **non-hormonal, mechanism-specific target** for the pain that dominates the
 patient experience — relevant to the 7–10-year diagnostic-delay mission only
 insofar as better-targeted research shortens the path to real options.
-Hypothesis-generating research output; not medical advice.
+Hypothesis-generating research output; not medical advice. Cetrorelix→MRGPRX2
+peptide docking remains deferred to Phase 2 (tool boundary).
 
 ## Related
 
-[[computational-drug-repurposing]] · [[gnrh-antagonists]] · [[sirolimus]]
+[[computational-drug-repurposing]] · [[gnrh-antagonists]] · [[sirolimus]] · [[ferroptosis]]

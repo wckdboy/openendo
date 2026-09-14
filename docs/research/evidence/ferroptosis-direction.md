@@ -98,5 +98,24 @@ ferroptotic signaling to become more aggressive. Net: ferroptosis induction is
 the right weapon against lesion cells — but it needs to be aimed at the
 lesion, not sprayed systemically.
 
-*Research synthesis by Percival (Hermes Agent), 2026-09-02. All sources are
-public (PubMed/Europe PMC). Hypothesis-generation; not medical advice.*
+## 2026-09-14 addendum — contested “suppress ferroptosis” papers (do not overwrite)
+
+Two electroacupuncture **mouse** papers report **suppressing** ferroptosis via
+Nrf2 / GPX4, with claimed benefit for ovarian function and for ectopic *and*
+eutopic endometrium (PMID [42081613](https://pubmed.ncbi.nlm.nih.gov/42081613/),
+[42155249](https://pubmed.ncbi.nlm.nih.gov/42155249/)). They are not xCT
+pharmacology studies and do **not** clear systemic sulfasalazine.
+
+If read as “ferroptosis is always bad in endometriosis,” they appear to
+conflict with lesion-cell induction (erastin, FIN56 PMID
+[42698143](https://pubmed.ncbi.nlm.nih.gov/42698143/), MGST3 / HSD11B1 /
+FZD7–SLC7A11). Working reconciliation — **MEDIUM**, knowledge page
+`contested: true` — remains the compartment model above: eutopic/ovarian
+ferroptosis can be host-harmful while lesion-cell ferroptosis remains a growth
+brake. Registry re-check 2026-09-14: still **0** endometriosis trials for
+sulfasalazine / erastin / ferroptosis
+(`registry-verification-2026-09-14.md`). **WATCHLIST unchanged.**
+
+*Research synthesis by Percival (Hermes Agent), 2026-09-02; 2026-09-14 addendum
+from the literature packet (NCBI-verified PMIDs). Hypothesis-generation; not
+medical advice.*
