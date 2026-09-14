@@ -14,6 +14,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "docs", "data")
 TODAY = date.today()
 WEEK = TODAY - timedelta(days=7)
+# Upper bound on papers stored per weekly window. The old value (15) silently
+# truncated the list AND made meta.pubmed_7d report the cap as if it were the
+# count (2026-09-14: 25 real papers, reported 15).
+PUBMED_MAX = 100
 
 FIELDS = ("protocolSection.identificationModule.briefTitle,"
           "protocolSection.identificationModule.nctId,"
@@ -114,7 +118,7 @@ def ctg(query, params, page_size=1000):
     return {"studies": studies, "totalCount": total}
 
 
-def pubmed_ids(mindate, maxdate, retmax=15):
+def pubmed_ids(mindate, maxdate, retmax=PUBMED_MAX):
     q = urllib.parse.quote("endometriosis[Title/Abstract]")
     url = (f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term={q}"
            f"&datetype=pdat&mindate={mindate}&maxdate={maxdate}&retmax={retmax}&retmode=json")
@@ -175,8 +179,40 @@ def git(*args):
     return subprocess.run(["git", "-C", ROOT, *args], capture_output=True, text=True)
 
 
+def current_branch():
+    return git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
+
+
+def ensure_main():
+    """The refresh must run on main — never on whatever branch the clone sits on.
+
+    The workspace clone is often parked on a topic branch (e.g. the Friday digest
+    branch). A refresh committed there is invisible to the site, and a bare
+    `git push` pushes THAT branch: on 2026-09-14 the Monday run committed, pushed
+    the digest branch, exited 3 on its own "is HEAD on origin/main?" gate, and
+    main kept serving the previous week's snapshot for a week while every run
+    looked healthy. Switch to main here, and push with an explicit refspec below
+    so correctness never depends on the checked-out branch.
+    """
+    branch = current_branch()
+    if branch == "main":
+        return
+    r = git("switch", "main")
+    if r.returncode != 0:
+        sys.stderr.write(f"  kan ikke skifte fra '{branch}' til main: "
+                         f"{r.stderr.strip()} — opdatering afbrudt\n")
+        sys.exit(4)
+    p = git("pull", "--ff-only", "origin", "main")
+    if p.returncode != 0:
+        sys.stderr.write(f"  git pull --ff-only origin main fejlede: "
+                         f"{p.stderr.strip()} — opdatering afbrudt\n")
+        sys.exit(4)
+    sys.stderr.write(f"  skiftede fra '{branch}' til main\n")
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
+    ensure_main()
 
     # --- Clinical trials ---
     glob = ctg("endometriosis", "filter.overallStatus=RECRUITING")
@@ -202,7 +238,7 @@ def main():
     save("trials_recent.json", {"updated": TODAY.isoformat(), "trials": t_rec})
 
     # --- PubMed: recent papers ---
-    ids, _ = pubmed_ids(WEEK.isoformat(), TODAY.isoformat(), retmax=15)
+    ids, pubmed_total = pubmed_ids(WEEK.isoformat(), TODAY.isoformat())
     summ = pubmed_summary(ids)
     papers = []
     for pmid in ids:
@@ -214,7 +250,14 @@ def main():
             "journal": v.get("fulljournalname", ""),
             "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
         })
+    if pubmed_total > len(ids):
+        sys.stderr.write(f"  pubmed: {pubmed_total} artikler i vinduet, "
+                         f"kun {len(ids)} hentet (PUBMED_MAX={PUBMED_MAX})\n")
     papers = apply_floor("pubmed_recent.json", papers)
+    # A source hiccup keeps the previous rows (floor) — then the count must
+    # describe what is actually published, not the empty API response.
+    if not pubmed_total:
+        pubmed_total = len(papers)
     save("pubmed_recent.json", {"updated": TODAY.isoformat(), "papers": papers})
 
     # --- PubMed: monthly counts, last 6 months ---
@@ -240,7 +283,7 @@ def main():
             "denmark": len(t_dk),
             "denmark_recruiting": len(t_dkrec),
             "recent": len(t_rec),
-            "pubmed_7d": len(papers),
+            "pubmed_7d": pubmed_total,
             "pubmed_max_month": max((x["count"] for x in monthly), default=0),
         },
     }
@@ -269,7 +312,7 @@ def main():
             git("rebase", "--abort")
             sys.stderr.write(f"git pull --rebase fejlede (konflikt?): {rebase.stderr}\n")
             sys.exit(2)
-    if git("push").returncode != 0:
+    if git("push", "origin", "HEAD:main").returncode != 0:
         sys.stderr.write("git push fejlede\n")
         sys.exit(1)
     # Green run ≠ pushed: confirm HEAD is actually on origin/main (server-side).
