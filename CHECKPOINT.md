@@ -16,7 +16,7 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-09-14 (Galahad, research packet knowledge merge + no-GPU partner asks) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-09-20 (Galahad, PR #40 merge of origin/main after digest #4) · **Maintainer:** Galahad (sole agent)
 
 ---
 
@@ -31,7 +31,7 @@
 | ID | Track | Status | Last touched | Owner |
 |----|-------|--------|--------------|-------|
 | M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · **0/35 to fold — coverage corrected 2026-09-03** | 2026-09-03 | Jaeger |
-| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** | 2026-09-07 | Galahad |
+| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digest #4 (2026-09-18, 27 papers) **PR #41 merged** | 2026-09-18 | Galahad |
 | M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival (done) |
 | T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Galahad (Phase B = human) |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
@@ -104,6 +104,10 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-20 (Galahad)** — **PR #40 rebased onto main via merge commit** — brought in M2 digest #4 (PR #41). CHECKPOINT + `llms.txt` keep both the 2026-09-14 research-packet notes and the 2026-09-18 digest cadence. Canonical knowledge pages (sirolimus / mrgprx2-pain / ferroptosis) unchanged; `_staging` stays deleted. *Galahad*
+
+- **2026-09-18 (Galahad, M2 cron)** — **M2 weekly evidence digest #4** — `docs/research/evidence/digest-2026-09-18.md` — **27 papers** (PubMed E-utilities, week 2026-09-11..09-18; 30 records retrieved, 3 dropped as noise). Headline themes: **repurposing** (transcriptomics pipeline → simvastatin + primaquine, rat model + retrospective six-institution EMR cohort, PMID 42668641 — most consequential repurposing item to date, observational only) · **Cochrane update on progesterone receptor modulators** (no new eligible studies; class still rests on one mifepristone RCT, low/very-low certainty, PMID 42746927) · **diagnostic access** (NICE recommends the saliva miRNA Endotest in primary care — BMJ news item, PMID 42749315; #Enzian addendum expert survey, PMID 42533569) · **surgery** (24-month NOSE vs conventional bowel-resection outcomes, n=73, PMID 42742521; segmental-resection predictors, n=196, PMID 42732853) · **mechanisms** (NRF2 redox framework, PMID 42735734; compartment-specific inflammation–metabolism with a negative result on endo→cancer progression, PMID 42731417; ferroptosis gene panel; baboon miRNA time course) · **2 errata** (ZEB1 review PMID 42747717; ⁶⁸Ga-CBP8 PET/MR PMID 42734695). Zero carry-over from the previous window. No repurposing verdict changes. Snapshot `weekly/2026-09-18.json` (+ `LATEST`), llms.txt digest + weekly-data pointers updated. **PR #41 merged.** *Galahad*
 
 - **2026-09-14 (Galahad)** — **Research packet landed; canonical knowledge merged** — `docs/research/research-agenda-2026-09-14.md` + registry/literature packets + discovery shortlist + lean-engine compare + `docs/research/lab-protocols/` (sirolimus/mTOR PD, MRGPRX2 IHC, ferroptosis selectivity). Staging knowledge drafts merged into `entities/sirolimus.md`, `concepts/mrgprx2-pain.md`, `concepts/ferroptosis.md` (`contested: true` for EA/Nrf2 suppress-ferroptosis papers); `_staging` deleted. Registry 2026-09-14: still **0** endo trials for sirolimus/rapalogs/mTOR, sulfasalazine/erastin/ferroptosis, MRGPRX2-named; cetrorelix still 2; dienogest control 40. New PMIDs NCBI-verified (incl. 40532686, 40200774, 40948761, 41516088, 42698143, 42081613, 42155249). **No M3 status upgrades** (TOP TIER / VALIDATED AXIS / WATCHLIST unchanged). Lean engine **0.1.2 live** (24 vs 49 findings; sirolimus named correctly). Phase 2 MD **deferred to coming weeks**. Immediate priorities = no-GPU partner IHC + mTOR PD. *Galahad*
 
