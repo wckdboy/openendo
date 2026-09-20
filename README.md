@@ -2,7 +2,7 @@
 
 **Open intelligence for a disease the world still ignores.**
 
-Endometriosis affects ~190 million women worldwide (1 in 10 of reproductive age), yet the average patient waits **7–10 years** for a diagnosis, research funding is a fraction of what the burden demands, and there is still **no cure**.
+Endometriosis affects ~190 million women worldwide (1 in 10 of reproductive age), yet WHO reports a typical time to diagnosis of **4–12 years** (a range, not a single-year mean), research funding is a fraction of what the burden demands, and there is still **no cure**.
 
 This repository is an open, weekly-refreshed data hub: clinical trials, research papers, funding deadlines and policy — for patients, relatives, researchers, journalists and politicians.
 

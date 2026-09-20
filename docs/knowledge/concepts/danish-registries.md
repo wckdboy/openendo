@@ -1,7 +1,7 @@
 ---
 title: Danish Registries for Endometriosis Research
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-20
 type: concept
 tags: [denmark, research, policy]
 sources:
@@ -12,6 +12,7 @@ sources:
   - https://pubmed.ncbi.nlm.nih.gov/42295201/
   - https://pubmed.ncbi.nlm.nih.gov/35218204/
   - https://pubmed.ncbi.nlm.nih.gov/27743699/
+  - https://www.who.int/news-room/fact-sheets/detail/endometriosis
 confidence: high
 ---
 
@@ -20,7 +21,7 @@ confidence: high
 Denmark maintains a set of nationwide administrative and clinical registers that together form
 one of the world's richest data infrastructures for population-scale health research. For
 endometriosis, these registers are particularly valuable: the disease has a long diagnostic
-delay (7–10 years on average), affects a large fraction of reproductive-aged women, and has
+delay (WHO typical time to diagnosis 4–12 years),^[https://www.who.int/news-room/fact-sheets/detail/endometriosis] affects a large fraction of reproductive-aged women, and has
 poorly understood long-term systemic consequences — all questions that require large, unselected,
 longitudinal cohorts. Despite this potential, Danish registry data has been **underutilised**
 for endometriosis to date, and the validation of key diagnostic codes is still recent work.
