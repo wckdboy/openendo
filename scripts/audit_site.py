@@ -39,6 +39,7 @@ import re
 import sys
 import urllib.error
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -135,7 +136,20 @@ def check_funding(issues: list[str]) -> dict:
     if bad:
         _fail(issues, f"funding.json entries missing name at index {bad[:5]}")
         info["ok"] = False
+    today = date.today().isoformat()
+    stale = [
+        row.get("id") or f"index-{i}"
+        for i, row in enumerate(data)
+        if isinstance(row, dict)
+        and row.get("open")
+        and isinstance(row.get("deadline"), str)
+        and row["deadline"] < today
+    ]
+    if stale:
+        _fail(issues, f"funding.json still marks past-deadline calls open: {stale}")
+        info["ok"] = False
     info["count"] = len(data)
+    info["stale_open"] = stale
     return info
 
 
