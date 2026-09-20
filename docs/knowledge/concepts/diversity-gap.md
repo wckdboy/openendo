@@ -1,7 +1,7 @@
 ---
 title: Diversity Gap in Endometriosis Research
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-20
 type: concept
 tags: [research, policy, advocacy]
 sources:
@@ -52,7 +52,7 @@ interact with treatment response in ways a homogeneous trial population cannot d
 A 2025 qualitative study (BMC Women's Health) interviewed 16 Black women in the US diagnosed
 with endometriosis. Participants described a pattern of dismissed symptoms, delayed diagnosis
 and poor patient-provider communication — consistent with the broader literature on medical
-racism, but compounding the already long (7–10 year) endometriosis diagnostic delay.^[https://pubmed.ncbi.nlm.nih.gov/40841635/]
+racism, but compounding the already long endometriosis diagnostic delay (WHO typical time to diagnosis 4–12 years).^[https://pubmed.ncbi.nlm.nih.gov/40841635/]^[https://www.who.int/news-room/fact-sheets/detail/endometriosis]
 Themes included feeling that their pain was not believed and difficulty navigating specialist
 referral systems. The study highlights that the diversity gap is not only a data problem but
 a care-delivery problem.

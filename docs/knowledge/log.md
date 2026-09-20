@@ -65,3 +65,11 @@
 - **ferroptosis:** FIN56 PMID 42698143 induction confirmation; mechanism PMIDs 40983106 / 41422938 / 41452077 / 42728524. `contested: true` for EA/Nrf2–GPX4 “suppress ferroptosis” mouse papers (PMIDs 42081613, 42155249) — compartment model retained; sulfasalazine stays WATCHLIST. Registry: 0 sulfasalazine/erastin/ferroptosis endo trials
 - All new PMIDs re-resolved via NCBI esummary 2026-09-14 before merge. No M3 status upgrades. Not treatment advice
 - Companion: `ferroptosis-direction.md` 2026-09-14 addendum; lab-protocol pointers on the three pages
+
+## [2026-09-20] update | awareness — diagnosis delay + Endotest nuance
+- Replaced single-point “7–10 years” / “~7 yr” delay claims with WHO typical time to diagnosis **4–12 years** (fact sheet 2025-10-15, NCBI-independent WHO page)
+- Kept WHO ~190 million / ~10% of reproductive-age women
+- Surgery remains gold-standard for definitive diagnosis
+- Nuanced Endotest: BMJ news PMID 42749315 (Wise J, 2026-09-16; NCBI esummary verified; title-level only) — NICE draft/early-use, emerging, **not established NHS standard**
+- Pages: saliva-diagnostics, index, wiki.html, diversity-gap, danish-registries, mrgprx2-pain, content.json + awareness HTML/README
+- Not medical advice

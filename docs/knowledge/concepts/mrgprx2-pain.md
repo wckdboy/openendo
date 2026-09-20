@@ -1,7 +1,7 @@
 ---
 title: "MRGPRX2 — mast-cell pain axis in endometriosis"
 created: 2026-09-02
-updated: 2026-09-14
+updated: 2026-09-20
 type: concept
 tags: [research, drug, treatment]
 sources:
@@ -120,7 +120,7 @@ enrichment to all disease forms. Partner-ready IHC spec:
 
 Most endometriosis treatments are hormonal. A mast-cell/MRGPRX2 pain axis is
 a **non-hormonal, mechanism-specific target** for the pain that dominates the
-patient experience — relevant to the 7–10-year diagnostic-delay mission only
+patient experience — relevant to the WHO 4–12-year typical time-to-diagnosis mission only
 insofar as better-targeted research shortens the path to real options.
 Hypothesis-generating research output; not medical advice. Cetrorelix→MRGPRX2
 peptide docking remains deferred to Phase 2 (tool boundary).

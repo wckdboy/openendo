@@ -11,9 +11,9 @@
       "source": "WHO"
     },
     {
-      "value": "7–10 yrs",
-      "label": {"en": "average time to diagnosis", "da": "gennemsnitlig tid til diagnose"},
-      "source": "Endometriosis UK · studies"
+      "value": "4–12 yrs",
+      "label": {"en": "typical time to diagnosis", "da": "typisk tid til diagnose"},
+      "source": "WHO"
     },
     {
       "value": "0",
@@ -30,10 +30,10 @@
     {
       "title": {"en": "The diagnostic delay", "da": "Diagnoseforsinkelsen"},
       "body": {
-        "en": "The average woman waits 7–10 years for a diagnosis. In that time the disease can spread, fertility can be affected, and pain becomes chronic — all while symptoms are dismissed as 'just bad periods'.",
-        "da": "Den gennemsnitlige kvinde venter 7–10 år på en diagnose. I den tid kan sygdommen sprede sig, fertiliteten påvirkes, og smerten blive kronisk — alt imens symptomerne affærdiges som 'bare kraftige menstruationer'."
+        "en": "WHO reports a typical time to diagnosis of 4–12 years (a range, not a single-year mean). In that time the disease can spread, fertility can be affected, and pain becomes chronic — all while symptoms are dismissed as 'just bad periods'. Laparoscopy remains the gold-standard for definitive diagnosis.",
+        "da": "WHO angiver en typisk tid til diagnose på 4–12 år (et interval, ikke et præcist gennemsnit). I den tid kan sygdommen sprede sig, fertiliteten påvirkes, og smerten blive kronisk — alt imens symptomerne affærdiges som 'bare kraftige menstruationer'. Laparoskopi er fortsat guldstandarden for definitiv diagnose."
       },
-      "source": "Endometriosis UK · multiple studies"
+      "source": "WHO fact sheet (2025-10-15)"
     },
     {
       "title": {"en": "Pain that isn't taken seriously", "da": "Smerte der ikke bliver taget alvorligt"},
@@ -46,8 +46,8 @@
     {
       "title": {"en": "A research funding gap", "da": "Et forskningsfinansieringshul"},
       "body": {
-        "en": "Endometriosis affects roughly as many women as diabetes affects people — yet it receives a fraction of the research funding. The result: no cure, no non-invasive diagnostic standard, and treatments that haven't fundamentally changed in decades.",
-        "da": "Endometriose rammer omtrent lige så mange kvinder, som diabetes rammer mennesker — men sygdommen modtager en brøkdel af forskningsmidlerne. Resultatet: ingen kur, ingen ikke-invasiv diagnostisk standard, og behandlinger der ikke har ændret sig grundlæggende i årtier."
+        "en": "Endometriosis affects roughly as many women as diabetes affects people — yet it receives a fraction of the research funding. The result: no cure, no established non-invasive diagnostic standard (a saliva miRNA Endotest is emerging — BMJ news PMID 42749315 on NICE draft/early-use; not established NHS standard), and treatments that haven't fundamentally changed in decades.",
+        "da": "Endometriose rammer omtrent lige så mange kvinder, som diabetes rammer mennesker — men sygdommen modtager en brøkdel af forskningsmidlerne. Resultatet: ingen kur, ingen etableret ikke-invasiv diagnostisk standard (en spyt-miRNA-Endotest er under fremkomst — BMJ-nyhed PMID 42749315 om NICE-udkast/tidlig brug; ikke etableret NHS-standard), og behandlinger der ikke har ændret sig grundlæggende i årtier."
       },
       "source": "Multiple funding-gap analyses"
     },
@@ -179,7 +179,7 @@
     },
     {
       "name": "Ziwig Endotest",
-      "desc": {"en": "Saliva miRNA test (CE-IVD) for endometriosis; available in Denmark via Life Genomics (prescription, private).", "da": "Spyt-miRNA-test (CE-IVD) til endometriose; tilgængelig i Danmark via Life Genomics (recept, privat)."},
+      "desc": {"en": "Saliva miRNA Endotest (CE-IVD). Emerging / early-use — not established NHS standard (BMJ news PMID 42749315). Laparoscopy remains gold-standard for definitive diagnosis.", "da": "Spyt-miRNA-Endotest (CE-IVD). Under fremkomst / tidlig brug — ikke etableret NHS-standard (BMJ-nyhed PMID 42749315). Laparoskopi er fortsat guldstandarden for definitiv diagnose."},
       "url": "https://ziwig.com/en/ziwig-endotest/",
       "tag": {"en": "Diagnostics", "da": "Diagnostik"}
     },
