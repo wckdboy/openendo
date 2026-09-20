@@ -16,7 +16,7 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-09-20 (Galahad, PR #40 merge of origin/main after digest #4) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-09-20 (Galahad, funding deadline flags; rebased after PR #40) · **Maintainer:** Galahad (sole agent)
 
 ---
 
@@ -24,7 +24,7 @@
 
 1. **Site split (decree 2026-09-04) — 🔄 PARTIAL 2026-09-12** — openendo = data/research/analytics ONLY; public UI is wckdboy/openendo-www (Lovable). **Audit re-scoped (PR #35):** `audit_site.py` + site-audit CI check live-app contracts and HTTP smoke of openendo.org key routes. **Keep/delete of the 8 legacy HTML files decided (none deleted — see horizon).** **`content.json` action/resource URLs retargeted 2026-09-12** (dead `openendo.org/*.html` + relative leftovers → raw.githubusercontent.com; working external + Lovable destinations kept). Remaining: Lovable-only migration of unique leftover pages. *Galahad*
 2. **No-GPU partner asks (elevated 2026-09-14)** — research packet landed. Immediate wet-lab asks: **MRGPRX2 IHC** (lesion-type stratification) + **sirolimus/mTOR PD** (FKBP4/PR as a *separate* readout), specs in `docs/research/lab-protocols/`. Ferroptosis selectivity co-culture is third (WATCHLIST, higher complexity). Lean discovery engine **0.1.2 live** (24 findings vs 49 in 0.1.1; sirolimus named correctly as TOP TIER, not wrong-direction). Canonical knowledge pages merged from `_staging` the same day. **Phase 2 MD deferred to coming weeks** (run package still ready; GPU budget still open — see blockers). *Galahad*
-3. **Lovable app ↔ repo wiring — funding + knowledge LIVE** — `/research` fetches `what-we-know.html`; Home funding reads `funding.json`; `/access` reads `access.json`; **`/knowledge` now fetches `docs/knowledge/index.md` + listed pages live** (openendo-www #1 merged; bundled articles = fallback only). **`content.json` URLs retargeted 2026-09-12** (no more 404 HTML). Remaining: live-fetch of `content.json` itself (still bundled in the app). Access-finder UI: **live + verified end-to-end 2026-09-02**. Knowledge packet 2026-09-14 shows after merge to `main` (live fetch); bundled fallback may lag — **needs-lovable-sync**. *Galahad*
+3. **Lovable app ↔ repo wiring — funding + knowledge LIVE** — `/research` fetches `what-we-know.html`; Home funding reads `funding.json`; `/access` reads `access.json`; **`/knowledge` now fetches `docs/knowledge/index.md` + listed pages live** (openendo-www #1 merged; bundled articles = fallback only). **`content.json` URLs retargeted 2026-09-12** (no more 404 HTML). **`funding.json` open flags corrected 2026-09-20** (SST 2026-09-13 + Horizon Cluster 1 2026-09-16 now `open: false`; DoD PRMRP 2026-09-22 remains the next dated close). Remaining: live-fetch of `content.json` itself (still bundled in the app); **DrDoc:** openendo-www may still ship a stale bundled `grantsEn` fallback (Horizon/NNF). Access-finder UI: **live + verified end-to-end 2026-09-02**. Knowledge packet 2026-09-14 shows after merge to `main` (live fetch); bundled fallback may lag — **needs-lovable-sync**. *Galahad*
 
 ## 📊 Workstreams
 
@@ -37,7 +37,7 @@
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
 | SITE | Perf fix + Target intelligence §06 | ✅ live | 2026-09-02 | Percival (done) |
 | WIKI | Knowledge base (13 pages, wiki.html, llms.txt) | 🟢 live — 2026-09-14 packet merged into sirolimus / mrgprx2-pain / ferroptosis (`contested`); staging deleted | 2026-09-14 | Galahad |
-| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 — **RESURRECTED 2026-09-07 (galahad cron, hardened pipeline)** · **branch-guarded + true PubMed count 2026-09-14** | 2026-09-14 | Galahad |
+| DATA | Weekly refresh (trials, PubMed, funding) | 🔄 automated Mon 08:00 — **RESURRECTED 2026-09-07 (galahad cron, hardened pipeline)** · **funding open-flags closed 2026-09-20** | 2026-09-20 | Galahad |
 | P0 | Data-layer reconciliation | ✅ merged — PR #23; **scripts fixes CLAIMED by Galahad 2026-09-07** (update_data pagination/atomic/push-check; repurpose_screen; access.json DK postcodes) | 2026-09-07 | Galahad |
 | SITE | openendo-www split (decree) | 🔄 audit re-scoped 2026-09-12; 8 HTML keep/delete decided (all kept this pass) | 2026-09-12 | Galahad |
 
@@ -104,6 +104,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-20 (Galahad)** — **Funding deadline flags: SST + Horizon Cluster 1 closed** — `docs/data/funding.json` still had `open: true` on Sundhedsstyrelsen women's-health centre (deadline 2026-09-13) and Horizon Europe Cluster 1 Health (deadline 2026-09-16). Today is 2026-09-20. Both set `open: false`. Remaining dated calls checked: DoD PRMRP 2026-09-22, NNF 2026-10-01, NIH R01 2026-10-05, DFF Project 1 2026-10-27, Wellcome Discovery 2026-11-10 stay open; rolling ESHRE/WERF stay open; EUmetriosis already closed. No new calls added. `audit_site.py` now fails if any `open: true` row has a deadline before today (so this class of stale flag cannot ship again). No in-repo `openByDeadline` sorter to change — Home ranking lives in openendo-www. **needs-lovable-sync:** the private www app may still ship a bundled `grantsEn` fallback with Horizon/NNF stale — flag for DrDoc. RO-Crate regenerated. Rebased onto `main` after PR #40. *Galahad*
 
 - **2026-09-20 (Galahad)** — **PR #40 rebased onto main via merge commit** — brought in M2 digest #4 (PR #41). CHECKPOINT + `llms.txt` keep both the 2026-09-14 research-packet notes and the 2026-09-18 digest cadence. Canonical knowledge pages (sirolimus / mrgprx2-pain / ferroptosis) unchanged; `_staging` stays deleted. *Galahad*
 

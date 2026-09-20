@@ -19,7 +19,7 @@
    "country": "DK",
    "url": "https://www.sst.dk/puljer/nationalt-center-for-forskning-i-kvinders-sundhed",
    "deadline": "2026-09-13",
-   "open": true,
+   "open": false,
    "desc": {
     "en": "160M DKK (2026–2029) for a national research centre on women's health. DEADLINE 13 September 2026, 12:00 CET. Consortium-based (universities/hospitals). Application to eviasst@sst.dk, case 03-1301-21.",
     "da": "160 mio. kr. (2026–2029) til et nationalt forskningscenter for kvinders sundhed. FRIST 13. september 2026 kl. 12.00. Konsortiebaseret (universiteter/hospitaler). Ansøgning til eviasst@sst.dk, sag 03-1301-21."
@@ -71,7 +71,7 @@
     "country": "EU",
     "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
     "deadline": "2026-09-16",
-    "open": true,
+    "open": false,
     "desc": {
       "en": "Open calls under the EU health cluster — endometriosis-relevant topics recur. Typical awards €6–12M per project.",
       "da": "Åbne opslag under EU's sundhedsklynge — endometrioserelevante emner går igen. Typisk 6–12 mio. € pr. projekt."
