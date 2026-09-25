@@ -16,7 +16,7 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-09-20 (Galahad, awareness + CHECKPOINT tidy — WHO 4–12 yr delay; rebased after PR #42) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-09-25 (Galahad, M2 weekly evidence digest #5) · **Maintainer:** Galahad (sole agent)
 
 ---
 
@@ -31,7 +31,7 @@
 | ID | Track | Status | Last touched | Owner |
 |----|-------|--------|--------------|-------|
 | M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · **0/35 to fold — coverage corrected 2026-09-03** | 2026-09-03 | Jaeger |
-| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digest #4 (2026-09-18, 27 papers) **PR #41 merged 2026-09-20 ~02:21 CEST (`1c1d568`)** | 2026-09-20 | Galahad |
+| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digest #4 (2026-09-18, 27 papers) **PR #41 merged 2026-09-20 (`1c1d568`)** · digest #5 (2026-09-25, 34 papers) **PR open — human merge** | 2026-09-25 | Galahad |
 | M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival (done) |
 | T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Galahad (Phase B = human) |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
@@ -104,6 +104,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-09-25 (Galahad, M2 cron)** — **M2 weekly evidence digest #5** — `docs/research/evidence/digest-2026-09-25.md` — **34 papers** (PubMed E-utilities, week 2026-09-18..09-25; 42 records retrieved, 1 carry-over, 1 duplicate record, 6 dropped as noise). Headline themes: **cardiovascular risk** (Beijing population-based claims cohort, 19,903 exposed women, adjusted HR 1.69 for incident CVD, PMID 42757591 — largest cohort this week; the statin/aspirin "mediation" percentages are modelled prescribing, not mechanism) · **pregnancy outcomes by phenotype** (deep infiltrating vs superficial, 268 singleton pregnancies, placenta previa aOR 2.41, NICU aOR 1.89, PMID 42768257) · **drug safety** (Myfembree FAERS disproportionality, 1,423 reports, bleeding-dominated with thromboembolic/vasomotor/neuropsychiatric signals, median onset 19 days, PMID 42778759; DMPA–meningioma absolute-risk framing, PMID 42765513) · **first prospective human cannabinoid-extract cohort** (n=27, uncontrolled — the follow-up last week's endocannabinoid review called for, PMID 42771648) · **evidence-quality papers** (biospecimen-methodology audit showing non-endometrial tissue in excised lesions, PMID 42769725; histone-cluster re-analysis that refuses its own enrichment signal, PMID 42781559). Notable: **HSP90α/HSP90AA1 recurs in three independent records** (PMIDs 42786124, 42782802, 42762506) — thread to watch, unvalidated. No M3 repurposing verdict changes. Snapshot `weekly/2026-09-25.json` (+ `LATEST`), llms.txt digest + weekly-data pointers updated. **PR open — human merge (solo-Knight discipline: digest is patient-facing research content).** *Galahad*
 
 - **2026-09-25 (Galahad)** — **CI unblock: DoD PRMRP flag closed (past deadline)** — `docs/data/funding.json` still had `open: true` on **prmrp-cta-fy26** (recorded deadline 2026-09-22), so `audit_site.py`'s past-deadline gate failed the site-audit check on every PR opened after 2026-09-22 — this surfaced as a red CI on the M2 digest PR (#44), a pre-existing repo-wide break, not a digest problem. Flag set `open: false`; the live CDMRP PRMRP page states “the application submission deadline for FY26 has passed” and eBRAP lists the FY26 Clinical Trial Award application deadline as 09-22-2026 (re-verified against source, not just the recorded date). RO-Crate regenerated. Remaining dated calls stay open (NNF 2026-10-01, NIH R01 2026-10-05, DFF 2026-10-27, Wellcome 2026-11-10); rolling ESHRE/WERF unchanged. Split out of the digest PR so the data fix could land on `main` immediately. *Galahad*
 
