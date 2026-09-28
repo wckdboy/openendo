@@ -1,58 +1,60 @@
 {
- "updated": "2026-09-21",
+ "updated": "2026-09-28",
  "trials": [
   {
-   "nct_id": "NCT07827794",
-   "title": "The Effect of Preoperative Pelvic Floor Physical Therapy (Prehabilitation) on Postoperative Pain Following Endometriosis Surgery: A Randomized Controlled Trial",
+   "nct_id": "NCT06955221",
+   "title": "Effect of Alcohol Sclerotherapy on Pelvic Pain and Quality of Life in Women With Ovarian Endometriosis",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Hospital Universitari de Bellvitge",
+   "countries": [
+    "Spain"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06955221"
+  },
+  {
+   "nct_id": "NCT05978414",
+   "title": "Functional Links Between the Temporomandibular Joint and the Pelvis in Gynecology",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Poznan University of Physical Education",
+   "countries": [
+    "Poland"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT05978414"
+  },
+  {
+   "nct_id": "NCT06891690",
+   "title": "Use of tDCS Stimulation in Neurological and Gynaecological Conditions",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Poznan University of Physical Education",
+   "countries": [
+    "Poland"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06891690"
+  },
+  {
+   "nct_id": "NCT07508358",
+   "title": "Vaginal Sildenafil for Primary Dysmenorrhea",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE1",
+   "sponsor": "Kevin Hellman",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07508358"
+  },
+  {
+   "nct_id": "NCT07765680",
+   "title": "Perioperative Yoga Therapy and Endometriosis Surgery",
    "status": "NOT_YET_RECRUITING",
    "phase": "NA",
-   "sponsor": "University of Alberta",
-   "countries": [
-    "Canada"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07827794"
-  },
-  {
-   "nct_id": "NCT07821320",
-   "title": "Impact of the Antihistamine Desloratadine on the Quality of Life and Dysmenorrhea in Patients With Endometriosis",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Medical University of Vienna",
-   "countries": [
-    "Austria"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07821320"
-  },
-  {
-   "nct_id": "NCT06973603",
-   "title": "Exposure to Persistent Organic Pollutants and Severity of Endometriosis in the ComPaRe-Endometriosis Cohort",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "N/A",
-   "sponsor": "Institut National de la Santé Et de la Recherche Médicale, France",
+   "sponsor": "University Hospital, Lille",
    "countries": [
     "France"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT06973603"
-  },
-  {
-   "nct_id": "NCT07810920",
-   "title": "Artificial Intelligence Into Ultrasound Diagnostics in Reproductive Medicine",
-   "status": "RECRUITING",
-   "phase": "N/A",
-   "sponsor": "Semmelweis University",
-   "countries": [
-    "Hungary"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07810920"
-  },
-  {
-   "nct_id": "NCT07823777",
-   "title": "Appendectomy as an Adjunct Procedure in Endometriosis Surgery",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "NA",
-   "sponsor": "Mount Sinai Hospital, Canada",
-   "countries": [],
-   "url": "https://clinicaltrials.gov/study/NCT07823777"
+   "url": "https://clinicaltrials.gov/study/NCT07765680"
   }
  ]
 }
