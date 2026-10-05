@@ -1,50 +1,6 @@
 {
- "updated": "2026-09-28",
+ "updated": "2026-10-05",
  "trials": [
-  {
-   "nct_id": "NCT06955221",
-   "title": "Effect of Alcohol Sclerotherapy on Pelvic Pain and Quality of Life in Women With Ovarian Endometriosis",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "Hospital Universitari de Bellvitge",
-   "countries": [
-    "Spain"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06955221"
-  },
-  {
-   "nct_id": "NCT05978414",
-   "title": "Functional Links Between the Temporomandibular Joint and the Pelvis in Gynecology",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "Poznan University of Physical Education",
-   "countries": [
-    "Poland"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT05978414"
-  },
-  {
-   "nct_id": "NCT06891690",
-   "title": "Use of tDCS Stimulation in Neurological and Gynaecological Conditions",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "Poznan University of Physical Education",
-   "countries": [
-    "Poland"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06891690"
-  },
-  {
-   "nct_id": "NCT07508358",
-   "title": "Vaginal Sildenafil for Primary Dysmenorrhea",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE1",
-   "sponsor": "Kevin Hellman",
-   "countries": [
-    "United States"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07508358"
-  },
   {
    "nct_id": "NCT07765680",
    "title": "Perioperative Yoga Therapy and Endometriosis Surgery",
@@ -55,6 +11,48 @@
     "France"
    ],
    "url": "https://clinicaltrials.gov/study/NCT07765680"
+  },
+  {
+   "nct_id": "NCT06141720",
+   "title": "Feasibility of a Mindfulness Intervention for Endometriosis Surgery",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Milton S. Hershey Medical Center",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06141720"
+  },
+  {
+   "nct_id": "NCT07686783",
+   "title": "Ovarian Reserve After Laparoscopic Cystectomy for Endometriotic and Non-Endometriotic Cysts",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Benha University",
+   "countries": [
+    "Egypt"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07686783"
+  },
+  {
+   "nct_id": "NCT07854925",
+   "title": "Protective Factors for Well-being in Endometriosis Patients",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "NA",
+   "sponsor": "Maximiliane Uhlich",
+   "countries": [],
+   "url": "https://clinicaltrials.gov/study/NCT07854925"
+  },
+  {
+   "nct_id": "NCT06477406",
+   "title": "Evaluating the Impact of a Novel Cannabinoid Product for Endometriosis",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Mclean Hospital",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06477406"
   }
  ]
 }
