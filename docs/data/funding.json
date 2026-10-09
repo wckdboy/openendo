@@ -123,7 +123,7 @@
     "country": "US",
     "url": "https://grants.nih.gov/funding/searchguide/index.html",
     "deadline": "2026-10-05",
-    "open": true,
+    "open": false,
     "desc": {
       "en": "NIH's standard research-project grant. Amount varies by topic and institute.",
       "da": "NIH's standardforskningsbevilling. Beløb varierer efter emne og institut."
