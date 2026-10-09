@@ -1,0 +1,137 @@
+{
+ "period": "2026-10-02..2026-10-09",
+ "collected": "2026-10-09",
+ "count": 13,
+ "papers": [
+  {
+   "pmid": "42838882",
+   "title": "State of the art imaging for endometriosis and adenomyosis.",
+   "journal": "Clin Radiol",
+   "pubdate": "2026 Sep 9",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42838882/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42833036",
+   "title": "Diagnosing endometriosis in adolescents using ultrasound and MRI: A scoping review of imaging approach and implementation considerations.",
+   "journal": "Radiography (Lond)",
+   "pubdate": "2026 Oct 5",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42833036/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42835735",
+   "title": "A Machine Learning-Based Prediction Model for Deep Infiltrating Endometriosis.",
+   "journal": "Int J Womens Health",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42835735/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42835309",
+   "title": "Prediction models for endometriosis-associated ovarian malignancy: A systematic review and meta-analysis.",
+   "journal": "Eur J Obstet Gynecol Reprod Biol X",
+   "pubdate": "2026 Dec",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42835309/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42830120",
+   "title": "The Robotic Trade-Off in Endometriosis Surgery: Robot-Assisted Versus Conventional Laparoscopy - A Systematic Review and Meta-Analysis.",
+   "journal": "J Minim Invasive Gynecol",
+   "pubdate": "2026 Oct 4",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42830120/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42826790",
+   "title": "Intraoperative cyst rupture in early-stage ovarian cancer: an analysis of endometriosis-associated subtypes.",
+   "journal": "J Minim Invasive Gynecol",
+   "pubdate": "2026 Oct 2",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42826790/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42848172",
+   "title": "PRDX4 ameliorates oxidative stress-induced injury in endometriosis: potential association with PTP1B oxidation and downstream phosphorylation cascades.",
+   "journal": "Mol Cell Biochem",
+   "pubdate": "2026 Oct 8",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42848172/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42836692",
+   "title": "Pathogenic Properties of Human Endometriotic Epithelial Cells Require Steroid Receptor Coactivator-2.",
+   "journal": "Reproduction",
+   "pubdate": "2026 Oct 6",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42836692/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42844237",
+   "title": "Fibrosis and Mechanotransduction in Endometriosis: Linking ECM Remodeling and Tissue Stiffness to Pain.",
+   "journal": "Am J Reprod Immunol",
+   "pubdate": "2026 Oct",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42844237/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42840992",
+   "title": "From local lesion to multisystem disease: integrated crosstalk among the gut microbiota, immune system, and host metabolism in endometriosis.",
+   "journal": "Front Immunol",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42840992/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42842599",
+   "title": "Computational identification of natural CXCR4-binding candidates relevant to endometriosis and ovarian cancer progression.",
+   "journal": "PLoS One",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42842599/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42835858",
+   "title": "Establishment of pathology-validated immortalized patient-derived ovarian endometriosis epithelial cell line.",
+   "journal": "Biomed Rep",
+   "pubdate": "2026 Nov",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42835858/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42843518",
+   "title": "Leaving the country for care: A descriptive study of those seeking care for suspected or confirmed endometriosis outside of Canada.",
+   "journal": "J Obstet Gynaecol Can",
+   "pubdate": "2026 Oct 7",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42843518/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "epidemiology"
+  }
+ ]
+}

@@ -16,7 +16,7 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-10-09 (Galahad, M2 digest 2026-10-02 stacked on 09-25 and main) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-10-09 (Galahad, M2 weekly evidence digest 2026-10-09) · **Maintainer:** Galahad (sole agent)
 
 ---
 
@@ -31,7 +31,7 @@
 | ID | Track | Status | Last touched | Owner |
 |----|-------|--------|--------------|-------|
 | M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · **0/35 to fold — coverage corrected 2026-09-03** | 2026-09-03 | Jaeger |
-| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digest #4 (2026-09-18, 27 papers) **PR #41 merged 2026-09-20 ~02:21 CEST (`1c1d568`)** · digest #5 (2026-09-25, 34 papers) **PR #44 open — conflict with main resolved 2026-10-09** · digest (2026-10-02, 38 papers) **PR #47 open — stacked on #44; merge #44 first** | 2026-10-09 | Galahad |
+| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digest #4 (2026-09-18, 27 papers) **PR #41 merged 2026-09-20 ~02:21 CEST (`1c1d568`)** · digest #5 (2026-09-25, 34 papers) **PR #44 open** · digest (2026-10-02, 38 papers) **PR #47 open** · digest (2026-10-09, 13 papers) **PR open — stacked on #47; merge #44, then #47, then this** | 2026-10-09 | Galahad |
 | M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival (done) |
 | T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Galahad (Phase B = human) |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
@@ -104,6 +104,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-10-09 (Galahad, M2 cron)** — **M2 weekly evidence digest** — `docs/research/evidence/digest-2026-10-09.md` — **13 papers** (PubMed E-utilities; pdat 2026-10-02..10-09 returned 10 records, plus 7 edat-only records indexed 2026-10-03..10-09 that the day window missed or that were absent from the 09-25 and 10-02 snapshots; 1 carry-over, 3 dropped as noise). Headline themes: **surgery** (robot-assisted vs conventional laparoscopy, 16 studies, laparoscopy faster by 26 minutes with I²=89% and no significant difference on most other perioperative outcomes, PMID 42830120) · **adolescent imaging** (scoping review, 9 primary studies, negative imaging does not exclude superficial disease, PMID 42833036) · **access** (Canadian survey of cross-border endometriosis surgery, 348 analysed, PMID 42843518) · **models not ready** (DIE classifier, internal AUC 0.787, authors say not clinically ready, PMID 42835735; EAOC prediction-model review, all studies high risk of bias, authors say routine use is premature, PMID 42835309). No new guideline. No M3 repurposing verdict changes. Carry-over PMID 42720599 already synthesized in digest-2026-09-11. Snapshot `weekly/2026-10-09.json` (+ `LATEST`), llms.txt pointers updated. Stacked on the updated 2026-10-02 branch so this merges after PR #44 and PR #47. **PR open — not merged (human/solo-Knight merge discipline; patient-facing research content).** *Galahad*
 
 - **2026-10-09 (Galahad)** — **CI unblock: NIH R01 standard-cycle flag closed (recorded deadline passed)** — `docs/data/funding.json` still had `open: true` on **nih-r01-standard** (recorded deadline 2026-10-05). Today is 2026-10-09, so `audit_site.py`'s past-deadline gate would fail every PR. The NIH standard due-date table lists new R01 applications on February 5, June 5 and October 5; the recorded 2026-10-05 date is that October cycle and has passed. Flag set `open: false`; the deadline string is kept as history (same pattern as NNF). Next new-application standard date is 2027-02-05; R01 renewals/resubmissions are 2026-11-05 — not written into the file. RO-Crate regenerated. *Galahad*
 
