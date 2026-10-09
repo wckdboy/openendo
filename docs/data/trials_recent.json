@@ -1,58 +1,58 @@
 {
- "updated": "2026-09-21",
+ "updated": "2026-10-05",
  "trials": [
   {
-   "nct_id": "NCT07827794",
-   "title": "The Effect of Preoperative Pelvic Floor Physical Therapy (Prehabilitation) on Postoperative Pain Following Endometriosis Surgery: A Randomized Controlled Trial",
+   "nct_id": "NCT07765680",
+   "title": "Perioperative Yoga Therapy and Endometriosis Surgery",
    "status": "NOT_YET_RECRUITING",
    "phase": "NA",
-   "sponsor": "University of Alberta",
-   "countries": [
-    "Canada"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07827794"
-  },
-  {
-   "nct_id": "NCT07821320",
-   "title": "Impact of the Antihistamine Desloratadine on the Quality of Life and Dysmenorrhea in Patients With Endometriosis",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Medical University of Vienna",
-   "countries": [
-    "Austria"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07821320"
-  },
-  {
-   "nct_id": "NCT06973603",
-   "title": "Exposure to Persistent Organic Pollutants and Severity of Endometriosis in the ComPaRe-Endometriosis Cohort",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "N/A",
-   "sponsor": "Institut National de la Santé Et de la Recherche Médicale, France",
+   "sponsor": "University Hospital, Lille",
    "countries": [
     "France"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT06973603"
+   "url": "https://clinicaltrials.gov/study/NCT07765680"
   },
   {
-   "nct_id": "NCT07810920",
-   "title": "Artificial Intelligence Into Ultrasound Diagnostics in Reproductive Medicine",
+   "nct_id": "NCT06141720",
+   "title": "Feasibility of a Mindfulness Intervention for Endometriosis Surgery",
    "status": "RECRUITING",
-   "phase": "N/A",
-   "sponsor": "Semmelweis University",
+   "phase": "NA",
+   "sponsor": "Milton S. Hershey Medical Center",
    "countries": [
-    "Hungary"
+    "United States"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07810920"
+   "url": "https://clinicaltrials.gov/study/NCT06141720"
   },
   {
-   "nct_id": "NCT07823777",
-   "title": "Appendectomy as an Adjunct Procedure in Endometriosis Surgery",
+   "nct_id": "NCT07686783",
+   "title": "Ovarian Reserve After Laparoscopic Cystectomy for Endometriotic and Non-Endometriotic Cysts",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Benha University",
+   "countries": [
+    "Egypt"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07686783"
+  },
+  {
+   "nct_id": "NCT07854925",
+   "title": "Protective Factors for Well-being in Endometriosis Patients",
    "status": "NOT_YET_RECRUITING",
    "phase": "NA",
-   "sponsor": "Mount Sinai Hospital, Canada",
+   "sponsor": "Maximiliane Uhlich",
    "countries": [],
-   "url": "https://clinicaltrials.gov/study/NCT07823777"
+   "url": "https://clinicaltrials.gov/study/NCT07854925"
+  },
+  {
+   "nct_id": "NCT06477406",
+   "title": "Evaluating the Impact of a Novel Cannabinoid Product for Endometriosis",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Mclean Hospital",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06477406"
   }
  ]
 }
