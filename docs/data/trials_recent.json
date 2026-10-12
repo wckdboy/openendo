@@ -1,58 +1,60 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-12",
  "trials": [
   {
-   "nct_id": "NCT07765680",
-   "title": "Perioperative Yoga Therapy and Endometriosis Surgery",
-   "status": "NOT_YET_RECRUITING",
+   "nct_id": "NCT07860203",
+   "title": "Stellate Ganglion Block and Dexmedetomidine for Postoperative Sleep in Women Undergoing Laparoscopic Gynecologic Surgery",
+   "status": "RECRUITING",
    "phase": "NA",
-   "sponsor": "University Hospital, Lille",
+   "sponsor": "Catherin Zhang",
    "countries": [
-    "France"
+    "China"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07765680"
+   "url": "https://clinicaltrials.gov/study/NCT07860203"
   },
   {
-   "nct_id": "NCT06141720",
-   "title": "Feasibility of a Mindfulness Intervention for Endometriosis Surgery",
+   "nct_id": "NCT07065214",
+   "title": "Argon Plasma Treatment for Ovarian Endometrioma Compared to Standard Cystectomy",
+   "status": "RECRUITING",
+   "phase": "NA",
+   "sponsor": "Erbe Elektromedizin GmbH",
+   "countries": [
+    "Germany"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07065214"
+  },
+  {
+   "nct_id": "NCT06559852",
+   "title": "The Impact of Yoga on Endometriosis-Related Pain",
    "status": "RECRUITING",
    "phase": "NA",
    "sponsor": "Milton S. Hershey Medical Center",
    "countries": [
     "United States"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT06141720"
+   "url": "https://clinicaltrials.gov/study/NCT06559852"
   },
   {
-   "nct_id": "NCT07686783",
-   "title": "Ovarian Reserve After Laparoscopic Cystectomy for Endometriotic and Non-Endometriotic Cysts",
+   "nct_id": "NCT07864883",
+   "title": "3D Modeling of Deep Endometriosis From Pelvic MRI",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "sponsor": "University Hospital, Strasbourg, France",
+   "countries": [
+    "France"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07864883"
+  },
+  {
+   "nct_id": "NCT06955221",
+   "title": "Effect of Alcohol Sclerotherapy on Pelvic Pain and Quality of Life in Women With Ovarian Endometriosis",
    "status": "RECRUITING",
    "phase": "NA",
-   "sponsor": "Benha University",
+   "sponsor": "Hospital Universitari de Bellvitge",
    "countries": [
-    "Egypt"
+    "Spain"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07686783"
-  },
-  {
-   "nct_id": "NCT07854925",
-   "title": "Protective Factors for Well-being in Endometriosis Patients",
-   "status": "NOT_YET_RECRUITING",
-   "phase": "NA",
-   "sponsor": "Maximiliane Uhlich",
-   "countries": [],
-   "url": "https://clinicaltrials.gov/study/NCT07854925"
-  },
-  {
-   "nct_id": "NCT06477406",
-   "title": "Evaluating the Impact of a Novel Cannabinoid Product for Endometriosis",
-   "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "PHASE2",
-   "sponsor": "Mclean Hospital",
-   "countries": [
-    "United States"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06477406"
+   "url": "https://clinicaltrials.gov/study/NCT06955221"
   }
  ]
 }
