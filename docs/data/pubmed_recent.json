@@ -1,117 +1,215 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-19",
  "papers": [
   {
-   "date": "2026 Oct 11",
-   "pmid": "42860207",
-   "title": "Pelvic splenosis and endometriosis in adolescent with hereditary spherocytosis.",
-   "journal": "Journal of minimally invasive gynecology",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42860207/"
-  },
-  {
-   "date": "2026",
-   "pmid": "42859589",
-   "title": "The Concentration of Macrophage-Derived IL-1α and IL-12 in the Peritoneal Fluid of Patients With Endometriosis: A Pilot Case-Control Study.",
-   "journal": "International journal of inflammation",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42859589/"
-  },
-  {
-   "date": "2026 Oct 9",
-   "pmid": "42855651",
-   "title": "Endometriosis and Adenomyosis: Mechanotransduction, Microenvironment, and Mechanisms Beyond Lesions.",
-   "journal": "Reproductive sciences (Thousand Oaks, Calif.)",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42855651/"
-  },
-  {
-   "date": "2026 Oct 9",
-   "pmid": "42855609",
-   "title": "The diagnostic value of high-resolution 3D T2-weighted MRI in preoperative evaluation and classification of Herlyn-Werner-Wunderlich syndrome: a prospective study.",
-   "journal": "Insights into imaging",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42855609/"
-  },
-  {
-   "date": "2026 Oct 9",
-   "pmid": "42854833",
-   "title": "An update on miRNAs as non-invasive diagnostic markers for endometriosis: Why have we not reached consensus?",
-   "journal": "Journal of minimally invasive gynecology",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42854833/"
-  },
-  {
-   "date": "2026 Oct 9",
-   "pmid": "42853081",
-   "title": "Validation of a Salivary miRNA Signature of Endometriosis - Interim Data.",
-   "journal": "NEJM evidence",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42853081/"
-  },
-  {
-   "date": "2026 Oct 9",
-   "pmid": "42852827",
-   "title": "Lung Localization of Endosalpingiosis: Challenges of Rare Manifestation of Müllerianosis.",
-   "journal": "International journal of surgical pathology",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42852827/"
+   "date": "2026 Oct 18",
+   "pmid": "42893499",
+   "title": "[Acute psychological stress and endometriosis-related pain].",
+   "journal": "Orvosi hetilap",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893499/"
   },
   {
    "date": "2026 Oct",
-   "pmid": "42852159",
-   "title": "Spontaneous Pregnancy After Laparoscopic Treatment of Ovarian Endometrioma: A Retrospective Cohort Study Comparing Stripping and Ethanol Sclerotherapy.",
+   "pmid": "42892851",
+   "title": "Cumulative Sonographic Features From the Morphological Uterus Sonographic Assessment (MUSA) System and Clinical Severity of Adenomyosis in Congolese Women: A Multicenter Study in Kinshasa, Democratic Republic of the Congo.",
    "journal": "Cureus",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42852159/"
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42892851/"
   },
   {
-   "date": "2026 Oct 8",
-   "pmid": "42848172",
-   "title": "PRDX4 ameliorates oxidative stress-induced injury in endometriosis: potential association with PTP1B oxidation and downstream phosphorylation cascades.",
-   "journal": "Molecular and cellular biochemistry",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42848172/"
+   "date": "2026 Oct 17",
+   "pmid": "42892355",
+   "title": "RNF34 restrains endometriosis progression by promoting PKM2 ubiquitination and suppressing glycolysis.",
+   "journal": "Cellular signalling",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42892355/"
   },
   {
-   "date": "2026 Oct 8",
-   "pmid": "42847569",
-   "title": "Spatial heterogeneity of hotspot mutations and clonal relatedness in ovarian endometrioid carcinoma.",
-   "journal": "Molecular oncology",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42847569/"
+   "date": "2026 Oct 15",
+   "pmid": "42892004",
+   "title": "Effectiveness of estetrol 15 mg combined with drospirenone 3 mg for symptom control in women with endometriosis: a systematic review.",
+   "journal": "European journal of obstetrics, gynecology, and reproductive biology",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42892004/"
   },
   {
-   "date": "2026 Oct 7",
-   "pmid": "42843518",
-   "title": "Leaving the country for care: A descriptive study of those seeking care for suspected or confirmed endometriosis outside of Canada.",
-   "journal": "Journal of obstetrics and gynaecology Canada : JOGC = Journal d'obstetrique et gynecologie du Canada : JOGC",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42843518/"
+   "date": "2026 Oct 17",
+   "pmid": "42891704",
+   "title": "Structured MRI reporting for deep pelvic endometriosis: objective report quality and surgeon-perceived clinical utility in a randomized comparative study.",
+   "journal": "Abdominal radiology (New York)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42891704/"
+  },
+  {
+   "date": "2026 Oct 16",
+   "pmid": "42891621",
+   "title": "Laparoscopic Induction of Endometriosis in a Preclinical Swine Model by Autologous Endometrial Transplantation.",
+   "journal": "Journal of visualized experiments : JoVE",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42891621/"
+  },
+  {
+   "date": "2026 Oct 16",
+   "pmid": "42891579",
+   "title": "Establishment of Rat Endometriosis Model by Autologous Endometrial Transplantation and Proof-of-Concept Pharmacological Validation with Elagolix.",
+   "journal": "Journal of visualized experiments : JoVE",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42891579/"
+  },
+  {
+   "date": "2026 Oct 13",
+   "pmid": "42887219",
+   "title": "Ferroptotic memory of the peritoneal niche: Mechanisms, cross-disease and cardiovascular-reproductive parallels, and targetable vulnerabilities.",
+   "journal": "Tissue & cell",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42887219/"
+  },
+  {
+   "date": "2026 Oct 16",
+   "pmid": "42886549",
+   "title": "Diet and supplementation as an element supporting the treatment of endometriosis - literature review.",
+   "journal": "Ginekologia polska",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886549/"
+  },
+  {
+   "date": "2026 Oct 16",
+   "pmid": "42885805",
+   "title": "Non-invasive diagnosis of endometriosis: From expert imaging to molecular and artificial intelligence-enabled pathways.",
+   "journal": "International journal of gynaecology and obstetrics: the official organ of the International Federation of Gynaecology and Obstetrics",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42885805/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42881338",
+   "title": "Polymer-based Vaginal Insert Systems: Engineering Controlled Drug Delivery for Women's Health.",
+   "journal": "AAPS PharmSciTech",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42881338/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42878987",
+   "title": "Correction: Exposure to Green Light-emitting Diodes Alleviates Endometriosis-associated Pain in Mice with Induced Deep Endometriosis.",
+   "journal": "Reproductive sciences (Thousand Oaks, Calif.)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42878987/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42878410",
+   "title": "Positioning gestrinone among the progestins: a narrative review of pharmacology, efficacy, safety, and tolerability.",
+   "journal": "Expert opinion on pharmacotherapy",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42878410/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42878335",
+   "title": "A multidisciplinary diagnostic approach to thoracic endometriosis syndrome: Insights from CT imaging, surgery, and pathology.",
+   "journal": "Advances in clinical and experimental medicine : official organ Wroclaw Medical University",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42878335/"
   },
   {
    "date": "2026",
-   "pmid": "42842599",
-   "title": "Computational identification of natural CXCR4-binding candidates relevant to endometriosis and ovarian cancer progression.",
-   "journal": "PloS one",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42842599/"
+   "pmid": "42877553",
+   "title": "The Prevalence of Histologically Confirmed Endometriosis in Salpingectomy Specimens for Hydrosalpinx and Subsequent Reproductive Outcomes.",
+   "journal": "Obstetrics and gynecology international",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42877553/"
   },
   {
-   "date": "2026 Oct 6",
-   "pmid": "42836692",
-   "title": "Pathogenic Properties of Human Endometriotic Epithelial Cells Require Steroid Receptor Coactivator-2.",
-   "journal": "Reproduction (Cambridge, England)",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42836692/"
+   "date": "2026 Oct",
+   "pmid": "42877470",
+   "title": "Persistent pneumothorax during pregnancy revealing histologically confirmed thoracic endometriosis.",
+   "journal": "Journal of surgical case reports",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42877470/"
   },
   {
-   "date": "2026 Oct 5",
-   "pmid": "42834562",
-   "title": "Risk factors for infection after hysterectomy for benign disease.",
-   "journal": "Acta obstetricia et gynecologica Scandinavica",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42834562/"
+   "date": "2026 Oct 14",
+   "pmid": "42875470",
+   "title": "Global inequities and fragmentation in guidelines for endometriosis: a scoping review.",
+   "journal": "Communications medicine",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42875470/"
   },
   {
-   "date": "2026 Oct 5",
-   "pmid": "42833036",
-   "title": "Diagnosing endometriosis in adolescents using ultrasound and MRI: A scoping review of imaging approach and implementation considerations.",
-   "journal": "Radiography (London, England : 1995)",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42833036/"
+   "date": "2026 Oct 14",
+   "pmid": "42874710",
+   "title": "\"Letter Response: Reliability and validity of the 30-second chair-stand test for assessing functional capacity in women with endometriosis: a cross-sectional and longitudinal study\".",
+   "journal": "Journal of gynecology obstetrics and human reproduction",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42874710/"
   },
   {
-   "date": "2026 Oct 6",
-   "pmid": "42720599",
-   "title": "Endometriosis pain: genes linked to inflammation distinguish symptomatic from asymptomatic disease.",
-   "journal": "Molecular human reproduction",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42720599/"
+   "date": "2026 Oct 14",
+   "pmid": "42874709",
+   "title": "Fertility after colorectal surgery for endometriosis comparing conventional laparoscopy and robotic assisted laparoscopy Should all patients benefit from robotic approach?",
+   "journal": "Journal of gynecology obstetrics and human reproduction",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42874709/"
+  },
+  {
+   "date": "2026 Oct 14",
+   "pmid": "42873536",
+   "title": "Magnetic induction heating: where will the field go next?",
+   "journal": "Chemical Society reviews",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42873536/"
+  },
+  {
+   "date": "2026 Oct 14",
+   "pmid": "42873453",
+   "title": "Clinical validation of an intra-abdominal pressure monitoring system by comparison with pneumoperitoneum pressure.",
+   "journal": "Journal of clinical monitoring and computing",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42873453/"
+  },
+  {
+   "date": "2026 Oct 14",
+   "pmid": "42872934",
+   "title": "Menopausal symptom severities and patterns are affected by medical profiles.",
+   "journal": "Post reproductive health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42872934/"
+  },
+  {
+   "date": "2026 Oct 13",
+   "pmid": "42869590",
+   "title": "Validity of the screening for early endometriosis detection (SEED) screening tool: protocol for a cross-sectional study.",
+   "journal": "BMJ open",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42869590/"
+  },
+  {
+   "date": "2026 Oct 13",
+   "pmid": "42869118",
+   "title": "Reoperations Following Surgical Treatment of Ovarian Endometriosis: Incidence, Risk Factors, and Surgical Approaches.",
+   "journal": "American journal of obstetrics and gynecology",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42869118/"
+  },
+  {
+   "date": "2026 Oct",
+   "pmid": "42866633",
+   "title": "Catamenial haemolacria and ocular pain as rare manifestations of extra-pelvic endometriosis.",
+   "journal": "Journal of surgical case reports",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42866633/"
+  },
+  {
+   "date": "2026 Oct 16",
+   "pmid": "42866613",
+   "title": "Endometriosis and chronic pain syndrome: The role of stress mechanisms.",
+   "journal": "iScience",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42866613/"
+  },
+  {
+   "date": "2026 Oct 12",
+   "pmid": "42862744",
+   "title": "Cystic-solid ADC difference on MRI for differentiating seromucinous borderline tumor from endometriosis-associated ovarian cancer.",
+   "journal": "Acta radiologica (Stockholm, Sweden : 1987)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42862744/"
+  },
+  {
+   "date": "2026 Oct 12",
+   "pmid": "42862077",
+   "title": "Anti-inflammatory diet as an element supporting the treatment of selected gynecological diseases - literature review.",
+   "journal": "Ginekologia polska",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42862077/"
+  },
+  {
+   "date": "2026 Oct 12",
+   "pmid": "42860778",
+   "title": "Connecting the dots in cardiovascular medicine: endometriosis, chronic inflammation, and venous thromboembolism.",
+   "journal": "European heart journal",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42860778/"
+  },
+  {
+   "date": "2026 Oct 12",
+   "pmid": "42680575",
+   "title": "Endometriosis and elite sports: a blind spot in research.",
+   "journal": "British journal of sports medicine",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42680575/"
   },
   {
    "date": "2026 Oct 12",
@@ -119,6 +217,27 @@
    "title": "Precise Surgical Navigation of Endometriosis via NIR-II Fluorescence Imaging With a Semiconducting Polymeric Probe.",
    "journal": "Angewandte Chemie (International ed. in English)",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42634982/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42555090",
+   "title": "TREM2 deficiency attenuates endometriosis progression by inhibiting M2 polarization of SpMs and suppressing SIRPα to enhance phagocytosis†.",
+   "journal": "Biology of reproduction",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42555090/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42493858",
+   "title": "Inflammation, estrogen, and matrix remodeling in female reproductive health: from crosstalk mechanisms to translational diagnostics†.",
+   "journal": "Biology of reproduction",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42493858/"
+  },
+  {
+   "date": "2026 Oct 15",
+   "pmid": "42108087",
+   "title": "Resveratrol alleviates endometriosis via restoration of hypoxic milieu and inhibition of autoantibody deposition.",
+   "journal": "Experimental animals",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42108087/"
   }
  ]
 }
