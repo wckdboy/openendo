@@ -1,49 +1,69 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-19",
  "trials": [
   {
-   "nct_id": "NCT07860203",
-   "title": "Stellate Ganglion Block and Dexmedetomidine for Postoperative Sleep in Women Undergoing Laparoscopic Gynecologic Surgery",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "Catherin Zhang",
-   "countries": [
-    "China"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07860203"
-  },
-  {
-   "nct_id": "NCT07065214",
-   "title": "Argon Plasma Treatment for Ovarian Endometrioma Compared to Standard Cystectomy",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "Erbe Elektromedizin GmbH",
-   "countries": [
-    "Germany"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07065214"
-  },
-  {
-   "nct_id": "NCT06559852",
-   "title": "The Impact of Yoga on Endometriosis-Related Pain",
-   "status": "RECRUITING",
-   "phase": "NA",
-   "sponsor": "Milton S. Hershey Medical Center",
-   "countries": [
-    "United States"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT06559852"
-  },
-  {
-   "nct_id": "NCT07864883",
-   "title": "3D Modeling of Deep Endometriosis From Pelvic MRI",
-   "status": "RECRUITING",
+   "nct_id": "NCT07871578",
+   "title": "Experiences and Care Pathways Shared on Social Media Regarding 5 Conditions Causing Chronic Pain",
+   "status": "COMPLETED",
    "phase": "N/A",
-   "sponsor": "University Hospital, Strasbourg, France",
+   "sponsor": "Central Hospital, Nancy, France",
    "countries": [
     "France"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT07864883"
+   "url": "https://clinicaltrials.gov/study/NCT07871578"
+  },
+  {
+   "nct_id": "NCT03746535",
+   "title": "Cardiovascular Disease Risk in Women With Endometriosis",
+   "status": "COMPLETED",
+   "phase": "EARLY_PHASE1",
+   "sponsor": "Yale University",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT03746535"
+  },
+  {
+   "nct_id": "NCT07876648",
+   "title": "Prospective Trial of [18F]AlF-FAPI-74 for PET Imaging of Fibroblast Activation Protein in Patients With Endometriosis",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "NA",
+   "sponsor": "Universitaire Ziekenhuizen KU Leuven",
+   "countries": [
+    "Belgium"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07876648"
+  },
+  {
+   "nct_id": "NCT07875062",
+   "title": "Evaluating the Impact of a Multi-Fiber Prebiotic Dietary Supplement (LOAM) in Women With Endometriosis and Co-existing Gastrointestinal Symptoms",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "NA",
+   "sponsor": "LOAM Science",
+   "countries": [],
+   "url": "https://clinicaltrials.gov/study/NCT07875062"
+  },
+  {
+   "nct_id": "NCT00073801",
+   "title": "Pelvic Pain in Women With Endometriosis",
+   "status": "COMPLETED",
+   "phase": "N/A",
+   "sponsor": "National Institute of Neurological Disorders and Stroke (NINDS)",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT00073801"
+  },
+  {
+   "nct_id": "NCT03756480",
+   "title": "Cancer Driving Mutations in Endometriosis Lesions and Development of Progesterone Resistance",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "N/A",
+   "sponsor": "Johns Hopkins University",
+   "countries": [
+    "United States"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT03756480"
   },
   {
    "nct_id": "NCT06955221",
