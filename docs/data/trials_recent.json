@@ -1,32 +1,21 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-26",
  "trials": [
   {
-   "nct_id": "NCT07871578",
-   "title": "Experiences and Care Pathways Shared on Social Media Regarding 5 Conditions Causing Chronic Pain",
-   "status": "COMPLETED",
-   "phase": "N/A",
-   "sponsor": "Central Hospital, Nancy, France",
-   "countries": [
-    "France"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT07871578"
-  },
-  {
-   "nct_id": "NCT03746535",
-   "title": "Cardiovascular Disease Risk in Women With Endometriosis",
-   "status": "COMPLETED",
-   "phase": "EARLY_PHASE1",
-   "sponsor": "Yale University",
+   "nct_id": "NCT05175248",
+   "title": "Nutritional Intervention for Endometriosis",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "NA",
+   "sponsor": "Physicians Committee for Responsible Medicine",
    "countries": [
     "United States"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT03746535"
+   "url": "https://clinicaltrials.gov/study/NCT05175248"
   },
   {
    "nct_id": "NCT07876648",
    "title": "Prospective Trial of [18F]AlF-FAPI-74 for PET Imaging of Fibroblast Activation Protein in Patients With Endometriosis",
-   "status": "NOT_YET_RECRUITING",
+   "status": "RECRUITING",
    "phase": "NA",
    "sponsor": "Universitaire Ziekenhuizen KU Leuven",
    "countries": [
@@ -35,35 +24,46 @@
    "url": "https://clinicaltrials.gov/study/NCT07876648"
   },
   {
+   "nct_id": "NCT07882498",
+   "title": "Postoperative Pain Trajectories After Endometriosis Surgery",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "sponsor": "Centre Hospitalier Universitaire, Amiens",
+   "countries": [
+    "France"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07882498"
+  },
+  {
    "nct_id": "NCT07875062",
-   "title": "Evaluating the Impact of a Multi-Fiber Prebiotic Dietary Supplement (LOAM) in Women With Endometriosis and Co-existing Gastrointestinal Symptoms",
-   "status": "NOT_YET_RECRUITING",
+   "title": "Trial Evaluating Nutritional Fiber in Digestive Symptoms of Endometriosis",
+   "status": "RECRUITING",
    "phase": "NA",
    "sponsor": "LOAM Science",
-   "countries": [],
+   "countries": [
+    "United States"
+   ],
    "url": "https://clinicaltrials.gov/study/NCT07875062"
   },
   {
-   "nct_id": "NCT00073801",
-   "title": "Pelvic Pain in Women With Endometriosis",
-   "status": "COMPLETED",
-   "phase": "N/A",
-   "sponsor": "National Institute of Neurological Disorders and Stroke (NINDS)",
-   "countries": [
-    "United States"
-   ],
-   "url": "https://clinicaltrials.gov/study/NCT00073801"
+   "nct_id": "NCT07881562",
+   "title": "Perioperative Esketamine Safety and Efficacy in Reducing Postoperative ENDometriosis PAIN (the ENDPAIN Trial): a Randomized Controlled Trial.",
+   "status": "NOT_YET_RECRUITING",
+   "phase": "PHASE4",
+   "sponsor": "Region Skane",
+   "countries": [],
+   "url": "https://clinicaltrials.gov/study/NCT07881562"
   },
   {
-   "nct_id": "NCT03756480",
-   "title": "Cancer Driving Mutations in Endometriosis Lesions and Development of Progesterone Resistance",
+   "nct_id": "NCT06141720",
+   "title": "Feasibility of a Mindfulness Intervention for Endometriosis Surgery",
    "status": "ACTIVE_NOT_RECRUITING",
-   "phase": "N/A",
-   "sponsor": "Johns Hopkins University",
+   "phase": "NA",
+   "sponsor": "Milton S. Hershey Medical Center",
    "countries": [
     "United States"
    ],
-   "url": "https://clinicaltrials.gov/study/NCT03756480"
+   "url": "https://clinicaltrials.gov/study/NCT06141720"
   },
   {
    "nct_id": "NCT06955221",
@@ -75,6 +75,45 @@
     "Spain"
    ],
    "url": "https://clinicaltrials.gov/study/NCT06955221"
+  },
+  {
+   "nct_id": "NCT07260669",
+   "title": "A Phase 2 Trial to Investigate Efficacy and Safety of Vipoglanstat in Women With Endometriosis",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "phase": "PHASE2",
+   "sponsor": "Gesynta Pharma AB",
+   "countries": [
+    "Bulgaria",
+    "Czechia",
+    "Hungary",
+    "Italy",
+    "Poland",
+    "Romania",
+    "United Kingdom"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07260669"
+  },
+  {
+   "nct_id": "NCT07232485",
+   "title": "Retinal Imaging for Systemic Inflammation in Endometriosis",
+   "status": "RECRUITING",
+   "phase": "N/A",
+   "sponsor": "University of Edinburgh",
+   "countries": [
+    "United Kingdom"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT07232485"
+  },
+  {
+   "nct_id": "NCT06543550",
+   "title": "Comparison Between the Effects of Implantable Gestrinone and Oral Dienogest in the Treatment of Endometriosis",
+   "status": "RECRUITING",
+   "phase": "PHASE4",
+   "sponsor": "Bio Meds Pharmaceutica Ltda",
+   "countries": [
+    "Brazil"
+   ],
+   "url": "https://clinicaltrials.gov/study/NCT06543550"
   }
  ]
 }
