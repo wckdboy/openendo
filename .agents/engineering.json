@@ -1,0 +1,54 @@
+{
+  "schema": "eng-config/v1",
+  "project": "workspace",
+  "commands": {
+    "fast": [
+      {
+        "name": "pii-scan",
+        "run": "bash -c 'if git grep -nEi \"dearwolf|wmd@|nkp@|blxmp\\\\.dk|hermeswebui|percivaldotbot\" -- . :!docs/llms.txt :!.github/; then exit 1; else exit 0; fi'",
+        "timeout": 120
+      }
+    ],
+    "full": [
+      {
+        "name": "pii-scan",
+        "run": "bash -c 'if git grep -nEi \"dearwolf|wmd@|nkp@|blxmp\\\\.dk|hermeswebui|percivaldotbot\" -- . :!docs/llms.txt :!.github/; then exit 1; else exit 0; fi'",
+        "timeout": 120
+      },
+      {
+        "name": "ro-crate-fresh",
+        "run": "python3 scripts/gen_ro_crate.py && git diff --exit-code --quiet -- docs/data/ro-crate-metadata.jsonld",
+        "timeout": 180
+      },
+      {
+        "name": "site-audit",
+        "run": "python3 scripts/audit_site.py --artifacts audit-artifacts",
+        "timeout": 300
+      }
+    ]
+  },
+  "security": {
+    "required": [
+      "gitleaks",
+      "semgrep"
+    ],
+    "optional": [
+      "osv-scanner",
+      "actionlint"
+    ],
+    "gitleaks_config": ".agents/config/gitleaks.toml",
+    "semgrep_config": ".agents/config/semgrep.yml",
+    "gitleaks_history": false,
+    "timeout": 600
+  },
+  "budgets": {
+    "fast_seconds": 300,
+    "full_seconds": 1800
+  },
+  "parallel": {
+    "max_worktrees": 4
+  },
+  "impact": {
+    "base": "origin/main"
+  }
+}
