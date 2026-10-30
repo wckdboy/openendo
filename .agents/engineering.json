@@ -1,0 +1,54 @@
+{
+  "schema": "eng-config/v1",
+  "project": "workspace",
+  "commands": {
+    "fast": [
+      {
+        "name": "weekly-json",
+        "run": "python3 -c \"import json, pathlib; root=pathlib.Path('docs/research/evidence/weekly'); name=root.joinpath('LATEST').read_text().strip(); doc=json.loads(root.joinpath(name).read_text()); assert doc['count']==len(doc['papers'])\"",
+        "timeout": 60
+      }
+    ],
+    "full": [
+      {
+        "name": "weekly-json",
+        "run": "python3 -c \"import json, pathlib; root=pathlib.Path('docs/research/evidence/weekly'); name=root.joinpath('LATEST').read_text().strip(); doc=json.loads(root.joinpath(name).read_text()); assert doc['count']==len(doc['papers'])\"",
+        "timeout": 60
+      },
+      {
+        "name": "ro-crate-fresh",
+        "run": "python3 scripts/gen_ro_crate.py && git diff --exit-code --quiet -- docs/data/ro-crate-metadata.jsonld",
+        "timeout": 180
+      },
+      {
+        "name": "site-audit",
+        "run": "python3 scripts/audit_site.py --artifacts audit-artifacts",
+        "timeout": 300
+      }
+    ]
+  },
+  "security": {
+    "required": [
+      "gitleaks",
+      "semgrep"
+    ],
+    "optional": [
+      "osv-scanner",
+      "actionlint"
+    ],
+    "gitleaks_config": ".agents/config/gitleaks.toml",
+    "semgrep_config": ".agents/config/semgrep.yml",
+    "gitleaks_history": false,
+    "timeout": 600
+  },
+  "budgets": {
+    "fast_seconds": 300,
+    "full_seconds": 1800
+  },
+  "parallel": {
+    "max_worktrees": 4
+  },
+  "impact": {
+    "base": "origin/main"
+  }
+}

@@ -16,7 +16,7 @@
 > owner tags below are historical; treat open items as Galahad's. The human
 > (wckdboy) remains final reviewer.
 
-**Last updated:** 2026-10-30 (Galahad, DFF deadline flag) · **Maintainer:** Galahad (sole agent)
+**Last updated:** 2026-10-30 (Galahad, M2 digest) · **Maintainer:** Galahad (sole agent)
 
 ---
 
@@ -31,7 +31,7 @@
 | ID | Track | Status | Last touched | Owner |
 |----|-------|--------|--------------|-------|
 | M1 | Fold-input pack (35 novel targets, AlphaFold-ready) | ✅ merged · **0/35 to fold — coverage corrected 2026-09-03** | 2026-09-03 | Jaeger |
-| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digests through 2026-10-09 **merged** (PRs #44, #47, #49) · digest 2026-10-16 (32 papers) **PR #51 open — updated onto main after #52; not merged** · digest 2026-10-23 (32 papers) **PR open — stacked on #51; merge #51 first** | 2026-10-23 | Galahad |
+| M2 | Living evidence synthesis (weekly digest) | ✅ merged · 🔄 weekly cadence — **RESURRECTED 2026-09-07 (galahad cron, Fri 09:00)** · digests through 2026-10-23 are on main · digest 2026-10-30 (42 papers) in progress on `galahad/m2-digest-2026-10-30` | 2026-10-30 | Galahad |
 | M3 | Drug repurposing screen | ✅ merged (PR #12) · 🟢 knowledge close-out in PR #13 | 2026-09-02 | Percival (done) |
 | T7 | Lab software modernization (DK ELN) | ✅ Phase A DONE 2026-09-03 · Phase B = interviews (human step) | 2026-09-03 | Galahad (Phase B = human) |
 | INT | RO-Crate integration contract | ✅ merged · 🔧 CI wiring next | 2026-09-02 | Percival (done) |
@@ -104,6 +104,8 @@
 ---
 
 ## ✅ Recently done (change log)
+
+- **2026-10-30 (Galahad, M2)** — **M2 weekly evidence digest** — `docs/research/evidence/digest-2026-10-30.md` — **42 papers** (PubMed E-utilities; pdat 2026-10-23..10-30 returned 22 records, plus 45 edat-only records indexed 2026-10-24..10-30; 67 screened, 0 carry-over, 25 dropped as noise). Headline themes: **IVF versus surgery** (partially randomized patient-preference trial, stopped early at 130 of a planned 206, randomized live birth 16/28 versus 7/27, PMID 42925945) · **second-line MRI** after expert ultrasound (112 with both tests, more rectosigmoid and uterosacral detection and more false positives, PMID 42922369) · **GnRH agonist versus antagonist** (5 randomized trials, agonists improved pain scores more and antagonists lost less bone density, PMID 42953143). No new guideline or Cochrane update. The Australian Prescriber review (PMID 42936234) restates clinical diagnosis without waiting for surgery; it is not itself a guideline. A mouse iron/macrophage experiment (PMID 42920128) does not move the lesion-cell ferroptosis direction or the sulfasalazine watchlist. No M3 repurposing verdict changes. Yselty and saliva-diagnostics pages unchanged. Two title-only records with no abstract (PMID 42556820, PMID 42946378) were not summarized because the text was not open. Snapshot `weekly/2026-10-30.json` (+ `LATEST`), llms.txt pointers updated. *Galahad*
 
 - **2026-10-30 (Galahad)** — **CI unblock: DFF Project 1 flag closed (recorded deadline passed)** — `docs/data/funding.json` still had `open: true` on **dff-project1** (recorded deadline 2026-10-27). Today is 2026-10-30, so `audit_site.py`'s past-deadline gate would fail every PR. The deadline string is kept as history (same pattern as NNF and NIH R01). The static HTML of https://dff.dk/en/apply-for-funding/see-what-you-can-apply-for/current-funding-opportunities/ did not list a later date (the opportunity list is not in the static HTML). If the call was extended, update the deadline rather than reopening the flag from this date. RO-Crate regenerated. *Galahad*
 

@@ -1,0 +1,427 @@
+{
+ "period": "2026-10-23..2026-10-30",
+ "collected": "2026-10-30",
+ "count": 42,
+ "papers": [
+  {
+   "pmid": "42922369",
+   "title": "Second-line MRI after expert transvaginal ultrasound in selected patients with suspected complex deep endometriosis: A prospective cohort study.",
+   "journal": "Acta Obstet Gynecol Scand",
+   "pubdate": "2026 Oct 23",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42922369/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42924039",
+   "title": "Laparoscopic Endometriosis Phenotypes and Preoperative Non-suspicion of Endometriosis in Women With Superficial Disease: A Retrospective Study in Kinshasa.",
+   "journal": "Cureus",
+   "pubdate": "2026 Oct",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42924039/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42947085",
+   "title": "Expression and clinical significance of WBC, hs-CRP, and ROMA index, and tumor markers in endometriosis.",
+   "journal": "BMC Womens Health",
+   "pubdate": "2026 Jul 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42947085/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42949228",
+   "title": "The Diagnostic Value and Molecular Mechanism of miR-1271-5p Combined with Ultrasound in Endometriosis.",
+   "journal": "J Vis Exp",
+   "pubdate": "2026 Oct 27",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42949228/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Video-Audio Media",
+   "group": "diagnostics"
+  },
+  {
+   "pmid": "42934651",
+   "title": "Expectant management of asymptomatic diaphragmatic endometriosis: a cross-sectional retrospective study.",
+   "journal": "BMC Womens Health",
+   "pubdate": "2026 Jul 30",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42934651/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42941597",
+   "title": "Perioperative Hemoglobin Decline After Deep Endometriosis Surgery: Association with Surgery Duration and Exploratory Analyses of Operative Extent.",
+   "journal": "J Clin Med",
+   "pubdate": "2026 Oct 18",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42941597/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42941690",
+   "title": "Neuropelveology in Endometriosis: Pain Mechanisms, Diagnostic Implications, and Surgical Decision-Making.",
+   "journal": "J Clin Med",
+   "pubdate": "2026 Oct 21",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42941690/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42947878",
+   "title": "Primary umbilical endometriosis mimicking a urachal fistula: a case report.",
+   "journal": "Front Med (Lausanne)",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42947878/",
+   "source": "PubMed",
+   "study_type": "Case Reports; Journal Article",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42952678",
+   "title": "Malignant transformation of deep infiltrating endometriosis at the uterosacral ligament to endometrioid adenocarcinoma: a rare Case Report.",
+   "journal": "Front Oncol",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42952678/",
+   "source": "PubMed",
+   "study_type": "Case Reports; Journal Article",
+   "group": "surgery"
+  },
+  {
+   "pmid": "42920128",
+   "title": "Ionomics powered single-cell mapping reveals targetable iron dysregulation in endometriosis associated macrophages.",
+   "journal": "BMC Med",
+   "pubdate": "2026 Jul 27",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42920128/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42920945",
+   "title": "Intestinal microbiota-associated LysoPC(16:0) promotes endometriosis via PPARγ-mediated M2 macrophage polarization and IL-10 secretion.",
+   "journal": "iScience",
+   "pubdate": "2026 Nov 20",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42920945/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42921169",
+   "title": "Ectopic endometrial stromal cells-derived exosomes accelerate endometriosis progression by delivering PDLIM3 to induce macrophage M2 polarization.",
+   "journal": "J Cell Commun Signal",
+   "pubdate": "2026 Dec",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42921169/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42926381",
+   "title": "Hormonal factors are poor indicators of endometriosis pain.",
+   "journal": "bioRxiv",
+   "pubdate": "2026 Oct 06",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42926381/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Preprint",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42928289",
+   "title": "Multimodal analysis reveals asynchronous aging dynamics between endometriosis-associated ovarian cancer and endometriosis patients.",
+   "journal": "BMC Med",
+   "pubdate": "2026 Jul 27",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42928289/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42929003",
+   "title": "Identification of Shared Hub Genes between Endometriosis and Ovarian Clear Cell Carcinoma Using Integrative Bioinformatic Analysis.",
+   "journal": "Int J Fertil Steril",
+   "pubdate": "2026 Oct 03",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42929003/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42929462",
+   "title": "Persistent Pelvic Adhesions and Fibrotic Remodeling Following Ectopic Lesion Ablation in a Mouse Model of Endometriosis.",
+   "journal": "FASEB J",
+   "pubdate": "2026 Oct 31",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42929462/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42929847",
+   "title": "Selective Estradiol Sensitivity in 12Z Human Endometriotic Epithelial Cell Line.",
+   "journal": "Cells",
+   "pubdate": "2026 Oct 15",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42929847/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42935196",
+   "title": "[Stromal cell-derived miR-423-5p targets EMP2 to promote M2 macrophage polarization and directly enhance stromal cell migration in endometriosis].",
+   "journal": "Zhong Nan Da Xue Xue Bao Yi Xue Ban",
+   "pubdate": "2026 Aug 28",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42935196/",
+   "source": "PubMed",
+   "study_type": "English Abstract; Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42939539",
+   "title": "Endometriosis at the Molecular Crossroads: Pathways, Targets, and Emerging Therapeutic Strategies.",
+   "journal": "Curr Issues Mol Biol",
+   "pubdate": "2026 Sep 29",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42939539/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42939956",
+   "title": "Intraperitoneal Fetuin-A Modulates HMGB1-Associated Inflammatory Remodeling in Experimental Endometriosis.",
+   "journal": "Biomedicines",
+   "pubdate": "2026 Sep 23",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42939956/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42942060",
+   "title": "CRMP4-Mediated Regulation of Cav1.3 Protein Stability and Apoptosis Resistance in Endometriosis.",
+   "journal": "Int J Mol Sci",
+   "pubdate": "2026 Oct 19",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42942060/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42942199",
+   "title": "Multi-Target Anti-Endometriosis Mechanisms of Camellia sinensis Polyphenols: An Integrated Computational and Transcriptomic Study.",
+   "journal": "Life (Basel)",
+   "pubdate": "2026 Sep 26",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42942199/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42943217",
+   "title": "Tissue Transglutaminase (TG2) as a Candidate Biomarker and Potential Therapeutic Target in Endometriosis: Functional Evidence from shRNA-Mediated Downregulation of TG2 in Endometrial Mesenchymal Stem Cells.",
+   "journal": "Pharmaceuticals (Basel)",
+   "pubdate": "2026 Sep 25",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42943217/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42947782",
+   "title": "Modulation of immune and inflammatory responses involving selected galectins and selected immune-inflammatory mediators in women with deep endometriosis coexisting with adenomyosis - preliminary study.",
+   "journal": "Front Endocrinol (Lausanne)",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42947782/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42948656",
+   "title": "Intrathecal EP4 Antagonist Alleviates Neuronal and Glial Activation and Hyperalgesia in a Mouse Model of Endometriosis.",
+   "journal": "J Pain Res",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42948656/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "mechanisms"
+  },
+  {
+   "pmid": "42921513",
+   "title": "Digital health-enabled life-course management of endometriosis: from early recognition and assisted diagnosis to symptom monitoring and self-management.",
+   "journal": "Front Med (Lausanne)",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42921513/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "epidemiology"
+  },
+  {
+   "pmid": "42926793",
+   "title": "Association between clinically suspected endometriosis lacking histologic evidence and anxiety, depression and cannabidiol-containing products.",
+   "journal": "Eur J Obstet Gynecol Reprod Biol X",
+   "pubdate": "2026 Dec",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42926793/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "epidemiology"
+  },
+  {
+   "pmid": "42936750",
+   "title": "Endometriosis Burden Among Adolescents and Young Adult Women in China and the Western Pacific Region from 1990 to 2023: A Systematic Analysis for the GBD 2023.",
+   "journal": "Int J Womens Health",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42936750/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "epidemiology"
+  },
+  {
+   "pmid": "42950453",
+   "title": "Structural reproductive problems and risk of endometriosis: A population-based cohort study.",
+   "journal": "Maturitas",
+   "pubdate": "2026 Oct 26",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42950453/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "epidemiology"
+  },
+  {
+   "pmid": "42954255",
+   "title": "Depressive symptoms, mental disorders, and treatment-seeking behavior in endometriosis: A cross-sectional study of prevalence and associations with quality of life.",
+   "journal": "Women Health",
+   "pubdate": "2026 Oct 29",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42954255/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "epidemiology"
+  },
+  {
+   "pmid": "42955882",
+   "title": "Investigating Interoceptive Beliefs in Individuals With Endometriosis.",
+   "journal": "Eur J Pain",
+   "pubdate": "2026 Nov",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42955882/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "epidemiology"
+  },
+  {
+   "pmid": "42925945",
+   "title": "IVF versus surgery for infertility in women with deep and ovarian endometriosis: a partially randomized patient preference trial.",
+   "journal": "Am J Obstet Gynecol",
+   "pubdate": "2026 Oct 24",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42925945/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42953143",
+   "title": "Gonadotropin-releasing hormone antagonists versus agonists for endometriosis: a systematic review and meta-analysis of randomized controlled trials.",
+   "journal": "Front Endocrinol (Lausanne)",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42953143/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Systematic Review; Meta-Analysis; Comparative Study",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42937421",
+   "title": "A Systematic Review of Elagolix for the Management of Endometriosis-associated Pain.",
+   "journal": "Ann Afr Med",
+   "pubdate": "2026 Oct 28",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42937421/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42951459",
+   "title": "Efficacy of estetrol (E4) 15 mg/ drospirenone (DRSP) 3 mg combination for the treatment of dysmenorrhea in women with recurrent endometriosis and/or adenomyosis.",
+   "journal": "Taiwan J Obstet Gynecol",
+   "pubdate": "2026 Nov",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42951459/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Observational Study",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42942272",
+   "title": "Daily Pain and Activity Interference Trajectories Following Primary Motor Cortex rTMS for Endometriosis-Associated Chronic Pelvic Pain: A Prospective Real-World Cohort Study.",
+   "journal": "Life (Basel)",
+   "pubdate": "2026 Oct 09",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42942272/",
+   "source": "PubMed",
+   "study_type": "Journal Article",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42937228",
+   "title": "Endometriosis in IVF/ICSI: Clinical Outcomes, Cumulative Live Birth, and a Pragmatic Narrative Review for Patient Counseling and Management.",
+   "journal": "JBRA Assist Reprod",
+   "pubdate": "2026 Oct 26",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42937228/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42941812",
+   "title": "Endometriosis-Associated Infertility: Molecular Mechanisms and Evidence-Based Clinical Management.",
+   "journal": "Int J Mol Sci",
+   "pubdate": "2026 Oct 12",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42941812/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42942430",
+   "title": "Fertility Preservation in Women with Endometriosis: Indications, Timing, Techniques, and Reproductive Outcomes.",
+   "journal": "Medicina (Kaunas)",
+   "pubdate": "2026 Oct 01",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42942430/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42923893",
+   "title": "Emerging mechanism-driven therapies for endometriosis: From GnRH antagonists to microbiome and device-based strategies (Review).",
+   "journal": "Med Int (Lond)",
+   "pubdate": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42923893/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42923654",
+   "title": "Endometriosis-associated lesions during or after long-term estrogen-only therapy following hysterectomy: 2 cases.",
+   "journal": "JCEM Case Rep",
+   "pubdate": "2026 Dec",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42923654/",
+   "source": "PubMed",
+   "study_type": "Case Reports; Journal Article",
+   "group": "treatment"
+  },
+  {
+   "pmid": "42936234",
+   "title": "Endometriosis and adenomyosis: diagnosis and management.",
+   "journal": "Aust Prescr",
+   "pubdate": "2026 Oct",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42936234/",
+   "source": "PubMed",
+   "study_type": "Journal Article; Review",
+   "group": "treatment"
+  }
+ ]
+}
