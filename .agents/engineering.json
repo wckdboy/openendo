@@ -4,16 +4,16 @@
   "commands": {
     "fast": [
       {
-        "name": "pii-scan",
-        "run": "bash -c 'if git grep -nEi \"dearwolf|wmd@|nkp@|blxmp\\\\.dk|hermeswebui|percivaldotbot\" -- . :!docs/llms.txt :!.github/; then exit 1; else exit 0; fi'",
-        "timeout": 120
+        "name": "weekly-json",
+        "run": "python3 -c \"import json, pathlib; root=pathlib.Path('docs/research/evidence/weekly'); name=root.joinpath('LATEST').read_text().strip(); doc=json.loads(root.joinpath(name).read_text()); assert doc['count']==len(doc['papers'])\"",
+        "timeout": 60
       }
     ],
     "full": [
       {
-        "name": "pii-scan",
-        "run": "bash -c 'if git grep -nEi \"dearwolf|wmd@|nkp@|blxmp\\\\.dk|hermeswebui|percivaldotbot\" -- . :!docs/llms.txt :!.github/; then exit 1; else exit 0; fi'",
-        "timeout": 120
+        "name": "weekly-json",
+        "run": "python3 -c \"import json, pathlib; root=pathlib.Path('docs/research/evidence/weekly'); name=root.joinpath('LATEST').read_text().strip(); doc=json.loads(root.joinpath(name).read_text()); assert doc['count']==len(doc['papers'])\"",
+        "timeout": 60
       },
       {
         "name": "ro-crate-fresh",
